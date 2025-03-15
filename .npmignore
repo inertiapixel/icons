@@ -1,0 +1,10 @@
+# Ignore everything except dist/
+src/
+node_modules/
+.rollup.cache/
+tsconfig.json
+rollup.config.js
+package-lock.json
+.yarn.lock
+.vscode/
+*.log

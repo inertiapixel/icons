@@ -1,0 +1,59 @@
+{
+  "name": "@inertiapixel/icons",
+  "version": "1.0.2",
+  "private": false,
+  "description": "InertiaPixel React Icon Set",
+  "author": "Muhammad Asif <mdasiff007@gmail.com>",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc && rollup -c",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "inertiapixel",
+    "icons",
+    "react-icons",
+    "nextjs-icons",
+    "svg-icons",
+    "inertiapixel icons"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mdasiff/inertiapixel-icons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mdasiff/inertiapixel-icons/issues"
+  },
+  "homepage": "https://inertiapixel.com/icons",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./icons": {
+      "import": "./dist/icons/index.esm.js",
+      "require": "./dist/icons/index.js",
+      "types": "./dist/icons/index.d.ts"
+    }
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@svgr/cli": "^8.1.0",
+    "rollup": "^4.0.0",
+    "rollup-plugin-typescript2": "^0.34.0",
+    "typescript": "^5.8.2"
+  }
+}
