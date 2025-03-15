@@ -2,14 +2,16 @@
 
 **InertiaPixel Icons** is a collection of high-quality SVG icons designed for React and Next.js applications. This lightweight, customizable icon set is perfect for modern web development.
 
-![InertiaPixel Icons](https://www.inertiapixel.com/images/logo.svg)
+With **5000+ icons**, this package provides a scalable, flexible, and easy-to-use solution for your UI needs.
+
+![InertiaPixel Icons](https://www.inertiapixel.com/images/logo-min.svg)
 
 ## 🚀 Installation
 
 Install the package via npm:
 
 ```sh
-npm install inertiapixel-icons
+npm install @inertiapixel/icons
 ```
 
 ## Usage
