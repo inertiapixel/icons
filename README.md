@@ -1,10 +1,12 @@
 # InertiaPixel Icons
 
+![InertiaPixel Icons](https://www.inertiapixel.com/images/logo-min.svg)
+
+
 **InertiaPixel Icons** is a collection of high-quality SVG icons designed for React and Next.js applications. This lightweight, customizable icon set is perfect for modern web development.
 
 With **5000+ icons**, this package provides a scalable, flexible, and easy-to-use solution for your UI needs.
 
-![InertiaPixel Icons](https://www.inertiapixel.com/images/logo-min.svg)
 
 ## 🚀 Installation
 
@@ -18,12 +20,12 @@ npm install @inertiapixel/icons
 
 ```tsx
 import React from "react";
-import { HeartIcon, StarIcon } from "inertiapixel-icons";
+import { HeartIcon, StarIcon } from "@inertiapixel/icons";
 
 const App = () => {
   return (
     <div>
-      <HeartIcon />
+      <HeartIcon width={50} height={50} color="red" />
       <StarIcon />
     </div>
   );
@@ -46,4 +48,4 @@ You can style the icons using props like `width`, `height`, and `fill`:
 ## 📄 License
 
 This icon set is **free** and open-source under the **MIT License**.  
-See the full license [here](https://github.com/mdasiff/inertiapixel-icons/blob/main/LICENSE).
+See the full license [here](https://github.com/inertiapixel/icons/blob/master/LICENSE).

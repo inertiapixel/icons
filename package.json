@@ -29,10 +29,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mdasiff/inertiapixel-icons.git"
+    "url": "git+https://github.com/inertiapixel/icons.git"
   },
   "bugs": {
-    "url": "https://github.com/mdasiff/inertiapixel-icons/issues"
+    "url": "https://github.com/inertiapixel/icons/issues"
   },
   "homepage": "https://inertiapixel.com/icons",
   "exports": {
