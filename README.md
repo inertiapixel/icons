@@ -43,7 +43,7 @@ You can style the icons using props like `width`, `height`, and `fill`:
 ```
 
 ### Visit our official website for live previews:
-🔗 www.inertiapixel.com/icons
+🔗 www.inertiapixel.com/react-icons
 
 ## 📄 License
 
