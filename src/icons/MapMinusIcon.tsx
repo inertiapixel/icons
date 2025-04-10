@@ -1,28 +1,19 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgMapMinusIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#map-minus-icon_svg__a)"
-    >
-      <path d="M12 18.5 9 17l-6 3V7l6-3 6 3 6-3v11M9 4v13M15 7v8M16 19h6" />
-    </g>
-    <defs>
-      <clipPath id="map-minus-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const MapMinusIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_69521)">
+<path d="M12 18.5L9 17L3 20V7L9 4L15 7L21 4V15" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M9 4V17" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M15 7V15" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M16 19H22" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_69521">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgMapMinusIcon;

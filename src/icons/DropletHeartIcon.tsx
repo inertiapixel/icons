@@ -1,29 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgDropletHeartIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#droplet-heart-icon_svg__a)"
-    >
-      <path d="M18.288 11.284a7 7 0 0 0-.224-.405l-4.89-7.26c-.42-.625-1.287-.803-1.936-.397a1.4 1.4 0 0 0-.41.397l-4.893 7.26c-1.695 2.838-1.035 6.44 1.567 8.546a7.1 7.1 0 0 0 3.824 1.548" />
-      <path d="m18 22 3.35-3.284a2.14 2.14 0 0 0 .005-3.071 2.24 2.24 0 0 0-3.129-.006l-.224.22-.223-.22a2.24 2.24 0 0 0-3.128-.006 2.143 2.143 0 0 0-.006 3.07z" />
-    </g>
-    <defs>
-      <clipPath id="droplet-heart-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const DropletHeartIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_75053)">
+<path d="M18.2882 11.2837C18.2182 11.1462 18.1435 11.0111 18.0642 10.8787L13.1742 3.61873C12.7542 2.99373 11.8872 2.81573 11.2382 3.22173C11.0753 3.32396 10.9356 3.4592 10.8282 3.61873L5.9352 10.8787C4.2402 13.7167 4.9002 17.3197 7.5022 19.4247C8.59608 20.307 9.92665 20.8456 11.3262 20.9727" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M18.0001 21.9996L21.3501 18.7156C21.5556 18.5163 21.719 18.2778 21.8307 18.0142C21.9425 17.7507 22.0003 17.4674 22.0007 17.1812C22.0012 16.8949 21.9443 16.6115 21.8334 16.3476C21.7225 16.0837 21.5599 15.8446 21.3551 15.6446C20.9373 15.236 20.3763 15.0066 19.7918 15.0055C19.2074 15.0044 18.6455 15.2316 18.2261 15.6386L18.0021 15.8586L17.7791 15.6386C17.3613 15.2303 16.8006 15.0011 16.2163 15C15.6321 14.9989 15.0705 15.2259 14.6511 15.6326C14.4456 15.8319 14.2821 16.0703 14.1703 16.3338C14.0585 16.5974 14.0006 16.8806 14 17.1669C13.9994 17.4531 14.0562 17.7366 14.167 18.0005C14.2778 18.2645 14.4404 18.5035 14.6451 18.7036L18.0001 21.9996Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_75053">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgDropletHeartIcon;

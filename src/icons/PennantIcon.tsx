@@ -1,25 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgPennantIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#pennant-icon_svg__a)">
-      <path
-        fill="currentColor"
-        d="M9.999 2a1 1 0 0 1 .993.883l.007.117v.35l8.406 3.736c.752.335.79 1.365.113 1.77l-.113.058-8.406 3.735V20h1a1 1 0 0 1 .117 1.993l-.117.007h-4a1 1 0 0 1-.117-1.993L7.999 20h1V3a1 1 0 0 1 1-1"
-      />
-    </g>
-    <defs>
-      <clipPath id="pennant-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const PennantIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_57675)">
+<path d="M9.99889 2C10.2438 2.00003 10.4802 2.08996 10.6633 2.25272C10.8463 2.41547 10.9632 2.63975 10.9919 2.883L10.9989 3V3.35L19.4049 7.086C20.1569 7.421 20.1949 8.451 19.5179 8.856L19.4049 8.914L10.9989 12.649V20H11.9989C12.2538 20.0003 12.4989 20.0979 12.6843 20.2728C12.8696 20.4478 12.9811 20.687 12.9961 20.9414C13.011 21.1958 12.9282 21.4464 12.7646 21.6418C12.601 21.8373 12.369 21.9629 12.1159 21.993L11.9989 22H7.99889C7.74401 21.9997 7.49886 21.9021 7.31352 21.7272C7.12819 21.5522 7.01666 21.313 7.00172 21.0586C6.98678 20.8042 7.06957 20.5536 7.23316 20.3582C7.39675 20.1627 7.6288 20.0371 7.88189 20.007L7.99889 20H8.99889V3C8.99889 2.73478 9.10425 2.48043 9.29179 2.29289C9.47932 2.10536 9.73368 2 9.99889 2Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_57675">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgPennantIcon;

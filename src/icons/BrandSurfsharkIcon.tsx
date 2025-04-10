@@ -1,29 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandSurfsharkIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#brand-surfshark-icon_svg__a)"
-    >
-      <path d="M19.955 9.447c-.237-6.217 0-6.217-6-6.425-5.774-.208-6.824 1-7.91 5.382C3.16 20.22 2.2 23.12 10.837 19.602c9.392-3.83 9.297-5.382 9.114-10.155z" />
-      <path d="M8 16h.452c1.943.007 3.526-1.46 3.543-3.286v-2.428c.018-1.828 1.607-3.298 3.553-3.286H16" />
-    </g>
-    <defs>
-      <clipPath id="brand-surfshark-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandSurfsharkIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_81435)">
+<path d="M19.9547 9.44726C19.7177 3.23026 19.9547 3.23026 13.9547 3.02226C8.18072 2.81426 7.13072 4.02226 6.04472 8.40426C3.16072 20.2203 2.19972 23.1203 10.8367 19.6023C20.2287 15.7713 20.1337 14.2203 19.9507 9.44726H19.9547Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M8 16.0001H8.452C10.395 16.0071 11.978 14.5391 11.995 12.7141V10.2861C12.013 8.45807 13.602 6.98807 15.548 7.00007H16" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_81435">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandSurfsharkIcon;

@@ -1,25 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgHomeIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#home-icon_svg__a)">
-      <path
-        fill="currentColor"
-        d="m12.709 2.293 9 9c.63.63.184 1.707-.707 1.707h-1v6a3 3 0 0 1-3 3h-1v-7a3 3 0 0 0-2.824-2.995L13.002 12h-2a3 3 0 0 0-3 3v7h-1a3 3 0 0 1-3-3v-6h-1c-.89 0-1.337-1.077-.707-1.707l9-9a1 1 0 0 1 1.414 0M13.002 14a1 1 0 0 1 1 1v7h-4v-7a1 1 0 0 1 .883-.993l.117-.007z"
-      />
-    </g>
-    <defs>
-      <clipPath id="home-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const HomeIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_57975)">
+<path d="M12.7087 2.29279L21.7087 11.2928C22.3387 11.9228 21.8927 12.9998 21.0017 12.9998H20.0017V18.9998C20.0017 19.7954 19.6857 20.5585 19.1231 21.1211C18.5605 21.6837 17.7974 21.9998 17.0017 21.9998H16.0017V14.9998C16.0018 14.2346 15.7094 13.4983 15.1845 12.9415C14.6595 12.3848 13.9416 12.0497 13.1777 12.0048L13.0017 11.9998H11.0017C10.2061 11.9998 9.44304 12.3159 8.88043 12.8785C8.31782 13.4411 8.00175 14.2041 8.00175 14.9998V21.9998H7.00175C6.2061 21.9998 5.44304 21.6837 4.88043 21.1211C4.31782 20.5585 4.00175 19.7954 4.00175 18.9998V12.9998H3.00175C2.11175 12.9998 1.66475 11.9228 2.29475 11.2928L11.2947 2.29279C11.4823 2.10532 11.7366 2 12.0017 2C12.2669 2 12.5212 2.10532 12.7087 2.29279ZM13.0017 13.9998C13.267 13.9998 13.5213 14.1051 13.7089 14.2927C13.8964 14.4802 14.0017 14.7346 14.0017 14.9998V21.9998H10.0017V14.9998C10.0018 14.7549 10.0917 14.5184 10.2545 14.3354C10.4172 14.1524 10.6415 14.0354 10.8847 14.0068L11.0017 13.9998H13.0017Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_57975">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgHomeIcon;

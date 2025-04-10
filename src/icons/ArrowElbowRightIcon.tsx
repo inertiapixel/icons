@@ -1,29 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgArrowElbowRightIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#arrow-elbow-right-icon_svg__a)"
-    >
-      <path d="M21 14V8h-6" />
-      <path d="m21 8-9 9-9-9" />
-    </g>
-    <defs>
-      <clipPath id="arrow-elbow-right-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const ArrowElbowRightIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_85400)">
+<path d="M21 14V8H15" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M21 8L12 17L3 8" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_85400">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgArrowElbowRightIcon;

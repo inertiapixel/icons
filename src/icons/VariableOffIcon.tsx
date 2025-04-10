@@ -1,29 +1,20 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgVariableOffIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#variable-off-icon_svg__a)"
-    >
-      <path d="M4.675 4.68C2.505 9.456 2.613 14.272 5 20M19 4c1.959 3.917 2.383 7.834 1.272 12.232m-.983 3.051q-.14.357-.289.717M11.695 11.695q.141.385.32.831C13 15 13 16 14 16h1" />
-      <path d="M8 16c1.5 0 3-2 4-3.5m2.022-2.514C14.651 9.404 15.326 9 16 9M3 3l18 18" />
-    </g>
-    <defs>
-      <clipPath id="variable-off-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const VariableOffIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_60477)">
+<path d="M4.67523 4.67969C2.50523 9.45569 2.61323 14.2717 5.00023 19.9997" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M19 4C20.959 7.917 21.383 11.834 20.272 16.232M19.289 19.283C19.196 19.521 19.1 19.76 19 20" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M11.6953 11.6953C11.7903 11.9523 11.8953 12.2283 12.0153 12.5263C12.9993 14.9993 12.9993 15.9993 13.9993 15.9993H14.9993" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M8 16C9.5 16 11 14 12 12.5M14.022 9.986C14.651 9.404 15.326 9 16 9" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3 3L21 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_60477">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgVariableOffIcon;

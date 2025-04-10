@@ -1,28 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgSkewXIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#skew-x-icon_svg__a)">
-      <path
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M4 5.203v13.59a1 1 0 0 0 1.184.983l14-2.625a1 1 0 0 0 .816-.983v-8.34a1 1 0 0 0-.816-.983l-14-2.625A1 1 0 0 0 4 5.203"
-      />
-    </g>
-    <defs>
-      <clipPath id="skew-x-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const SkewXIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_63584)">
+<path d="M4 5.2032V18.7932C3.99999 18.9401 4.03235 19.0852 4.09478 19.2182C4.15722 19.3512 4.24819 19.4688 4.36122 19.5627C4.47426 19.6565 4.60659 19.7243 4.74879 19.7612C4.891 19.7981 5.03959 19.8032 5.184 19.7762L19.184 17.1512C19.4133 17.1083 19.6204 16.9865 19.7694 16.807C19.9185 16.6275 20 16.4015 20 16.1682V7.8282C20 7.59489 19.9185 7.36892 19.7694 7.1894C19.6204 7.00989 19.4133 6.88813 19.184 6.8452L5.184 4.2202C5.03959 4.19317 4.891 4.19828 4.74879 4.23519C4.60659 4.2721 4.47426 4.33989 4.36122 4.43373C4.24819 4.52758 4.15722 4.64518 4.09478 4.77817C4.03235 4.91117 3.99999 5.05628 4 5.2032Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_63584">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgSkewXIcon;

@@ -1,29 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgRotate360Icon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#rotate-360-icon_svg__a)"
-    >
-      <path d="M12 16h4v4" />
-      <path d="M19.458 11.042c.86-2.366.722-4.58-.6-5.9-2.272-2.274-7.185-1.045-10.973 2.743s-5.017 8.7-2.744 10.974c2.227 2.226 6.987 1.093 10.74-2.515" />
-    </g>
-    <defs>
-      <clipPath id="rotate-360-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const Rotate360Icon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_64907)">
+<path d="M12 16H16V20" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M19.458 11.0417C20.318 8.67574 20.18 6.46174 18.858 5.14174C16.586 2.86774 11.673 4.09674 7.88503 7.88474C4.09703 11.6727 2.86803 16.5857 5.14103 18.8587C7.36803 21.0847 12.128 19.9517 15.881 16.3437" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_64907">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgRotate360Icon;

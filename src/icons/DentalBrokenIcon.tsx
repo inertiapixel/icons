@@ -1,29 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgDentalBrokenIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#dental-broken-icon_svg__a)"
-    >
-      <path d="M12 5.5C10.926 4.914 9.417 4 8 4 5.9 4 4 5.247 4 9c0 4.899 1.056 8.41 2.671 10.537.573.756 1.97.521 2.567-.236q.597-.758 1.262-2.801c.292-.771.892-1.504 1.5-1.5.602 0 1.21.737 1.5 1.5q.665 2.043 1.262 2.8c.597.759 2 .993 2.567.237C18.944 17.41 20 13.9 20 9c0-3.74-1.908-5-4-5-1.423 0-2.92.911-4 1.5" />
-      <path d="M12 5.5 13 8l-2 2 2 2" />
-    </g>
-    <defs>
-      <clipPath id="dental-broken-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const DentalBrokenIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_76890)">
+<path d="M12 5.5C10.926 4.914 9.417 4 8 4C5.9 4 4 5.247 4 9C4 13.899 5.056 17.41 6.671 19.537C7.244 20.293 8.641 20.058 9.238 19.301C9.636 18.796 10.057 17.862 10.5 16.5C10.792 15.729 11.392 14.996 12 15C12.602 15 13.21 15.737 13.5 16.5C13.943 17.862 14.364 18.795 14.762 19.3C15.359 20.059 16.762 20.293 17.329 19.537C18.944 17.41 20 13.9 20 9C20 5.26 18.092 4 16 4C14.577 4 13.08 4.911 12 5.5Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 5.5L13 8L11 10L13 12" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_76890">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgDentalBrokenIcon;

@@ -1,30 +1,18 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgFileStarIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#file-star-icon_svg__a)"
-    >
-      <path d="M14 3v4a1 1 0 0 0 1 1h4" />
-      <path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2" />
-      <path d="m11.798 16.818-2.172 1.137a.392.392 0 0 1-.568-.41l.415-2.41-1.757-1.707a.39.39 0 0 1 .217-.666l2.428-.351 1.086-2.193a.391.391 0 0 1 .702 0l1.086 2.193 2.428.351a.389.389 0 0 1 .217.665l-1.757 1.707.414 2.41a.39.39 0 0 1-.567.412z" />
-    </g>
-    <defs>
-      <clipPath id="file-star-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const FileStarIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_74098)">
+<path d="M14 3V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H19" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M17 21H7C6.46957 21 5.96086 20.7893 5.58579 20.4142C5.21071 20.0391 5 19.5304 5 19V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H14L19 8V19C19 19.5304 18.7893 20.0391 18.4142 20.4142C18.0391 20.7893 17.5304 21 17 21Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M11.7983 16.8175L9.62628 17.9555C9.56183 17.989 9.48932 18.004 9.41684 17.9987C9.34437 17.9934 9.27479 17.9681 9.21587 17.9256C9.15696 17.8831 9.11102 17.825 9.08319 17.7579C9.05536 17.6907 9.04674 17.6172 9.05828 17.5455L9.47328 15.1345L7.71628 13.4275C7.66384 13.3768 7.62671 13.3123 7.60913 13.2416C7.59154 13.1708 7.59422 13.0965 7.61685 13.0271C7.63948 12.9578 7.68114 12.8962 7.7371 12.8494C7.79305 12.8026 7.86103 12.7725 7.93328 12.7625L10.3613 12.4105L11.4473 10.2175C11.4798 10.1521 11.5298 10.0972 11.5918 10.0588C11.6538 10.0204 11.7253 10 11.7983 10C11.8712 10 11.9427 10.0204 12.0047 10.0588C12.0667 10.0972 12.1168 10.1521 12.1493 10.2175L13.2353 12.4105L15.6633 12.7625C15.7353 12.7728 15.803 12.8031 15.8587 12.85C15.9144 12.8968 15.9559 12.9583 15.9785 13.0275C16.0011 13.0967 16.0039 13.1708 15.9865 13.2415C15.9691 13.3122 15.9323 13.3766 15.8803 13.4275L14.1233 15.1345L14.5373 17.5445C14.5497 17.6163 14.5417 17.6902 14.5143 17.7578C14.4868 17.8254 14.4409 17.8839 14.3819 17.9267C14.3228 17.9695 14.253 17.9949 14.1802 18C14.1074 18.005 14.0347 17.9896 13.9703 17.9555L11.7983 16.8175Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_74098">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgFileStarIcon;

@@ -1,28 +1,18 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandTetherIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#brand-tether-icon_svg__a)"
-    >
-      <path d="M14.079 20.188c-1.15 1.083-3.02 1.083-4.17 0l-6.93-6.548c-.96-.906-1.27-2.624-.69-3.831l2.4-5.018C5.158 3.8 6.408 3 7.468 3h9.06c1.06 0 2.31.802 2.78 1.79l2.4 5.019c.58 1.207.26 2.925-.69 3.83-3.453 3.293-3.466 3.279-6.94 6.549M12 15V8M8 8h8" />
-    </g>
-    <defs>
-      <clipPath id="brand-tether-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandTetherIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_81375)">
+<path d="M14.0785 20.188C12.9285 21.271 11.0585 21.271 9.90848 20.188L2.97848 13.64C2.01848 12.734 1.70848 11.016 2.28848 9.809L4.68848 4.791C5.15848 3.8 6.40848 3 7.46848 3H16.5285C17.5885 3 18.8385 3.802 19.3085 4.79L21.7085 9.809C22.2885 11.016 21.9685 12.734 21.0185 13.639C17.5655 16.932 17.5525 16.918 14.0785 20.188Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 15V8" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M8 8H16" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_81375">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandTetherIcon;

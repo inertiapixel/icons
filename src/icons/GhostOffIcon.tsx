@@ -1,29 +1,19 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgGhostOffIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#ghost-off-icon_svg__a)"
-    >
-      <path d="M8.792 4.777a7 7 0 0 1 10.206 6.224v4m-.12 3.898a1.78 1.78 0 0 1-2.98.502 1.65 1.65 0 0 0-2.6 0 1.65 1.65 0 0 1-2.6 0 1.65 1.65 0 0 0-2.6 0 1.78 1.78 0 0 1-3.1-1.4v-7c0-1.683.594-3.227 1.583-4.434M14 10h.01" />
-      <path d="M10 14a3.5 3.5 0 0 0 4 0M3 3l18 18" />
-    </g>
-    <defs>
-      <clipPath id="ghost-off-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const GhostOffIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_72890)">
+<path d="M8.79219 4.77734C9.85936 4.22751 11.05 3.96139 12.2497 4.00452C13.4494 4.04766 14.6179 4.3986 15.6428 5.02364C16.6677 5.64868 17.5147 6.52681 18.1023 7.57365C18.6899 8.62049 18.9984 9.80085 18.9982 11.0013V15.0013M18.8782 18.8993C18.7634 19.1792 18.5792 19.4252 18.3429 19.6141C18.1066 19.8029 17.826 19.9284 17.5277 19.9787C17.2294 20.0289 16.9232 20.0023 16.6381 19.9012C16.353 19.8002 16.0983 19.6282 15.8982 19.4013C15.7439 19.2039 15.5466 19.0442 15.3213 18.9344C15.0961 18.8245 14.8488 18.7675 14.5982 18.7675C14.3476 18.7675 14.1003 18.8245 13.875 18.9344C13.6498 19.0442 13.4525 19.2039 13.2982 19.4013C13.1439 19.5988 12.9466 19.7585 12.7213 19.8683C12.4961 19.9781 12.2488 20.0352 11.9982 20.0352C11.7476 20.0352 11.5003 19.9781 11.275 19.8683C11.0498 19.7585 10.8525 19.5988 10.6982 19.4013C10.5439 19.2039 10.3466 19.0442 10.1213 18.9344C9.89609 18.8245 9.64878 18.7675 9.39819 18.7675C9.14759 18.7675 8.90028 18.8245 8.67503 18.9344C8.44978 19.0442 8.25251 19.2039 8.09819 19.4013C7.84633 19.6863 7.5098 19.8832 7.13792 19.963C6.76605 20.0428 6.37839 20.0014 6.03175 19.8449C5.68512 19.6883 5.39774 19.4249 5.21174 19.0931C5.02574 18.7613 4.9509 18.3787 4.99819 18.0013V11.0013C4.99819 9.31834 5.59219 7.77434 6.58119 6.56734" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M14 10H14.01" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M10 14C10.5869 14.4087 11.2849 14.6277 12 14.6277C12.7151 14.6277 13.4131 14.4087 14 14" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3 3L21 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_72890">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgGhostOffIcon;

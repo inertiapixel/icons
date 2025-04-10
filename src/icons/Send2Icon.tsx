@@ -1,28 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgSend2Icon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#send-2-icon_svg__a)"
-    >
-      <path d="M4.698 4.033 21 12 4.698 19.966a.5.5 0 0 1-.546-.123.56.56 0 0 1-.12-.569L6.5 12 4.032 4.724a.56.56 0 0 1 .12-.568.5.5 0 0 1 .546-.124M6.5 12H21" />
-    </g>
-    <defs>
-      <clipPath id="send-2-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const Send2Icon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_64365)">
+<path d="M4.69817 4.03348L21.0002 11.9995L4.69817 19.9655C4.60512 20.0012 4.50354 20.0086 4.40633 19.9865C4.30911 19.9644 4.22065 19.9139 4.15217 19.8415C4.08169 19.7671 4.03317 19.6747 4.01199 19.5744C3.99081 19.4742 3.99779 19.37 4.03217 19.2735L6.50017 11.9995L4.03217 4.72548C3.99779 4.62896 3.99081 4.5248 4.01199 4.42454C4.03317 4.32429 4.08169 4.23185 4.15217 4.15748C4.22065 4.08503 4.30911 4.03457 4.40633 4.01249C4.50354 3.99041 4.60512 3.99772 4.69817 4.03348Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M6.5 12H21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_64365">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgSend2Icon;

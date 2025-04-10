@@ -1,29 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgChartPie1Icon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#chart-pie-1-icon_svg__a)"
-    >
-      <path d="M9.999 3.201a9 9 0 1 0 10.8 10.8 1 1 0 0 0-1-1h-6.8a2 2 0 0 1-2-2v-7a.9.9 0 0 0-1-.8" />
-      <path d="M15 3.5A9 9 0 0 1 20.5 9H16a1 1 0 0 1-1-1z" />
-    </g>
-    <defs>
-      <clipPath id="chart-pie-1-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const ChartPie1Icon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_79603)">
+<path d="M9.99874 3.20145C8.43445 3.56409 6.99566 4.33865 5.83162 5.44478C4.66758 6.55092 3.82068 7.94835 3.37877 9.49212C2.93686 11.0359 2.91602 12.6698 3.31843 14.2243C3.72084 15.7789 4.53183 17.1974 5.66729 18.3329C6.80275 19.4684 8.22132 20.2793 9.77586 20.6818C11.3304 21.0842 12.9643 21.0633 14.5081 20.6214C16.0518 20.1795 17.4493 19.3326 18.5554 18.1686C19.6615 17.0045 20.4361 15.5657 20.7987 14.0014C20.7987 13.7362 20.6934 13.4819 20.5058 13.2943C20.3183 13.1068 20.064 13.0014 19.7987 13.0014H12.9987C12.4683 13.0014 11.9596 12.7907 11.5845 12.4157C11.2095 12.0406 10.9987 11.5319 10.9987 11.0014V4.00145C10.9863 3.88297 10.9505 3.76814 10.8934 3.66362C10.8362 3.55909 10.7589 3.46695 10.6659 3.39253C10.5729 3.31811 10.466 3.2629 10.3515 3.2301C10.2369 3.1973 10.1171 3.18756 9.99874 3.20145Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M15 3.5C16.2697 3.94708 17.423 4.6733 18.3748 5.62516C19.3267 6.57702 20.0529 7.73028 20.5 9H16C15.7348 9 15.4804 8.89464 15.2929 8.70711C15.1054 8.51957 15 8.26522 15 8V3.5Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_79603">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgChartPie1Icon;

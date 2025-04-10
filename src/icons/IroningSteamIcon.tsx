@@ -1,28 +1,19 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgIroningSteamIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#ironing-steam-icon_svg__a)"
-    >
-      <path d="M12 19v2M9 4h7.459a3 3 0 0 1 2.959 2.507l.577 3.464.81 4.865A1 1 0 0 1 19.82 16H3a7 7 0 0 1 7-7h9.8M8 19l-1 2M16 19l1 2" />
-    </g>
-    <defs>
-      <clipPath id="ironing-steam-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const IroningSteamIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_71238)">
+<path d="M12 19V21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M9 4H16.459C17.1691 4.00005 17.8562 4.25202 18.3981 4.71107C18.9399 5.17013 19.3013 5.80651 19.418 6.507L19.995 9.971L20.805 14.836C20.8288 14.9791 20.8212 15.1257 20.7826 15.2656C20.7441 15.4054 20.6756 15.5352 20.5819 15.646C20.4882 15.7567 20.3715 15.8457 20.2399 15.9069C20.1084 15.968 19.9651 15.9998 19.82 16H3C3 14.1435 3.7375 12.363 5.05025 11.0503C6.36301 9.7375 8.14348 9 10 9H19.8" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M8 19L7 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M16 19L17 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_71238">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgIroningSteamIcon;

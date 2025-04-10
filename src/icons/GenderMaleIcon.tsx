@@ -1,28 +1,19 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgGenderMaleIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#gender-male-icon_svg__a)"
-    >
-      <path d="M5 14a5 5 0 1 0 10 0 5 5 0 0 0-10 0M19.002 5l-5.4 5.4M19 5h-5M19 5v5" />
-    </g>
-    <defs>
-      <clipPath id="gender-male-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const GenderMaleIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_72937)">
+<path d="M5 14C5 15.3261 5.52678 16.5979 6.46447 17.5355C7.40215 18.4732 8.67392 19 10 19C11.3261 19 12.5979 18.4732 13.5355 17.5355C14.4732 16.5979 15 15.3261 15 14C15 12.6739 14.4732 11.4021 13.5355 10.4645C12.5979 9.52678 11.3261 9 10 9C8.67392 9 7.40215 9.52678 6.46447 10.4645C5.52678 11.4021 5 12.6739 5 14Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M19.0016 5L13.6016 10.4" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M19 5H14" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M19 5V10" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_72937">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgGenderMaleIcon;

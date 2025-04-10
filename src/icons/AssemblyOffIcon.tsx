@@ -1,29 +1,18 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgAssemblyOffIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#assembly-off-icon_svg__a)"
-    >
-      <path d="m8.703 4.684 2.326-1.385a2.06 2.06 0 0 1 2 0l6 3.573H19a2 2 0 0 1 1 1.747v6.536c0 .248-.046.49-.132.715m-2.156 1.837-4.741 3.029a2 2 0 0 1-1.942 0l-6-3.833A2 2 0 0 1 4 15.156V8.619A2 2 0 0 1 5.029 6.87l1.157-.69" />
-      <path d="M11.593 7.59c.295-.132.637-.12.921.04l3 1.79H15.5c.312.182.503.517.5.878V12m-1.152 2.86-2.363 1.514a1 1 0 0 1-.97 0l-3-1.922A1 1 0 0 1 8 13.576v-3.278c0-.364.197-.7.514-.877l.568-.34M3 3l18 18" />
-    </g>
-    <defs>
-      <clipPath id="assembly-off-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const AssemblyOffIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_84717)">
+<path d="M8.703 4.68364L11.029 3.29864C11.3348 3.12841 11.679 3.03906 12.029 3.03906C12.379 3.03906 12.7232 3.12841 13.029 3.29864L19.029 6.87164H19C19.3062 7.04844 19.5601 7.30327 19.7358 7.61016C19.9115 7.91705 20.0026 8.26504 20 8.61864V15.1546C20 15.4026 19.954 15.6446 19.868 15.8696M17.712 17.7066L12.971 20.7356C12.674 20.9006 12.3398 20.9872 12 20.9872C11.6602 20.9872 11.326 20.9006 11.029 20.7356L5.029 16.9026C4.71736 16.7296 4.45763 16.4764 4.27671 16.1692C4.0958 15.862 4.00026 15.5121 4 15.1556V8.61864C4.00008 8.26199 4.09553 7.91186 4.27646 7.60451C4.45739 7.29717 4.71721 7.04379 5.029 6.87064L6.186 6.18164" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M11.593 7.59077C11.888 7.45777 12.23 7.47077 12.514 7.63077L15.514 9.42077H15.5C15.812 9.60177 16.003 9.93677 16 10.2978V11.9998M14.848 14.8598L12.485 16.3738C12.3366 16.4561 12.1697 16.4993 12 16.4993C11.8303 16.4993 11.6634 16.4561 11.515 16.3738L8.515 14.4518C8.35872 14.3651 8.22851 14.2381 8.13794 14.0841C8.04737 13.93 7.99974 13.7545 8 13.5758V10.2978C8 9.93377 8.197 9.59777 8.514 9.42077L9.082 9.08177" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3 3L21 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_84717">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgAssemblyOffIcon;

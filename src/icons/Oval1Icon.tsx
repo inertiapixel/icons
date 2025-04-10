@@ -1,28 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgOval1Icon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#oval-1-icon_svg__a)">
-      <path
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M6 12c0 2.387.632 4.676 1.757 6.364S10.41 21 12 21s3.117-.948 4.243-2.636C17.368 16.676 18 14.387 18 12s-.632-4.676-1.757-6.364S13.59 3 12 3s-3.117.948-4.243 2.636C6.632 7.324 6 9.613 6 12"
-      />
-    </g>
-    <defs>
-      <clipPath id="oval-1-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const Oval1Icon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_67200)">
+<path d="M6 12C6 14.3869 6.63214 16.6761 7.75736 18.364C8.88258 20.0518 10.4087 21 12 21C13.5913 21 15.1174 20.0518 16.2426 18.364C17.3679 16.6761 18 14.3869 18 12C18 9.61305 17.3679 7.32387 16.2426 5.63604C15.1174 3.94821 13.5913 3 12 3C10.4087 3 8.88258 3.94821 7.75736 5.63604C6.63214 7.32387 6 9.61305 6 12Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_67200">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgOval1Icon;

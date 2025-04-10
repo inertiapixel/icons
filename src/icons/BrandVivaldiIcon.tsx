@@ -1,28 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandVivaldiIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#brand-vivaldi-icon_svg__a)">
-      <path
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M21.648 6.808q-3.702 6.421-7.408 12.836c-.397.777-1.366 1.301-2.24 1.356-.962.102-1.7-.402-2.154-1.254-1.563-2.684-3.106-5.374-4.66-8.064-.943-1.633-1.891-3.266-2.83-4.905a2.47 2.47 0 0 1-.06-2.45A2.49 2.49 0 0 1 4.381 3.02a2.39 2.39 0 0 1 2.287 1.281c.697 1.19 2.043 3.83 2.55 4.682A3.92 3.92 0 0 0 12.5 11c2.126.133 3.974-.95 4.21-3.058 0-.164.228-3.178.846-3.962.619-.784 1.64-1.155 2.606-.893a2.48 2.48 0 0 1 1.814 2.062 2.57 2.57 0 0 1-.343 1.674"
-      />
-    </g>
-    <defs>
-      <clipPath id="brand-vivaldi-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandVivaldiIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_81250)">
+<path d="M21.648 6.8083C19.18 11.0883 16.711 15.3683 14.24 19.6443C13.843 20.4213 12.874 20.9453 12 21.0003C11.038 21.1023 10.3 20.5983 9.84603 19.7463C8.28303 17.0623 6.74003 14.3723 5.18603 11.6823C4.24303 10.0493 3.29503 8.4163 2.35603 6.7773C2.13373 6.40945 2.01126 5.98995 2.00074 5.56027C1.99022 5.13059 2.092 4.7056 2.29603 4.3273C2.50081 3.94769 2.80057 3.62771 3.16603 3.39862C3.53148 3.16953 3.95012 3.03918 4.38103 3.0203C5.33203 2.9553 6.23103 3.4583 6.66803 4.3013C7.36503 5.4913 8.71103 8.1313 9.21803 8.9833C9.54511 9.57365 10.0191 10.0695 10.5941 10.4229C11.1691 10.7763 11.8256 10.9752 12.5 11.0003C14.626 11.1333 16.474 10.0503 16.71 7.9423C16.71 7.7783 16.938 4.7643 17.556 3.9803C18.175 3.1963 19.196 2.8253 20.162 3.0873C20.6336 3.21456 21.0573 3.47805 21.3799 3.84481C21.7026 4.21157 21.9099 4.66532 21.976 5.1493C22.056 5.7303 21.935 6.3203 21.633 6.8233" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_81250">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandVivaldiIcon;

@@ -1,28 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandPatreon1Icon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#brand-patreon-1-icon_svg__a)">
-      <path
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M20 8.408c-.003-2.299-1.746-4.182-3.79-4.862-2.54-.844-5.888-.722-8.312.453-2.94 1.425-3.862 4.545-3.896 7.656-.028 2.559.22 9.297 3.92 9.345 2.75.036 3.159-3.603 4.43-5.356.906-1.247 2.07-1.599 3.506-1.963 2.465-.627 4.146-2.626 4.142-5.273"
-      />
-    </g>
-    <defs>
-      <clipPath id="brand-patreon-1-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandPatreon1Icon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_81772)">
+<path d="M19.9998 8.40801C19.9968 6.10901 18.2538 4.22601 16.2098 3.54601C13.6698 2.70201 10.3218 2.82401 7.89783 3.99901C4.95883 5.42401 4.03583 8.54401 4.00183 11.655C3.97383 14.214 4.22183 20.952 7.92183 21C10.6718 21.036 11.0808 17.397 12.3518 15.644C13.2578 14.397 14.4228 14.045 15.8578 13.681C18.3228 13.054 20.0038 11.055 19.9998 8.40801Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_81772">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandPatreon1Icon;

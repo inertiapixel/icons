@@ -1,29 +1,19 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgCardboardsOffIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#cardboards-off-icon_svg__a)"
-    >
-      <path d="M20.96 16.953q.04-.22.04-.453V8a2 2 0 0 0-2-2h-9M6 6H5a2 2 0 0 0-2 2v8.5A2.5 2.5 0 0 0 5.5 19h1.06a3 3 0 0 0 2.34-1.13l1.54-1.92a2 2 0 0 1 3.12 0l1.54 1.92A3 3 0 0 0 17.44 19h1.06q.233 0 .454-.041" />
-      <path d="M7 12a1 1 0 1 0 2 0 1 1 0 0 0-2 0M16.714 12.701a1 1 0 0 0-1.417-1.41zM3 3l18 18" />
-    </g>
-    <defs>
-      <clipPath id="cardboards-off-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const CardboardsOffIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_79998)">
+<path d="M20.96 16.953C20.986 16.806 21 16.655 21 16.5V8C21 7.46957 20.7893 6.96086 20.4142 6.58579C20.0391 6.21071 19.5304 6 19 6H10M6 6H5C4.46957 6 3.96086 6.21071 3.58579 6.58579C3.21071 6.96086 3 7.46957 3 8V16.5C3 17.163 3.26339 17.7989 3.73223 18.2678C4.20107 18.7366 4.83696 19 5.5 19H6.56C7.0098 18.9991 7.45365 18.8971 7.8587 18.7015C8.26374 18.5059 8.61962 18.2217 8.9 17.87L10.44 15.95C10.6274 15.7164 10.8649 15.5279 11.1349 15.3984C11.4049 15.2688 11.7005 15.2016 12 15.2016C12.2995 15.2016 12.5951 15.2688 12.8651 15.3984C13.1351 15.5279 13.3726 15.7164 13.56 15.95L15.1 17.87C15.3804 18.2217 15.7363 18.5059 16.1413 18.7015C16.5464 18.8971 16.9902 18.9991 17.44 19H18.5C18.655 19 18.807 18.986 18.954 18.959" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M7 12C7 12.2652 7.10536 12.5196 7.29289 12.7071C7.48043 12.8946 7.73478 13 8 13C8.26522 13 8.51957 12.8946 8.70711 12.7071C8.89464 12.5196 9 12.2652 9 12C9 11.7348 8.89464 11.4804 8.70711 11.2929C8.51957 11.1054 8.26522 11 8 11C7.73478 11 7.48043 11.1054 7.29289 11.2929C7.10536 11.4804 7 11.7348 7 12Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M16.7139 12.7011C16.8957 12.5121 16.996 12.2593 16.9931 11.9971C16.9903 11.7349 16.8846 11.4842 16.6988 11.2992C16.513 11.1142 16.2619 11.0095 15.9997 11.0078C15.7375 11.0061 15.4851 11.1075 15.2969 11.2901L16.7139 12.7011Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3 3L21 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_79998">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgCardboardsOffIcon;

@@ -1,25 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgDeviceTabletIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#device-tablet-icon_svg__a)">
-      <path
-        fill="currentColor"
-        d="M18 2a2 2 0 0 1 1.995 1.85L20 4v16a2 2 0 0 1-1.85 1.995L18 22H6a2 2 0 0 1-1.995-1.85L4 20V4a2 2 0 0 1 1.85-1.995L6 2zm-6 13a2 2 0 0 0-1.977 1.697l-.018.154L10 17l.005.15A2 2 0 1 0 12 15"
-      />
-    </g>
-    <defs>
-      <clipPath id="device-tablet-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const DeviceTabletIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_58247)">
+<path d="M18 2C18.5046 1.99984 18.9906 2.19041 19.3605 2.5335C19.7305 2.87659 19.9572 3.34684 19.995 3.85L20 4V20C20.0002 20.5046 19.8096 20.9906 19.4665 21.3605C19.1234 21.7305 18.6532 21.9572 18.15 21.995L18 22H6C5.49542 22.0002 5.00943 21.8096 4.63945 21.4665C4.26947 21.1234 4.04284 20.6532 4.005 20.15L4 20V4C3.99984 3.49542 4.19041 3.00943 4.5335 2.63945C4.87659 2.26947 5.34684 2.04284 5.85 2.005L6 2H18ZM12 15C11.5221 15 11.0599 15.1711 10.6973 15.4824C10.3346 15.7937 10.0954 16.2246 10.023 16.697L10.005 16.851L10 17L10.005 17.15C10.0342 17.538 10.1759 17.9092 10.4129 18.2178C10.6499 18.5265 10.9717 18.7594 11.339 18.8878C11.7064 19.0163 12.1032 19.0349 12.4809 18.9412C12.8586 18.8475 13.2007 18.6456 13.4654 18.3604C13.7301 18.0751 13.9059 17.7188 13.9711 17.3352C14.0363 16.9516 13.9882 16.5572 13.8326 16.2005C13.6771 15.8438 13.4208 15.5403 13.0953 15.327C12.7698 15.1138 12.3891 15.0001 12 15Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_58247">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgDeviceTabletIcon;

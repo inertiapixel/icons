@@ -1,28 +1,20 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandTedIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#brand-ted-icon_svg__a)"
-    >
-      <path d="M2 8h4M4 8v8M13 8H9v8h4M9 12h2.5M16 8v8h2a3 3 0 0 0 3-3v-2a3 3 0 0 0-3-3z" />
-    </g>
-    <defs>
-      <clipPath id="brand-ted-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandTedIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_81387)">
+<path d="M2 8H6" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M4 8V16" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M13 8H9V16H13" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M9 12H11.5" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M16 8V16H18C18.7956 16 19.5587 15.6839 20.1213 15.1213C20.6839 14.5587 21 13.7956 21 13V11C21 10.2044 20.6839 9.44129 20.1213 8.87868C19.5587 8.31607 18.7956 8 18 8H16Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_81387">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandTedIcon;

@@ -1,30 +1,18 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBroadcastIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#broadcast-icon_svg__a)"
-    >
-      <path d="M18.364 19.364a9 9 0 1 0-12.728 0" />
-      <path d="M15.536 16.535a5 5 0 1 0-7.072 0" />
-      <path d="M11 13a1 1 0 1 0 2 0 1 1 0 0 0-2 0" />
-    </g>
-    <defs>
-      <clipPath id="broadcast-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BroadcastIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_80973)">
+<path d="M18.364 19.3639C19.6227 18.1052 20.4798 16.5016 20.8271 14.7558C21.1743 13.0099 20.9961 11.2004 20.3149 9.55582C19.6337 7.9113 18.4802 6.50569 17.0001 5.51677C15.5201 4.52784 13.78 4 12 4C10.22 4 8.47992 4.52784 6.99988 5.51677C5.51984 6.50569 4.36629 7.9113 3.6851 9.55582C3.00391 11.2004 2.82567 13.0099 3.17293 14.7558C3.52019 16.5016 4.37734 18.1052 5.636 19.3639" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M15.536 16.5351C16.2351 15.8358 16.7112 14.9448 16.904 13.975C17.0968 13.0051 16.9978 11.9998 16.6193 11.0863C16.2408 10.1727 15.5999 9.39191 14.7777 8.84256C13.9555 8.29321 12.9889 8 12 8C11.0112 8 10.0445 8.29321 9.22229 8.84256C8.40007 9.39191 7.75921 10.1727 7.38073 11.0863C7.00225 11.9998 6.90316 13.0051 7.09598 13.975C7.2888 14.9448 7.76487 15.8358 8.464 16.5351" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M11 13C11 13.2652 11.1054 13.5196 11.2929 13.7071C11.4804 13.8946 11.7348 14 12 14C12.2652 14 12.5196 13.8946 12.7071 13.7071C12.8946 13.5196 13 13.2652 13 13C13 12.7348 12.8946 12.4804 12.7071 12.2929C12.5196 12.1054 12.2652 12 12 12C11.7348 12 11.4804 12.1054 11.2929 12.2929C11.1054 12.4804 11 12.7348 11 13Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_80973">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBroadcastIcon;

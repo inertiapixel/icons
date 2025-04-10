@@ -1,28 +1,19 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgFlask2OffIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#flask-2-off-icon_svg__a)"
-    >
-      <path d="M6.102 15h8.9M17.741 17.741A6 6 0 0 1 15.317 21H8.682A6 6 0 0 1 10 10.34v-.326M10 6V3h4v7m.613.598a6 6 0 0 1 2.801 2.817M9 3h6M3 3l18 18" />
-    </g>
-    <defs>
-      <clipPath id="flask-2-off-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const Flask2OffIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_73453)">
+<path d="M6.10156 15H15.0016" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M17.7414 17.741C17.3369 19.0761 16.4797 20.2285 15.3174 21H8.68244C7.75226 20.3838 7.01233 19.5204 6.54579 18.5068C6.07924 17.4933 5.90456 16.3697 6.04137 15.2624C6.17818 14.155 6.62106 13.1077 7.32025 12.2382C8.01945 11.3686 8.94725 10.7113 9.99944 10.34V10.014M9.99944 6V3H13.9994V10M14.6124 10.598C15.8389 11.1917 16.8267 12.1852 17.4134 13.415" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M9 3H15" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3 3L21 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_73453">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgFlask2OffIcon;

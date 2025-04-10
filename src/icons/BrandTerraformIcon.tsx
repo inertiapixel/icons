@@ -1,28 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandTerraformIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#brand-terraform-icon_svg__a)"
-    >
-      <path d="M15 15.5 3.524 9.284A1 1 0 0 1 3 8.404V4.35a1.35 1.35 0 0 1 2.03-1.166L15 9v10.65a1.35 1.35 0 0 1-2.03 1.166l-3.474-2.027A1 1 0 0 1 9 17.926V6M15 15.5l5.504-3.21a1 1 0 0 0 .496-.864V7.85a1.35 1.35 0 0 0-2.03-1.166L15 9" />
-    </g>
-    <defs>
-      <clipPath id="brand-terraform-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandTerraformIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_81380)">
+<path d="M15 15.4998L3.524 9.28377C3.36544 9.19795 3.23303 9.07085 3.14079 8.91594C3.04855 8.76103 2.9999 8.58406 3 8.40377V4.34977C3.00004 4.11232 3.06271 3.87909 3.18168 3.6736C3.30065 3.46811 3.47171 3.29763 3.67761 3.17937C3.8835 3.0611 4.11695 2.99923 4.35439 3.00001C4.59184 3.00078 4.82488 3.06417 5.03 3.18377L15 8.99977V19.6498C15 19.8872 14.9373 20.1204 14.8183 20.3259C14.6994 20.5314 14.5283 20.7019 14.3224 20.8202C14.1165 20.9384 13.883 21.0003 13.6456 20.9995C13.4082 20.9988 13.1751 20.9354 12.97 20.8158L9.496 18.7888C9.34517 18.7008 9.22002 18.5748 9.133 18.4234C9.04598 18.272 9.00012 18.1004 9 17.9258V5.99977" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M15 15.4998L20.504 12.2898C20.655 12.2017 20.7802 12.0755 20.8673 11.9239C20.9543 11.7723 21.0001 11.6006 21 11.4258V7.84977C21 7.61232 20.9373 7.37909 20.8183 7.1736C20.6994 6.96811 20.5283 6.79763 20.3224 6.67937C20.1165 6.5611 19.8831 6.49923 19.6456 6.50001C19.4082 6.50078 19.1751 6.56417 18.97 6.68377L15 8.99977" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_81380">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandTerraformIcon;

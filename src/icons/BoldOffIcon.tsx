@@ -1,28 +1,18 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBoldOffIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#bold-off-icon_svg__a)"
-    >
-      <path d="M9 5h4a3.5 3.5 0 0 1 2.222 6.204M12 12H7V7M17.107 17.112A3.5 3.5 0 0 1 14 19H7v-7M3 3l18 18" />
-    </g>
-    <defs>
-      <clipPath id="bold-off-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BoldOffIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_83622)">
+<path d="M9 5H13C13.7213 5.00005 14.425 5.22295 15.0147 5.63821C15.6045 6.05347 16.0516 6.6408 16.2948 7.31986C16.538 7.99892 16.5655 8.73654 16.3734 9.4318C16.1814 10.1271 15.7793 10.746 15.222 11.204M12 12H7V7" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M17.107 17.112C16.8117 17.6811 16.3658 18.1581 15.8179 18.4911C15.27 18.824 14.6411 19.0001 14 19H7V12" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3 3L21 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_83622">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBoldOffIcon;

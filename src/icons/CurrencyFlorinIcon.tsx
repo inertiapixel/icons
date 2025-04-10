@@ -1,28 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgCurrencyFlorinIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#currency-florin-icon_svg__a)"
-    >
-      <path d="M8 12h8M7 19c1.213 0 2.31-.723 2.788-1.838l4.424-10.324A3.03 3.03 0 0 1 17 5" />
-    </g>
-    <defs>
-      <clipPath id="currency-florin-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const CurrencyFlorinIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_77332)">
+<path d="M8 12H16" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M7 19C8.213 19 9.31 18.277 9.788 17.162L14.212 6.838C14.4459 6.29243 14.8347 5.82748 15.3303 5.50076C15.8259 5.17405 16.4064 4.99993 17 5" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_77332">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgCurrencyFlorinIcon;

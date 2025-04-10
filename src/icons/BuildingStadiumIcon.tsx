@@ -1,29 +1,19 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBuildingStadiumIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#building-stadium-icon_svg__a)"
-    >
-      <path d="M4 12c0 .53.843 1.04 2.343 1.414C7.843 13.79 9.878 14 12 14s4.157-.21 5.657-.586C19.157 13.04 20 12.53 20 12s-.843-1.04-2.343-1.414C16.157 10.21 14.122 10 12 10s-4.157.21-5.657.586C4.843 10.96 4 11.47 4 12" />
-      <path d="M4 12v7c0 .94 2.51 1.785 6 2v-3h4v3c3.435-.225 6-1.07 6-2v-7M15 6h4V3h-4v7M7 6h4V3H7v7" />
-    </g>
-    <defs>
-      <clipPath id="building-stadium-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BuildingStadiumIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_80719)">
+<path d="M4 12C4 12.5304 4.84285 13.0391 6.34315 13.4142C7.84344 13.7893 9.87827 14 12 14C14.1217 14 16.1566 13.7893 17.6569 13.4142C19.1571 13.0391 20 12.5304 20 12C20 11.4696 19.1571 10.9609 17.6569 10.5858C16.1566 10.2107 14.1217 10 12 10C9.87827 10 7.84344 10.2107 6.34315 10.5858C4.84285 10.9609 4 11.4696 4 12Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M4 12V19C4 19.94 6.51 20.785 10 21V18H14V21C17.435 20.775 20 19.93 20 19V12" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M15 6H19V3H15V10" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M7 6H11V3H7V10" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_80719">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBuildingStadiumIcon;

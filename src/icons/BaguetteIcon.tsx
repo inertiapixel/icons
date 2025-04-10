@@ -1,28 +1,19 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBaguetteIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#baguette-icon_svg__a)"
-    >
-      <path d="m5.628 11.283 5.645-5.637c2.665-2.663 5.924-3.747 8.663-1.205l.188.181a2.987 2.987 0 0 1 0 4.228L8.836 20.124a3 3 0 0 1-4.089.135l-.143-.135C1.876 17.4 2.9 14.007 5.628 11.284M9.5 7.5 11 11M6.5 10.5 8 14M12.5 4.5 14 8" />
-    </g>
-    <defs>
-      <clipPath id="baguette-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BaguetteIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_84440)">
+<path d="M5.62846 11.2832L11.2725 5.64619C13.9375 2.98319 17.1965 1.89919 19.9355 4.44119L20.1235 4.62219C20.4014 4.89963 20.6219 5.22915 20.7723 5.59189C20.9228 5.95463 21.0002 6.34348 21.0002 6.73619C21.0002 7.12889 20.9228 7.51774 20.7723 7.88049C20.6219 8.24323 20.4014 8.57275 20.1235 8.85019L8.83646 20.1242C8.29848 20.6599 7.57737 20.9718 6.81854 20.9968C6.05971 21.0219 5.31961 20.7583 4.74746 20.2592L4.60446 20.1242C1.87646 17.4002 2.90046 14.0072 5.62846 11.2832Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M9.5 7.5L11 11" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M6.5 10.5L8 14" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12.5 4.5L14 8" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_84440">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBaguetteIcon;

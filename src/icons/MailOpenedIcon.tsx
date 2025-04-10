@@ -1,22 +1,19 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgMailOpenedIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g fill="currentColor" clipPath="url(#mail-opened-icon_svg__a)">
-      <path d="m14.872 14.285 6.522 6.52a3 3 0 0 1-2.218 1.188l-.176.005H5a3 3 0 0 1-2.395-1.19l6.521-6.523 2.319 1.545.115.066a1 1 0 0 0 .878 0l.117-.066zM2 9.535l5.429 3.62L2 18.585zM22 9.535v9.05l-5.43-5.43zM12.44 2.102l.115.066 8.444 5.63-8.999 6-9-6 8.445-5.63a1 1 0 0 1 .995-.066" />
-    </g>
-    <defs>
-      <clipPath id="mail-opened-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const MailOpenedIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_57764)">
+<path d="M14.8715 14.2852L21.3935 20.8052C21.132 21.1522 20.7982 21.4381 20.4152 21.6433C20.0322 21.8484 19.6092 21.9678 19.1755 21.9932L18.9995 21.9982H4.99947C4.53544 21.9987 4.07764 21.8913 3.66218 21.6847C3.24672 21.478 2.88497 21.1776 2.60547 20.8072L9.12647 14.2852L11.4445 15.8302L11.5605 15.8962C11.6972 15.963 11.8473 15.9977 11.9995 15.9977C12.1516 15.9977 12.3018 15.963 12.4385 15.8962L12.5545 15.8302L14.8715 14.2852Z" fill="black"/>
+<path d="M2 9.53516L7.429 13.1552L2 18.5852V9.53516Z" fill="black"/>
+<path d="M22.0003 9.53516V18.5852L16.5703 13.1552L22.0003 9.53516Z" fill="black"/>
+<path d="M12.44 2.10221L12.555 2.16821L20.999 7.79721L12 13.7972L3 7.79721L11.445 2.16721C11.5906 2.07045 11.7589 2.01354 11.9333 2.00213C12.1077 1.99073 12.2831 2.02523 12.44 2.10221Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_57764">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgMailOpenedIcon;

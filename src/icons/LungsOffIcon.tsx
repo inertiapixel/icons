@@ -1,28 +1,20 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgLungsOffIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#lungs-off-icon_svg__a)"
-    >
-      <path d="M6.581 6.61c-1.206 1.057-2.07 2.625-2.933 5.448q-.63 2.055-.648 4.775c-.012 1.675 1.261 3.054 2.877 3.161l.203.007c1.611 0 2.918-1.335 2.918-2.98v-8.02M15 11V7.257C15 6.563 15.552 6 16.233 6c.204 0 .405.052.584.15l.13.083c1.46 1.059 2.432 2.647 3.405 5.824q.63 2.055.648 4.775v.187m-1.455 2.51c-.417.265-.9.43-1.419.464l-.202.007c-1.613 0-2.92-1.335-2.92-2.98V15M9 12a3 3 0 0 0 2.132-.89M12 4v4M3 3l18 18" />
-    </g>
-    <defs>
-      <clipPath id="lungs-off-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const LungsOffIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_69828)">
+<path d="M6.58108 6.60938C5.37508 7.66737 4.51108 9.23538 3.64808 12.0584C3.22808 13.4284 3.01208 15.0204 3.00008 16.8334C2.98808 18.5084 4.26108 19.8874 5.87708 19.9944L6.08008 20.0014C7.69108 20.0014 8.99808 18.6664 8.99808 17.0214V9.00138" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M15 11V7.257C15 6.563 15.552 6 16.233 6C16.437 6 16.638 6.052 16.817 6.15L16.947 6.233C18.407 7.292 19.379 8.88 20.352 12.057C20.772 13.427 20.988 15.019 21 16.832C21 16.895 21 16.957 21 17.019M19.545 19.529C19.128 19.794 18.645 19.959 18.126 19.993L17.924 20C16.311 20 15.004 18.665 15.004 17.02V15" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M9 11.9994C9.39664 11.9999 9.78941 11.9214 10.1554 11.7686C10.5215 11.6158 10.8534 11.3917 11.132 11.1094" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 4V8" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3 3L21 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_69828">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgLungsOffIcon;

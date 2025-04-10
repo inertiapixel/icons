@@ -1,28 +1,18 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgRepeatOffIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#repeat-off-icon_svg__a)"
-    >
-      <path d="M4 12V9a3 3 0 0 1 2.08-2.856M10 6h10m0 0-3-3m3 3-3 3M20 12v3a3 3 0 0 1-.133.886m-1.99 1.984c-.284.086-.58.13-.877.13H4m0 0 3 3m-3-3 3-3M3 3l18 18" />
-    </g>
-    <defs>
-      <clipPath id="repeat-off-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const RepeatOffIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_65260)">
+<path d="M4 12V9C4 7.664 4.873 6.532 6.08 6.144M10 6H20M20 6L17 3M20 6L17 9" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M20 12V15C20.0003 15.3003 19.9554 15.599 19.867 15.886M17.877 17.87C17.5927 17.9565 17.2972 18.0003 17 18H4M4 18L7 21M4 18L7 15" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3 3L21 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_65260">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgRepeatOffIcon;

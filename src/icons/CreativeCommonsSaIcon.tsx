@@ -1,30 +1,18 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgCreativeCommonsSaIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#creative-commons-sa-icon_svg__a)"
-    >
-      <path d="M3 12a9 9 0 1 0 18.001 0A9 9 0 0 0 3 12" />
-      <path d="M12 16a4 4 0 1 0-4-4v1" />
-      <path d="m6 12 2 2 2-2" />
-    </g>
-    <defs>
-      <clipPath id="creative-commons-sa-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const CreativeCommonsSaIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_77656)">
+<path d="M3 12C3 13.1819 3.23279 14.3522 3.68508 15.4442C4.13738 16.5361 4.80031 17.5282 5.63604 18.364C6.47177 19.1997 7.46392 19.8626 8.55585 20.3149C9.64778 20.7672 10.8181 21 12 21C13.1819 21 14.3522 20.7672 15.4442 20.3149C16.5361 19.8626 17.5282 19.1997 18.364 18.364C19.1997 17.5282 19.8626 16.5361 20.3149 15.4442C20.7672 14.3522 21 13.1819 21 12C21 10.8181 20.7672 9.64778 20.3149 8.55585C19.8626 7.46392 19.1997 6.47177 18.364 5.63604C17.5282 4.80031 16.5361 4.13738 15.4442 3.68508C14.3522 3.23279 13.1819 3 12 3C10.8181 3 9.64778 3.23279 8.55585 3.68508C7.46392 4.13738 6.47177 4.80031 5.63604 5.63604C4.80031 6.47177 4.13738 7.46392 3.68508 8.55585C3.23279 9.64778 3 10.8181 3 12Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 16C12.7911 16 13.5645 15.7654 14.2223 15.3259C14.8801 14.8864 15.3928 14.2616 15.6955 13.5307C15.9983 12.7998 16.0775 11.9956 15.9231 11.2196C15.7688 10.4437 15.3878 9.73098 14.8284 9.17157C14.269 8.61216 13.5563 8.2312 12.7804 8.07686C12.0044 7.92252 11.2002 8.00173 10.4693 8.30448C9.73836 8.60723 9.11365 9.11993 8.67412 9.77772C8.2346 10.4355 8 11.2089 8 12V13" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M6 12L8 14L10 12" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_77656">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgCreativeCommonsSaIcon;

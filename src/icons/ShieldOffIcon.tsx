@@ -1,28 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgShieldOffIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#shield-off-icon_svg__a)"
-    >
-      <path d="M17.669 17.667A12 12 0 0 1 11.999 21a12 12 0 0 1-8.5-15c.794.036 1.583-.006 2.357-.124m3.128-.926A12 12 0 0 0 11.999 3a12 12 0 0 0 8.5 3 12 12 0 0 1-1.116 9.376M3 3l18 18" />
-    </g>
-    <defs>
-      <clipPath id="shield-off-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const ShieldOffIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_64007)">
+<path d="M17.6689 17.667C16.1261 19.2844 14.1624 20.4387 11.9989 21C10.4421 20.5962 8.98234 19.8836 7.7064 18.9045C6.43047 17.9254 5.36437 16.6998 4.57145 15.3005C3.77854 13.9013 3.27499 12.3569 3.09073 10.7592C2.90647 9.16147 3.04527 7.54302 3.49886 6C4.29286 6.036 5.08186 5.994 5.85586 5.876M8.98386 4.95C10.081 4.45493 11.0974 3.79757 11.9989 3C14.3347 5.06658 17.3833 6.14257 20.4989 6C20.9565 7.55707 21.0936 9.19081 20.9018 10.8024C20.71 12.4139 20.1932 13.9699 19.3829 15.376" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3 3L21 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_64007">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgShieldOffIcon;

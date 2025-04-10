@@ -1,22 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgThumbUpIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g fill="currentColor" clipPath="url(#thumb-up-icon_svg__a)">
-      <path d="M13 3a3 3 0 0 1 2.995 2.824L16 6v4h2a3 3 0 0 1 2.98 2.65l.015.174L21 13l-.02.196-1.006 5.032c-.381 1.626-1.502 2.796-2.81 2.78L17 21H9a1 1 0 0 1-.993-.883L8 20l.001-9.536a1 1 0 0 1 .5-.865 3 3 0 0 0 1.492-2.397L10 7V6a3 3 0 0 1 3-3M5 10a1 1 0 0 1 .993.883L6 11v9a1 1 0 0 1-.883.993L5 21H4a2 2 0 0 1-1.995-1.85L2 19v-7a2 2 0 0 1 1.85-1.995L4 10z" />
-    </g>
-    <defs>
-      <clipPath id="thumb-up-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const ThumbUpIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_57144)">
+<path d="M13 3C13.7652 2.99996 14.5015 3.29233 15.0583 3.81728C15.615 4.34224 15.9501 5.06011 15.995 5.824L16 6V10H18C18.7351 9.99988 19.4447 10.2697 19.994 10.7582C20.5434 11.2467 20.8942 11.9199 20.98 12.65L20.995 12.824L21 13L20.98 13.196L19.974 18.228C19.593 19.854 18.472 21.024 17.164 21.008L17 21H9C8.75507 21 8.51866 20.91 8.33563 20.7473C8.15259 20.5845 8.03566 20.3603 8.007 20.117L8 20L8.001 10.464C8.00118 10.2886 8.04747 10.1164 8.13523 9.96458C8.22299 9.81276 8.34913 9.68668 8.501 9.599C8.92742 9.35272 9.28662 9.00519 9.54684 8.58713C9.80706 8.16907 9.96029 7.69335 9.993 7.202L10 7V6C10 5.20435 10.3161 4.44129 10.8787 3.87868C11.4413 3.31607 12.2044 3 13 3Z" fill="black"/>
+<path d="M5 10C5.24493 10 5.48134 10.09 5.66437 10.2527C5.84741 10.4155 5.96434 10.6397 5.993 10.883L6 11V20C5.99997 20.2449 5.91004 20.4813 5.74728 20.6644C5.58453 20.8474 5.36025 20.9643 5.117 20.993L5 21H4C3.49542 21.0002 3.00943 20.8096 2.63945 20.4665C2.26947 20.1234 2.04284 19.6532 2.005 19.15L2 19V12C1.99984 11.4954 2.19041 11.0094 2.5335 10.6395C2.87659 10.2695 3.34684 10.0428 3.85 10.005L4 10H5Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_57144">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgThumbUpIcon;

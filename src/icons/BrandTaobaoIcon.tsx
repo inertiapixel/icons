@@ -1,29 +1,25 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandTaobaoIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#brand-taobao-icon_svg__a)"
-    >
-      <path d="M2 5c.968.555 1.335 1.104 2 2M2 10c5.007 3.674 2.85 6.544 0 10M9.998 4C9.861 8.137 7.74 9.286 6.29 10.684M10 6c2.194-.8 3.736-.852 6.056-.993 4.206-.158 5.523 2.264 5.803 5.153.428 4.396-.077 7.186-2.117 9.298-1.188 1.23-3.238 2.62-7.207.26M11 10h6M13 10v6.493M8 13h10M16 15.512l.853 1.72" />
-      <path d="M16.5 17c-1.145.361-7 3-8.5-.5M11.765 8.54 10 11" />
-    </g>
-    <defs>
-      <clipPath id="brand-taobao-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandTaobaoIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_81403)">
+<path d="M2 5C2.968 5.555 3.335 6.104 4 7" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M2 10C7.007 13.674 4.85 16.544 2 20" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M9.99806 4C9.86106 8.137 7.74006 9.286 6.28906 10.684" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M10 6.00032C12.194 5.20032 13.736 5.14832 16.056 5.00732C20.262 4.84932 21.579 7.27132 21.859 10.1603C22.287 14.5563 21.782 17.3463 19.742 19.4583C18.554 20.6883 16.504 22.0783 12.535 19.7173" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M11 10H17" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M13 10V16.493" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M8 13H18" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M16 15.5117L16.853 17.2317" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M16.5 17C15.355 17.361 9.5 20 8 16.5" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M11.765 8.53906L10 11.0001" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_81403">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandTaobaoIcon;

@@ -1,29 +1,21 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgWorldMinusIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#world-minus-icon_svg__a)"
-    >
-      <path d="M20.483 15.007a9 9 0 1 0-7.958 5.978M3.602 9h16.8M3.602 15h16.8" />
-      <path d="M11.5 3a17 17 0 0 0 0 18M12.5 3a16.94 16.94 0 0 1 2.307 12M16 19h6" />
-    </g>
-    <defs>
-      <clipPath id="world-minus-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const WorldMinusIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_59650)">
+<path d="M20.4829 15.0067C21.1288 13.1845 21.1707 11.2028 20.6025 9.35496C20.0344 7.50711 18.8863 5.89131 17.3283 4.74677C15.7703 3.60223 13.8851 2.9898 11.9519 3.00013C10.0187 3.01046 8.14021 3.64301 6.5945 4.80413C5.0488 5.96525 3.91806 7.59322 3.36968 9.44705C2.8213 11.3009 2.88442 13.282 3.5497 15.0972C4.21498 16.9123 5.44706 18.465 7.06354 19.5254C8.68002 20.5858 10.595 21.0974 12.5249 20.9847" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3.60156 9H20.4016" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3.60156 15H20.4016" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M11.4997 3C9.81501 5.69961 8.92188 8.81787 8.92188 12C8.92188 15.1821 9.81501 18.3004 11.4997 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12.5 3C14.7352 6.57367 15.5577 10.8523 14.807 15" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M16 19H22" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_59650">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgWorldMinusIcon;

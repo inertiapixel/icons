@@ -1,28 +1,18 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgColorPickerOffIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#color-picker-off-icon_svg__a)"
-    >
-      <path d="m11 7 6 6M12 8l3.698-3.699a1 1 0 0 1 1.4 0l2.6 2.6a1 1 0 0 1 0 1.4l-3.702 3.703m-2 2-6 6h-4v-4l6-6M3 3l18 18" />
-    </g>
-    <defs>
-      <clipPath id="color-picker-off-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const ColorPickerOffIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_78076)">
+<path d="M11 7L17 13" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M11.9991 8.00048L15.6981 4.30148C15.885 4.11826 16.1363 4.01562 16.3981 4.01562C16.6598 4.01562 16.9112 4.11826 17.0981 4.30148L19.6981 6.90148C19.8813 7.08841 19.984 7.33973 19.984 7.60148C19.984 7.86323 19.8813 8.11455 19.6981 8.30148L15.9961 12.0035M13.9961 14.0035L7.99609 20.0035H3.99609V16.0035L9.99609 10.0035" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3 3L21 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_78076">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgColorPickerOffIcon;

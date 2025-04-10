@@ -1,25 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgConeIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#cone-icon_svg__a)">
-      <path
-        fill="currentColor"
-        d="M12 1.001c.72 0 1.385.387 1.749 1.03l8.13 14.99a1 1 0 0 1 .121.477v.498c0 2.46-4.306 3.945-9.677 4.002L12 22c-5.52 0-10-1.495-10-4.003v-.5a1 1 0 0 1 .121-.477L10.26 2.015A2 2 0 0 1 12 1"
-      />
-    </g>
-    <defs>
-      <clipPath id="cone-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const ConeIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_58313)">
+<path d="M12 1.001C12.72 1.001 13.385 1.388 13.749 2.031L21.879 17.021C21.9584 17.1674 22 17.3314 22 17.498V17.996C22 20.456 17.694 21.941 12.323 21.998L12 22C6.48 22 2 20.505 2 17.997V17.497C1.99997 17.3304 2.04156 17.1664 2.121 17.02L10.26 2.015C10.4343 1.707 10.6872 1.45076 10.9929 1.27244C11.2986 1.09412 11.6461 1.00011 12 1" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_58313">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgConeIcon;

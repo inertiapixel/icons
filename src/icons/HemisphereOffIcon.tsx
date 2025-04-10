@@ -1,29 +1,18 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgHemisphereOffIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#hemisphere-off-icon_svg__a)"
-    >
-      <path d="M6.588 6.603C4.41 7.15 3 8.02 3 9c0 1.657 4.03 3 9 3m3.72-.267C18.834 11.26 21 10.215 21 9c0-1.657-4.03-3-9-3q-.995 0-1.93.07" />
-      <path d="M3 9a9 9 0 0 0 13.677 7.69m2.165-1.843A8.97 8.97 0 0 0 21 9M3 3l18 18" />
-    </g>
-    <defs>
-      <clipPath id="hemisphere-off-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const HemisphereOffIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_72104)">
+<path d="M6.588 6.603C4.41 7.15 3 8.02 3 9C3 10.657 7.03 12 12 12M15.72 11.733C18.834 11.26 21 10.215 21 9C21 7.343 16.97 6 12 6C11.338 6 10.692 6.024 10.07 6.07" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3 9C2.99988 10.5973 3.42488 12.1659 4.23136 13.5447C5.03784 14.9235 6.19675 16.0628 7.58909 16.8457C8.98143 17.6285 10.557 18.0267 12.1541 17.9994C13.7512 17.972 15.3123 17.5201 16.677 16.69M18.842 14.847C20.2375 13.2188 21.0031 11.1444 21 9" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3 3L21 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_72104">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgHemisphereOffIcon;

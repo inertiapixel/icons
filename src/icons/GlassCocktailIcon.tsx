@@ -1,29 +1,19 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgGlassCocktailIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#glass-cocktail-icon_svg__a)"
-    >
-      <path d="M8 21h8M12 15v6M5 5c0 .263.181.523.533.765.352.243.867.464 1.517.65.65.185 1.422.332 2.271.433.85.1 1.76.152 2.679.152.92 0 1.83-.052 2.679-.152.85-.1 1.62-.248 2.27-.434.65-.185 1.166-.406 1.518-.649C18.82 5.523 19 5.263 19 5s-.181-.523-.533-.765c-.352-.243-.867-.464-1.517-.65a15 15 0 0 0-2.271-.433C13.829 3.052 12.919 3 12 3c-.92 0-1.83.052-2.679.152-.85.1-1.62.248-2.27.434s-1.166.406-1.518.649C5.18 4.477 5 4.737 5 5" />
-      <path d="M5 5v.388c0 .432.126.853.362 1.206l5 7.509c.633.951 1.88 1.183 2.785.517.191-.141.358-.316.491-.517l5-7.509c.236-.353.362-.774.362-1.206V5" />
-    </g>
-    <defs>
-      <clipPath id="glass-cocktail-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const GlassCocktailIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_72766)">
+<path d="M8 21H16" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 15V21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M5 5C5 5.26264 5.18106 5.52272 5.53284 5.76537C5.88463 6.00802 6.40024 6.2285 7.05025 6.41421C7.70026 6.59993 8.47194 6.74725 9.32122 6.84776C10.1705 6.94827 11.0807 7 12 7C12.9193 7 13.8295 6.94827 14.6788 6.84776C15.5281 6.74725 16.2997 6.59993 16.9497 6.41421C17.5998 6.2285 18.1154 6.00802 18.4672 5.76537C18.8189 5.52272 19 5.26264 19 5C19 4.73736 18.8189 4.47728 18.4672 4.23463C18.1154 3.99198 17.5998 3.7715 16.9497 3.58579C16.2997 3.40007 15.5281 3.25275 14.6788 3.15224C13.8295 3.05173 12.9193 3 12 3C11.0807 3 10.1705 3.05173 9.32122 3.15224C8.47194 3.25275 7.70026 3.40007 7.05025 3.58579C6.40024 3.7715 5.88463 3.99198 5.53284 4.23463C5.18106 4.47728 5 4.73736 5 5Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M5 5V5.388C5 5.82 5.126 6.241 5.362 6.594L10.362 14.103C10.995 15.054 12.242 15.286 13.147 14.62C13.338 14.479 13.505 14.304 13.638 14.103L18.638 6.594C18.874 6.241 19 5.82 19 5.388V5" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_72766">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgGlassCocktailIcon;

@@ -1,29 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandNordVpnIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#brand-nord-vpn-icon_svg__a)"
-    >
-      <path d="m9.992 15-2.007-3-4.015 8c-2.212-3.061-2.625-7.098-.915-10.463A10.14 10.14 0 0 1 12 4a10.14 10.14 0 0 1 8.945 5.537c1.71 3.365 1.297 7.402-.915 10.463l-4.517-8-1.505 1.5" />
-      <path d="m14.5 15-3-6L9 13.5" />
-    </g>
-    <defs>
-      <clipPath id="brand-nord-vpn-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandNordVpnIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_81850)">
+<path d="M9.99221 15L7.98521 12L3.97021 20C1.75821 16.939 1.34521 12.902 3.05521 9.537C3.89715 7.88421 5.17632 6.49402 6.75349 5.51775C8.33066 4.54147 10.1454 4.01651 12.0002 4C13.855 4.01651 15.6698 4.54147 17.2469 5.51775C18.8241 6.49402 20.1033 7.88421 20.9452 9.537C22.6552 12.902 22.2422 16.939 20.0302 20L15.5132 12L14.0082 13.5" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M14.5 15L11.5 9L9 13.5" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_81850">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandNordVpnIcon;

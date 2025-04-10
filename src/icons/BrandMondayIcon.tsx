@@ -1,28 +1,18 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandMondayIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#brand-monday-icon_svg__a)"
-    >
-      <path d="M18 15.5a1.5 1.5 0 1 0 3 0 1.5 1.5 0 0 0-3 0M9.5 7a1.5 1.5 0 0 1 1.34 2.177l-4.035 7.074c-.264.447-.75.749-1.305.749a1.5 1.5 0 0 1-1.27-2.297l3.905-6.827A1.5 1.5 0 0 1 9.5 7M16.5 7a1.5 1.5 0 0 1 1.34 2.177l-4.035 7.074c-.264.447-.75.749-1.305.749a1.5 1.5 0 0 1-1.27-2.297l3.905-6.827A1.5 1.5 0 0 1 16.5 7" />
-    </g>
-    <defs>
-      <clipPath id="brand-monday-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandMondayIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_81908)">
+<path d="M18 15.5C18 15.8978 18.158 16.2794 18.4393 16.5607C18.7206 16.842 19.1022 17 19.5 17C19.8978 17 20.2794 16.842 20.5607 16.5607C20.842 16.2794 21 15.8978 21 15.5C21 15.1022 20.842 14.7206 20.5607 14.4393C20.2794 14.158 19.8978 14 19.5 14C19.1022 14 18.7206 14.158 18.4393 14.4393C18.158 14.7206 18 15.1022 18 15.5Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M9.50026 7C9.75657 6.99992 10.0086 7.06552 10.2324 7.19054C10.4561 7.31556 10.6441 7.49583 10.7784 7.71415C10.9127 7.93247 10.9888 8.18156 10.9994 8.43764C11.0101 8.69373 10.9549 8.94828 10.8393 9.177L6.80526 16.251C6.54126 16.698 6.05526 17 5.50026 17C5.23228 17 4.96918 16.9283 4.73832 16.7922C4.50746 16.6561 4.31727 16.4607 4.18753 16.2262C4.05778 15.9918 3.99322 15.7268 4.00056 15.4589C4.0079 15.191 4.08687 14.93 4.22926 14.703L8.13526 7.876C8.25488 7.61451 8.44714 7.39291 8.68915 7.2376C8.93115 7.08229 9.2127 6.99982 9.50026 7Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M16.5003 7C16.7566 6.99992 17.0086 7.06552 17.2324 7.19054C17.4561 7.31556 17.6441 7.49583 17.7784 7.71415C17.9127 7.93247 17.9888 8.18156 17.9994 8.43764C18.0101 8.69373 17.9549 8.94828 17.8393 9.177L13.8053 16.251C13.5413 16.698 13.0553 17 12.5003 17C12.2323 17 11.9692 16.9283 11.7383 16.7922C11.5075 16.6561 11.3173 16.4607 11.1875 16.2262C11.0578 15.9918 10.9932 15.7268 11.0006 15.4589C11.0079 15.191 11.0869 14.93 11.2293 14.703L15.1353 7.876C15.2549 7.61451 15.4471 7.39291 15.6891 7.2376C15.9312 7.08229 16.2127 6.99982 16.5003 7Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_81908">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandMondayIcon;

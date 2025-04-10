@@ -1,25 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgArrowBigUpIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#arrow-big-up-icon_svg__a)">
-      <path
-        fill="currentColor"
-        d="M10.586 3 4 9.586a2 2 0 0 0-.434 2.18l.068.145A2 2 0 0 0 5.414 13H8v7a2 2 0 0 0 2 2h4l.15-.005A2 2 0 0 0 16 20v-7h2.586A1.999 1.999 0 0 0 20 9.586L13.414 3a2 2 0 0 0-2.828 0"
-      />
-    </g>
-    <defs>
-      <clipPath id="arrow-big-up-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const ArrowBigUpIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_59089)">
+<path d="M10.5863 2.99964L4.00029 9.58564C3.72043 9.86533 3.52981 10.2217 3.45256 10.6098C3.3753 10.9978 3.41488 11.4001 3.56629 11.7656L3.63429 11.9106C3.802 12.2384 4.05694 12.5135 4.37101 12.7057C4.68509 12.8978 5.04611 12.9995 5.41429 12.9996H8.00029V19.9996C8.00029 20.5301 8.21101 21.0388 8.58608 21.4138C8.96115 21.7889 9.46986 21.9996 10.0003 21.9996H14.0003L14.1503 21.9946C14.6534 21.9568 15.1237 21.7302 15.4668 21.3602C15.8099 20.9902 16.0005 20.5042 16.0003 19.9996L15.9993 12.9996H18.5863C18.9818 12.9996 19.3684 12.8822 19.6972 12.6624C20.026 12.4427 20.2823 12.1303 20.4336 11.7649C20.585 11.3995 20.6246 10.9975 20.5475 10.6096C20.4703 10.2217 20.2799 9.86534 20.0003 9.58564L13.4143 2.99964C13.0392 2.62469 12.5306 2.41406 12.0003 2.41406C11.47 2.41406 10.9613 2.62469 10.5863 2.99964Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_59089">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgArrowBigUpIcon;

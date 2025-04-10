@@ -1,29 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgArrowSharpTurnLeftIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#arrow-sharp-turn-left-icon_svg__a)"
-    >
-      <path d="M17 17.998V6.688a.7.7 0 0 0-1.195-.495L6 15.998" />
-      <path d="M11 16H6v-5" />
-    </g>
-    <defs>
-      <clipPath id="arrow-sharp-turn-left-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const ArrowSharpTurnLeftIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_85107)">
+<path d="M17 17.9983V6.68833C17 6.54988 16.959 6.41453 16.882 6.29941C16.8051 6.18428 16.6958 6.09455 16.5679 6.04157C16.44 5.98858 16.2992 5.97472 16.1634 6.00173C16.0276 6.02875 15.9029 6.09543 15.805 6.19333L6 15.9983" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M11 16H6V11" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_85107">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgArrowSharpTurnLeftIcon;

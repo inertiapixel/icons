@@ -1,28 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgGrowthIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#growth-icon_svg__a)">
-      <path
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M16.5 15a4.5 4.5 0 0 0-4.5 4.5c0-2.485-1.79-4.5-4-4.5m8.5-4a4.5 4.5 0 0 0-4.5 4.5c0-2.485-1.79-4.5-4-4.5m8.5-4a4.5 4.5 0 0 0-4.5 4.5C12 9.015 10.21 7 8 7m4-3v6"
-      />
-    </g>
-    <defs>
-      <clipPath id="growth-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const GrowthIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_72572)">
+<path d="M16.5 15C15.3065 15 14.1619 15.4741 13.318 16.318C12.4741 17.1619 12 18.3065 12 19.5C12 17.015 10.21 15 8 15M16.5 11C15.3065 11 14.1619 11.4741 13.318 12.318C12.4741 13.1619 12 14.3065 12 15.5C12 13.015 10.21 11 8 11M16.5 7C15.3065 7 14.1619 7.47411 13.318 8.31802C12.4741 9.16193 12 10.3065 12 11.5C12 9.015 10.21 7 8 7M12 4V10" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_72572">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgGrowthIcon;

@@ -1,29 +1,19 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgAwardOffIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#award-off-icon_svg__a)"
-    >
-      <path d="M16.719 12.706a6 6 0 0 0-8.433-8.418m-1.755 2.24a6 6 0 0 0 7.936 7.944" />
-      <path d="m12 14.999 3.4 5.89 1.598-3.233.707.046m1.108-2.902L17.196 12M6.802 12l-3.4 5.89L7 17.657l1.598 3.232 3.4-5.889M3 3l18 18" />
-    </g>
-    <defs>
-      <clipPath id="award-off-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const AwardOffIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_84611)">
+<path d="M16.719 12.7058C17.6258 11.5512 18.0778 10.1041 17.9893 8.63857C17.9009 7.17306 17.2782 5.79083 16.2391 4.75359C15.2 3.71635 13.8167 3.0961 12.351 3.01027C10.8853 2.92444 9.43904 3.37898 8.28598 4.28784M6.53098 6.52784C6.02759 7.63878 5.87471 8.87675 6.09274 10.0768C6.31076 11.2768 6.88932 12.3819 7.75132 13.2447C8.61332 14.1076 9.71782 14.6873 10.9176 14.9065C12.1174 15.1257 13.3555 14.9741 14.467 14.4718" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 14.999L15.4 20.889L16.998 17.656L17.705 17.702M18.813 14.8L17.196 12" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M6.80234 12L3.40234 17.89L7.00034 17.657L8.59834 20.889L11.9983 15" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3 3L21 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_84611">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgAwardOffIcon;

@@ -1,28 +1,18 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandGoogleAnalyticsIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#brand-google-analytics-icon_svg__a)"
-    >
-      <path d="M10 10.105A1.106 1.106 0 0 1 11.105 9h1.79A1.105 1.105 0 0 1 14 10.105v9.79A1.105 1.105 0 0 1 12.895 21h-1.79A1.105 1.105 0 0 1 10 19.895zM17 4.105A1.105 1.105 0 0 1 18.105 3h1.79A1.105 1.105 0 0 1 21 4.105v15.79A1.105 1.105 0 0 1 19.895 21h-1.79A1.105 1.105 0 0 1 17 19.895zM3 19a2 2 0 1 0 4 0 2 2 0 0 0-4 0" />
-    </g>
-    <defs>
-      <clipPath id="brand-google-analytics-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandGoogleAnalyticsIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_82218)">
+<path d="M10 10.105C10 9.95989 10.0286 9.8162 10.0841 9.68213C10.1396 9.54807 10.221 9.42626 10.3236 9.32365C10.4263 9.22104 10.5481 9.13964 10.6821 9.08411C10.8162 9.02858 10.9599 9 11.105 9H12.895C13.0401 9 13.1838 9.02858 13.3179 9.08411C13.4519 9.13964 13.5737 9.22104 13.6764 9.32365C13.779 9.42626 13.8604 9.54807 13.9159 9.68213C13.9714 9.8162 14 9.95989 14 10.105V19.895C14 20.1881 13.8836 20.4691 13.6764 20.6764C13.4691 20.8836 13.1881 21 12.895 21H11.105C10.8119 21 10.5309 20.8836 10.3236 20.6764C10.1164 20.4691 10 20.1881 10 19.895V10.105Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M17 4.105C17 3.81194 17.1164 3.53087 17.3236 3.32365C17.5309 3.11642 17.8119 3 18.105 3H19.895C20.1881 3 20.4691 3.11642 20.6764 3.32365C20.8836 3.53087 21 3.81194 21 4.105V19.895C21 20.1881 20.8836 20.4691 20.6764 20.6764C20.4691 20.8836 20.1881 21 19.895 21H18.105C17.8119 21 17.5309 20.8836 17.3236 20.6764C17.1164 20.4691 17 20.1881 17 19.895V4.105Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3 19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21C5.53043 21 6.03914 20.7893 6.41421 20.4142C6.78929 20.0391 7 19.5304 7 19C7 18.4696 6.78929 17.9609 6.41421 17.5858C6.03914 17.2107 5.53043 17 5 17C4.46957 17 3.96086 17.2107 3.58579 17.5858C3.21071 17.9609 3 18.4696 3 19Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_82218">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandGoogleAnalyticsIcon;

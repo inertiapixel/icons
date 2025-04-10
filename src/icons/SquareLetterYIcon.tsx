@@ -1,25 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgSquareLetterYIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#square-letter-y-icon_svg__a)">
-      <path
-        fill="currentColor"
-        d="M19 2a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3zm-4.629 5.072a1 1 0 0 0-1.3.557L12 10.307l-1.072-2.678a1 1 0 0 0-1.856.742L11 13.194V16a1 1 0 0 0 .883.993L12 17a1 1 0 0 0 1-1v-2.809l1.928-4.82a1 1 0 0 0-.45-1.25z"
-      />
-    </g>
-    <defs>
-      <clipPath id="square-letter-y-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const SquareLetterYIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_57371)">
+<path d="M19 2C19.7956 2 20.5587 2.31607 21.1213 2.87868C21.6839 3.44129 22 4.20435 22 5V19C22 19.7956 21.6839 20.5587 21.1213 21.1213C20.5587 21.6839 19.7956 22 19 22H5C4.20435 22 3.44129 21.6839 2.87868 21.1213C2.31607 20.5587 2 19.7956 2 19V5C2 4.20435 2.31607 3.44129 2.87868 2.87868C3.44129 2.31607 4.20435 2 5 2H19ZM14.371 7.072C14.2491 7.02321 14.1187 6.99891 13.9874 7.00049C13.8561 7.00208 13.7263 7.02951 13.6056 7.08124C13.4849 7.13296 13.3756 7.20796 13.2838 7.30194C13.1921 7.39593 13.1198 7.50706 13.071 7.629L12 10.307L10.928 7.629C10.8236 7.39169 10.631 7.20422 10.391 7.10614C10.151 7.00806 9.88226 7.00703 9.64151 7.10328C9.40075 7.19953 9.20679 7.38553 9.10054 7.62204C8.99429 7.85855 8.98406 8.12709 9.072 8.371L11 13.194V16C11 16.2449 11.09 16.4813 11.2527 16.6644C11.4155 16.8474 11.6397 16.9643 11.883 16.993L12 17C12.2652 17 12.5196 16.8946 12.7071 16.7071C12.8946 16.5196 13 16.2652 13 16V13.191L14.928 8.371C15.019 8.14369 15.0235 7.89087 14.9406 7.66047C14.8576 7.43008 14.693 7.23812 14.478 7.121L14.371 7.072Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_57371">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgSquareLetterYIcon;

@@ -1,25 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgShieldCheckeredIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#shield-checkered-icon_svg__a)">
-      <path
-        fill="currentColor"
-        d="M11.012 11.999v9.754a13 13 0 0 1-8.733-9.754h8.734m9.284 3.794a13 13 0 0 1-7.283 5.95V12h8.707a13 13 0 0 1-1.424 3.794M11.013 2.525v7.474H2.025c-.068-1.432.101-2.88.514-4.282A1 1 0 0 1 3.545 5a11 11 0 0 0 7.192-2.256zm2 7.474V2.546l-.09-.073A11 11 0 0 0 20.11 5.01l.342-.01a1 1 0 0 1 1.005.717c.413 1.403.582 2.85.514 4.282z"
-      />
-    </g>
-    <defs>
-      <clipPath id="shield-checkered-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const ShieldCheckeredIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_57557)">
+<path d="M11.0123 11.9987V21.7527C8.82394 21.0447 6.86255 19.7688 5.32832 18.0553C3.7941 16.3417 2.74198 14.2517 2.27933 11.9987H11.0133H11.0123ZM20.2963 15.7927C18.6965 18.6158 16.0986 20.7385 13.0133 21.7437L13.0123 11.9987H21.7203C21.4475 13.3302 20.967 14.6105 20.2963 15.7927ZM11.0133 2.52466L11.0123 9.99866H2.02633C1.95833 8.56666 2.12733 7.11866 2.54033 5.71666C2.60344 5.50191 2.73677 5.31455 2.91898 5.18456C3.10119 5.05456 3.32174 4.98946 3.54533 4.99966C6.13354 5.11812 8.6805 4.31918 10.7373 2.74366L11.0133 2.52466ZM13.0123 9.99866V2.54566L12.9223 2.47266C14.9396 4.14822 17.4892 5.04796 20.1113 5.00966L20.4533 4.99966C20.6769 4.98946 20.8975 5.05456 21.0797 5.18456C21.2619 5.31455 21.3952 5.50191 21.4583 5.71666C21.8713 7.11966 22.0403 8.56666 21.9723 9.99866H13.0123Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_57557">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgShieldCheckeredIcon;

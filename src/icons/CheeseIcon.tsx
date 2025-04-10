@@ -1,29 +1,20 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgCheeseIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#cheese-icon_svg__a)"
-    >
-      <path d="M4.518 20.008 21 20v-3.5a2 2 0 0 1 0-4V9H4.277" />
-      <path d="m21 9-9.385-4.992c-2.512.12-4.758 1.42-6.327 3.425C3.865 9.253 3 11.653 3 14.287c0 2.117.56 4.085 1.519 5.72M15 13v.01M8 13v.01M11 16v.01" />
-    </g>
-    <defs>
-      <clipPath id="cheese-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const CheeseIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_79529)">
+<path d="M4.51834 20.008L20.9993 20V16.5C20.4689 16.5 19.9602 16.2893 19.5851 15.9142C19.2101 15.5391 18.9993 15.0304 18.9993 14.5C18.9993 13.9696 19.2101 13.4609 19.5851 13.0858C19.9602 12.7107 20.4689 12.5 20.9993 12.5V9H4.27734" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M21 8.99981L11.615 4.00781C9.103 4.12781 6.857 5.42781 5.288 7.43281C3.865 9.25281 3 11.6538 3 14.2868C3 16.4038 3.56 18.3718 4.519 20.0078" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M15 13V13.01" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M8 13V13.01" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M11 16V16.01" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_79529">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgCheeseIcon;

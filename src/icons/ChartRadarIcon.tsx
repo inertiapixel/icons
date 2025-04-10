@@ -1,31 +1,20 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgChartRadarIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#chart-radar-icon_svg__a)"
-    >
-      <path d="m12 3 9.5 7L18 21H6L2.5 10z" />
-      <path d="m12 7.5 5.5 4L15 17H8.5l-2-5.5z" />
-      <path d="m2.5 10 9.5 3 9.5-3" />
-      <path d="M12 3v10l6 8M6 21l6-8" />
-    </g>
-    <defs>
-      <clipPath id="chart-radar-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const ChartRadarIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_79592)">
+<path d="M12 3L21.5 10L18 21H6L2.5 10L12 3Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 7.5L17.5 11.5L15 17H8.5L6.5 11.5L12 7.5Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M2.5 10L12 13L21.5 10" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 3V13L18 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M6 21L12 13" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_79592">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgChartRadarIcon;

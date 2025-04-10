@@ -1,29 +1,19 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandItchIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#brand-itch-icon_svg__a)"
-    >
-      <path d="M2 7v1c0 1.087 1.078 2 2 2 1.107 0 2-.91 2-2 0 1.09.893 2 2 2s2-.91 2-2c0 1.09.893 2 2 2s2-.91 2-2c0 1.09.893 2 2 2s2-.91 2-2c0 1.09.893 2 2 2 .922 0 2-.913 2-2V7q-.013-.412-1.588-2.068A3 3 0 0 0 18.238 4H5.762a3 3 0 0 0-2.174.932Q2.013 6.588 2 7M4 10q-.177 9.42.813 10.456c1.534.367 4.355.535 7.186.536 2.83-.001 5.652-.169 7.186-.536.99-1.037.898-9.559.814-10.456" />
-      <path d="m10 16 2-2 2 2M12 14v4" />
-    </g>
-    <defs>
-      <clipPath id="brand-itch-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandItchIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_82077)">
+<path d="M2 7V8C2 9.087 3.078 10 4 10C5.107 10 6 9.09 6 8C6 9.09 6.893 10 8 10C9.107 10 10 9.09 10 8C10 9.09 10.893 10 12 10C13.107 10 14 9.09 14 8C14 9.09 14.893 10 16 10C17.107 10 18 9.09 18 8C18 9.09 18.893 10 20 10C20.922 10 22 9.087 22 8V7C21.991 6.725 21.462 6.036 20.412 4.932C20.1317 4.63743 19.7945 4.40291 19.4207 4.2427C19.047 4.08248 18.6446 3.99991 18.238 4H5.762C5.35538 3.99991 4.95299 4.08248 4.57927 4.2427C4.20555 4.40291 3.86829 4.63743 3.588 4.932C2.538 6.036 2.008 6.725 2 7Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3.99911 10C3.88211 16.28 4.15311 19.765 4.81311 20.456C6.34711 20.823 9.16811 20.991 11.9991 20.992C14.8291 20.991 17.6511 20.823 19.1851 20.456C20.1751 19.419 20.0831 10.897 19.9991 10" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M10 16L12 14L14 16" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 14V18" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_82077">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandItchIcon;

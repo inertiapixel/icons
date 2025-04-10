@@ -1,29 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandKbinIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={1.838}
-      clipPath="url(#brand-kbin-icon_svg__a)"
-    >
-      <path d="M10.585 9.506h-2.43C7.721 8.574 7.455 8 6.56 8l-2.404.019c-.662 0-1.353.592-1.103 1.487l2.216 9.436C5.754 20.685 6.08 21 6.413 21h.64" />
-      <path d="M14.275 3h5.645c.84 0 1.24.714 1.02 1.287l-4.687 15.109c-.42 1.133-1.159 1.603-2.354 1.603H6.414c.39 0 .76-.618 1.296-2.061l4.457-14.49c.326-.83.76-1.448 2.108-1.448" />
-    </g>
-    <defs>
-      <clipPath id="brand-kbin-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandKbinIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_82057)">
+<path d="M10.5854 9.506H8.15536C7.72136 8.574 7.45536 8 6.55936 8L4.15536 8.019C3.49336 8.019 2.80236 8.611 3.05236 9.506L5.26836 18.942C5.75436 20.685 6.07936 21 6.41336 21H7.05336" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M14.2751 3H19.9201C20.7601 3 21.1601 3.714 20.9401 4.287L16.2531 19.396C15.8331 20.529 15.0941 20.999 13.8991 20.999H6.41406C6.80406 20.999 7.17406 20.381 7.71006 18.938L12.1671 4.448C12.4931 3.618 12.9271 3 14.2751 3Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_82057">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandKbinIcon;

@@ -1,29 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandBandlabIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#brand-bandlab-icon_svg__a)"
-    >
-      <path d="m6.885 7-2.536 4.907c-2.021 3.845-2.5 8.775 3.82 9.093h6.809c4.86-.207 7.989-2.975 4.607-9.093L16.597 7" />
-      <path d="M15.076 4H9.94l3.678 8.768m0 0c.547 1.14.847 1.822.162 2.676-.053.093-1.332 1.907-3.053 1.495-.825-.187-1.384-.926-1.32-1.74.04-.91.62-1.717 1.488-2.074a4.46 4.46 0 0 1 2.723-.357" />
-    </g>
-    <defs>
-      <clipPath id="brand-bandlab-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandBandlabIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_82731)">
+<path d="M6.88485 7L4.34885 11.907C2.32785 15.752 1.84985 20.682 8.16985 21H14.9778C19.8378 20.793 22.9668 18.025 19.5848 11.907L16.5968 7" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M15.0763 4H9.94032L13.6183 12.768M13.6183 12.768C14.1653 13.908 14.4653 14.59 13.7803 15.444C13.7273 15.537 12.4483 17.351 10.7273 16.939C9.90232 16.752 9.34332 16.013 9.40732 15.199C9.44732 14.289 10.0273 13.482 10.8953 13.125C11.7428 12.7224 12.6956 12.5981 13.6183 12.768Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_82731">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandBandlabIcon;

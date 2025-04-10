@@ -1,30 +1,18 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgStackMiddleIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#stack-middle-icon_svg__a)"
-    >
-      <path d="m16 10 4-2-8-4-8 4 4 2" />
-      <path fill="currentColor" d="m12 12-4-2-4 2 8 4 8-4-4-2z" />
-      <path d="m8 14-4 2 8 4 8-4-4-2" />
-    </g>
-    <defs>
-      <clipPath id="stack-middle-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const StackMiddleIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_62511)">
+<path d="M16 10L20 8L12 4L4 8L8 10" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 12L8 10L4 12L12 16L20 12L16 10L12 12Z" fill="black" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M8 14L4 16L12 20L20 16L16 14" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_62511">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgStackMiddleIcon;

@@ -1,29 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgArrowLoopRight2Icon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#arrow-loop-right-2-icon_svg__a)"
-    >
-      <path d="M12 21v-6m0-6V8a4 4 0 1 0-4 4h13" />
-      <path d="m17 16 4-4-4-4" />
-    </g>
-    <defs>
-      <clipPath id="arrow-loop-right-2-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const ArrowLoopRight2Icon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_85314)">
+<path d="M12 21V15M12 9V8C12 7.20888 11.7654 6.43552 11.3259 5.77772C10.8864 5.11992 10.2616 4.60723 9.53074 4.30448C8.79983 4.00173 7.99556 3.92252 7.21964 4.07686C6.44372 4.2312 5.73098 4.61216 5.17157 5.17157C4.61216 5.73098 4.2312 6.44372 4.07686 7.21964C3.92252 7.99556 4.00173 8.79983 4.30448 9.53074C4.60723 10.2616 5.11992 10.8864 5.77772 11.3259C6.43552 11.7654 7.20888 12 8 12H21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M17 16L21 12L17 8" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_85314">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgArrowLoopRight2Icon;

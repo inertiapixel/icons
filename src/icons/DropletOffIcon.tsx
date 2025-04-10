@@ -1,28 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgDropletOffIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#droplet-off-icon_svg__a)"
-    >
-      <path d="M18.963 14.94a6.54 6.54 0 0 0-.899-4.06l-4.89-7.26c-.42-.626-1.287-.804-1.936-.398a1.4 1.4 0 0 0-.41.397l-1.282 1.9M7.921 7.934 5.935 10.88C4.24 13.717 4.9 17.32 7.502 19.425s6.395 2.105 8.996 0a6.8 6.8 0 0 0 1.376-1.5M3 3l18 18" />
-    </g>
-    <defs>
-      <clipPath id="droplet-off-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const DropletOffIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_75045)">
+<path d="M18.9632 14.9397C19.1132 13.5246 18.7976 12.0992 18.0642 10.8797L13.1742 3.61969C12.7542 2.99369 11.8872 2.81569 11.2382 3.22169C11.0753 3.32391 10.9356 3.45915 10.8282 3.61869L9.5462 5.51869M7.9212 7.93369L5.9352 10.8797C4.2402 13.7167 4.9002 17.3197 7.5022 19.4247C10.1042 21.5297 13.8972 21.5297 16.4982 19.4247C17.0291 18.9965 17.493 18.4913 17.8742 17.9257" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3 3L21 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_75045">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgDropletOffIcon;

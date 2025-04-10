@@ -1,29 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgSmartHomeIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#smart-home-icon_svg__a)"
-    >
-      <path d="m19.001 8.71-5.333-4.148a2.666 2.666 0 0 0-3.274 0L5.06 8.71a2.67 2.67 0 0 0-1.029 2.105v7.2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.2c0-.823-.38-1.6-1.03-2.105" />
-      <path d="M16 15c-2.21 1.333-5.792 1.333-8 0" />
-    </g>
-    <defs>
-      <clipPath id="smart-home-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const SmartHomeIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_63532)">
+<path d="M19.0013 8.70977L13.6683 4.56177C13.2002 4.19768 12.6242 4 12.0312 4C11.4383 4 10.8623 4.19768 10.3942 4.56177L5.06025 8.70977C4.73969 8.95905 4.48034 9.2783 4.30201 9.64312C4.12367 10.0079 4.03106 10.4087 4.03125 10.8148V18.0148C4.03125 18.5452 4.24196 19.0539 4.61704 19.429C4.99211 19.8041 5.50082 20.0148 6.03125 20.0148H18.0313C18.5617 20.0148 19.0704 19.8041 19.4455 19.429C19.8205 19.0539 20.0312 18.5452 20.0312 18.0148V10.8148C20.0312 9.99177 19.6513 9.21477 19.0013 8.70977Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M16 15C13.79 16.333 10.208 16.333 8 15" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_63532">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgSmartHomeIcon;

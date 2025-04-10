@@ -1,28 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgWashDrycleanOffIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#wash-dryclean-off-icon_svg__a)"
-    >
-      <path d="M20.049 16.034A9 9 0 0 0 7.955 3.96M5.634 5.641a9 9 0 1 0 12.733 12.723M3 3l18 18" />
-    </g>
-    <defs>
-      <clipPath id="wash-dryclean-off-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const WashDrycleanOffIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_60045)">
+<path d="M20.0486 16.0342C20.8978 14.3428 21.1921 12.4266 20.8897 10.5583C20.5874 8.6899 19.7037 6.96441 18.3643 5.62714C17.0249 4.28987 15.298 3.40889 13.4292 3.10945C11.5604 2.81001 9.64469 3.10737 7.95456 3.95924M5.63356 5.64124C3.94638 7.32974 2.99906 9.61931 3 12.0063C3.00094 14.3932 3.95006 16.6821 5.63856 18.3692C7.32706 20.0564 9.61663 21.0037 12.0036 21.0028C14.3906 21.0019 16.6794 20.0527 18.3666 18.3642" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3 3L21 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_60045">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgWashDrycleanOffIcon;

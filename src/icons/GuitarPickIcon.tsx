@@ -1,25 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgGuitarPickIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#guitar-pick-icon_svg__a)">
-      <path
-        fill="currentColor"
-        d="M12 2c-1.613 0-2.882.104-3.825.323l-.23.057C4.926 3.088 3 4.883 3 8c0 3.367 1.939 8.274 4.22 11.125q.48.6 1.03 1.158l.367.36a4.904 4.904 0 0 0 6.752.011q.758-.715 1.41-1.528C19.27 16.013 21 11.832 21 8c0-3.025-1.813-4.806-4.71-5.562l-.266-.066C15.088 2.122 13.743 2 12 2"
-      />
-    </g>
-    <defs>
-      <clipPath id="guitar-pick-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const GuitarPickIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_58119)">
+<path d="M12 2C10.387 2 9.118 2.104 8.175 2.323L7.945 2.38C4.926 3.088 3 4.883 3 8C3 11.367 4.939 16.274 7.22 19.125C7.54 19.525 7.884 19.911 8.25 20.283L8.617 20.643C9.52683 21.5094 10.7345 21.9935 11.9908 21.9956C13.2471 21.9976 14.4564 21.5174 15.369 20.654C15.8737 20.1778 16.3448 19.6672 16.779 19.126C19.27 16.013 21 11.832 21 8C21 4.975 19.187 3.194 16.29 2.438L16.024 2.372C15.088 2.122 13.743 2 12 2Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_58119">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgGuitarPickIcon;

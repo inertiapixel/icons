@@ -1,28 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgCircleMinus2Icon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#circle-minus-2-icon_svg__a)"
-    >
-      <path d="M20.475 15.028a9 9 0 1 0-7.962 5.957M16 19h6" />
-    </g>
-    <defs>
-      <clipPath id="circle-minus-2-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const CircleMinus2Icon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_78944)">
+<path d="M20.4752 15.0284C21.1259 13.2074 21.1727 11.2253 20.6089 9.37562C20.045 7.52594 18.9004 5.90706 17.3445 4.75874C15.7887 3.61043 13.9044 2.99375 11.9707 3.00005C10.037 3.00635 8.15673 3.63528 6.6084 4.79371C5.06008 5.95213 3.92603 7.57843 3.37422 9.43174C2.82241 11.2851 2.88219 13.2668 3.5447 15.0835C4.20721 16.9002 5.43722 18.4552 7.05256 19.5182C8.66789 20.5812 10.5826 21.0956 12.5132 20.9854" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M16 19H22" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_78944">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgCircleMinus2Icon;

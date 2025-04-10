@@ -1,28 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandSwiftIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#brand-swift-icon_svg__a)">
-      <path
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M20.548 15.829c1.33-4.126-1.384-9.521-6.047-12.828-.135-.096 2.39 6.704 1.308 9.124q-3.23-2.18-7.808-6.124l-.5 2-3.5-1q6.54 7.122 8.56 8.841c-4.658 2.089-10.65-.978-10.56-.841 1.016 1.545 6 6 11 6 2 0 3.788-.502 4.742-1.389.005-.005.432-.446 1.378-.17q.755.221 2.88 1.559v-1.507c0-1.377-.515-2.67-1.453-3.665"
-      />
-    </g>
-    <defs>
-      <clipPath id="brand-swift-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandSwiftIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_81428)">
+<path d="M20.548 15.829C21.878 11.703 19.164 6.30801 14.501 3.00101C14.366 2.90501 16.891 9.70501 15.809 12.125C13.656 10.671 11.053 8.63101 8.001 6.00101L7.501 8.00101L4.001 7.00101C8.361 11.749 11.214 14.696 12.561 15.842C7.903 17.931 1.911 14.864 2.001 15.001C3.017 16.546 8.001 21.001 13.001 21.001C15.001 21.001 16.789 20.499 17.743 19.612C17.748 19.607 18.175 19.166 19.121 19.442C19.625 19.59 20.584 20.109 22.001 21.001V19.494C22.001 18.117 21.486 16.824 20.548 15.829Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_81428">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandSwiftIcon;

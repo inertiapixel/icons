@@ -1,25 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgLocationIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#location-icon_svg__a)">
-      <path
-        fill="currentColor"
-        d="M20.89 2.006 20.998 2l.13.008.09.016.123.035.107.046.1.057.09.067.082.075.052.059.082.116.052.096q.07.15.09.316l.005.106q0 .113-.024.22l-.035.123-6.532 18.077a1.55 1.55 0 0 1-1.41.903 1.55 1.55 0 0 1-1.328-.747l-.065-.127-3.352-6.702-6.67-3.336a1.55 1.55 0 0 1-.898-1.259L1.68 10c0-.56.3-1.072.84-1.37l.14-.07 18.018-6.506.106-.03z"
-      />
-    </g>
-    <defs>
-      <clipPath id="location-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const LocationIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_57785)">
+<path d="M20.8907 2.006L20.9967 2L21.1267 2.008L21.2167 2.024L21.3397 2.059L21.4467 2.105L21.5467 2.162L21.6367 2.229L21.7187 2.304L21.7707 2.363L21.8527 2.479L21.9047 2.575C21.9517 2.675 21.9817 2.781 21.9947 2.891L21.9997 2.997C21.9997 3.072 21.9917 3.146 21.9757 3.217L21.9407 3.34L15.4087 21.417C15.2849 21.6866 15.0863 21.9149 14.8365 22.075C14.5868 22.2351 14.2963 22.3201 13.9997 22.32C13.7325 22.3208 13.4697 22.2525 13.2368 22.1216C13.0039 21.9907 12.8088 21.8017 12.6707 21.573L12.6057 21.446L9.25369 14.744L2.58369 11.408C2.33689 11.2951 2.12405 11.1194 1.96646 10.8985C1.80887 10.6775 1.71205 10.4191 1.68569 10.149L1.67969 10C1.67969 9.44 1.98069 8.928 2.52069 8.63L2.66069 8.56L20.6777 2.054L20.7837 2.024L20.8907 2.006Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_57785">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgLocationIcon;

@@ -1,28 +1,20 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgAccessPointOffIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#access-point-off-icon_svg__a)"
-    >
-      <path d="m3 3 18 18M14.828 9.172A4 4 0 0 1 16 12M17.656 6.344a8 8 0 0 1 1.635 8.952M9.167 14.828a4 4 0 0 1 0-5.656M6.335 17.658a8 8 0 0 1 0-11.314" />
-    </g>
-    <defs>
-      <clipPath id="access-point-off-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const AccessPointOffIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_86551)">
+<path d="M3 3L21 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M14.8281 9.17188C15.5783 9.92185 15.9999 10.9391 16.0001 11.9999" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M17.6562 6.34375C18.8061 7.49303 19.5785 8.96536 19.8706 10.5646C20.1627 12.1639 19.9606 13.8142 19.2913 15.2957" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M9.16724 14.8279C8.41736 14.0778 7.99609 13.0605 7.99609 11.9999C7.99609 10.9392 8.41736 9.92199 9.16724 9.17188" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M6.33548 17.6577C5.59257 16.9149 5.00325 16.0329 4.60119 15.0623C4.19913 14.0917 3.99219 13.0514 3.99219 12.0008C3.99219 10.9501 4.19913 9.90982 4.60119 8.93919C5.00325 7.96856 5.59257 7.08662 6.33548 6.34375" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_86551">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgAccessPointOffIcon;

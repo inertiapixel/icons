@@ -1,25 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgPhoneIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#phone-icon_svg__a)">
-      <path
-        fill="currentColor"
-        d="M9 3a1 1 0 0 1 .877.519l.051.11 2 5a1 1 0 0 1-.313 1.16l-.1.068-1.674 1.004.063.103a10 10 0 0 0 3.132 3.132l.102.062 1.005-1.672a1 1 0 0 1 1.113-.453l.115.039 5 2a1 1 0 0 1 .622.807L21 15v4c0 1.657-1.343 3-3.06 2.998C9.361 21.477 2.522 14.638 2 6a3 3 0 0 1 2.824-2.995L5 3z"
-      />
-    </g>
-    <defs>
-      <clipPath id="phone-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const PhoneIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_57669)">
+<path d="M9 3C9.17928 2.99995 9.35528 3.0481 9.50957 3.13941C9.66386 3.23071 9.79076 3.36182 9.877 3.519L9.928 3.629L11.928 8.629C12.0086 8.83016 12.0216 9.05204 11.9651 9.26125C11.9087 9.47045 11.7858 9.65566 11.615 9.789L11.515 9.857L9.841 10.861L9.904 10.964C10.7008 12.229 11.771 13.2992 13.036 14.096L13.138 14.158L14.143 12.486C14.2544 12.3001 14.4231 12.1554 14.6239 12.0737C14.8246 11.992 15.0464 11.9777 15.256 12.033L15.371 12.072L20.371 14.072C20.5375 14.1384 20.6831 14.2484 20.7925 14.3903C20.9019 14.5323 20.9712 14.7011 20.993 14.879L21 15V19C21 20.657 19.657 22 17.94 21.998C9.361 21.477 2.522 14.638 2 6C1.99996 5.23479 2.29233 4.49849 2.81728 3.94174C3.34224 3.38499 4.06011 3.04989 4.824 3.005L5 3H9Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_57669">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgPhoneIcon;

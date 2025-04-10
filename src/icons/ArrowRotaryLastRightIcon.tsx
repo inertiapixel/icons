@@ -1,28 +1,19 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgArrowRotaryLastRightIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#arrow-rotary-last-right-icon_svg__a)"
-    >
-      <path d="M6 12a3 3 0 1 0 6 0 3 3 0 0 0-6 0M9 15v6M11.5 9.5 18 3M13 3h5v5" />
-    </g>
-    <defs>
-      <clipPath id="arrow-rotary-last-right-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const ArrowRotaryLastRightIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_85137)">
+<path d="M6 12C6 12.7956 6.31607 13.5587 6.87868 14.1213C7.44129 14.6839 8.20435 15 9 15C9.79565 15 10.5587 14.6839 11.1213 14.1213C11.6839 13.5587 12 12.7956 12 12C12 11.2044 11.6839 10.4413 11.1213 9.87868C10.5587 9.31607 9.79565 9 9 9C8.20435 9 7.44129 9.31607 6.87868 9.87868C6.31607 10.4413 6 11.2044 6 12Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M9 15V21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M11.5 9.5L18 3" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M13 3H18V8" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_85137">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgArrowRotaryLastRightIcon;

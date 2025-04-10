@@ -1,28 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandPrismaIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#brand-prisma-icon_svg__a)"
-    >
-      <path d="M4.185 16.203 7.8 21.516c.265.39.754.57 1.215.447l10.166-2.718a1.087 1.087 0 0 0 .713-1.51L12.389 2.25a.448.448 0 0 0-.787-.033L4.149 15.056a1.07 1.07 0 0 0 .036 1.147M8.5 22 12 2" />
-    </g>
-    <defs>
-      <clipPath id="brand-prisma-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandPrismaIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_81705)">
+<path d="M4.18483 16.2032L7.79983 21.5162C8.06483 21.9062 8.55383 22.0862 9.01483 21.9632L19.1808 19.2452C19.3353 19.2054 19.4791 19.132 19.602 19.0304C19.7249 18.9287 19.8239 18.8012 19.8919 18.657C19.96 18.5127 19.9954 18.3553 19.9958 18.1958C19.9961 18.0363 19.9613 17.8787 19.8938 17.7342L12.3888 2.25117C12.3534 2.1787 12.299 2.11714 12.2315 2.073C12.164 2.02886 12.0858 2.00377 12.0052 2.00039C11.9245 1.99701 11.8445 2.01546 11.7735 2.0538C11.7025 2.09213 11.6432 2.14892 11.6018 2.21817L4.14883 15.0562C4.04544 15.2311 3.994 15.4319 4.00056 15.635C4.00711 15.8382 4.07037 16.0352 4.18483 16.2032Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M8.5 22L12 2" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_81705">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandPrismaIcon;

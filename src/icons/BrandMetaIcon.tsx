@@ -1,28 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandMetaIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#brand-meta-icon_svg__a)"
-    >
-      <path d="M12 10.174Q14.649 5.999 16.648 6c2 0 3.263 2.213 4 5.217.704 2.869.5 6.783-2 6.783-1.114 0-2.648-1.565-4.148-3.652a27.6 27.6 0 0 1-2.5-4.174M12 10.174Q9.35 5.999 7.352 6c-2 0-3.263 2.213-4 5.217-.704 2.869-.5 6.783 2 6.783C6.466 18 8 16.435 9.5 14.348q1.5-2.087 2.5-4.174" />
-    </g>
-    <defs>
-      <clipPath id="brand-meta-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandMetaIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_81930)">
+<path d="M12 10.174C13.766 7.39 15.315 6 16.648 6C18.648 6 19.911 8.213 20.648 11.217C21.352 14.086 21.148 18 18.648 18C17.534 18 16 16.435 14.5 14.348C13.5455 13.0329 12.709 11.6361 12 10.174Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M11.9996 10.174C10.2336 7.39 8.68463 6 7.35163 6C5.35163 6 4.08863 8.213 3.35163 11.217C2.64763 14.086 2.85163 18 5.35163 18C6.46563 18 7.99963 16.435 9.49963 14.348C10.4996 12.957 11.3326 11.565 11.9996 10.174Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_81930">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandMetaIcon;

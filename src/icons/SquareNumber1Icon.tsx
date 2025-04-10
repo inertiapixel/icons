@@ -1,25 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgSquareNumber1Icon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#square-number-1-icon_svg__a)">
-      <path
-        fill="currentColor"
-        d="M18.333 2c1.96 0 3.56 1.537 3.662 3.472l.005.195v12.666c0 1.96-1.537 3.56-3.472 3.662l-.195.005H5.667a3.667 3.667 0 0 1-3.662-3.472L2 18.333V5.667c0-1.96 1.537-3.56 3.472-3.662L5.667 2zm-5.339 5.886c-.083-.777-1.008-1.16-1.617-.67l-.084.077-2 2-.083.094a1 1 0 0 0 0 1.226l.083.094.094.083a1 1 0 0 0 1.226 0l.094-.083.293-.293V16l.007.117a1 1 0 0 0 1.986 0L13 16V8z"
-      />
-    </g>
-    <defs>
-      <clipPath id="square-number-1-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const SquareNumber1Icon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_57359)">
+<path d="M18.333 2C20.293 2 21.893 3.537 21.995 5.472L22 5.667V18.333C22 20.293 20.463 21.893 18.528 21.995L18.333 22H5.667C4.72818 22 3.82509 21.64 3.1438 20.9941C2.46252 20.3481 2.05492 19.4655 2.005 18.528L2 18.333V5.667C2 3.707 3.537 2.107 5.472 2.005L5.667 2H18.333ZM12.994 7.886C12.911 7.109 11.986 6.726 11.377 7.216L11.293 7.293L9.293 9.293L9.21 9.387C9.07393 9.56237 9.00008 9.77803 9.00008 10C9.00008 10.222 9.07393 10.4376 9.21 10.613L9.293 10.707L9.387 10.79C9.56237 10.9261 9.77803 10.9999 10 10.9999C10.222 10.9999 10.4376 10.9261 10.613 10.79L10.707 10.707L11 10.414V16L11.007 16.117C11.0359 16.3601 11.153 16.5841 11.336 16.7466C11.519 16.9091 11.7552 16.9989 12 16.9989C12.2448 16.9989 12.481 16.9091 12.664 16.7466C12.847 16.5841 12.9641 16.3601 12.993 16.117L13 16V8L12.994 7.886Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_57359">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgSquareNumber1Icon;

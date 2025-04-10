@@ -1,29 +1,18 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgWashOffIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#wash-off-icon_svg__a)"
-    >
-      <path d="m3 6 1.721 10.329A2 2 0 0 0 6.694 18h10.612q.314-.001.6-.092m1.521-2.472L21 6" />
-      <path d="M3.484 8.965q.252.031.514.035c.79.01 1.54-.178 2-.5.461-.32 1.21-.507 2-.5m4.92.92c.428-.084.805-.228 1.08-.419.461-.322 1.21-.508 2-.5.79-.008 1.54.178 2 .5.461.32 1.21.508 2 .5.17 0 .34-.015.503-.035M3 3l18 18" />
-    </g>
-    <defs>
-      <clipPath id="wash-off-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const WashOffIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_60011)">
+<path d="M3 6L4.721 16.329C4.79888 16.796 5.0399 17.2202 5.40118 17.5262C5.76245 17.8322 6.22056 18.0001 6.694 18H17.306C17.514 18 17.716 17.968 17.906 17.908M19.427 15.436L21 6" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3.48438 8.96519C3.65237 8.98519 3.82437 8.99819 3.99837 9.00019C4.78837 9.00919 5.53737 8.82219 5.99837 8.50019C6.45937 8.18019 7.20837 7.99319 7.99837 8.00019M12.9184 8.91919C13.3464 8.83619 13.7234 8.69219 13.9984 8.50119C14.4594 8.17919 15.2084 7.99319 15.9984 8.00119C16.7884 7.99319 17.5374 8.17919 17.9984 8.50119C18.4594 8.82119 19.2084 9.00919 19.9984 9.00119C20.1684 9.00119 20.3374 8.98619 20.5014 8.96619" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3 3L21 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_60011">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgWashOffIcon;

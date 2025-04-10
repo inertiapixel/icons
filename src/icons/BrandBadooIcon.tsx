@@ -1,29 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandBadooIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#brand-badoo-icon_svg__a)"
-    >
-      <path d="M22 9.43C22 15.268 17.523 20 12 20S2 15.338 2 9.5c0-2.667 1.83-5.01 4.322-5.429 2.492-.418 4.9 1.392 5.678 3.93.768-2.54 3.177-4.355 5.668-3.932C20.163 4.486 22 6.76 22 9.43z" />
-      <path d="M7.5 10c0 2.761 2.015 5 4.5 5s4.5-2.239 4.5-5" />
-    </g>
-    <defs>
-      <clipPath id="brand-badoo-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandBadooIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_82745)">
+<path d="M22 9.43015C22 15.2681 17.523 20.0001 12 20.0001C6.477 20.0001 2 15.3381 2 9.50014C2 6.83314 3.83 4.49014 6.322 4.07114C8.814 3.65314 11.222 5.46314 12 8.00014C12.768 5.46014 15.177 3.64614 17.668 4.06914C20.163 4.48614 22 6.75914 22 9.42914V9.43015Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M7.5 10C7.5 12.761 9.515 15 12 15C14.485 15 16.5 12.761 16.5 10" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_82745">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandBadooIcon;

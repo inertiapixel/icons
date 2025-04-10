@@ -1,28 +1,19 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgSortAscendingSmallBigIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#sort-ascending-small-big-icon_svg__a)"
-    >
-      <path d="m4 15 3 3 3-3M7 6v12M14 5.667c0-.369.298-.667.667-.667h2.666c.369 0 .667.298.667.667v2.666a.667.667 0 0 1-.667.667h-2.666A.667.667 0 0 1 14 8.333zM14 13.167c0-.645.522-1.167 1.167-1.167h4.666c.645 0 1.167.522 1.167 1.167v4.666c0 .645-.522 1.167-1.167 1.167h-4.666A1.17 1.17 0 0 1 14 17.833z" />
-    </g>
-    <defs>
-      <clipPath id="sort-ascending-small-big-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const SortAscendingSmallBigIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_63364)">
+<path d="M4 15L7 18L10 15" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M7 6V18" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M14 5.667C14 5.298 14.298 5 14.667 5H17.333C17.702 5 18 5.298 18 5.667V8.333C18 8.5099 17.9297 8.67955 17.8046 8.80464C17.6796 8.92973 17.5099 9 17.333 9H14.667C14.4901 9 14.3204 8.92973 14.1954 8.80464C14.0703 8.67955 14 8.5099 14 8.333V5.667Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M14 13.167C14 12.522 14.522 12 15.167 12H19.833C20.478 12 21 12.522 21 13.167V17.833C21 18.478 20.478 19 19.833 19H15.167C15.0137 19 14.862 18.9698 14.7204 18.9112C14.5788 18.8525 14.4502 18.7666 14.3418 18.6582C14.2334 18.5498 14.1475 18.4212 14.0888 18.2796C14.0302 18.138 14 17.9863 14 17.833V13.167Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_63364">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgSortAscendingSmallBigIcon;

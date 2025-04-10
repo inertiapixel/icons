@@ -1,25 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgSignRightIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#sign-right-icon_svg__a)">
-      <path
-        fill="currentColor"
-        d="M10 2a1 1 0 0 1 .993.883L11 3v2h5a1 1 0 0 1 .694.28l.087.095 2 2.5a1 1 0 0 1 .072 1.147l-.072.103-2 2.5a1 1 0 0 1-.652.367L16 12h-5v8h1a1 1 0 0 1 .117 1.993L12 22H8a1 1 0 0 1-.117-1.993L8 20h1v-8H6a1 1 0 0 1-.993-.883L5 11V6a1 1 0 0 1 .883-.993L6 5h3V3a1 1 0 0 1 1-1"
-      />
-    </g>
-    <defs>
-      <clipPath id="sign-right-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const SignRightIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_57530)">
+<path d="M10 2C10.2449 2.00003 10.4813 2.08996 10.6644 2.25272C10.8474 2.41547 10.9643 2.63975 10.993 2.883L11 3V5H16C16.2589 4.99999 16.5076 5.10036 16.694 5.28L16.781 5.375L18.781 7.875C18.9095 8.03558 18.9853 8.23187 18.9982 8.43712C19.0111 8.64238 18.9604 8.84661 18.853 9.022L18.781 9.125L16.781 11.625C16.6193 11.8271 16.3856 11.9586 16.129 11.992L16 12H11V20H12C12.2549 20.0003 12.5 20.0979 12.6854 20.2728C12.8707 20.4478 12.9822 20.687 12.9972 20.9414C13.0121 21.1958 12.9293 21.4464 12.7657 21.6418C12.6021 21.8373 12.3701 21.9629 12.117 21.993L12 22H8C7.74512 21.9997 7.49997 21.9021 7.31463 21.7272C7.1293 21.5522 7.01777 21.313 7.00283 21.0586C6.98789 20.8042 7.07067 20.5536 7.23426 20.3582C7.39786 20.1627 7.6299 20.0371 7.883 20.007L8 20H9V12H6C5.75507 12 5.51866 11.91 5.33563 11.7473C5.15259 11.5845 5.03566 11.3603 5.007 11.117L5 11V6C5.00003 5.75507 5.08996 5.51866 5.25272 5.33563C5.41547 5.15259 5.63975 5.03566 5.883 5.007L6 5H9V3C9 2.73478 9.10536 2.48043 9.29289 2.29289C9.48043 2.10536 9.73478 2 10 2Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_57530">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgSignRightIcon;

@@ -1,29 +1,18 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBucketDropletIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#bucket-droplet-icon_svg__a)"
-    >
-      <path d="m5 16 1.464 1.638a2 2 0 1 1-3.015.099zM13.737 9.737c2.3-2.3 3.23-5.095 2.081-6.245s-3.945-.217-6.244 2.082-3.23 5.095-2.082 6.244c1.15 1.15 3.946.218 6.245-2.08" />
-      <path d="M7.492 11.818c.362.362.768.676 1.208.934l6.895 4.047c1.078.557 2.255-.075 3.692-1.512s2.07-2.614 1.512-3.692q-.557-1.078-4.047-6.895a6 6 0 0 0-.934-1.208" />
-    </g>
-    <defs>
-      <clipPath id="bucket-droplet-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BucketDropletIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_80904)">
+<path d="M4.9994 16L6.4644 17.638C6.72582 17.919 6.90085 18.2694 6.9686 18.6472C7.03635 19.0249 6.99396 19.4143 6.84649 19.7686C6.69902 20.123 6.45269 20.4274 6.13692 20.6456C5.82114 20.8638 5.44925 20.9865 5.06564 20.9991C4.68202 21.0117 4.30288 20.9136 3.97348 20.7166C3.64407 20.5196 3.3783 20.232 3.2079 19.8881C3.0375 19.5442 2.96967 19.1585 3.01249 18.7771C3.05531 18.3956 3.20698 18.0346 3.4494 17.737L4.9994 16Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M13.7372 9.73745C16.0362 7.43745 16.9672 4.64245 15.8182 3.49245C14.6682 2.34245 11.8732 3.27545 9.57419 5.57445C7.27419 7.87345 6.34319 10.6694 7.49219 11.8184C8.64219 12.9684 11.4382 12.0364 13.7372 9.73745Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M7.49219 11.8182C7.85419 12.1802 8.26019 12.4942 8.70019 12.7522L15.5952 16.7992C16.6732 17.3562 17.8502 16.7242 19.2872 15.2872C20.7242 13.8502 21.3572 12.6732 20.7992 11.5952C20.4272 10.8772 19.0792 8.57819 16.7522 4.70019C16.4934 4.25948 16.1796 3.85354 15.8182 3.49219" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_80904">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBucketDropletIcon;

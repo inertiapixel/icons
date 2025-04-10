@@ -1,29 +1,18 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgRollerSkatingIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#roller-skating-icon_svg__a)"
-    >
-      <path d="M5.907 5h3.418a1 1 0 0 1 .928.629l1.143 2.856a3 3 0 0 0 2.207 1.83l4.717.926a2.084 2.084 0 0 1 1.682 2.045V14a1 1 0 0 1-1 1H5.107a1 1 0 0 1-1-1.1l.8-8a1 1 0 0 1 1-.9" />
-      <path d="M6 17a2 2 0 1 0 4 0 2 2 0 0 0-4 0M14 17a2 2 0 1 0 4 0 2 2 0 0 0-4 0" />
-    </g>
-    <defs>
-      <clipPath id="roller-skating-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const RollerSkatingIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_64999)">
+<path d="M5.90658 5.00001H9.32458C9.5244 5.00014 9.7196 5.06013 9.88501 5.17224C10.0504 5.28435 10.1784 5.44345 10.2526 5.62901L11.3956 8.48501C11.5815 8.95001 11.8808 9.36107 12.2663 9.68072C12.6518 10.0004 13.1112 10.2184 13.6026 10.315L18.3196 11.241C18.7935 11.3342 19.2203 11.589 19.5271 11.9621C19.8339 12.3351 20.0016 12.803 20.0016 13.286V14C20.0016 14.2652 19.8962 14.5196 19.7087 14.7071C19.5211 14.8947 19.2668 15 19.0016 15H5.10658C4.9664 15.0007 4.82764 14.9719 4.6993 14.9156C4.57097 14.8592 4.45592 14.7764 4.36162 14.6727C4.26733 14.569 4.19589 14.4466 4.15196 14.3135C4.10802 14.1804 4.09256 14.0395 4.10658 13.9L4.90658 5.90001C4.93145 5.65249 5.04769 5.42312 5.2326 5.25671C5.41751 5.09029 5.65781 4.99877 5.90658 5.00001Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M6 17C6 17.5304 6.21071 18.0391 6.58579 18.4142C6.96086 18.7893 7.46957 19 8 19C8.53043 19 9.03914 18.7893 9.41421 18.4142C9.78929 18.0391 10 17.5304 10 17C10 16.4696 9.78929 15.9609 9.41421 15.5858C9.03914 15.2107 8.53043 15 8 15C7.46957 15 6.96086 15.2107 6.58579 15.5858C6.21071 15.9609 6 16.4696 6 17Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M14 17C14 17.5304 14.2107 18.0391 14.5858 18.4142C14.9609 18.7893 15.4696 19 16 19C16.5304 19 17.0391 18.7893 17.4142 18.4142C17.7893 18.0391 18 17.5304 18 17C18 16.4696 17.7893 15.9609 17.4142 15.5858C17.0391 15.2107 16.5304 15 16 15C15.4696 15 14.9609 15.2107 14.5858 15.5858C14.2107 15.9609 14 16.4696 14 17Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_64999">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgRollerSkatingIcon;

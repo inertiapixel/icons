@@ -1,25 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgSquareCheckIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#square-check-icon_svg__a)">
-      <path
-        fill="currentColor"
-        d="M18.333 2c1.96 0 3.56 1.537 3.662 3.472l.005.195v12.666c0 1.96-1.537 3.56-3.472 3.662l-.195.005H5.667a3.667 3.667 0 0 1-3.662-3.472L2 18.333V5.667c0-1.96 1.537-3.56 3.472-3.662L5.667 2zm-2.626 7.293a1 1 0 0 0-1.414 0L11 12.585l-1.293-1.292-.094-.083a1 1 0 0 0-1.32 1.497l2 2 .094.083a1 1 0 0 0 1.32-.083l4-4 .083-.094a1 1 0 0 0-.083-1.32"
-      />
-    </g>
-    <defs>
-      <clipPath id="square-check-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const SquareCheckIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_57503)">
+<path d="M18.333 2C20.293 2 21.893 3.537 21.995 5.472L22 5.667V18.333C22 20.293 20.463 21.893 18.528 21.995L18.333 22H5.667C4.72818 22 3.82509 21.64 3.1438 20.9941C2.46252 20.3481 2.05492 19.4655 2.005 18.528L2 18.333V5.667C2 3.707 3.537 2.107 5.472 2.005L5.667 2H18.333ZM15.707 9.293C15.5195 9.10553 15.2652 9.00021 15 9.00021C14.7348 9.00021 14.4805 9.10553 14.293 9.293L11 12.585L9.707 11.293L9.613 11.21C9.41201 11.0546 9.1594 10.9815 8.90647 11.0056C8.65355 11.0297 8.41928 11.1492 8.25125 11.3397C8.08321 11.5303 7.99402 11.7777 8.00177 12.0316C8.00953 12.2856 8.11365 12.527 8.293 12.707L10.293 14.707L10.387 14.79C10.5794 14.9393 10.8197 15.0132 11.0627 14.9979C11.3057 14.9826 11.5348 14.8792 11.707 14.707L15.707 10.707L15.79 10.613C15.9393 10.4206 16.0132 10.1803 15.9979 9.93732C15.9826 9.69429 15.8792 9.46519 15.707 9.293Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_57503">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgSquareCheckIcon;

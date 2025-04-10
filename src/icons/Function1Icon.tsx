@@ -1,29 +1,18 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgFunction1Icon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#function-1-icon_svg__a)"
-    >
-      <path d="M4 6.667A2.667 2.667 0 0 1 6.667 4h10.666A2.667 2.667 0 0 1 20 6.667v10.666A2.67 2.67 0 0 1 17.333 20H6.667A2.67 2.67 0 0 1 4 17.333z" />
-      <path d="M9 15.5v.25c0 .69.56 1.25 1.25 1.25a1.38 1.38 0 0 0 1.374-1.244l.752-7.512A1.38 1.38 0 0 1 13.75 7c.69 0 1.25.56 1.25 1.25v.25M9 12h6" />
-    </g>
-    <defs>
-      <clipPath id="function-1-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const Function1Icon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_73071)">
+<path d="M4 6.667C4 5.95967 4.28099 5.28131 4.78115 4.78115C5.28131 4.28099 5.95967 4 6.667 4H17.333C17.6832 4 18.03 4.06898 18.3536 4.20301C18.6772 4.33704 18.9712 4.53349 19.2189 4.78115C19.4665 5.0288 19.663 5.32281 19.797 5.64638C19.931 5.96996 20 6.31676 20 6.667V17.333C20 17.6832 19.931 18.03 19.797 18.3536C19.663 18.6772 19.4665 18.9712 19.2189 19.2189C18.9712 19.4665 18.6772 19.663 18.3536 19.797C18.03 19.931 17.6832 20 17.333 20H6.667C6.31676 20 5.96996 19.931 5.64638 19.797C5.32281 19.663 5.0288 19.4665 4.78115 19.2189C4.53349 18.9712 4.33704 18.6772 4.20301 18.3536C4.06898 18.03 4 17.6832 4 17.333V6.667Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M9 15.5V15.75C9 16.44 9.56 17 10.25 17C10.96 17 11.554 16.462 11.624 15.756L12.376 8.244C12.41 7.90318 12.5694 7.58714 12.8233 7.35726C13.0772 7.12737 13.4075 7.00005 13.75 7C14.44 7 15 7.56 15 8.25V8.5" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M9 12H15" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_73071">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgFunction1Icon;

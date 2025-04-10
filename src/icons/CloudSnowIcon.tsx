@@ -1,28 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgCloudSnowIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#cloud-snow-icon_svg__a)"
-    >
-      <path d="M7.001 18a4.82 4.82 0 0 1-3.326-1.319A4.4 4.4 0 0 1 2.297 13.5c0-1.193.496-2.338 1.378-3.182A4.82 4.82 0 0 1 7 9c.295-1.313 1.157-2.466 2.397-3.207a6 6 0 0 1 2.025-.749 6.2 6.2 0 0 1 2.19.006c.722.132 1.408.39 2.02.76.611.37 1.136.845 1.543 1.397.408.553.69 1.172.832 1.823.142.65.14 1.32-.007 1.97h1a3.5 3.5 0 0 1 0 7M11 15v.01m0 3v.01m0 3v.01m4-4v.01m0 3v.01" />
-    </g>
-    <defs>
-      <clipPath id="cloud-snow-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const CloudSnowIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_78263)">
+<path d="M7.00142 17.9992C5.7537 17.9992 4.55708 17.5251 3.6748 16.6812C2.79253 15.8373 2.29687 14.6927 2.29688 13.4992C2.29687 12.3057 2.79253 11.1612 3.6748 10.3172C4.55708 9.47333 5.7537 8.99922 7.00142 8.99922C7.29611 7.6864 8.15818 6.5327 9.39801 5.79193C10.0119 5.42514 10.7001 5.17077 11.4232 5.04333C12.1463 4.9159 12.8903 4.9179 13.6125 5.04922C14.3348 5.18054 15.0213 5.43861 15.6327 5.8087C16.2442 6.17878 16.7686 6.65364 17.1762 7.20615C17.5837 7.75866 17.8664 8.378 18.008 9.02882C18.1496 9.67963 18.1473 10.3492 18.0014 10.9992H19.0014C19.9297 10.9992 20.8199 11.368 21.4763 12.0243C22.1327 12.6807 22.5014 13.571 22.5014 14.4992C22.5014 15.4275 22.1327 16.3177 21.4763 16.9741C20.8199 17.6305 19.9297 17.9992 19.0014 17.9992" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M11 15V15.01M11 18.01V18.02M11 21.02V21.03M15 17.03V17.04M15 20.04V20.05" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_78263">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgCloudSnowIcon;

@@ -1,28 +1,18 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandLeetcodeIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#brand-leetcode-icon_svg__a)"
-    >
-      <path d="M12 13h7.5M9.426 7.269l4.999-5M16.633 16.644l-2.402 2.415a3.19 3.19 0 0 1-4.524 0l-3.77-3.787a3.223 3.223 0 0 1 0-4.544l3.77-3.787a3.19 3.19 0 0 1 4.524 0l2.302 2.313" />
-    </g>
-    <defs>
-      <clipPath id="brand-leetcode-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandLeetcodeIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_82027)">
+<path d="M12 13H19.5" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M9.42578 7.26853L14.4248 2.26953" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M16.633 16.6441L14.231 19.0591C13.9346 19.3573 13.5822 19.594 13.194 19.7555C12.8058 19.917 12.3895 20.0002 11.969 20.0002C11.5485 20.0002 11.1322 19.917 10.744 19.7555C10.3558 19.594 10.0034 19.3573 9.70701 19.0591L5.93701 15.2721C5.33685 14.6682 5 13.8515 5 13.0001C5 12.1487 5.33685 11.3319 5.93701 10.7281L9.70701 6.94109C10.0034 6.64286 10.3558 6.40617 10.744 6.24466C11.1322 6.08315 11.5485 6 11.969 6C12.3895 6 12.8058 6.08315 13.194 6.24466C13.5822 6.40617 13.9346 6.64286 14.231 6.94109L16.533 9.25409" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_82027">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandLeetcodeIcon;

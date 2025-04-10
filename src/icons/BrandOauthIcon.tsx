@@ -1,29 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandOauthIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#brand-oauth-icon_svg__a)"
-    >
-      <path d="M2 12a10 10 0 1 0 20 0 10 10 0 0 0-20 0" />
-      <path d="M12.555 6c.65 0 1.235.373 1.508.947l2.838 7.848a1.647 1.647 0 0 1-1.01 2.108 1.673 1.673 0 0 1-2.068-.851L13.363 15h-2.73l-.397.905a1.67 1.67 0 0 1-1.978 1.045l-.153-.047a1.647 1.647 0 0 1-1.056-1.956l2.824-7.852a1.66 1.66 0 0 1 1.41-1.087z" />
-    </g>
-    <defs>
-      <clipPath id="brand-oauth-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandOauthIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_81820)">
+<path d="M2 12C2 14.6522 3.05357 17.1957 4.92893 19.0711C6.8043 20.9464 9.34784 22 12 22C14.6522 22 17.1957 20.9464 19.0711 19.0711C20.9464 17.1957 22 14.6522 22 12C22 9.34784 20.9464 6.8043 19.0711 4.92893C17.1957 3.05357 14.6522 2 12 2C9.34784 2 6.8043 3.05357 4.92893 4.92893C3.05357 6.8043 2 9.34784 2 12Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12.5545 6C13.2045 6 13.7895 6.373 14.0625 6.947L16.9015 14.795C16.9745 14.9997 17.0063 15.2168 16.995 15.4338C16.9837 15.6508 16.9295 15.8634 16.8356 16.0594C16.7417 16.2554 16.6099 16.4308 16.4479 16.5756C16.2858 16.7204 16.0967 16.8317 15.8915 16.903C15.5025 17.0413 15.0761 17.0309 14.6944 16.8738C14.3126 16.7167 14.0024 16.424 13.8235 16.052L13.3635 15H10.6335L10.2355 15.905C10.0935 16.2928 9.8128 16.6143 9.44768 16.8072C9.08256 17.0002 8.65888 17.0511 8.25846 16.95L8.10546 16.903C7.71696 16.7677 7.39315 16.492 7.19772 16.13C7.0023 15.768 6.94941 15.346 7.04946 14.947L9.87346 7.095C9.98134 6.79902 10.171 6.53975 10.4204 6.34732C10.6699 6.1549 10.9688 6.03723 11.2825 6.008L12.5545 6Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_81820">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandOauthIcon;

@@ -1,29 +1,18 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandFirebaseIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#brand-firebase-icon_svg__a)"
-    >
-      <path d="m4.531 17.05 6.15-11.72h-.02c.38-.74 1.28-1.02 2.01-.63.26.14.48.36.62.62l1.06 2.01" />
-      <path d="M15.47 6.45c.58-.59 1.53-.59 2.11-.01.22.22.36.5.41.81l1.5 9.11c.1.62-.2 1.24-.76 1.54l-6.07 2.9c-.46.25-1.01.26-1.46 0l-6.02-2.92c-.55-.31-.85-.92-.75-1.54L6.39 4.3c.12-.82.89-1.38 1.7-1.25.46.07.87.36 1.09.77l1.24 1.76M4.57 17.18 15.5 6.5" />
-    </g>
-    <defs>
-      <clipPath id="brand-firebase-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandFirebaseIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_82306)">
+<path d="M4.53125 17.0493L10.6813 5.32927H10.6612C11.0412 4.58927 11.9412 4.30927 12.6712 4.69927C12.9312 4.83927 13.1513 5.05927 13.2913 5.31927L14.3512 7.32927" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M15.4692 6.45C16.0492 5.86 16.9992 5.86 17.5792 6.44C17.7992 6.66 17.9392 6.94 17.9892 7.25L19.4892 16.36C19.5892 16.98 19.2892 17.6 18.7292 17.9L12.6592 20.8C12.1992 21.05 11.6492 21.06 11.1992 20.8L5.17921 17.88C4.62921 17.57 4.32921 16.96 4.42921 16.34L6.38921 4.3C6.50921 3.48 7.27921 2.92 8.08921 3.05C8.54921 3.12 8.95921 3.41 9.17921 3.82L10.4192 5.58" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M4.57031 17.18L15.5003 6.5" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_82306">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandFirebaseIcon;

@@ -1,29 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandHeadlessuiIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#brand-headlessui-icon_svg__a)"
-    >
-      <path d="m6.743 4.324 7.82-1.267a4.456 4.456 0 0 1 5.111 3.686l1.267 7.82a4.456 4.456 0 0 1-3.686 5.111l-7.82 1.267a4.456 4.456 0 0 1-5.11-3.686l-1.268-7.82a4.456 4.456 0 0 1 3.686-5.11" />
-      <path d="m7.251 7.703 7.897-1.28a1 1 0 0 1 1.147.828l.36 2.223-9.562 3.51-.67-4.134a1 1 0 0 1 .828-1.147" />
-    </g>
-    <defs>
-      <clipPath id="brand-headlessui-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandHeadlessuiIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_82114)">
+<path d="M6.74333 4.32433L14.5633 3.05733C15.7299 2.86841 16.9237 3.15061 17.8822 3.84186C18.8407 4.53311 19.4853 5.57679 19.6743 6.74333L20.9413 14.5633C21.1302 15.7299 20.848 16.9237 20.1568 17.8822C19.4655 18.8407 18.4219 19.4853 17.2553 19.6743L9.43533 20.9413C8.26878 21.1302 7.07496 20.848 6.11647 20.1568C5.15799 19.4655 4.51334 18.4219 4.32433 17.2553L3.05733 9.43533C2.86841 8.26878 3.15061 7.07496 3.84186 6.11647C4.53311 5.15799 5.57679 4.51334 6.74333 4.32433Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M7.251 7.703L15.148 6.423C15.2777 6.40201 15.4102 6.40678 15.5381 6.43704C15.6659 6.4673 15.7865 6.52245 15.8931 6.59935C15.9996 6.67624 16.0899 6.77337 16.1589 6.88518C16.2278 6.99699 16.2741 7.1213 16.295 7.251L16.655 9.474L7.093 12.984L6.423 8.85C6.40201 8.72031 6.40678 8.58776 6.43704 8.45992C6.4673 8.33208 6.52245 8.21146 6.59935 8.10494C6.67624 7.99842 6.77337 7.9081 6.88518 7.83913C6.99699 7.77017 7.1213 7.72391 7.251 7.703Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_82114">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandHeadlessuiIcon;

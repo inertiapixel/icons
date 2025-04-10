@@ -1,29 +1,21 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgSteeringWheelOffIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#steering-wheel-off-icon_svg__a)"
-    >
-      <path d="M20.039 16.047A9 9 0 0 0 7.954 3.957m-2.32 1.678a9 9 0 1 0 12.737 12.719" />
-      <path d="M10.594 10.574a2 2 0 1 0 2.827 2.83M12 14v7M10 12l-6.75-2M15.543 11.543 20.751 10M3 3l18 18" />
-    </g>
-    <defs>
-      <clipPath id="steering-wheel-off-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const SteeringWheelOffIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_62437)">
+<path d="M20.0385 16.0469C20.8907 14.3561 21.1879 12.4396 20.8879 10.57C20.5879 8.70052 19.7059 6.97324 18.3674 5.63399C17.0289 4.29473 15.3022 3.41173 13.4328 3.11063C11.5635 2.80953 9.64677 3.10567 7.95546 3.95691M5.63546 5.63491C3.94882 7.32394 3.00222 9.61381 3.00391 12.0008C3.0056 14.3877 3.95543 16.6763 5.64446 18.3629C7.33349 20.0496 9.62336 20.9961 12.0103 20.9945C14.3973 20.9928 16.6858 20.0429 18.3725 18.3539" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M10.5944 10.5742C10.2191 10.9491 10.0081 11.4577 10.0078 11.9882C10.0075 12.5186 10.218 13.0274 10.5929 13.4027C10.9677 13.778 11.4764 13.989 12.0068 13.9893C12.5373 13.9896 13.0461 13.7791 13.4214 13.4042" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 14V21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M10 12L3.25 10" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M15.543 11.543L20.751 10" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3 3L21 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_62437">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgSteeringWheelOffIcon;

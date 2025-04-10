@@ -1,28 +1,20 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgFidgetSpinnerIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#fidget-spinner-icon_svg__a)"
-    >
-      <path d="M18 16v.01M6 16v.01M12 5v.01M12 12v.01M12 1a4 4 0 0 1 2.001 7.464l.001.072a4 4 0 0 1 1.987 3.758l.22.128a4 4 0 0 1 1.591-.417L18 12a4 4 0 1 1-3.994 3.77l-.28-.16c-.522.25-1.108.39-1.726.39-.619 0-1.205-.14-1.728-.391l-.279.16L10 16a4 4 0 1 1-2.212-3.579l.222-.129a4 4 0 0 1 1.988-3.756L10 8.465A4 4 0 0 1 8.005 5.2L8 5a4 4 0 0 1 4-4" />
-    </g>
-    <defs>
-      <clipPath id="fidget-spinner-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const FidgetSpinnerIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_74434)">
+<path d="M18 16V16.01" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M6 16V16.01" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 5V5.01" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 12V12.01" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 1C12.8806 0.999819 13.7366 1.29023 14.4353 1.82618C15.1341 2.36213 15.6364 3.11367 15.8644 3.96423C16.0924 4.81478 16.0334 5.71681 15.6965 6.5304C15.3596 7.34399 14.7636 8.02367 14.001 8.464L14.002 8.536C14.6531 8.91216 15.1849 9.4643 15.5364 10.129C15.8878 10.7938 16.0447 11.5441 15.989 12.294L16.209 12.422C16.7045 12.1737 17.2464 12.0316 17.8 12.005L18 12C18.8009 12.0001 19.5833 12.2407 20.246 12.6905C20.9086 13.1403 21.421 13.7787 21.7167 14.523C22.0124 15.2673 22.0779 16.0832 21.9047 16.8652C21.7315 17.6471 21.3275 18.3591 20.7451 18.9088C20.1626 19.4586 19.4286 19.8208 18.638 19.9487C17.8474 20.0766 17.0365 19.9641 16.3105 19.626C15.5845 19.2878 14.9767 18.7395 14.5659 18.052C14.155 17.3646 13.96 16.5696 14.006 15.77L13.726 15.61C13.204 15.86 12.618 16 12 16C11.381 16 10.795 15.86 10.272 15.609L9.993 15.769L10 16C9.99982 16.8702 9.71586 17.7166 9.19119 18.4108C8.66653 19.1051 7.92978 19.6093 7.09268 19.847C6.25558 20.0847 5.36379 20.043 4.55256 19.7281C3.74134 19.4132 3.05492 18.8423 2.59743 18.1021C2.13993 17.3619 1.9363 16.4926 2.01742 15.6262C2.09855 14.7598 2.46 13.9435 3.04697 13.3011C3.63393 12.6586 4.41438 12.2251 5.26996 12.0663C6.12555 11.9075 7.00958 12.032 7.788 12.421L8.01 12.292C7.95478 11.5424 8.112 10.7923 8.46363 10.128C8.81526 9.46364 9.34706 8.91187 9.998 8.536L10 8.465C9.42116 8.13079 8.93529 7.65686 8.58679 7.08651C8.23829 6.51616 8.03827 5.86757 8.005 5.2L8 5C8 3.93913 8.42143 2.92172 9.17158 2.17157C9.92172 1.42143 10.9391 1 12 1Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_74434">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgFidgetSpinnerIcon;

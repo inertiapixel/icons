@@ -1,29 +1,20 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgMoodMinusIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#mood-minus-icon_svg__a)"
-    >
-      <path d="M20.48 15.015a9 9 0 1 0-7.956 5.97M9 10h.01M15 10h.01M16 19h6" />
-      <path d="M9.5 15c.658.64 1.56 1 2.5 1s1.842-.36 2.5-1" />
-    </g>
-    <defs>
-      <clipPath id="mood-minus-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const MoodMinusIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_68194)">
+<path d="M20.4801 15.0147C21.1277 13.1929 21.1715 11.2109 20.6048 9.36221C20.0381 7.51356 18.8911 5.89657 17.3336 4.75069C15.7762 3.60482 13.8911 2.99098 11.9576 3.0001C10.024 3.00922 8.14483 3.64079 6.59826 4.8013C5.05169 5.96181 3.91999 7.58955 3.37074 9.44346C2.82149 11.2974 2.88391 13.2789 3.54874 15.0946C4.21358 16.9102 5.44548 18.4635 7.06202 19.5244C8.67856 20.5853 10.5938 21.0973 12.5241 20.9847" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M9 10H9.01" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M15 10H15.01" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M16 19H22" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M9.5 15C10.158 15.64 11.06 16 12 16C12.94 16 13.842 15.64 14.5 15" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_68194">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgMoodMinusIcon;

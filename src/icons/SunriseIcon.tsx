@@ -1,28 +1,18 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgSunriseIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#sunrise-icon_svg__a)"
-    >
-      <path d="M3 17.002h1m16 0h1m-15.4-6.4.7.7m12.1-.7-.7.7m-9.7 5.7a4 4 0 0 1 8 0M3 21h18M12 9V3m0 0 3 3m-3-3L9 6" />
-    </g>
-    <defs>
-      <clipPath id="sunrise-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const SunriseIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_62265)">
+<path d="M3 17.0016H4M20 17.0016H21M5.6 10.6016L6.3 11.3016M18.4 10.6016L17.7 11.3016M8 17.0016C8 15.9407 8.42143 14.9233 9.17157 14.1731C9.92172 13.423 10.9391 13.0016 12 13.0016C13.0609 13.0016 14.0783 13.423 14.8284 14.1731C15.5786 14.9233 16 15.9407 16 17.0016" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3 21H21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 9V3M12 3L15 6M12 3L9 6" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_62265">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgSunriseIcon;

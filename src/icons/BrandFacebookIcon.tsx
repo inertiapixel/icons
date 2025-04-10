@@ -1,25 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandFacebookIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#brand-facebook-icon_svg__a)">
-      <path
-        fill="currentColor"
-        d="M18 2a1 1 0 0 1 .993.883L19 3v4a1 1 0 0 1-.883.993L18 8h-3v1h3a1 1 0 0 1 .991 1.131l-.02.112-1 4a1 1 0 0 1-.858.75L17 15h-2v6a1 1 0 0 1-.883.993L14 22h-4a1 1 0 0 1-.993-.883L9 21v-6H7a1 1 0 0 1-.993-.883L6 14v-4a1 1 0 0 1 .883-.993L7 9h2V8a6 6 0 0 1 5.775-5.996L15 2z"
-      />
-    </g>
-    <defs>
-      <clipPath id="brand-facebook-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandFacebookIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_58770)">
+<path d="M18 2C18.2449 2.00003 18.4813 2.08996 18.6644 2.25272C18.8474 2.41547 18.9643 2.63975 18.993 2.883L19 3V7C19 7.24493 18.91 7.48134 18.7473 7.66437C18.5845 7.84741 18.3603 7.96434 18.117 7.993L18 8H15V9H18C18.1424 9.00005 18.2831 9.0305 18.4127 9.0893C18.5423 9.14811 18.6579 9.23391 18.7517 9.34098C18.8456 9.44804 18.9154 9.57391 18.9567 9.71015C18.998 9.84639 19.0096 9.98987 18.991 10.131L18.971 10.243L17.971 14.243C17.9214 14.4405 17.8126 14.6182 17.6593 14.7522C17.506 14.8862 17.3154 14.9702 17.113 14.993L17 15H15V21C15 21.2449 14.91 21.4813 14.7473 21.6644C14.5845 21.8474 14.3603 21.9643 14.117 21.993L14 22H10C9.75507 22 9.51866 21.91 9.33563 21.7473C9.15259 21.5845 9.03566 21.3603 9.007 21.117L9 21V15H7C6.75507 15 6.51866 14.91 6.33563 14.7473C6.15259 14.5845 6.03566 14.3603 6.007 14.117L6 14V10C6.00003 9.75507 6.08996 9.51866 6.25272 9.33563C6.41547 9.15259 6.63975 9.03566 6.883 9.007L7 9H9V8C8.99994 6.44762 9.60157 4.95564 10.6785 3.83753C11.7554 2.71942 13.2237 2.06221 14.775 2.004L15 2H18Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_58770">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandFacebookIcon;

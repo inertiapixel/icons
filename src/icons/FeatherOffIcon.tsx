@@ -1,29 +1,23 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgFeatherOffIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#feather-off-icon_svg__a)"
-    >
-      <path d="m4 20 8-8M14 5v5h5M9 11v4h4M6 13v5h5M6 13l3.502-3.502m2.023-2.023L14 5" />
-      <path d="M19 10c.638-.636 1-1.515 1-2.486A3.515 3.515 0 0 0 16.483 4c-.97 0-1.847.367-2.483 1M11 18l3.499-3.499m2.008-2.008L19 10M3 3l18 18" />
-    </g>
-    <defs>
-      <clipPath id="feather-off-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const FeatherOffIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_74458)">
+<path d="M4 20L12 12" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M14 5V10H19" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M9 11V15H13" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M6 13V18H11" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M6 13L9.502 9.498M11.525 7.475L14 5" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M19 10C19.638 9.364 20 8.485 20 7.514C19.9999 7.05232 19.9088 6.59519 19.732 6.16871C19.5551 5.74224 19.296 5.35478 18.9694 5.02846C18.6428 4.70214 18.2551 4.44336 17.8285 4.26689C17.4019 4.09043 16.9447 3.99974 16.483 4C15.513 4 14.636 4.367 14 5" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M11 18L14.499 14.501M16.507 12.493L19 10" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3 3L21 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_74458">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgFeatherOffIcon;

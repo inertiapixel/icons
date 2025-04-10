@@ -1,28 +1,21 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgRectangularPrismPlusIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#rectangular-prism-plus-icon_svg__a)"
-    >
-      <path d="M21 12.5V8.99a1.98 1.98 0 0 0-1-1.716l-4-2.008a2.02 2.02 0 0 0-2 0L4 10.273c-.619.354-1 1.01-1 1.718v5.018c0 .709.381 1.363 1 1.717l4 2.008a2.02 2.02 0 0 0 2 0l2.062-1.033M9 21v-7.5M9 13.5 20.5 8M3.5 11 9 13.5M16 19h6M19 16v6" />
-    </g>
-    <defs>
-      <clipPath id="rectangular-prism-plus-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const RectangularPrismPlusIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_65361)">
+<path d="M21 12.4995V8.9905C20.9994 8.64157 20.9066 8.299 20.731 7.99748C20.5554 7.69596 20.3032 7.4462 20 7.2735L16 5.2655C15.6954 5.09151 15.3508 5 15 5C14.6492 5 14.3046 5.09151 14 5.2655L4 10.2725C3.381 10.6275 3 11.2825 3 11.9905V17.0085C3 17.7175 3.381 18.3715 4 18.7255L8 20.7335C8.30456 20.9075 8.64925 20.999 9 20.999C9.35075 20.999 9.69544 20.9075 10 20.7335L12.062 19.7015" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M9 21V13.5" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M9 13.5L20.5 8" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3.5 11L9 13.5" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M16 19H22" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M19 16V22" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_65361">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgRectangularPrismPlusIcon;

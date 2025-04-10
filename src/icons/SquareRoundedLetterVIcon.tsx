@@ -1,25 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgSquareRoundedLetterVIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#square-rounded-letter-v-icon_svg__a)">
-      <path
-        fill="currentColor"
-        d="M11.676 2.001 12 2c7.752 0 10 2.248 10 10l-.005.642C21.869 19.877 19.534 22 12 22l-.642-.005C4.228 21.87 2.063 19.6 2 12.325V12c0-7.643 2.185-9.936 9.676-9.999m2.567 5.029a1 1 0 0 0-1.213.727L12 11.875l-1.03-4.118a.998.998 0 0 0-1.569-.566 1 1 0 0 0-.371 1.052l2 8c.252 1.01 1.688 1.01 1.94 0l2-8a1 1 0 0 0-.727-1.213"
-      />
-    </g>
-    <defs>
-      <clipPath id="square-rounded-letter-v-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const SquareRoundedLetterVIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_57215)">
+<path d="M11.676 2.001L12 2C19.752 2 22 4.248 22 12L21.995 12.642C21.869 19.877 19.534 22 12 22L11.358 21.995C4.228 21.87 2.063 19.6 2 12.325V12C2 4.357 4.185 2.064 11.676 2.001ZM14.243 7.03C13.9857 6.96556 13.7134 7.00595 13.4859 7.14229C13.2585 7.27863 13.0945 7.49974 13.03 7.757L12 11.875L10.97 7.757C10.9389 7.62881 10.8827 7.50804 10.8046 7.40166C10.7266 7.29528 10.6283 7.20539 10.5154 7.13717C10.4025 7.06895 10.2772 7.02374 10.1467 7.00416C10.0163 6.98457 9.88323 6.99099 9.75526 7.02305C9.62729 7.05511 9.50693 7.11217 9.40111 7.19095C9.29529 7.26972 9.20611 7.36866 9.13869 7.48206C9.07128 7.59546 9.02697 7.72107 9.00831 7.85167C8.98966 7.98227 8.99703 8.11526 9.03 8.243L11.03 16.243C11.282 17.253 12.718 17.253 12.97 16.243L14.97 8.243C15.0344 7.98574 14.9941 7.71342 14.8577 7.48594C14.7214 7.25846 14.5003 7.09445 14.243 7.03Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_57215">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgSquareRoundedLetterVIcon;

@@ -1,28 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgLemon2Icon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#lemon-2-icon_svg__a)">
-      <path
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M18 4a2 2 0 0 1 1.186 3.611c1.55 2.94.872 6.917-1.892 9.682-2.766 2.765-6.744 3.442-9.682 1.892a2 2 0 1 1-2.796-2.796c-1.55-2.94-.873-6.917 1.892-9.682s6.743-3.442 9.682-1.892A2 2 0 0 1 18 4"
-      />
-    </g>
-    <defs>
-      <clipPath id="lemon-2-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const Lemon2Icon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_70716)">
+<path d="M18.0005 4.00006C18.4219 4.0001 18.8324 4.1332 19.1736 4.38036C19.5148 4.62752 19.7693 4.97613 19.9006 5.37645C20.032 5.77677 20.0336 6.20835 19.9052 6.60963C19.7768 7.01091 19.5249 7.36139 19.1855 7.61106C20.7355 10.5511 20.0585 14.5281 17.2935 17.2931C14.5285 20.0581 10.5505 20.7351 7.61153 19.1851C7.44087 19.4173 7.22203 19.6098 6.97002 19.7496C6.71801 19.8894 6.43877 19.973 6.15143 19.9949C5.86408 20.0167 5.57541 19.9761 5.30518 19.876C5.03496 19.7759 4.78956 19.6186 4.58579 19.4148C4.38202 19.211 4.22469 18.9656 4.12457 18.6954C4.02446 18.4252 3.98392 18.1365 4.00574 17.8492C4.02756 17.5618 4.11122 17.2826 4.25098 17.0306C4.39075 16.7786 4.58333 16.5597 4.81553 16.3891C3.26553 13.4491 3.94253 9.47206 6.70753 6.70706C9.47253 3.94206 13.4505 3.26506 16.3895 4.81506C16.5754 4.56241 16.818 4.35701 17.0978 4.21543C17.3777 4.07386 17.6869 4.00008 18.0005 4.00006Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_70716">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgLemon2Icon;

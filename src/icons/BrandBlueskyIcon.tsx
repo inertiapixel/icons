@@ -1,28 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandBlueskyIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#brand-bluesky-icon_svg__a)">
-      <path
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M6.335 5.144C4.681 3.945 2 3.017 2 5.97c0 .59.35 4.953.556 5.661.713 2.463 3.13 2.75 5.444 2.37-4.045.664-4.889 3.207-2.667 5.41C6.363 20.427 7.246 21 8 21c2 0 3.134-2.77 3.5-3.5q.5-1.002.5-1.5 0 .498.5 1.5c.366.73 1.5 3.5 3.5 3.5.754 0 1.637-.572 2.667-1.59C20.889 17.206 20.045 14.663 16 14c2.314.38 4.73.093 5.444-2.37.206-.708.556-5.072.556-5.66 0-2.954-2.68-2.026-4.335-.827C15.372 6.806 12.905 10.192 12 12c-.905-1.808-3.372-5.194-5.665-6.856"
-      />
-    </g>
-    <defs>
-      <clipPath id="brand-bluesky-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandBlueskyIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_82675)">
+<path d="M6.335 5.14423C4.681 3.94523 2 3.01723 2 5.97023C2 6.56023 2.35 10.9232 2.556 11.6312C3.269 14.0942 5.686 14.3812 8 14.0002C3.955 14.6652 3.111 17.2082 5.333 19.4102C6.363 20.4282 7.246 21.0002 8 21.0002C10 21.0002 11.134 18.2312 11.5 17.5002C11.833 16.8332 12 16.3332 12 16.0002C12 16.3332 12.167 16.8332 12.5 17.5002C12.866 18.2312 14 21.0002 16 21.0002C16.754 21.0002 17.637 20.4292 18.667 19.4102C20.889 17.2072 20.045 14.6642 16 14.0002C18.314 14.3802 20.73 14.0942 21.444 11.6312C21.65 10.9232 22 6.55923 22 5.97023C22 3.01723 19.32 3.94523 17.665 5.14423C15.372 6.80623 12.905 10.1922 12 12.0002C11.095 10.1922 8.628 6.80623 6.335 5.14423Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_82675">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandBlueskyIcon;

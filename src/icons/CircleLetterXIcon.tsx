@@ -1,25 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgCircleLetterXIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#circle-letter-x-icon_svg__a)">
-      <path
-        fill="currentColor"
-        d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2m2.447 5.106a1 1 0 0 0-1.341.447L12 9.763l-1.106-2.21a1 1 0 0 0-1.234-.494l-.107.047a1 1 0 0 0-.447 1.341L10.88 12l-1.775 3.553a1 1 0 0 0 .345 1.283l.102.058a1 1 0 0 0 1.341-.447L12 14.236l1.106 2.211a1 1 0 0 0 1.234.494l.107-.047a1 1 0 0 0 .447-1.341L13.118 12l1.776-3.553a1 1 0 0 0-.345-1.283z"
-      />
-    </g>
-    <defs>
-      <clipPath id="circle-letter-x-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const CircleLetterXIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_58441)">
+<path d="M12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2ZM14.447 7.106C14.2099 6.98758 13.9354 6.96814 13.684 7.05196C13.4325 7.13577 13.2246 7.31599 13.106 7.553L12 9.763L10.894 7.553C10.7846 7.33378 10.5984 7.16237 10.371 7.0713C10.1435 6.98024 9.89049 6.97586 9.66 7.059L9.553 7.106C9.31599 7.22465 9.13577 7.43254 9.05196 7.68399C8.96814 7.93544 8.98758 8.20987 9.106 8.447L10.88 12L9.105 15.553C8.99544 15.772 8.97005 16.0236 9.03364 16.2601C9.09723 16.4966 9.24538 16.7015 9.45 16.836L9.552 16.894C9.78913 17.0124 10.0636 17.0319 10.315 16.948C10.5665 16.8642 10.7744 16.684 10.893 16.447L12 14.236L13.106 16.447C13.2154 16.6662 13.4016 16.8376 13.629 16.9287C13.8565 17.0198 14.1095 17.0241 14.34 16.941L14.447 16.894C14.684 16.7754 14.8642 16.5675 14.948 16.316C15.0319 16.0646 15.0124 15.7901 14.894 15.553L13.118 12L14.894 8.447C15.0036 8.228 15.0289 7.9764 14.9654 7.73993C14.9018 7.50345 14.7536 7.29852 14.549 7.164L14.447 7.106Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_58441">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgCircleLetterXIcon;

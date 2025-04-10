@@ -1,25 +1,18 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgLayoutDistributeVerticalIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      fill="currentColor"
-      clipPath="url(#layout-distribute-vertical-icon_svg__a)"
-    >
-      <path d="M4 3a1 1 0 0 1 1 1v16a1 1 0 1 1-2 0V4a1 1 0 0 1 1-1M20 3a1 1 0 0 1 1 1v16a1 1 0 0 1-2 0V4a1 1 0 0 1 1-1M13 5a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3h-2a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3z" />
-    </g>
-    <defs>
-      <clipPath id="layout-distribute-vertical-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const LayoutDistributeVerticalIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_57839)">
+<path d="M4 3C4.26522 3 4.51957 3.10536 4.70711 3.29289C4.89464 3.48043 5 3.73478 5 4V20C5 20.2652 4.89464 20.5196 4.70711 20.7071C4.51957 20.8946 4.26522 21 4 21C3.73478 21 3.48043 20.8946 3.29289 20.7071C3.10536 20.5196 3 20.2652 3 20V4C3 3.73478 3.10536 3.48043 3.29289 3.29289C3.48043 3.10536 3.73478 3 4 3Z" fill="black"/>
+<path d="M20 3C20.2652 3 20.5196 3.10536 20.7071 3.29289C20.8946 3.48043 21 3.73478 21 4V20C21 20.2652 20.8946 20.5196 20.7071 20.7071C20.5196 20.8946 20.2652 21 20 21C19.7348 21 19.4804 20.8946 19.2929 20.7071C19.1054 20.5196 19 20.2652 19 20V4C19 3.73478 19.1054 3.48043 19.2929 3.29289C19.4804 3.10536 19.7348 3 20 3Z" fill="black"/>
+<path d="M13 5C13.7956 5 14.5587 5.31607 15.1213 5.87868C15.6839 6.44129 16 7.20435 16 8V16C16 16.7956 15.6839 17.5587 15.1213 18.1213C14.5587 18.6839 13.7956 19 13 19H11C10.2044 19 9.44129 18.6839 8.87868 18.1213C8.31607 17.5587 8 16.7956 8 16V8C8 7.20435 8.31607 6.44129 8.87868 5.87868C9.44129 5.31607 10.2044 5 11 5H13Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_57839">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgLayoutDistributeVerticalIcon;

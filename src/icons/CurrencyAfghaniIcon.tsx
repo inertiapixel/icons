@@ -1,28 +1,18 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgCurrencyAfghaniIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#currency-afghani-icon_svg__a)"
-    >
-      <path d="M15 13h-3.5A3.5 3.5 0 1 1 15 9.5V16H8M12 3v.01M12 19v2" />
-    </g>
-    <defs>
-      <clipPath id="currency-afghani-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const CurrencyAfghaniIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_77451)">
+<path d="M15 13H11.5C10.8078 13 10.1311 12.7947 9.55551 12.4101C8.97993 12.0256 8.53133 11.4789 8.26642 10.8394C8.00152 10.1999 7.9322 9.49612 8.06725 8.81718C8.2023 8.13825 8.53564 7.51461 9.02513 7.02513C9.51461 6.53564 10.1383 6.2023 10.8172 6.06725C11.4961 5.9322 12.1999 6.00152 12.8394 6.26642C13.4789 6.53133 14.0256 6.97993 14.4101 7.55551C14.7947 8.13108 15 8.80777 15 9.5V16H8" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 3V3.01" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 19V21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_77451">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgCurrencyAfghaniIcon;

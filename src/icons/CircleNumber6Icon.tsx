@@ -1,25 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgCircleNumber6Icon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#circle-number-6-icon_svg__a)">
-      <path
-        fill="currentColor"
-        d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2m1 5h-2l-.15.005a2 2 0 0 0-1.844 1.838L9 9v6l.005.15a2 2 0 0 0 1.838 1.844L11 17h2l.15-.005a2 2 0 0 0 1.844-1.838L15 15v-2l-.005-.15a2 2 0 0 0-1.838-1.844L13 11h-2V9h2l.007.117A1 1 0 0 0 15 9a2 2 0 0 0-1.85-1.995zm0 6v2h-2v-2z"
-      />
-    </g>
-    <defs>
-      <clipPath id="circle-number-6-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const CircleNumber6Icon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_58414)">
+<path d="M12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2ZM13 7H11L10.85 7.005C10.3738 7.04078 9.92617 7.24576 9.58797 7.58286C9.24977 7.91996 9.04334 8.36695 9.006 8.843L9 9V15L9.005 15.15C9.04078 15.6262 9.24576 16.0738 9.58286 16.412C9.91996 16.7502 10.3669 16.9567 10.843 16.994L11 17H13L13.15 16.995C13.6262 16.9592 14.0738 16.7542 14.412 16.4171C14.7502 16.08 14.9567 15.6331 14.994 15.157L15 15V13L14.995 12.85C14.9592 12.3738 14.7542 11.9262 14.4171 11.588C14.08 11.2498 13.6331 11.0433 13.157 11.006L13 11H11V9H13L13.007 9.117C13.0371 9.3701 13.1627 9.60215 13.3582 9.76574C13.5536 9.92933 13.8042 10.0121 14.0586 9.99717C14.313 9.98224 14.5522 9.8707 14.7272 9.68537C14.9021 9.50003 14.9997 9.25488 15 9C15.0002 8.49542 14.8096 8.00943 14.4665 7.63945C14.1234 7.26947 13.6532 7.04284 13.15 7.005L13 7ZM13 13V15H11V13H13Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_58414">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgCircleNumber6Icon;

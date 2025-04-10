@@ -1,28 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandAirbnbIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#brand-airbnb-icon_svg__a)">
-      <path
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M12 18.5c-1.506-1.965-3-4-3-5.5q0-3 3-3t3 3c0 1.5-1.494 3.535-3 5.5m0 0c1 1 1.5 1.5 2.5 2s2.5 1 4.5-.5 1.5-3.5.5-6-2.333-5.5-5-9.5C13.666 3.5 13 3 11.997 3c-1 0-1.623.45-2.497 1.5-2.667 4-4 7-5 9.5S3 18.5 5 20s3.5 1 4.5.5 1.5-1 2.5-2"
-      />
-    </g>
-    <defs>
-      <clipPath id="brand-airbnb-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandAirbnbIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_82867)">
+<path d="M12 18.5C10.494 16.535 9 14.5 9 13C9 11 10 10 12 10C14 10 15 11 15 13C15 14.5 13.506 16.535 12 18.5ZM12 18.5C13 19.5 13.5 20 14.5 20.5C15.5 21 17 21.5 19 20C21 18.5 20.5 16.5 19.5 14C18.5 11.5 17.167 8.5 14.5 4.5C13.666 3.5 13 3 11.997 3C10.997 3 10.374 3.45 9.5 4.5C6.833 8.5 5.5 11.5 4.5 14C3.5 16.5 3 18.5 5 20C7 21.5 8.5 21 9.5 20.5C10.5 20 11 19.5 12 18.5Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_82867">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandAirbnbIcon;

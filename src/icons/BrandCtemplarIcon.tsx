@@ -1,29 +1,19 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandCtemplarIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#brand-ctemplar-icon_svg__a)"
-    >
-      <path d="M6.04 14.831 10.5 10.5M12.556 20.82c4.55-3.455 7.582-8.638 8.426-14.404a1.67 1.67 0 0 0-.934-1.767A19.65 19.65 0 0 0 12.001 3a19.65 19.65 0 0 0-8.047 1.647 1.67 1.67 0 0 0-.934 1.767c.844 5.766 3.875 10.95 8.426 14.406a.95.95 0 0 0 1.11 0" />
-      <path d="M20 5c-2 0-4.37 3.304-8 6.644C8.37 8.304 6 5 4 5M17.738 15 13.5 10.5" />
-    </g>
-    <defs>
-      <clipPath id="brand-ctemplar-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandCtemplarIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_82525)">
+<path d="M6.03906 14.831L10.4991 10.5" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12.5563 20.8207C17.1063 17.3647 20.1383 12.1817 20.9823 6.41574C21.0383 6.05985 20.9776 5.69538 20.8093 5.37686C20.6409 5.05834 20.3739 4.8029 20.0483 4.64874C17.512 3.53857 14.7698 2.97696 12.0013 3.00074C9.23288 2.97665 6.49063 3.53791 3.9543 4.64774C3.62867 4.8019 3.3617 5.05734 3.19334 5.37586C3.02497 5.69438 2.96427 6.05885 3.0203 6.41474C3.8643 12.1807 6.8953 17.3647 11.4463 20.8207C11.6078 20.9374 11.802 21.0002 12.0013 21.0002C12.2006 21.0002 12.3948 20.9374 12.5563 20.8207Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M20 5C18 5 15.63 8.304 12 11.644C8.37 8.304 6 5 4 5" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M17.738 15L13.5 10.5" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_82525">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandCtemplarIcon;

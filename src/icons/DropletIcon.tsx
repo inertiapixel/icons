@@ -1,25 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgDropletIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#droplet-icon_svg__a)">
-      <path
-        fill="currentColor"
-        d="M10.709 2.374c-.282.177-.524.41-.71.686l-4.892 7.26c-1.981 3.314-1.22 7.466 1.767 9.882 2.969 2.402 7.286 2.402 10.254 0 2.987-2.416 3.748-6.57 1.795-9.836l-4.92-7.306c-.721-1.075-2.191-1.376-3.294-.686"
-      />
-    </g>
-    <defs>
-      <clipPath id="droplet-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const DropletIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_58199)">
+<path d="M10.7089 2.37395C10.4269 2.55052 10.185 2.78421 9.99887 3.05995L5.10687 10.3199C3.12587 13.6339 3.88687 17.7859 6.87387 20.2019C9.84287 22.6039 14.1599 22.6039 17.1279 20.2019C20.1149 17.7859 20.8759 13.6329 18.9229 10.3659L14.0039 3.05995C13.2819 1.98495 11.8119 1.68395 10.7089 2.37395Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_58199">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgDropletIcon;

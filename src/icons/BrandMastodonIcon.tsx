@@ -1,29 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandMastodonIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#brand-mastodon-icon_svg__a)"
-    >
-      <path d="M18.648 15.254C16.832 17.017 12 16.88 12 16.88a18.3 18.3 0 0 1-3.288-.256q1.69 2.977 8.982 2.475c-1.945 2.013-13.598 5.257-13.668-7.636L4 10.31c0-3.036.023-4.115 1.352-5.633C7.023 2.766 12 3.01 12 3.01s4.977-.243 6.648 1.667C19.977 6.195 20 7.274 20 10.31s-.456 4.074-1.352 4.944" />
-      <path d="M12 11.204V8.278m0 0C12 7.02 11.105 6 10 6S8 7.02 8 8.278V13m4-4.722C12 7.02 12.895 6 14 6s2 1.02 2 2.278V13" />
-    </g>
-    <defs>
-      <clipPath id="brand-mastodon-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandMastodonIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_81967)">
+<path d="M18.648 15.2541C16.832 17.0171 12 16.8801 12 16.8801C10.8985 16.8941 9.79804 16.8084 8.712 16.6241C9.839 18.6091 12.832 19.4341 17.694 19.0991C15.749 21.1121 4.096 24.3561 4.026 11.4631L4 10.3091C4 7.2731 4.023 6.19411 5.352 4.67611C7.023 2.76611 12 3.0101 12 3.0101C12 3.0101 16.977 2.7671 18.648 4.6771C19.977 6.1951 20 7.27411 20 10.3101C20 13.3461 19.544 14.3841 18.648 15.2541Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 11.204V8.278M12 8.278C12 7.02 11.105 6 10 6C8.895 6 8 7.02 8 8.278V13M12 8.278C12 7.02 12.895 6 14 6C15.105 6 16 7.02 16 8.278V13" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_81967">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandMastodonIcon;

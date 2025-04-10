@@ -1,29 +1,20 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandGoogleHomeIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#brand-google-home-icon_svg__a)"
-    >
-      <path d="M19.072 21H4.928A1.93 1.93 0 0 1 3 19.074v-6.857c0-.512.203-1 .566-1.365l7.07-7.063a1.927 1.927 0 0 1 2.727 0l7.071 7.063c.363.362.566.853.566 1.365v6.857A1.93 1.93 0 0 1 19.072 21" />
-      <path d="M7 13v4h10v-4l-5-5M14.8 5.2 3 17M7 17v4M17 17v4" />
-    </g>
-    <defs>
-      <clipPath id="brand-google-home-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandGoogleHomeIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_82198)">
+<path d="M19.072 21.0006H4.928C4.41666 21.0006 3.92627 20.7974 3.5647 20.4359C3.20313 20.0743 3 19.5839 3 19.0726V12.2156C3 11.7036 3.203 11.2156 3.566 10.8506L10.636 3.78755C10.815 3.60846 11.0276 3.4664 11.2616 3.36947C11.4955 3.27254 11.7463 3.22266 11.9995 3.22266C12.2527 3.22266 12.5035 3.27254 12.7374 3.36947C12.9714 3.4664 13.184 3.60846 13.363 3.78755L20.434 10.8506C20.797 11.2126 21 11.7036 21 12.2156V19.0726C21 19.5839 20.7969 20.0743 20.4353 20.4359C20.0737 20.7974 19.5833 21.0006 19.072 21.0006Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M7 13V17H17V13L12 8" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M14.8 5.19922L3 16.9992" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M7 17V21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M17 17V21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_82198">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandGoogleHomeIcon;

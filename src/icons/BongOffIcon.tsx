@@ -1,28 +1,19 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBongOffIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#bong-off-icon_svg__a)"
-    >
-      <path d="M9 5V3h4v6m1.5 1.5L17 8l2 2-2.5 2.5m-.5 3.505a5 5 0 1 1-7-4.589V9M8 3h6M6.102 17h9.8M3 3l18 18" />
-    </g>
-    <defs>
-      <clipPath id="bong-off-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BongOffIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_83593)">
+<path d="M9 5V3H13V9M14.5 10.5L17 8L19 10L16.5 12.5M16 16.005C15.9988 16.9062 15.7541 17.7903 15.2918 18.5638C14.8294 19.3374 14.1666 19.9716 13.3735 20.3993C12.5803 20.8271 11.6862 21.0326 10.7859 20.994C9.88555 20.9554 9.01236 20.6742 8.2587 20.1801C7.50504 19.686 6.89892 18.9975 6.50446 18.1872C6.10999 17.3769 5.94184 16.4751 6.01779 15.5772C6.09375 14.6792 6.41098 13.8184 6.93593 13.086C7.46089 12.3535 8.17406 11.7765 9 11.416V9" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M8 3H14" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M6.10156 17H15.9016" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3 3L21 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_83593">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBongOffIcon;

@@ -1,28 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandGithub1Icon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#brand-github-1-icon_svg__a)">
-      <path
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"
-      />
-    </g>
-    <defs>
-      <clipPath id="brand-github-1-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandGithub1Icon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_82239)">
+<path d="M9 19.0004C4.7 20.4004 4.7 16.5004 3 16.0004M15 21.0004V17.5004C15 16.5004 15.1 16.1004 14.5 15.5004C17.3 15.2004 20 14.1004 20 9.50044C19.9988 8.3054 19.5325 7.15775 18.7 6.30044C19.0905 5.26241 19.0545 4.11207 18.6 3.10044C18.6 3.10044 17.5 2.80044 15.1 4.40044C13.0672 3.87103 10.9328 3.87103 8.9 4.40044C6.5 2.80044 5.4 3.10044 5.4 3.10044C4.94548 4.11207 4.90953 5.26241 5.3 6.30044C4.46745 7.15775 4.00122 8.3054 4 9.50044C4 14.1004 6.7 15.2004 9.5 15.5004C8.9 16.1004 8.9 16.7004 9 17.5004V21.0004" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_82239">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandGithub1Icon;

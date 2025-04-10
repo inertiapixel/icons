@@ -1,28 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgWaveSineIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#wave-sine-icon_svg__a)">
-      <path
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M20.999 12h-2c-.894 0-1.662-.857-1.761-2-.296-3.45-.75-6-2.75-6s-2.5 3.582-2.5 8-.5 8-2.5 8-2.451-2.547-2.748-6c-.1-1.147-.867-2-1.763-2h-2"
-      />
-    </g>
-    <defs>
-      <clipPath id="wave-sine-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const WaveSineIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_59935)">
+<path d="M20.9986 12H18.9986C18.1046 12 17.3366 11.143 17.2376 10C16.9416 6.55 16.4886 4 14.4886 4C12.4886 4 11.9886 7.582 11.9886 12C11.9886 16.418 11.4886 20 9.48856 20C7.48856 20 7.03656 17.453 6.73956 14C6.63956 12.853 5.87256 12 4.97656 12H2.97656" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_59935">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgWaveSineIcon;

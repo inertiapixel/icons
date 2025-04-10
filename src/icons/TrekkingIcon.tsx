@@ -1,29 +1,21 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgTrekkingIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#trekking-icon_svg__a)"
-    >
-      <path d="M11 4a1 1 0 1 0 2 0 1 1 0 0 0-2 0M7 21l2-4M13 21v-4l-3-3 1-6 3 4 3 2" />
-      <path d="m10 14-1.828-1.218a2 2 0 0 1-.83-2.15l.28-1.117A2 2 0 0 1 9.56 8H11l4 1 3-2M17 12v9M16 20h2" />
-    </g>
-    <defs>
-      <clipPath id="trekking-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const TrekkingIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_60967)">
+<path d="M11 4C11 4.26522 11.1054 4.51957 11.2929 4.70711C11.4804 4.89464 11.7348 5 12 5C12.2652 5 12.5196 4.89464 12.7071 4.70711C12.8946 4.51957 13 4.26522 13 4C13 3.73478 12.8946 3.48043 12.7071 3.29289C12.5196 3.10536 12.2652 3 12 3C11.7348 3 11.4804 3.10536 11.2929 3.29289C11.1054 3.48043 11 3.73478 11 4Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M7 21L9 17" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M13 21V17L10 14L11 8L14 12L17 14" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M9.99913 14L8.17213 12.782C7.82873 12.5531 7.56452 12.2237 7.41575 11.8388C7.26697 11.4538 7.24091 11.0323 7.34113 10.632L7.62113 9.515C7.72924 9.08249 7.97876 8.6985 8.33006 8.42401C8.68137 8.14953 9.11431 8.00029 9.56013 8H10.9991L14.9991 9L17.9991 7" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M17 12V21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M16 20H18" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_60967">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgTrekkingIcon;

@@ -1,30 +1,19 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBoxMultiple3Icon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#box-multiple-3-icon_svg__a)"
-    >
-      <path d="M7 5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z" />
-      <path d="M17 17v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h2M14 10a2 2 0 1 0-2-2" />
-      <path d="M12 12a2 2 0 1 0 2-2" />
-    </g>
-    <defs>
-      <clipPath id="box-multiple-3-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BoxMultiple3Icon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_83014)">
+<path d="M7 5C7 4.46957 7.21071 3.96086 7.58579 3.58579C7.96086 3.21071 8.46957 3 9 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H9C8.46957 17 7.96086 16.7893 7.58579 16.4142C7.21071 16.0391 7 15.5304 7 15V5Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M17 17V19C17 19.5304 16.7893 20.0391 16.4142 20.4142C16.0391 20.7893 15.5304 21 15 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V9C3 8.46957 3.21071 7.96086 3.58579 7.58579C3.96086 7.21071 4.46957 7 5 7H7" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M14 10C14.3956 10 14.7822 9.8827 15.1111 9.66294C15.44 9.44318 15.6964 9.13082 15.8478 8.76537C15.9991 8.39992 16.0387 7.99778 15.9616 7.60982C15.8844 7.22186 15.6939 6.86549 15.4142 6.58579C15.1345 6.30608 14.7781 6.1156 14.3902 6.03843C14.0022 5.96126 13.6001 6.00087 13.2346 6.15224C12.8692 6.30362 12.5568 6.55996 12.3371 6.88886C12.1173 7.21776 12 7.60444 12 8" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 12C12 12.3956 12.1173 12.7822 12.3371 13.1111C12.5568 13.44 12.8692 13.6964 13.2346 13.8478C13.6001 13.9991 14.0022 14.0387 14.3902 13.9616C14.7781 13.8844 15.1345 13.6939 15.4142 13.4142C15.6939 13.1345 15.8844 12.7781 15.9616 12.3902C16.0387 12.0022 15.9991 11.6001 15.8478 11.2346C15.6964 10.8692 15.44 10.5568 15.1111 10.3371C14.7822 10.1173 14.3956 10 14 10" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_83014">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBoxMultiple3Icon;

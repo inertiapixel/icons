@@ -1,29 +1,23 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgUfoOffIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#ufo-off-icon_svg__a)"
-    >
-      <path d="M16.949 9.01c3.02.739 5.05 2.123 5.05 3.714 0 1.08-.931 2.063-2.468 2.814m-3 1c-1.36.295-2.9.462-4.531.462-5.52 0-10-1.909-10-4.276C2 11.134 4.04 9.739 7.07 9" />
-      <path d="M14.69 10.686C16.078 10.331 17 9.71 17 9v-.035C17 6.223 14.761 4 12 4c-1.125 0-2.164.37-3 .992M7.293 7.289A4.9 4.9 0 0 0 7 8.965V9c0 .961 1.696 1.764 3.956 1.956M15 17l2 3M8.5 17 7 20M12 14h.01M7 13h.01M17 13h.01M3 3l18 18" />
-    </g>
-    <defs>
-      <clipPath id="ufo-off-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const UfoOffIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_60795)">
+<path d="M16.949 9.01C19.969 9.749 21.999 11.133 21.999 12.724C21.999 13.804 21.068 14.787 19.531 15.538M16.531 16.538C15.171 16.833 13.631 17 12 17C6.48 17 2 15.091 2 12.724C2 11.134 4.04 9.739 7.07 9" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M14.69 10.686C16.078 10.331 17 9.71 17 9V8.965C17 6.223 14.761 4 12 4C10.875 4 9.836 4.37 9 4.992M7.293 7.289C7.09884 7.82644 6.9997 8.39357 7 8.965V9C7 9.961 8.696 10.764 10.956 10.956" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M15 17L17 20" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M8.5 17L7 20" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 14H12.01" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M7 13H7.01" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M17 13H17.01" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3 3L21 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_60795">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgUfoOffIcon;

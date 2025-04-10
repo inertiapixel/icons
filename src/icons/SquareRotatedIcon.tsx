@@ -1,25 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgSquareRotatedIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#square-rotated-icon_svg__a)">
-      <path
-        fill="currentColor"
-        d="m9.795 2.895-6.9 6.9c-1.172 1.17-1.172 3.243 0 4.414l6.9 6.9c1.17 1.172 3.243 1.172 4.414 0l6.9-6.9c1.172-1.171 1.172-3.243 0-4.414l-6.9-6.9c-1.171-1.172-3.243-1.172-4.414 0"
-      />
-    </g>
-    <defs>
-      <clipPath id="square-rotated-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const SquareRotatedIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_57332)">
+<path d="M9.79463 2.89463L2.89463 9.79463C1.72263 10.9656 1.72263 13.0376 2.89463 14.2086L9.79463 21.1086C10.9656 22.2806 13.0376 22.2806 14.2086 21.1086L21.1086 14.2086C22.2806 13.0376 22.2806 10.9656 21.1086 9.79463L14.2086 2.89463C13.0376 1.72263 10.9656 1.72263 9.79463 2.89463Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_57332">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgSquareRotatedIcon;

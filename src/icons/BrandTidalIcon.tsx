@@ -1,28 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandTidalIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#brand-tidal-icon_svg__a)">
-      <path
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M8.667 9.25 5.333 6 2 9.25l3.333 3.25zm0 0L12 6l3.333 3.25m-6.666 0L12 12.5m3.333-3.25L18.667 6 22 9.25l-3.333 3.25zm0 0L12 12.5m0 0 3.333 3.25L12 19l-3.333-3.25z"
-      />
-    </g>
-    <defs>
-      <clipPath id="brand-tidal-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandTidalIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_81359)">
+<path d="M8.667 9.25L5.333 6L2 9.25L5.333 12.5L8.667 9.25ZM8.667 9.25L12 6L15.333 9.25M8.667 9.25L12 12.5M15.333 9.25L18.667 6L22 9.25L18.667 12.5L15.333 9.25ZM15.333 9.25L12 12.5M12 12.5L15.333 15.75L12 19L8.667 15.75L12 12.5Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_81359">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandTidalIcon;

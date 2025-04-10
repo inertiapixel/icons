@@ -1,30 +1,18 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandToyotaIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#brand-toyota-icon_svg__a)"
-    >
-      <path d="M2 12c0 1.857 1.054 3.637 2.929 4.95S9.348 19 12 19s5.196-.738 7.071-2.05C20.946 15.637 22 13.857 22 12s-1.054-3.637-2.929-4.95C17.196 5.738 14.652 5 12 5s-5.196.737-7.071 2.05S2 10.143 2 12" />
-      <path d="M9 12c0 3.866 1.343 7 3 7s3-3.134 3-7-1.343-7-3-7-3 3.134-3 7" />
-      <path d="M6.415 6.191C5.527 6.694 5 7.321 5 8.001c0 1.656 3.134 3 7 3s7-1.344 7-3c0-.679-.525-1.305-1.41-1.807" />
-    </g>
-    <defs>
-      <clipPath id="brand-toyota-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandToyotaIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_81341)">
+<path d="M2 12C2 13.8565 3.05357 15.637 4.92893 16.9497C6.8043 18.2625 9.34784 19 12 19C14.6522 19 17.1957 18.2625 19.0711 16.9497C20.9464 15.637 22 13.8565 22 12C22 10.1435 20.9464 8.36301 19.0711 7.05025C17.1957 5.7375 14.6522 5 12 5C9.34784 5 6.8043 5.7375 4.92893 7.05025C3.05357 8.36301 2 10.1435 2 12Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M9 12C9 15.866 10.343 19 12 19C13.657 19 15 15.866 15 12C15 8.134 13.657 5 12 5C10.343 5 9 8.134 9 12Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M6.415 6.19141C5.527 6.69441 5 7.32141 5 8.00041C5 9.65741 8.134 11.0004 12 11.0004C15.866 11.0004 19 9.65741 19 8.00041C19 7.32241 18.475 6.69641 17.59 6.19441" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_81341">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandToyotaIcon;

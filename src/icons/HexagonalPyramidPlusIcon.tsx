@@ -1,28 +1,20 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgHexagonalPyramidPlusIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#hexagonal-pyramid-plus-icon_svg__a)"
-    >
-      <path d="m18.642 12.04-5.804-9.582a.995.995 0 0 0-1.676 0L3.316 15.412a1.99 1.99 0 0 0 .267 2.483l2.527 2.523c.374.373.88.583 1.408.583H12.5M12 2 7 20.9M12 2l3.304 12.489M16 19h6M19 16v6" />
-    </g>
-    <defs>
-      <clipPath id="hexagonal-pyramid-plus-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const HexagonalPyramidPlusIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_71871)">
+<path d="M18.6424 12.0407L12.8384 2.4577C12.7483 2.31732 12.6243 2.20185 12.4779 2.12188C12.3314 2.04191 12.1673 2 12.0004 2C11.8336 2 11.6694 2.04191 11.523 2.12188C11.3766 2.20185 11.2526 2.31732 11.1624 2.4577L3.31644 15.4117C3.07047 15.7938 2.96282 16.2486 3.0114 16.7004C3.05998 17.1521 3.26187 17.5737 3.58344 17.8947L6.11044 20.4177C6.48444 20.7907 6.99044 21.0007 7.51844 21.0007H12.5004" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 2L7 20.9" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 2L15.304 14.489" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M16 19H22" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M19 16V22" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_71871">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgHexagonalPyramidPlusIcon;

@@ -1,28 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgInfinityIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#infinity-icon_svg__a)">
-      <path
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M12 12a10 10 0 0 1-2.171 2.828 4 4 0 1 1 0-5.656A10 10 0 0 1 12 12m0 0a10 10 0 0 1 2.173-2.828 4 4 0 1 1 0 5.656A10 10 0 0 1 12 12"
-      />
-    </g>
-    <defs>
-      <clipPath id="infinity-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const InfinityIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_71362)">
+<path d="M12.0009 12C11.4521 13.0652 10.7164 14.0231 9.82885 14.828C9.26949 15.3875 8.55676 15.7686 7.78081 15.9231C7.00485 16.0775 6.20052 15.9984 5.46955 15.6956C4.73857 15.3929 4.11378 14.8802 3.67421 14.2224C3.23463 13.5646 3 12.7912 3 12C3 11.2088 3.23463 10.4354 3.67421 9.7776C4.11378 9.11977 4.73857 8.60708 5.46955 8.30437C6.20052 8.00165 7.00485 7.92251 7.78081 8.07695C8.55676 8.23139 9.26949 8.61247 9.82885 9.172C10.7164 9.97693 11.4521 10.9348 12.0009 12ZM12.0009 12C12.5496 10.9348 13.2853 9.97693 14.1729 9.172C14.7322 8.61247 15.4449 8.23139 16.2209 8.07695C16.9969 7.92251 17.8012 8.00165 18.5322 8.30437C19.2631 8.60708 19.8879 9.11977 20.3275 9.7776C20.7671 10.4354 21.0017 11.2088 21.0017 12C21.0017 12.7912 20.7671 13.5646 20.3275 14.2224C19.8879 14.8802 19.2631 15.3929 18.5322 15.6956C17.8012 15.9984 16.9969 16.0775 16.2209 15.9231C15.4449 15.7686 14.7322 15.3875 14.1729 14.828C13.2853 14.0231 12.5496 13.0652 12.0009 12Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_71362">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgInfinityIcon;

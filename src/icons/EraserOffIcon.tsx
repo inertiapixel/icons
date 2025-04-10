@@ -1,28 +1,18 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgEraserOffIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#eraser-off-icon_svg__a)"
-    >
-      <path d="m3 3 18 18M19 20H8.5l-4.21-4.3a1 1 0 0 1 0-1.41l5-4.993m2.01-2.01 3-3a1 1 0 0 1 1.41 0l5 5a1 1 0 0 1 0 1.41q-2.125 2.146-2.97 3m-2.02 2.043-4.211 4.256M18 13.3 11.7 7" />
-    </g>
-    <defs>
-      <clipPath id="eraser-off-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const EraserOffIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_74820)">
+<path d="M3 3L21 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M19.0008 19.9999H8.50079L4.29079 15.6999C4.10454 15.5125 4 15.2591 4 14.9949C4 14.7307 4.10454 14.4772 4.29079 14.2899L9.29079 9.29689M11.2998 7.28689L14.2998 4.28689C14.4872 4.10064 14.7406 3.99609 15.0048 3.99609C15.269 3.99609 15.5224 4.10064 15.7098 4.28689L20.7098 9.28689C20.896 9.47425 21.0006 9.7277 21.0006 9.99189C21.0006 10.2561 20.896 10.5095 20.7098 10.6969C19.2928 12.1279 18.3038 13.1289 17.7398 13.6969M15.7198 15.7399L11.5088 19.9959" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M17.9992 13.3L11.6992 7" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_74820">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgEraserOffIcon;

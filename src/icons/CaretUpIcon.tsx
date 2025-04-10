@@ -1,25 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgCaretUpIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#caret-up-icon_svg__a)">
-      <path
-        fill="currentColor"
-        d="M11.295 7.293a1 1 0 0 1 1.32-.083l.094.083 6 6 .083.094.054.077.054.096.017.036.027.067.032.108.01.053.01.06.004.057.002.059-.002.059-.005.058-.01.06-.01.052-.031.108-.027.067-.07.132-.065.09-.073.08-.094.084-.077.054-.096.054-.036.017-.067.027-.108.032-.053.01-.06.01-.057.004L18 15h-12c-.851 0-1.296-.986-.782-1.623l.076-.084z"
-      />
-    </g>
-    <defs>
-      <clipPath id="caret-up-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const CaretUpIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_58626)">
+<path d="M11.2947 7.29286C11.4669 7.12068 11.696 7.01725 11.939 7.00197C12.182 6.98669 12.4223 7.06061 12.6147 7.20986L12.7087 7.29286L18.7087 13.2929L18.7917 13.3869L18.8457 13.4639L18.8997 13.5599L18.9167 13.5959L18.9437 13.6629L18.9757 13.7709L18.9857 13.8239L18.9957 13.8839L18.9997 13.9409L19.0017 13.9999L18.9997 14.0589L18.9947 14.1169L18.9857 14.1769L18.9757 14.2289L18.9437 14.3369L18.9167 14.4039L18.8467 14.5359L18.7817 14.6259L18.7087 14.7069L18.6147 14.7899L18.5377 14.8439L18.4417 14.8979L18.4057 14.9149L18.3387 14.9419L18.2307 14.9739L18.1777 14.9839L18.1177 14.9939L18.0607 14.9979L18.0017 14.9999H6.0017C5.1497 14.9999 4.7047 14.0139 5.2187 13.3769L5.2947 13.2929L11.2947 7.29286Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_58626">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgCaretUpIcon;

@@ -1,29 +1,20 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgDeviceGamepad2Icon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#device-gamepad-2-icon_svg__a)"
-    >
-      <path d="M11.998 5h3.5a5 5 0 1 1 0 10h-5.5l-4.015 4.227a2.3 2.3 0 0 1-3.923-2.035l1.634-8.173A5 5 0 0 1 8.598 5z" />
-      <path d="m14 14.998 4.07 4.284a2.3 2.3 0 0 0 3.925-2.023l-1.6-8.232M8 9v2M7 10h2M14 10h2" />
-    </g>
-    <defs>
-      <clipPath id="device-gamepad-2-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const DeviceGamepad2Icon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_76619)">
+<path d="M11.9983 5H15.4983C16.8244 5 18.0961 5.52678 19.0338 6.46447C19.9715 7.40215 20.4983 8.67392 20.4983 10C20.4983 11.3261 19.9715 12.5979 19.0338 13.5355C18.0961 14.4732 16.8244 15 15.4983 15H9.99829L5.98329 19.227C5.63985 19.5886 5.18819 19.8288 4.69637 19.9113C4.20455 19.9939 3.69923 19.9143 3.25655 19.6847C2.81387 19.4551 2.45781 19.0878 2.24205 18.6382C2.02628 18.1886 1.96249 17.681 2.06029 17.192L3.69429 9.019C3.9211 7.88546 4.53368 6.86553 5.42778 6.13278C6.32189 5.40003 7.44228 4.99973 8.59829 5H11.9983Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M14 14.9983L18.07 19.2823C18.4128 19.643 18.8632 19.8828 19.3538 19.9657C19.8444 20.0487 20.3487 19.9703 20.7909 19.7423C21.2332 19.5144 21.5896 19.1492 21.8067 18.7015C22.0238 18.2538 22.0899 17.7478 21.995 17.2593L20.395 9.02734" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M8 9V11" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M7 10H9" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M14 10H16" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_76619">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgDeviceGamepad2Icon;

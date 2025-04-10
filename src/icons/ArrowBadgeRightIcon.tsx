@@ -1,25 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgArrowBadgeRightIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#arrow-badge-right-icon_svg__a)">
-      <path
-        fill="currentColor"
-        d="m7 6-.111.006a1 1 0 0 0-.67 1.619L9.722 12l-3.5 4.375A1 1 0 0 0 7 18h6a1 1 0 0 0 .78-.375l4-5a1 1 0 0 0 0-1.25l-4-5A1 1 0 0 0 13 6z"
-      />
-    </g>
-    <defs>
-      <clipPath id="arrow-badge-right-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const ArrowBadgeRightIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_59141)">
+<path d="M7.00056 6L6.88856 6.006C6.71073 6.02594 6.54151 6.09323 6.39855 6.20086C6.25559 6.30848 6.14413 6.45249 6.0758 6.61787C6.00746 6.78325 5.98475 6.96394 6.01004 7.14108C6.03532 7.31823 6.10768 7.48535 6.21956 7.625L9.72056 12L6.22056 16.375C6.10284 16.522 6.02904 16.6993 6.00765 16.8864C5.98626 17.0736 6.01816 17.2629 6.09966 17.4327C6.18116 17.6025 6.30896 17.7459 6.46835 17.8462C6.62773 17.9466 6.81221 17.9999 7.00056 18H13.0006C13.1504 17.9999 13.2982 17.9662 13.4332 17.9013C13.5682 17.8363 13.6869 17.7419 13.7806 17.625L17.7806 12.625C17.9226 12.4476 17.9999 12.2272 17.9999 12C17.9999 11.7728 17.9226 11.5524 17.7806 11.375L13.7806 6.375C13.6869 6.25806 13.5682 6.16365 13.4332 6.09875C13.2982 6.03384 13.1504 6.00009 13.0006 6H7.00056Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_59141">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgArrowBadgeRightIcon;

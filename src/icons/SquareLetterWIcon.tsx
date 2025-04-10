@@ -1,25 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgSquareLetterWIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#square-letter-w-icon_svg__a)">
-      <path
-        fill="currentColor"
-        d="M19 2a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3zm-4.992 5.876-.52 4.153-.56-1.4c-.319-.799-1.41-.837-1.803-.114l-.053.114-.561 1.4-.519-4.153a1 1 0 0 0-1-.876l-.116.008a1 1 0 0 0-.868 1.116l1 8c.128 1.025 1.537 1.207 1.92.247L12 13.693l1.072 2.678c.383.96 1.792.778 1.92-.247l1-8a1 1 0 0 0-1.984-.248"
-      />
-    </g>
-    <defs>
-      <clipPath id="square-letter-w-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const SquareLetterWIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_57377)">
+<path d="M19 2C19.7956 2 20.5587 2.31607 21.1213 2.87868C21.6839 3.44129 22 4.20435 22 5V19C22 19.7956 21.6839 20.5587 21.1213 21.1213C20.5587 21.6839 19.7956 22 19 22H5C4.20435 22 3.44129 21.6839 2.87868 21.1213C2.31607 20.5587 2 19.7956 2 19V5C2 4.20435 2.31607 3.44129 2.87868 2.87868C3.44129 2.31607 4.20435 2 5 2H19ZM14.008 7.876L13.488 12.029L12.928 10.629C12.609 9.83 11.518 9.792 11.125 10.515L11.072 10.629L10.511 12.029L9.992 7.876C9.96162 7.63281 9.84299 7.40925 9.65864 7.24777C9.4743 7.08628 9.23707 6.99811 8.992 7L8.876 7.008C8.61294 7.04096 8.37373 7.17703 8.21096 7.3863C8.04819 7.59558 7.97519 7.86092 8.008 8.124L9.008 16.124C9.136 17.149 10.545 17.331 10.928 16.371L12 13.693L13.072 16.371C13.455 17.331 14.864 17.149 14.992 16.124L15.992 8.124C16.0182 7.8642 15.9418 7.60445 15.7791 7.40024C15.6164 7.19604 15.3802 7.06359 15.1211 7.0312C14.862 6.99882 14.6005 7.06906 14.3925 7.22692C14.1845 7.38478 14.0465 7.61774 14.008 7.876Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_57377">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgSquareLetterWIcon;

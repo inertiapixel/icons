@@ -1,28 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgSpiralIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#spiral-icon_svg__a)">
-      <path
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M10 12.057a1.9 1.9 0 0 0 .614.743c1.06.713 2.472.112 3.043-.92.839-1.512-.022-3.367-1.525-4.08-2-.95-4.371.155-5.24 2.087-1.095 2.432.29 5.248 2.71 6.246 2.93 1.208 6.283-.418 7.438-3.255 1.36-3.343-.557-7.134-3.896-8.41-3.855-1.474-8.2.68-9.636 4.422-1.63 4.253.823 9.024 5.082 10.576 4.778 1.74 10.118-.941 11.833-5.59.336-.902.53-1.851.577-2.813"
-      />
-    </g>
-    <defs>
-      <clipPath id="spiral-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const SpiralIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_63220)">
+<path d="M9.99986 12.0569C10.1373 12.3532 10.3487 12.6091 10.6139 12.7999C11.6739 13.5129 13.0859 12.9119 13.6569 11.8809C14.4959 10.3679 13.6349 8.51291 12.1319 7.80091C10.1319 6.85091 7.76086 7.95491 6.89186 9.88691C5.79686 12.3189 7.18186 15.1349 9.60186 16.1329C12.5329 17.3409 15.8849 15.7149 17.0399 12.8779C18.3999 9.53491 16.4829 5.74391 13.1439 4.46791C9.28886 2.99391 4.94386 5.14791 3.50786 8.88991C1.87786 13.1429 4.33086 17.9139 8.58986 19.4659C13.3679 21.2059 18.7079 18.5249 20.4229 13.8759C20.7588 12.9735 20.9535 12.0247 20.9999 11.0629" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_63220">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgSpiralIcon;

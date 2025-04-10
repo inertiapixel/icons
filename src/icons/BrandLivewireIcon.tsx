@@ -1,31 +1,19 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandLivewireIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#brand-livewire-icon_svg__a)"
-    >
-      <path d="M20.982 18.777C20.61 19.325 20.33 20 19.576 20c-1.269 0-1.337-1.913-2.607-1.913S15.769 20 14.499 20c-1.268 0-1.337-1.913-2.607-1.913-1.269 0-1.2 1.913-2.47 1.913-1.268 0-1.337-1.913-2.607-1.913S5.615 20 4.345 20c-.398 0-.679-.189-.915-.448A10.4 10.4 0 0 1 2 14.262C2 8.593 6.477 4 12 4c5.524 0 10 4.594 10 10.261 0 1.62-.366 3.152-1.018 4.516" />
-      <path d="M20.982 18.777C20.61 19.325 20.33 20 19.576 20c-1.269 0-1.337-1.913-2.607-1.913S15.769 20 14.499 20c-1.268 0-1.337-1.913-2.607-1.913-1.269 0-1.2 1.913-2.47 1.913-1.268 0-1.337-1.913-2.607-1.913S5.615 20 4.345 20c-.398 0-.679-.189-.915-.448A10.4 10.4 0 0 1 2 14.262C2 8.593 6.477 4 12 4c5.524 0 10 4.594 10 10.261 0 1.62-.366 3.152-1.018 4.516" />
-      <path d="M11.5 16c3.167 0 4.5-1.748 4.5-4.231C16 9.285 13.986 7 11.5 7 9.015 7 7 9.286 7 11.769S8.333 16 11.5 16" />
-      <path d="M10 11a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
-    </g>
-    <defs>
-      <clipPath id="brand-livewire-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandLivewireIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_81995)">
+<path d="M20.982 18.777C20.61 19.325 20.33 20 19.576 20C18.307 20 18.239 18.087 16.969 18.087C15.699 18.087 15.769 20 14.499 20C13.231 20 13.162 18.087 11.892 18.087C10.623 18.087 10.692 20 9.42203 20C8.15403 20 8.08503 18.087 6.81503 18.087C5.54503 18.087 5.61503 20 4.34503 20C3.94703 20 3.66603 19.811 3.43003 19.552C2.48965 17.9479 1.99589 16.1214 2.00003 14.262C2.00003 8.593 6.47703 4 12 4C17.524 4 22 8.594 22 14.261C22 15.881 21.634 17.413 20.982 18.777Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M20.982 18.777C20.61 19.325 20.33 20 19.576 20C18.307 20 18.239 18.087 16.969 18.087C15.699 18.087 15.769 20 14.499 20C13.231 20 13.162 18.087 11.892 18.087C10.623 18.087 10.692 20 9.42203 20C8.15403 20 8.08503 18.087 6.81503 18.087C5.54503 18.087 5.61503 20 4.34503 20C3.94703 20 3.66603 19.811 3.43003 19.552C2.48965 17.9479 1.99589 16.1214 2.00003 14.262C2.00003 8.593 6.47703 4 12 4C17.524 4 22 8.594 22 14.261C22 15.881 21.634 17.413 20.982 18.777Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M11.5 16C14.667 16 16 14.252 16 11.769C16 9.285 13.986 7 11.5 7C9.015 7 7 9.286 7 11.769C7 14.252 8.333 16 11.5 16Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M10 11C10.2652 11 10.5196 10.8946 10.7071 10.7071C10.8946 10.5196 11 10.2652 11 10C11 9.73478 10.8946 9.48043 10.7071 9.29289C10.5196 9.10536 10.2652 9 10 9C9.73478 9 9.48043 9.10536 9.29289 9.29289C9.10536 9.48043 9 9.73478 9 10C9 10.2652 9.10536 10.5196 9.29289 10.7071C9.48043 10.8946 9.73478 11 10 11Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_81995">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandLivewireIcon;

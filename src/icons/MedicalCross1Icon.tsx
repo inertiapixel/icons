@@ -1,28 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgMedicalCross1Icon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#medical-cross-1-icon_svg__a)">
-      <path
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M12.998 3a1 1 0 0 1 1 1v4.535l3.928-2.267a1 1 0 0 1 1.366.366l1 1.732a1 1 0 0 1-.366 1.366L16 12l3.927 2.269a1 1 0 0 1 .366 1.366l-1 1.732a1 1 0 0 1-1.366.366l-3.928-2.269V20a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-4.536L6.07 17.732a1 1 0 0 1-1.366-.366l-1-1.732a1 1 0 0 1 .366-1.366L7.997 12 4.07 9.732a1 1 0 0 1-.366-1.366l1-1.732a1 1 0 0 1 1.366-.366l3.928 2.267V4a1 1 0 0 1 1-1z"
-      />
-    </g>
-    <defs>
-      <clipPath id="medical-cross-1-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const MedicalCross1Icon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_68986)">
+<path d="M12.9983 3C13.2635 3 13.5179 3.10536 13.7054 3.29289C13.8929 3.48043 13.9983 3.73478 13.9983 4V8.535L17.9263 6.268C18.156 6.1354 18.4289 6.09946 18.6851 6.1681C18.9413 6.23674 19.1597 6.40433 19.2923 6.634L20.2923 8.366C20.4249 8.59568 20.4608 8.86863 20.3922 9.1248C20.3235 9.38097 20.156 9.59939 19.9263 9.732L15.9993 12L19.9263 14.269C20.156 14.4016 20.3235 14.62 20.3922 14.8762C20.4608 15.1324 20.4249 15.4053 20.2923 15.635L19.2923 17.367C19.1597 17.5967 18.9413 17.7643 18.6851 17.8329C18.4289 17.9015 18.156 17.8656 17.9263 17.733L13.9983 15.464V20C13.9983 20.2652 13.8929 20.5196 13.7054 20.7071C13.5179 20.8946 13.2635 21 12.9983 21H10.9983C10.7331 21 10.4787 20.8946 10.2912 20.7071C10.1036 20.5196 9.99828 20.2652 9.99828 20V15.464L6.07028 17.732C5.84061 17.8646 5.56766 17.9005 5.31149 17.8319C5.05531 17.7633 4.8369 17.5957 4.70428 17.366L3.70428 15.634C3.57168 15.4043 3.53575 15.1314 3.60439 14.8752C3.67302 14.619 3.84061 14.4006 4.07028 14.268L7.99728 12L4.07028 9.732C3.84061 9.59939 3.67302 9.38097 3.60439 9.1248C3.53575 8.86863 3.57168 8.59568 3.70428 8.366L4.70428 6.634C4.8369 6.40433 5.05531 6.23674 5.31149 6.1681C5.56766 6.09946 5.84061 6.1354 6.07028 6.268L9.99828 8.535V4C9.99828 3.73478 10.1036 3.48043 10.2912 3.29289C10.4787 3.10536 10.7331 3 10.9983 3H12.9983Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_68986">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgMedicalCross1Icon;

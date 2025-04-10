@@ -1,29 +1,20 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBasketHeartIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#basket-heart-icon_svg__a)"
-    >
-      <path d="m17 10-2-6M7 10l2-6M10.5 20H7.242a3 3 0 0 1-2.965-2.544l-1.255-7.152A2 2 0 0 1 5 8h14a2 2 0 0 1 1.976 2.304l-.143.817" />
-      <path d="M12.603 12.093a2 2 0 0 0-2.233 3.066M18 22l3.35-3.284a2.14 2.14 0 0 0 .005-3.071 2.24 2.24 0 0 0-3.129-.006l-.224.22-.223-.22a2.24 2.24 0 0 0-3.128-.006 2.143 2.143 0 0 0-.006 3.07z" />
-    </g>
-    <defs>
-      <clipPath id="basket-heart-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BasketHeartIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_84146)">
+<path d="M17 10L15 4" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M7 10L9 4" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M10.4992 20H7.24324C6.52664 20 5.83372 19.7434 5.28987 19.2768C4.74602 18.8102 4.38716 18.1643 4.27824 17.456L3.02324 10.304C2.97941 10.019 2.99773 9.72786 3.07694 9.45059C3.15616 9.17331 3.2944 8.91645 3.48218 8.6976C3.66997 8.47876 3.90286 8.30311 4.16488 8.1827C4.42691 8.06229 4.71187 7.99997 5.00024 8H18.9992C19.2876 7.99997 19.5726 8.06229 19.8346 8.1827C20.0966 8.30311 20.3295 8.47876 20.5173 8.6976C20.7051 8.91645 20.8433 9.17331 20.9225 9.45059C21.0017 9.72786 21.0201 10.019 20.9762 10.304L20.8332 11.121" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12.6031 12.0931C12.2034 11.9667 11.774 11.9691 11.3756 12.1C10.9773 12.2309 10.6302 12.4836 10.3833 12.8226C10.1365 13.1615 10.0024 13.5694 10 13.9887C9.99766 14.408 10.1271 14.8174 10.3701 15.1591" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M18.0001 21.9996L21.3501 18.7156C21.5556 18.5163 21.719 18.2778 21.8307 18.0142C21.9425 17.7507 22.0003 17.4674 22.0007 17.1812C22.0012 16.8949 21.9443 16.6115 21.8334 16.3476C21.7225 16.0837 21.5599 15.8446 21.3551 15.6446C20.9373 15.236 20.3763 15.0066 19.7918 15.0055C19.2074 15.0044 18.6455 15.2316 18.2261 15.6386L18.0021 15.8586L17.7791 15.6386C17.3613 15.2303 16.8006 15.0011 16.2163 15C15.6321 14.9989 15.0705 15.2259 14.6511 15.6326C14.4456 15.8319 14.2821 16.0703 14.1703 16.3338C14.0585 16.5974 14.0006 16.8806 14 17.1669C13.9994 17.4531 14.0562 17.7366 14.167 18.0005C14.2778 18.2645 14.4404 18.5035 14.6451 18.7036L18.0001 21.9996Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_84146">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBasketHeartIcon;

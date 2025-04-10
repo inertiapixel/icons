@@ -1,29 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBellRinging21Icon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#bell-ringing-2-1-icon_svg__a)"
-    >
-      <path d="M19.365 4.636a2 2 0 0 1 0 2.828 7 7 0 0 1-1.414 7.072l-2.122 2.12a4 4 0 0 0-.707 3.536L3.809 8.88a4 4 0 0 0 3.535-.707l2.12-2.123a7 7 0 0 1 7.073-1.414 2 2 0 0 1 2.828 0" />
-      <path d="m7.344 12.414-.707.707a3 3 0 1 0 4.243 4.243l.707-.707" />
-    </g>
-    <defs>
-      <clipPath id="bell-ringing-2-1-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BellRinging21Icon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_83847)">
+<path d="M19.3646 4.63635C19.7395 5.01141 19.9502 5.52003 19.9502 6.05035C19.9502 6.58068 19.7395 7.0893 19.3646 7.46435C19.7929 8.66049 19.8875 9.95063 19.6384 11.1965C19.3893 12.4423 18.8059 13.5969 17.9506 14.5364L15.8286 16.6564C15.4421 17.1492 15.1768 17.726 15.054 18.3402C14.9312 18.9543 14.9544 19.5888 15.1216 20.1924L3.80859 8.88035C4.41204 9.04741 5.04627 9.07047 5.66026 8.94767C6.27424 8.82487 6.85082 8.55965 7.34359 8.17335L9.46459 6.05035C10.4041 5.19507 11.5586 4.6116 12.8045 4.36251C14.0503 4.11341 15.3405 4.20807 16.5366 4.63635C16.9116 4.26141 17.4203 4.05078 17.9506 4.05078C18.4809 4.05078 18.9895 4.26141 19.3646 4.63635Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M7.34357 12.4141L6.63657 13.1211C6.07391 13.6837 5.75781 14.4468 5.75781 15.2426C5.75781 16.0383 6.07391 16.8014 6.63657 17.3641C7.19922 17.9267 7.96235 18.2428 8.75807 18.2428C9.55378 18.2428 10.3169 17.9267 10.8796 17.3641L11.5866 16.6571" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_83847">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBellRinging21Icon;

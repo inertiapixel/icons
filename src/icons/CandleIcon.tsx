@@ -1,22 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgCandleIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g fill="currentColor" clipPath="url(#candle-icon_svg__a)">
-      <path d="M14 10h-4a2 2 0 0 0-2 2v9a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-9a2 2 0 0 0-2-2M11.253 2.334l-1.55 1.737c-1.042 1.277-.898 3.097.296 4.166a3 3 0 0 0 4.195-4.28l-1.452-1.624a1 1 0 0 0-1.49.001" />
-    </g>
-    <defs>
-      <clipPath id="candle-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const CandleIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_58664)">
+<path d="M14 10H10C9.46957 10 8.96086 10.2107 8.58579 10.5858C8.21071 10.9609 8 11.4696 8 12V21C8 21.2652 8.10536 21.5196 8.29289 21.7071C8.48043 21.8946 8.73478 22 9 22H15C15.2652 22 15.5196 21.8946 15.7071 21.7071C15.8946 21.5196 16 21.2652 16 21V12C16 11.4696 15.7893 10.9609 15.4142 10.5858C15.0391 10.2107 14.5304 10 14 10Z" fill="black"/>
+<path d="M11.2525 2.33399L9.70251 4.07099C8.66051 5.34799 8.80451 7.168 9.99851 8.237C10.5738 8.75163 11.3254 9.0247 12.0969 8.99941C12.8684 8.97412 13.6005 8.65242 14.1408 8.10121C14.6812 7.55 14.9884 6.81171 14.9984 6.03986C15.0084 5.26801 14.7204 4.52201 14.1945 3.95699L12.7425 2.33299C12.6486 2.22814 12.5337 2.14428 12.4052 2.0869C12.2767 2.02952 12.1375 1.99991 11.9968 2C11.8561 2.00009 11.7169 2.02989 11.5885 2.08745C11.4601 2.145 11.3462 2.22902 11.2525 2.33399Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_58664">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgCandleIcon;

@@ -1,29 +1,20 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgGavelIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#gavel-icon_svg__a)"
-    >
-      <path d="m13 10 7.383 7.418c.823.82.823 2.148 0 2.967a2.11 2.11 0 0 1-2.976 0L10 13M6 9l4 4M13 10 9 6M3 21h7" />
-      <path d="m6.793 15.793-3.586-3.586a1 1 0 0 1 0-1.414L5.5 8.5 6 9l3-3-.5-.5 2.293-2.293a1 1 0 0 1 1.414 0l3.586 3.586a1 1 0 0 1 0 1.414L13.5 10.5 13 10l-3 3 .5.5-2.293 2.293a1 1 0 0 1-1.414 0" />
-    </g>
-    <defs>
-      <clipPath id="gavel-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const GavelIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_73020)">
+<path d="M13 10L20.383 17.418C21.206 18.238 21.206 19.566 20.383 20.385C19.9876 20.7783 19.4527 20.999 18.895 20.999C18.3373 20.999 17.8024 20.7783 17.407 20.385L10 13" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M6 9L10 13" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M13 10L9 6" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3 21H10" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M6.79285 15.7928L3.20685 12.2068C3.01938 12.0193 2.91406 11.765 2.91406 11.4998C2.91406 11.2347 3.01938 10.9804 3.20685 10.7928L5.49985 8.49985L5.99985 8.99985L8.99985 5.99985L8.49985 5.49985L10.7928 3.20685C10.9804 3.01938 11.2347 2.91406 11.4998 2.91406C11.765 2.91406 12.0193 3.01938 12.2068 3.20685L15.7928 6.79285C15.9803 6.98038 16.0856 7.23468 16.0856 7.49985C16.0856 7.76501 15.9803 8.01932 15.7928 8.20685L13.4998 10.4998L12.9998 9.99985L9.99985 12.9998L10.4998 13.4998L8.20685 15.7928C8.01932 15.9803 7.76501 16.0856 7.49985 16.0856C7.23468 16.0856 6.98038 15.9803 6.79285 15.7928Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_73020">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgGavelIcon;

@@ -1,29 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgMichelinStarGreenIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#michelin-star-green-icon_svg__a)"
-    >
-      <path d="M12.432 17.95c.863 1.543 2.589 1.975 4.13 1.111s1.972-2.594 1.048-4.138c-.185-.309-.309-.556-.494-.74.247.06.555.06.925.06 1.726 0 2.959-1.234 2.959-2.963s-1.233-2.965-3.02-2.965c-.37 0-.617 0-.925.062.185-.185.308-.432.493-.74.863-1.545.431-3.274-1.048-4.138-1.541-.865-3.205-.433-4.13 1.111-.185.31-.308.556-.432.803-.123-.247-.246-.494-.431-.803-.802-1.605-2.528-2.038-4.007-1.173-1.541.865-1.973 2.594-1.048 4.137.185.31.308.556.493.741-.246-.06-.555-.06-.924-.06C4.233 8.254 3 9.488 3 11.217s1.233 2.964 3.02 2.964" />
-      <path d="M4.074 21c4.286-2.756 5.9-5.254 7.927-9" />
-    </g>
-    <defs>
-      <clipPath id="michelin-star-green-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const MichelinStarGreenIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_68478)">
+<path d="M12.432 17.9491C13.295 19.4931 15.021 19.9251 16.562 19.0611C18.102 18.1961 18.534 16.4671 17.61 14.9231C17.425 14.6141 17.301 14.3671 17.116 14.1831C17.363 14.2431 17.671 14.2431 18.041 14.2431C19.767 14.2431 21 13.0091 21 11.2801C21 9.55011 19.767 8.31511 17.98 8.31511C17.61 8.31511 17.363 8.31511 17.055 8.37711C17.24 8.19211 17.363 7.94511 17.548 7.63711C18.411 6.09211 17.979 4.36311 16.5 3.49911C14.959 2.63411 13.295 3.06611 12.37 4.61011C12.185 4.91911 12.062 5.16611 11.938 5.41311C11.815 5.16611 11.692 4.91911 11.507 4.61011C10.705 3.00511 8.979 2.57211 7.5 3.43711C5.959 4.30211 5.527 6.03111 6.452 7.57411C6.637 7.88411 6.76 8.13011 6.945 8.31511C6.699 8.25411 6.39 8.25411 6.021 8.25411C4.233 8.25411 3 9.48911 3 11.2181C3 12.9471 4.233 14.1821 6.02 14.1821" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M4.07422 21C8.36022 18.244 9.97422 15.746 12.0012 12" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_68478">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgMichelinStarGreenIcon;

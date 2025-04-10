@@ -1,29 +1,18 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgSchoolBellIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#school-bell-icon_svg__a)"
-    >
-      <path d="M4 17a3 3 0 0 0 3 3M14.805 6.37l2.783-2.784a2 2 0 1 1 2.829 2.828L17.633 9.2" />
-      <path d="M16.505 7.495a5.105 5.105 0 0 1 .176 7.035l-.176.184-1.867 1.867a3.48 3.48 0 0 0-1.013 2.234l-.008.23v.934c0 .327-.13.64-.36.87a.51.51 0 0 1-.652.06l-.07-.06-9.385-9.383a.51.51 0 0 1 0-.722c.198-.198.456-.322.732-.353l.139-.008h.933c.848 0 1.663-.31 2.297-.864l.168-.157 1.867-1.867.16-.153a5.105 5.105 0 0 1 7.059.153" />
-    </g>
-    <defs>
-      <clipPath id="school-bell-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const SchoolBellIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_64546)">
+<path d="M4 17C4 17.7956 4.31607 18.5587 4.87868 19.1213C5.44129 19.6839 6.20435 20 7 20" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M14.8047 6.37005L17.5877 3.58605C17.7734 3.4003 17.9938 3.25293 18.2365 3.15238C18.4791 3.05183 18.7392 3.00005 19.0018 3C19.2645 2.99995 19.5246 3.05164 19.7672 3.15211C20.0099 3.25258 20.2304 3.39986 20.4162 3.58555C20.6019 3.77124 20.7493 3.9917 20.8499 4.23434C20.9504 4.47698 21.0022 4.73705 21.0022 4.9997C21.0023 5.26235 20.9506 5.52244 20.8501 5.76511C20.7497 6.00779 20.6024 6.2283 20.4167 6.41405L17.6327 9.20005" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M16.5048 7.49485C17.431 8.42099 17.9658 9.66774 17.9986 10.9772C18.0314 12.2866 17.5595 13.5585 16.6808 14.5298L16.5048 14.7138L14.6378 16.5808C14.0401 17.1779 13.6801 17.9719 13.6248 18.8148L13.6168 19.0448V19.9788C13.6168 20.3058 13.4868 20.6188 13.2568 20.8498C13.1724 20.9348 13.0609 20.9873 12.9417 20.9983C12.8225 21.0093 12.7032 20.978 12.6048 20.9098L12.5348 20.8498L3.14975 11.4658C3.10228 11.4185 3.06462 11.3622 3.03892 11.3003C3.01323 11.2383 3 11.1719 3 11.1048C3 11.0378 3.01323 10.9714 3.03892 10.9094C3.06462 10.8475 3.10228 10.7912 3.14975 10.7438C3.34775 10.5458 3.60575 10.4218 3.88175 10.3908L4.02075 10.3828H4.95375C5.80175 10.3828 6.61675 10.0738 7.25075 9.51885L7.41875 9.36185L9.28575 7.49485L9.44575 7.34185C10.4154 6.45296 11.6908 5.97269 13.006 6.0012C14.3211 6.02971 15.5745 6.56478 16.5048 7.49485Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_64546">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgSchoolBellIcon;

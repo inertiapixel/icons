@@ -1,28 +1,21 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgCookie1Icon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#cookie-1-icon_svg__a)"
-    >
-      <path d="M8 13v.01M12 17v.01M12 12v.01M16 14v.01M11 8v.01M13.146 3.474l2.667 1.104a4 4 0 0 0 4.656 6.14l.053.132a3 3 0 0 1 0 2.296q-.744 1.18-1.024 1.852-.282.684-.66 2.216a3 3 0 0 1-1.624 1.623q-1.571.394-2.216.661-.712.295-1.852 1.024a3 3 0 0 1-2.296 0q-1.203-.753-1.852-1.024-.706-.291-2.216-.66a3 3 0 0 1-1.623-1.624q-.397-1.576-.66-2.216-.299-.718-1.025-1.852a3 3 0 0 1 0-2.296q.72-1.115 1.024-1.852.258-.62.66-2.216A3 3 0 0 1 6.782 5.16q1.547-.384 2.216-.66.688-.285 1.852-1.025a3 3 0 0 1 2.296 0" />
-    </g>
-    <defs>
-      <clipPath id="cookie-1-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const Cookie1Icon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_77847)">
+<path d="M8 13V13.01" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 17V17.01" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 12V12.01" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M16 14V14.01" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M11 8V8.01" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M13.1464 3.47443L15.8134 4.57843C15.2849 5.27385 14.9985 6.12318 14.998 6.99668C14.9975 7.87017 15.2829 8.71982 15.8107 9.41583C16.3385 10.1118 17.0796 10.616 17.9209 10.8512C18.7621 11.0864 19.6572 11.0398 20.4694 10.7184L20.5224 10.8504C20.8269 11.5855 20.8269 12.4114 20.5224 13.1464C20.0258 13.9331 19.6844 14.5504 19.4984 14.9984C19.3098 15.4544 19.0898 16.1931 18.8384 17.2144C18.5337 17.9494 17.9496 18.5332 17.2144 18.8374C16.1664 19.1001 15.4278 19.3204 14.9984 19.4984C14.5238 19.6951 13.9064 20.0364 13.1464 20.5224C12.4114 20.8269 11.5855 20.8269 10.8504 20.5224C10.0484 20.0198 9.4311 19.6784 8.99843 19.4984C8.5271 19.3038 7.78843 19.0838 6.78243 18.8384C6.04749 18.5337 5.46369 17.9496 5.15943 17.2144C4.89477 16.1631 4.67443 15.4244 4.49843 14.9984C4.29977 14.5198 3.95843 13.9024 3.47443 13.1464C3.16998 12.4114 3.16998 11.5855 3.47443 10.8504C3.95377 10.1064 4.2951 9.4891 4.49843 8.99843C4.66977 8.5851 4.88977 7.84643 5.15843 6.78243C5.46314 6.04749 6.04731 5.46369 6.78243 5.15943C7.81377 4.90343 8.55243 4.6831 8.99843 4.49843C9.45643 4.30843 10.0738 3.9671 10.8504 3.47443C11.5855 3.16998 12.4114 3.16998 13.1464 3.47443Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_77847">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgCookie1Icon;

@@ -1,28 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandAdobeIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#brand-adobe-icon_svg__a)">
-      <path
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="m12.893 4.515 7.977 14a.993.993 0 0 1-.394 1.366 1.04 1.04 0 0 1-.5.127H16.5l-4.5-8-2.5 4H11l2 4H4.023c-.565 0-1.023-.45-1.023-1 0-.171.045-.34.13-.49l7.977-13.994a1.035 1.035 0 0 1 1.786 0z"
-      />
-    </g>
-    <defs>
-      <clipPath id="brand-adobe-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandAdobeIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_82874)">
+<path d="M12.893 4.51546L20.87 18.5155C20.9353 18.6306 20.977 18.7576 20.9925 18.8891C21.008 19.0205 20.9971 19.1537 20.9604 19.2809C20.9237 19.4081 20.8619 19.5267 20.7788 19.6296C20.6956 19.7326 20.5926 19.8179 20.476 19.8805C20.3226 19.9641 20.1507 20.0078 19.976 20.0075H16.5L12 12.0075L9.5 16.0075H11L13 20.0075H4.023C3.458 20.0075 3 19.5575 3 19.0075C3 18.8365 3.045 18.6675 3.13 18.5175L11.107 4.52446C11.1981 4.36843 11.3285 4.23898 11.4851 4.14902C11.6418 4.05906 11.8193 4.01172 12 4.01172C12.1807 4.01172 12.3582 4.05906 12.5149 4.14902C12.6715 4.23898 12.8019 4.36843 12.893 4.52446V4.51546Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_82874">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandAdobeIcon;

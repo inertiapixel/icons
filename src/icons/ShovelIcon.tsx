@@ -1,28 +1,18 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgShovelIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#shovel-icon_svg__a)"
-    >
-      <path d="m17 4 3 3M18.5 5.5l-8 8M8.276 11.284l4.44 4.44a.97.97 0 0 1 0 1.369l-2.704 2.704a4.108 4.108 0 0 1-5.809-5.81l2.704-2.703a.97.97 0 0 1 1.37 0z" />
-    </g>
-    <defs>
-      <clipPath id="shovel-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const ShovelIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_63698)">
+<path d="M17 4L20 7" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M18.5 5.5L10.5 13.5" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M8.27602 11.284L12.716 15.724C12.8059 15.8139 12.8772 15.9206 12.9259 16.0381C12.9745 16.1555 12.9996 16.2814 12.9996 16.4085C12.9996 16.5357 12.9745 16.6615 12.9259 16.779C12.8772 16.8964 12.8059 17.0032 12.716 17.093L10.012 19.797C9.2401 20.5603 8.19744 20.987 7.11188 20.9839C6.02632 20.9808 4.98612 20.5482 4.21858 19.7805C3.45104 19.0128 3.01856 17.9725 3.01564 16.887C3.01272 15.8014 3.43961 14.7588 4.20302 13.987L6.90702 11.284C6.99692 11.194 7.1037 11.1226 7.22124 11.0738C7.33878 11.0251 7.46478 11 7.59202 11C7.71926 11 7.84526 11.0251 7.9628 11.0738C8.08034 11.1226 8.18711 11.194 8.27702 11.284H8.27602Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_63698">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgShovelIcon;

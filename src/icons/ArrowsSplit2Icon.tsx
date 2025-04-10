@@ -1,29 +1,19 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgArrowsSplit2Icon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#arrows-split-2-icon_svg__a)"
-    >
-      <path d="M21 17h-5.397a5 5 0 0 1-4.096-2.133l-.514-.734A5 5 0 0 0 6.897 12H3M21 7h-5.395a5 5 0 0 0-4.098 2.135l-.51.73A5 5 0 0 1 6.9 12H3" />
-      <path d="m18 10 3-3-3-3M18 20l3-3-3-3" />
-    </g>
-    <defs>
-      <clipPath id="arrows-split-2-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const ArrowsSplit2Icon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_84819)">
+<path d="M21 17H15.603C14.7991 16.9999 14.007 16.806 13.294 16.4347C12.581 16.0634 11.968 15.5256 11.507 14.867L10.993 14.133C10.532 13.4744 9.91904 12.9366 9.20601 12.5653C8.49298 12.194 7.70092 12.0001 6.897 12H3" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M21 7H15.605C14.8006 6.99996 14.008 7.19402 13.2946 7.56571C12.5812 7.93739 11.9679 8.47572 11.507 9.135L10.997 9.865C10.5362 10.5241 9.9231 11.0624 9.20987 11.4341C8.49664 11.8057 7.70427 11.9999 6.9 12H3" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M18 10L21 7L18 4" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M18 20L21 17L18 14" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_84819">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgArrowsSplit2Icon;

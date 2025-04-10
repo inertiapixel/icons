@@ -1,28 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgPointOffIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#point-off-icon_svg__a)"
-    >
-      <path d="M9.152 9.194a4 4 0 0 0 5.697 5.617M16.002 12a4 4 0 0 0-4-4M3 3l18 18" />
-    </g>
-    <defs>
-      <clipPath id="point-off-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const PointOffIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_66029)">
+<path d="M9.1517 9.194C8.40684 9.94947 7.9926 10.9699 8.0001 12.0308C8.0076 13.0917 8.43623 14.1061 9.1917 14.851C9.94717 15.5959 10.9676 16.0101 12.0285 16.0026C13.0894 15.9951 14.1038 15.5665 14.8487 14.811M16.0017 12C16.0017 10.9391 15.5803 9.92172 14.8301 9.17157C14.08 8.42143 13.0626 8 12.0017 8" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3 3L21 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_66029">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgPointOffIcon;

@@ -1,25 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgMoonIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#moon-icon_svg__a)">
-      <path
-        fill="currentColor"
-        d="M11.998 1.992a10 10 0 1 0 9.236 13.838c.341-.82-.476-1.644-1.298-1.31a6.5 6.5 0 0 1-6.864-10.787l.077-.08C13.7 3.023 13.262 2 12.391 2h-.266l-.068-.006z"
-      />
-    </g>
-    <defs>
-      <clipPath id="moon-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const MoonIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_57709)">
+<path d="M11.9982 1.99219C10.1879 1.99252 8.41162 2.48426 6.85889 3.41495C5.30616 4.34564 4.03519 5.68037 3.18156 7.27677C2.32794 8.87317 1.92367 10.6713 2.01188 12.4795C2.1001 14.2876 2.67749 16.0379 3.68246 17.5436C4.68743 19.0493 6.08229 20.254 7.71825 21.0291C9.3542 21.8043 11.1699 22.1208 12.9716 21.9449C14.7733 21.769 16.4935 21.1073 17.9487 20.0304C19.4038 18.9535 20.5394 17.5018 21.2342 15.8302C21.5752 15.0102 20.7582 14.1862 19.9362 14.5202C18.5273 15.0909 16.9631 15.1498 15.5153 14.6866C14.0676 14.2235 12.8279 13.2676 12.0119 11.9852C11.1959 10.7028 10.8551 9.17497 11.0488 7.66734C11.2425 6.15972 11.9585 4.76765 13.0722 3.73319L13.1492 3.65319C13.7002 3.02319 13.2622 2.00019 12.3912 2.00019H12.1252L12.0572 1.99419L11.9972 1.99219H11.9982Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_57709">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgMoonIcon;

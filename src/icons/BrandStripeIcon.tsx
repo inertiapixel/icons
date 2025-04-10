@@ -1,28 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandStripeIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#brand-stripe-icon_svg__a)">
-      <path
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M11.453 8.056c0-.623.518-.979 1.442-.979 1.69 0 3.41.343 4.605.923l.5-4c-.948-.449-2.82-1-5.5-1-1.895 0-3.373.087-4.5 1-1.172.956-2 2.33-2 4 0 3.03 1.958 4.906 5 6 1.961.69 3 .743 3 1.5 0 .735-.851 1.5-2 1.5-1.423 0-3.963-.609-5.5-1.5l-.5 4c1.321.734 3.474 1.5 6 1.5 2 0 3.957-.468 5.084-1.36C18.347 18.661 19 17.372 19 15.5c0-3.096-1.915-4.547-5-5.637-1.646-.605-2.544-1.07-2.544-1.807z"
-      />
-    </g>
-    <defs>
-      <clipPath id="brand-stripe-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandStripeIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_81464)">
+<path d="M11.453 8.056C11.453 7.433 11.971 7.077 12.895 7.077C14.585 7.077 16.305 7.42 17.5 8L18 4C17.052 3.551 15.18 3 12.5 3C10.605 3 9.127 3.087 8 4C6.828 4.956 6 6.33 6 8C6 11.03 7.958 12.906 11 14C12.961 14.69 14 14.743 14 15.5C14 16.235 13.149 17 12 17C10.577 17 8.037 16.391 6.5 15.5L6 19.5C7.321 20.234 9.474 21 12 21C14 21 15.957 20.532 17.084 19.64C18.347 18.661 19 17.372 19 15.5C19 12.404 17.085 10.953 14 9.863C12.354 9.258 11.456 8.793 11.456 8.056H11.453Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_81464">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandStripeIcon;

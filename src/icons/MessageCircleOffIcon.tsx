@@ -1,28 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgMessageCircleOffIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#message-circle-off-icon_svg__a)"
-    >
-      <path d="M8.595 4.579c3.223-1.176 7.025-.61 9.65 1.63 2.982 2.543 3.601 6.523 1.636 9.66m-1.908 2.108c-2.787 2.19-6.89 2.666-10.273 1.024l-4.7 1 1.3-3.9c-2.229-3.295-1.494-7.51 1.68-10.056M3 3l18 18" />
-    </g>
-    <defs>
-      <clipPath id="message-circle-off-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const MessageCircleOffIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_68721)">
+<path d="M8.595 4.57854C11.818 3.40254 15.62 3.96854 18.245 6.20854C21.227 8.75154 21.846 12.7315 19.881 15.8685M17.973 17.9775C15.186 20.1675 11.083 20.6435 7.7 19.0015L3 20.0015L4.3 16.1015C2.071 12.8055 2.806 8.59054 5.98 6.04454" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3 3L21 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_68721">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgMessageCircleOffIcon;

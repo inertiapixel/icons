@@ -1,30 +1,20 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandSupernovaIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#brand-supernova-icon_svg__a)"
-    >
-      <path d="M10 12a2 2 0 1 0 4 0 2 2 0 0 0-4 0" />
-      <path d="M15 15h.5c3.037 0 5.5-1.343 5.5-3s-2.463-3-5.5-3c-1.837 0-3.463.49-4.46 1.245M9 9h-.5C5.462 9 3 10.343 3 12s2.462 3 5.5 3c1.844 0 3.476-.495 4.474-1.255" />
-      <path d="M15 9v-.5C15 5.462 13.657 3 12 3S9 5.462 9 8.5c0 1.833.49 3.457 1.241 4.456M9 15.001v.5c0 3.038 1.343 5.5 3 5.5s3-2.462 3-5.5c0-1.842-.494-3.472-1.252-4.47" />
-    </g>
-    <defs>
-      <clipPath id="brand-supernova-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandSupernovaIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_81439)">
+<path d="M10 12C10 12.5304 10.2107 13.0391 10.5858 13.4142C10.9609 13.7893 11.4696 14 12 14C12.5304 14 13.0391 13.7893 13.4142 13.4142C13.7893 13.0391 14 12.5304 14 12C14 11.4696 13.7893 10.9609 13.4142 10.5858C13.0391 10.2107 12.5304 10 12 10C11.4696 10 10.9609 10.2107 10.5858 10.5858C10.2107 10.9609 10 11.4696 10 12Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M14.9991 15H15.4991C18.5371 15 20.9991 13.657 20.9991 12C20.9991 10.343 18.5371 9 15.4991 9C13.6631 9 12.0371 9.49 11.0391 10.245" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M9 9H8.5C5.462 9 3 10.343 3 12C3 13.657 5.462 15 8.5 15C10.344 15 11.976 14.505 12.974 13.745" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M15 9V8.5C15 5.462 13.657 3 12 3C10.343 3 9 5.462 9 8.5C9 10.333 9.49 11.957 10.241 12.956" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M9 15.0013V15.5013C9 18.5393 10.343 21.0013 12 21.0013C13.657 21.0013 15 18.5393 15 15.5013C15 13.6593 14.506 12.0293 13.748 11.0312" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_81439">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandSupernovaIcon;

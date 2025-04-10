@@ -1,29 +1,18 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgSmartHomeOffIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#smart-home-off-icon_svg__a)"
-    >
-      <path d="M7.097 7.125 5.06 8.71a2.67 2.67 0 0 0-1.029 2.105v7.2a2 2 0 0 0 2 2h12c.56 0 1.064-.23 1.427-.598M20.03 16v-5.185c0-.823-.38-1.6-1.03-2.105l-5.333-4.148a2.666 2.666 0 0 0-3.274 0l-1.029.8" />
-      <path d="M15.332 15.345c-2.213.976-5.335.86-7.332-.345M3 3l18 18" />
-    </g>
-    <defs>
-      <clipPath id="smart-home-off-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const SmartHomeOffIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_63536)">
+<path d="M7.09725 7.12477L5.06025 8.70977C4.73969 8.95905 4.48034 9.2783 4.30201 9.64312C4.12367 10.0079 4.03106 10.4087 4.03125 10.8148V18.0148C4.03125 18.5452 4.24196 19.0539 4.61704 19.429C4.99211 19.8041 5.50082 20.0148 6.03125 20.0148H18.0312C18.5903 20.0148 19.0953 19.7858 19.4583 19.4168M20.0303 15.9998V10.8148C20.0303 9.99177 19.6502 9.21477 19.0002 8.70977L13.6672 4.56177C13.1992 4.19768 12.6232 4 12.0303 4C11.4373 4 10.8613 4.19768 10.3932 4.56177L9.36425 5.36177" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M15.332 15.345C13.119 16.321 9.997 16.205 8 15" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3 3L21 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_63536">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgSmartHomeOffIcon;

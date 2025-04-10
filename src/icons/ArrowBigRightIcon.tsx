@@ -1,25 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgArrowBigRightIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#arrow-big-right-icon_svg__a)">
-      <path
-        fill="currentColor"
-        d="M12.089 3.634A2 2 0 0 0 11 5.414L10.999 8H4a2 2 0 0 0-2 2v4l.005.15A2 2 0 0 0 4 16h6.999L11 18.585A2 2 0 0 0 14.414 20L21 13.414a2 2 0 0 0 0-2.828L14.414 4a2 2 0 0 0-2.18-.434z"
-      />
-    </g>
-    <defs>
-      <clipPath id="arrow-big-right-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const ArrowBigRightIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_59101)">
+<path d="M12.089 3.63429C11.7612 3.802 11.4861 4.05694 11.294 4.37101C11.1018 4.68509 11.0001 5.04611 11 5.41429L10.999 8.00029H4C3.46957 8.00029 2.96086 8.21101 2.58579 8.58608C2.21071 8.96115 2 9.46986 2 10.0003V14.0003L2.005 14.1503C2.04284 14.6534 2.26947 15.1237 2.63945 15.4668C3.00943 15.8099 3.49542 16.0005 4 16.0003L10.999 15.9993L11 18.5863C11.0001 18.9818 11.1174 19.3684 11.3372 19.6972C11.557 20.026 11.8693 20.2823 12.2347 20.4336C12.6001 20.585 13.0022 20.6246 13.3901 20.5475C13.778 20.4703 14.1343 20.2799 14.414 20.0003L21 13.4143C21.3749 13.0392 21.5856 12.5306 21.5856 12.0003C21.5856 11.47 21.3749 10.9613 21 10.5863L14.414 4.00029C14.1343 3.72043 13.7779 3.52981 13.3898 3.45256C13.0018 3.3753 12.5995 3.41488 12.234 3.56629L12.089 3.63429Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_59101">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgArrowBigRightIcon;

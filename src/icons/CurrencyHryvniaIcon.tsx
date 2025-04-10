@@ -1,28 +1,18 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgCurrencyHryvniaIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#currency-hryvnia-icon_svg__a)"
-    >
-      <path d="M7.998 7a2.64 2.64 0 0 1 2.562-2h3.376a2.64 2.64 0 0 1 2.562 2 2.57 2.57 0 0 1-1.344 2.922L9.278 12.86a3.34 3.34 0 0 0-1.78 3.64 3.11 3.11 0 0 0 3.05 2.5h2.888a2.64 2.64 0 0 0 2.562-2M6 10h12M6 14h12" />
-    </g>
-    <defs>
-      <clipPath id="currency-hryvnia-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const CurrencyHryvniaIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_77312)">
+<path d="M7.99841 7C8.14118 6.42863 8.47091 5.9214 8.93515 5.559C9.39939 5.1966 9.97147 4.99983 10.5604 5H13.9364C14.5254 4.99983 15.0974 5.1966 15.5617 5.559C16.0259 5.9214 16.3556 6.42863 16.4984 7C16.6402 7.56729 16.5843 8.16598 16.34 8.69723C16.0956 9.22847 15.6774 9.66051 15.1544 9.922L9.27841 12.86C8.62357 13.1875 8.09458 13.7213 7.77293 14.379C7.45129 15.0368 7.35483 15.782 7.49841 16.5C7.63944 17.205 8.02041 17.8394 8.57649 18.2952C9.13256 18.7511 9.8294 19.0001 10.5484 19H13.4364C14.0254 19.0002 14.5974 18.8034 15.0617 18.441C15.5259 18.0786 15.8556 17.5714 15.9984 17" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M6 10H18" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M6 14H18" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_77312">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgCurrencyHryvniaIcon;

@@ -1,25 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandPaypalIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#brand-paypal-icon_svg__a)">
-      <path
-        fill="currentColor"
-        d="M12.5 2c3.113 0 5.309 1.785 5.863 4.565C20.088 7.75 21 9.717 21 12c0 2.933-2.748 5.384-5.783 5.496L15 17.5h-1.754l-.466 2.8a2 2 0 0 1-1.823 1.597l-.157.003H8.12a1.5 1.5 0 0 1-1.182-.54 1.5 1.5 0 0 1-.348-1.07l.042-.29H5c-1.004 0-1.914-.864-1.994-1.857L3 18l.01-.141L5.003 3.905l.003-.048c.072-.894.815-1.682 1.695-1.832l.156-.02L7 2zm5.812 7.35-.024.087c-.706 2.403-3.072 4.436-5.555 4.557L12.5 14H9.997v.05l-.025.183-1.2 5-.019.07-.088.597h2.154l.595-3.564a1 1 0 0 1 .865-.829l.121-.007H15c2.073 0 4-1.67 4-3.5 0-1.022-.236-1.924-.688-2.65"
-      />
-    </g>
-    <defs>
-      <clipPath id="brand-paypal-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandPaypalIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_58758)">
+<path d="M12.5 2C15.613 2 17.809 3.785 18.363 6.565C20.088 7.75 21 9.717 21 12C21 14.933 18.252 17.384 15.217 17.496L15 17.5H13.246L12.78 20.3C12.6931 20.7292 12.4677 21.1179 12.1383 21.4065C11.8089 21.695 11.3939 21.8674 10.957 21.897L10.8 21.9H8.12C7.8951 21.9044 7.67209 21.8581 7.46749 21.7646C7.26288 21.6712 7.08192 21.5329 6.938 21.36C6.68709 21.0623 6.56224 20.6784 6.59 20.29L6.632 20H5C3.996 20 3.086 19.136 3.006 18.143L3 18L3.01 17.859L5.003 3.905L5.006 3.857C5.078 2.963 5.821 2.175 6.701 2.025L6.857 2.005L7 2H12.5ZM18.312 9.35L18.288 9.437C17.582 11.84 15.216 13.873 12.733 13.994L12.5 14H9.997V14.05L9.972 14.233L8.772 19.233C8.76651 19.2566 8.76017 19.2799 8.753 19.303L8.665 19.9H10.819L11.414 16.336C11.4493 16.1229 11.5527 15.927 11.7086 15.7776C11.8645 15.6282 12.0646 15.5332 12.279 15.507L12.4 15.5H15C17.073 15.5 19 13.83 19 12C19 10.978 18.764 10.076 18.312 9.35Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_58758">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandPaypalIcon;

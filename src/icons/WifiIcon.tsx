@@ -1,29 +1,19 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgWifiIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#wifi-icon_svg__a)"
-    >
-      <path d="M12 18h.01M9.172 15.171a4 4 0 0 1 5.656 0M6.344 12.343a8 8 0 0 1 11.314 0" />
-      <path d="M3.516 9.515c4.686-4.687 12.284-4.687 17 0" />
-    </g>
-    <defs>
-      <clipPath id="wifi-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const WifiIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_59859)">
+<path d="M12 18H12.01" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M9.17188 15.1711C9.92199 14.4213 10.9392 14 11.9999 14C13.0605 14 14.0778 14.4213 14.8279 15.1711" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M6.34375 12.3433C7.08662 11.6004 7.96856 11.0111 8.93919 10.609C9.90982 10.2069 10.9501 10 12.0008 10C13.0514 10 14.0917 10.2069 15.0623 10.609C16.0329 11.0111 16.9149 11.6004 17.6577 12.3433" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3.51562 9.51525C8.20162 4.82825 15.7996 4.82825 20.5156 9.51525" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_59859">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgWifiIcon;

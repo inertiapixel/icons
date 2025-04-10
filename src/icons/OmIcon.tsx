@@ -1,29 +1,20 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgOmIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#om-icon_svg__a)"
-    >
-      <path d="M7 12c2.21 0 4-1.567 4-3.5S9.21 5 7 5c-1.594 0-2.97.816-3.613 2M3.423 14.483A4.9 4.9 0 0 0 3 16.5C3 18.985 4.79 21 7 21s4-2.015 4-4.5S9.21 12 7 12" />
-      <path d="M14.07 17.01c.327 2.277 1.739 3.99 3.429 3.99 1.933 0 3.5-2.239 3.5-5s-1.567-5-3.5-5c-.96 0-1.868.606-2.5 1.5-.717 1.049-1.76 1.7-2.936 1.7-.92 0-1.766-.406-2.434-1.087M17 3l2 2M12 3q2.5 5.5 9 5" />
-    </g>
-    <defs>
-      <clipPath id="om-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const OmIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_67219)">
+<path d="M6.99972 12C9.20972 12 10.9997 10.433 10.9997 8.5C10.9997 6.567 9.20972 5 6.99972 5C5.40572 5 4.02972 5.816 3.38672 7" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3.42303 14.483C3.14191 15.1182 2.99778 15.8054 3.00003 16.5C3.00003 18.985 4.79003 21 7.00003 21C9.21003 21 11 18.985 11 16.5C11 14.015 9.21003 12 7.00003 12" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M14.0699 17.01C14.3969 19.287 15.8089 21 17.4989 21C19.4319 21 20.9989 18.761 20.9989 16C20.9989 13.239 19.4319 11 17.4989 11C16.5389 11 15.6309 11.606 14.9989 12.5C14.2819 13.549 13.2389 14.2 12.0629 14.2C11.1429 14.2 10.2969 13.794 9.62891 13.113" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M17 3L19 5" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 3C13.667 6.667 16.667 8.333 21 8" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_67219">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgOmIcon;

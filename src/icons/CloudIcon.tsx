@@ -1,25 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgCloudIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#cloud-icon_svg__a)">
-      <path
-        fill="currentColor"
-        d="M10.04 4.305c2.195-.667 4.615-.224 6.36 1.176 1.386 1.108 2.188 2.686 2.252 4.34l.003.212.091.003c2.3.107 4.143 1.96 4.25 4.27l.004.21c0 2.408-1.885 4.373-4.255 4.483l-.21.005H6.657l-.222-.008c-2.94-.11-5.317-2.4-5.43-5.263L1 13.517C1 10.77 3.08 8.507 5.784 8.1l.114-.016.07-.181c.663-1.62 2.056-2.906 3.829-3.518l.244-.08z"
-      />
-    </g>
-    <defs>
-      <clipPath id="cloud-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const CloudIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_58352)">
+<path d="M10.04 4.30488C12.235 3.63788 14.655 4.08088 16.4 5.48088C17.786 6.58888 18.588 8.16689 18.652 9.82089L18.655 10.0329L18.746 10.0359C21.046 10.1429 22.889 11.9969 22.996 14.3059L23 14.5169C23 16.9239 21.115 18.8889 18.745 18.9989L18.535 19.0039H6.657L6.435 18.9959C3.495 18.8859 1.118 16.5969 1.005 13.7329L1 13.5169C1 10.7699 3.08 8.50689 5.784 8.09989L5.898 8.08388L5.968 7.90288C6.631 6.28288 8.024 4.99689 9.797 4.38489L10.041 4.30488H10.04Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_58352">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgCloudIcon;

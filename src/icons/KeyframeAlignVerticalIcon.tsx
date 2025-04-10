@@ -1,22 +1,18 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgKeyframeAlignVerticalIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g fill="currentColor" clipPath="url(#keyframe-align-vertical-icon_svg__a)">
-      <path d="M12 1a1 1 0 0 1 .993.883L13 2v2a1 1 0 0 1-1.993.117L11 4V2a1 1 0 0 1 1-1M12 6c-.63 0-1.215.301-1.607.807l-2.908 3.748a2.395 2.395 0 0 0-.01 2.876l2.918 3.762c.39.505.977.807 1.606.807s1.214-.301 1.606-.807l2.908-3.748a2.395 2.395 0 0 0 .011-2.876l-2.919-3.762A2.03 2.03 0 0 0 12 6M12 19a1 1 0 0 1 .993.883L13 20v2a1 1 0 0 1-1.993.117L11 22v-2a1 1 0 0 1 1-1" />
-    </g>
-    <defs>
-      <clipPath id="keyframe-align-vertical-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const KeyframeAlignVerticalIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_57901)">
+<path d="M12 1C12.2449 1.00003 12.4813 1.08996 12.6644 1.25272C12.8474 1.41547 12.9643 1.63975 12.993 1.883L13 2V4C12.9997 4.25488 12.9021 4.50003 12.7272 4.68537C12.5522 4.8707 12.313 4.98223 12.0586 4.99717C11.8042 5.01211 11.5536 4.92933 11.3582 4.76574C11.1627 4.60214 11.0371 4.3701 11.007 4.117L11 4V2C11 1.73478 11.1054 1.48043 11.2929 1.29289C11.4804 1.10536 11.7348 1 12 1Z" fill="black"/>
+<path d="M11.9993 6C11.3703 6 10.7853 6.301 10.3933 6.807L7.48527 10.555C7.17229 10.9686 7.002 11.4725 7.00002 11.9912C6.99803 12.5098 7.16446 13.0151 7.47427 13.431L10.3933 17.193C10.7833 17.698 11.3703 18 11.9993 18C12.6283 18 13.2133 17.699 13.6053 17.193L16.5133 13.445C16.8263 13.0314 16.9965 12.5275 16.9985 12.0088C17.0005 11.4902 16.8341 10.9849 16.5243 10.569L13.6053 6.807C13.4174 6.55833 13.1748 6.35621 12.8963 6.21628C12.6179 6.07634 12.3109 6.00234 11.9993 6Z" fill="black"/>
+<path d="M12 19C12.2449 19 12.4813 19.09 12.6644 19.2527C12.8474 19.4155 12.9643 19.6397 12.993 19.883L13 20V22C12.9997 22.2549 12.9021 22.5 12.7272 22.6854C12.5522 22.8707 12.313 22.9822 12.0586 22.9972C11.8042 23.0121 11.5536 22.9293 11.3582 22.7657C11.1627 22.6021 11.0371 22.3701 11.007 22.117L11 22V20C11 19.7348 11.1054 19.4804 11.2929 19.2929C11.4804 19.1054 11.7348 19 12 19Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_57901">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgKeyframeAlignVerticalIcon;

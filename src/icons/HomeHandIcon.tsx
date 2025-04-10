@@ -1,29 +1,18 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgHomeHandIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#home-hand-icon_svg__a)"
-    >
-      <path d="m18 9-6-6-9 9h2v7a2 2 0 0 0 2 2h3.5" />
-      <path d="M9 21v-6a2 2 0 0 1 2-2h2M16 17.5l-.585-.578a1.516 1.516 0 0 0-2 0c-.477.433-.551 1.112-.177 1.622L14.999 21c.37.506 1.332 1 2 1h3c1.01 0 1.498-.683 1.623-1.593Q22 19 22 18c0-1-.94-1.843-2-2h-1v-2.636C19 12.61 18.328 12 17.5 12s-1.5.61-1.5 1.364z" />
-    </g>
-    <defs>
-      <clipPath id="home-hand-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const HomeHandIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_71718)">
+<path d="M18 9L12 3L3 12H5V19C5 19.5304 5.21071 20.0391 5.58579 20.4142C5.96086 20.7893 6.46957 21 7 21H10.5" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M9 21V15C9 14.4696 9.21071 13.9609 9.58579 13.5858C9.96086 13.2107 10.4696 13 11 13H13" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M15.9995 17.5L15.4145 16.922C15.138 16.6793 14.7825 16.5454 14.4145 16.5454C14.0466 16.5454 13.6911 16.6793 13.4145 16.922C12.9375 17.355 12.8635 18.034 13.2375 18.544L14.9995 21C15.3695 21.506 16.3305 22 16.9995 22H19.9995C21.0085 22 21.4965 21.317 21.6215 20.407C21.8735 19.469 21.9995 18.667 21.9995 18C21.9995 17 21.0605 16.157 19.9995 16H18.9995V13.364C18.9995 12.61 18.3275 12 17.4995 12C16.6715 12 15.9995 12.61 15.9995 13.364V17.5Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_71718">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgHomeHandIcon;

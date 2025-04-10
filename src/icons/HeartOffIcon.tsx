@@ -1,28 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgHeartOffIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#heart-off-icon_svg__a)"
-    >
-      <path d="m3 3 18 18M18.002 14l1.5-1.428A5 5 0 1 0 12.002 6c-.95-1.273-2.44-2-4-2m8 12-4 4-7.5-7.428a5 5 0 0 1-1.288-5.068A4.98 4.98 0 0 1 5.002 5" />
-    </g>
-    <defs>
-      <clipPath id="heart-off-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const HeartOffIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_72245)">
+<path d="M3 3L21 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M18.0017 14L19.5017 12.572C19.9926 12.0898 20.3787 11.5115 20.6358 10.8733C20.8929 10.235 21.0155 9.55053 20.996 8.86271C20.9764 8.17488 20.8151 7.4985 20.5221 6.87589C20.2291 6.25328 19.8107 5.69785 19.2932 5.24436C18.7757 4.79087 18.1701 4.44909 17.5144 4.24039C16.8587 4.0317 16.167 3.96059 15.4826 4.03152C14.7981 4.10245 14.1357 4.31389 13.5368 4.65261C12.9378 4.99132 12.4152 5.45002 12.0017 6C11.0517 4.727 9.56165 4 8.00165 4M16.0017 16L12.0017 20L4.50165 12.572C3.84014 11.9284 3.36966 11.1143 3.14233 10.2198C2.915 9.3253 2.93969 8.38533 3.21365 7.504C3.53015 6.5014 4.15609 5.62482 5.00165 5" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_72245">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgHeartOffIcon;

@@ -1,28 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgCurrencyEuroIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#currency-euro-icon_svg__a)"
-    >
-      <path d="M17.2 7c-.845-.965-1.914-1.617-3.074-1.876a5.2 5.2 0 0 0-3.45.423c-1.09.534-2.02 1.43-2.673 2.579A7.86 7.86 0 0 0 7 12c0 1.378.349 2.726 1.003 3.874s1.583 2.045 2.673 2.58c1.089.533 2.289.68 3.45.422 1.16-.259 2.23-.911 3.073-1.876M13 10H5m0 4h8" />
-    </g>
-    <defs>
-      <clipPath id="currency-euro-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const CurrencyEuroIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_77336)">
+<path d="M17.1991 7C16.3552 6.03533 15.286 5.38281 14.1255 5.12426C12.965 4.8657 11.7649 5.01262 10.6756 5.5466C9.58643 6.08058 8.65658 6.97784 8.00269 8.12587C7.34881 9.27391 7 10.6216 7 12C7 13.3784 7.34881 14.7261 8.00269 15.8741C8.65658 17.0222 9.58643 17.9194 10.6756 18.4534C11.7649 18.9874 12.965 19.1343 14.1255 18.8758C15.286 18.6172 16.3552 17.9647 17.1991 17" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M13 10H5M5 14H13" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_77336">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgCurrencyEuroIcon;

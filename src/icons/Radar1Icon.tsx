@@ -1,30 +1,18 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgRadar1Icon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#radar-1-icon_svg__a)"
-    >
-      <path d="M21 12h-8a1 1 0 1 0-1 1v8a9 9 0 0 0 9-9" />
-      <path d="M16 9a5 5 0 1 0-7 7" />
-      <path d="M20.486 9.002A9 9 0 1 0 9.004 20.497" />
-    </g>
-    <defs>
-      <clipPath id="radar-1-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const Radar1Icon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_65575)">
+<path d="M21 12H13C13 11.8022 12.9414 11.6089 12.8315 11.4444C12.7216 11.28 12.5654 11.1518 12.3827 11.0761C12.2 11.0004 11.9989 10.9806 11.8049 11.0192C11.6109 11.0578 11.4327 11.153 11.2929 11.2929C11.153 11.4327 11.0578 11.6109 11.0192 11.8049C10.9806 11.9989 11.0004 12.2 11.0761 12.3827C11.1518 12.5654 11.28 12.7216 11.4444 12.8315C11.6089 12.9414 11.8022 13 12 13V21C14.3869 21 16.6761 20.0518 18.364 18.364C20.0518 16.6761 21 14.3869 21 12Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M16 9C15.5702 8.42691 15.0222 7.95287 14.3933 7.60998C13.7643 7.2671 13.069 7.06336 12.3544 7.01258C11.6399 6.9618 10.9228 7.06515 10.2516 7.31565C9.58049 7.56614 8.97101 7.95792 8.46447 8.46447C7.95792 8.97101 7.56614 9.58049 7.31565 10.2516C7.06515 10.9228 6.9618 11.6399 7.01258 12.3544C7.06336 13.069 7.2671 13.7643 7.60998 14.3933C7.95287 15.0222 8.42691 15.5702 9 16" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M20.4857 9.00194C19.9774 7.56957 19.1147 6.28925 17.9779 5.28038C16.8412 4.27151 15.4674 3.56696 13.9848 3.23243C12.5022 2.8979 10.9591 2.94429 9.49923 3.36727C8.03939 3.79024 6.71045 4.57604 5.63635 5.65136C4.56224 6.72668 3.77795 8.05651 3.35662 9.51682C2.9353 10.9771 2.89066 12.5204 3.22687 14.0026C3.56307 15.4848 4.26918 16.8578 5.27933 17.9934C6.28949 19.129 7.57078 19.9903 9.00372 20.4969" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_65575">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgRadar1Icon;

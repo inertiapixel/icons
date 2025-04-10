@@ -1,28 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgMoonOffIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#moon-off-icon_svg__a)"
-    >
-      <path d="M7.962 3.95A9 9 0 0 1 12 2.991V3h.393a7.5 7.5 0 0 0-2.07 3.308m-.14 3.84a7.49 7.49 0 0 0 5.575 5.641m3.892-.11q.334-.1.663-.233a9 9 0 0 1-.274.597m-1.695 2.337A9.001 9.001 0 1 1 5.634 5.631M3 3l18 18" />
-    </g>
-    <defs>
-      <clipPath id="moon-off-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const MoonOffIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_67979)">
+<path d="M7.96241 3.94919C9.2151 3.31894 10.5981 2.99117 12.0004 2.99219V3.00019H12.3934C11.4228 3.90022 10.7085 5.04175 10.3234 6.30819M10.1824 10.1482C10.3684 10.9712 10.6964 11.7742 11.1714 12.5212C12.2168 14.1656 13.8618 15.3379 15.7574 15.7892M19.6504 15.6792C19.8734 15.6122 20.0944 15.5352 20.3134 15.4462C20.2293 15.6484 20.1379 15.8476 20.0394 16.0432M18.3444 18.3802C16.6538 20.0656 14.3629 21.0105 11.9756 21.0068C9.58837 21.0031 7.30036 20.0513 5.61491 18.3607C3.92946 16.6701 2.98463 14.3791 2.98829 11.9919C2.99195 9.60466 3.94378 7.31664 5.63441 5.63119" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3 3L21 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_67979">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgMoonOffIcon;

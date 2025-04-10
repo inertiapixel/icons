@@ -1,29 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgHexagonLetterC1Icon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#hexagon-letter-c-1-icon_svg__a)"
-    >
-      <path d="M19.875 6.27A2.23 2.23 0 0 1 21 8.218v7.284c0 .809-.443 1.555-1.158 1.948l-6.75 4.27a2.27 2.27 0 0 1-2.184 0l-6.75-4.27A2.23 2.23 0 0 1 3 15.502V8.217c0-.81.443-1.554 1.158-1.947l6.75-3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98z" />
-      <path d="M14 10a2 2 0 1 0-4 0v4a2 2 0 0 0 4 0" />
-    </g>
-    <defs>
-      <clipPath id="hexagon-letter-c-1-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const HexagonLetterC1Icon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_72072)">
+<path d="M19.875 6.26959C20.2187 6.46505 20.5041 6.74856 20.7018 7.09095C20.8995 7.43333 21.0025 7.82222 21 8.21759V15.5016C21 16.3106 20.557 17.0566 19.842 17.4496L13.092 21.7196C12.7574 21.9033 12.3818 21.9996 12 21.9996C11.6182 21.9996 11.2426 21.9033 10.908 21.7196L4.158 17.4496C3.80817 17.2584 3.51612 16.9768 3.31241 16.6341C3.1087 16.2914 3.0008 15.9003 3 15.5016V8.21659C3 7.40759 3.443 6.66259 4.158 6.26959L10.908 2.28959C11.2525 2.09963 11.6396 2 12.033 2C12.4264 2 12.8135 2.09963 13.158 2.28959L19.908 6.26959H19.875Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M14 10C14 9.46957 13.7893 8.96086 13.4142 8.58579C13.0391 8.21071 12.5304 8 12 8C11.4696 8 10.9609 8.21071 10.5858 8.58579C10.2107 8.96086 10 9.46957 10 10V14C10 14.5304 10.2107 15.0391 10.5858 15.4142C10.9609 15.7893 11.4696 16 12 16C12.5304 16 13.0391 15.7893 13.4142 15.4142C13.7893 15.0391 14 14.5304 14 14" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_72072">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgHexagonLetterC1Icon;

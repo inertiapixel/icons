@@ -1,29 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandRedhatIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#brand-redhat-icon_svg__a)"
-    >
-      <path d="m6 10.5 1.436-4c.318-.876.728-1.302 1.359-1.302.219 0 1.054.365 1.88.583.825.219.733-.329.908-.487s.355-.294.61-.294c.242 0 .553.048 1.692.448a20 20 0 0 1 2.204.922c1.175.582 1.426.913 1.595 1.507L18.5 12.5c2.086.898 3.5 2.357 3.5 3.682C22 17.867 20.8 20 16.043 20 9.837 20 2 15.958 2 12.68q0-1.565 4-2.18" />
-      <path d="M6 10.5c0 .969 4.39 3.5 9.5 3.5 1.314 0 3 .063 3-1.5" />
-    </g>
-    <defs>
-      <clipPath id="brand-redhat-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandRedhatIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_81632)">
+<path d="M6 10.5L7.436 6.5C7.754 5.624 8.164 5.198 8.795 5.198C9.014 5.198 9.849 5.563 10.675 5.781C11.5 6 11.408 5.452 11.583 5.294C11.759 5.136 11.938 5 12.193 5C12.435 5 12.746 5.048 13.885 5.448C14.644 5.715 15.378 6.022 16.089 6.37C17.264 6.952 17.515 7.283 17.684 7.877L18.5 12.5C20.586 13.398 22 14.857 22 16.182C22 17.867 20.8 20 16.043 20C9.837 20 2 15.958 2 12.68C2 11.636 3.333 10.91 6 10.5Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M6 10.5C6 11.469 10.39 14 15.5 14C16.814 14 18.5 14.063 18.5 12.5" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_81632">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandRedhatIcon;

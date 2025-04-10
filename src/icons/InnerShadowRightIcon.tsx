@@ -1,25 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgInnerShadowRightIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#inner-shadow-right-icon_svg__a)">
-      <path
-        fill="currentColor"
-        d="M4.929 4.929c3.905-3.905 10.237-3.905 14.142 0s3.905 10.237 0 14.142-10.237 3.905-14.142 0-3.905-10.237 0-14.142m12.02 2.12a1 1 0 0 0-1.413 1.415 5 5 0 0 1 0 7.072 1 1 0 0 0 1.414 1.414 7 7 0 0 0 0-9.9z"
-      />
-    </g>
-    <defs>
-      <clipPath id="inner-shadow-right-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const InnerShadowRightIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_57939)">
+<path d="M4.92875 4.92875C8.83375 1.02375 15.1657 1.02375 19.0707 4.92875C22.9757 8.83375 22.9757 15.1657 19.0707 19.0707C15.1657 22.9757 8.83375 22.9757 4.92875 19.0707C1.02375 15.1657 1.02375 8.83375 4.92875 4.92875ZM16.9487 7.04975C16.7593 6.8721 16.5082 6.77512 16.2485 6.77933C15.9888 6.78355 15.7409 6.88863 15.5574 7.07234C15.3738 7.25606 15.2689 7.50399 15.2648 7.76367C15.2608 8.02336 15.358 8.27443 15.5358 8.46375C16.0002 8.92806 16.3686 9.47931 16.62 10.086C16.8713 10.6927 17.0007 11.343 17.0007 11.9998C17.0007 12.6565 16.8713 13.3068 16.62 13.9135C16.3686 14.5202 16.0002 15.0714 15.5358 15.5358C15.3536 15.7244 15.2528 15.977 15.2551 16.2392C15.2574 16.5013 15.3625 16.7522 15.5479 16.9376C15.7333 17.123 15.9842 17.2281 16.2463 17.2304C16.5085 17.2327 16.7611 17.1319 16.9498 16.9498C17.5998 16.2997 18.1155 15.528 18.4673 14.6787C18.8192 13.8294 19.0003 12.9191 19.0003 11.9998C19.0003 11.0804 18.8192 10.1701 18.4673 9.3208C18.1155 8.47148 17.5998 7.69977 16.9498 7.04975H16.9487Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_57939">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgInnerShadowRightIcon;

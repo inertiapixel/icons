@@ -1,28 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgMelonIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#melon-icon_svg__a)">
-      <path
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M20 10.002c0 5.523-4.477 10-10 10a9.97 9.97 0 0 1-6.984-2.842l4.343-4.153a4 4 0 0 0 5.76-5.51l4.342-4.153A9.96 9.96 0 0 1 20 10.002"
-      />
-    </g>
-    <defs>
-      <clipPath id="melon-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const MelonIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_68974)">
+<path d="M19.9996 10.0017C19.9996 15.5247 15.5226 20.0018 9.99963 20.0018C7.38929 20.0055 4.88165 18.9851 3.01562 17.1598L7.35863 13.0068C8.1103 13.6693 9.08328 14.0257 10.0851 14.0053C11.0869 13.9849 12.0446 13.5892 12.7686 12.8965C13.4927 12.2039 13.9304 11.2647 13.9952 10.2648C14.0601 9.26489 13.7472 8.27707 13.1186 7.49675L17.4606 3.34375C19.0988 5.17419 20.003 7.5453 19.9996 10.0017Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_68974">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgMelonIcon;

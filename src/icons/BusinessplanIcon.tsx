@@ -1,31 +1,21 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBusinessplanIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#businessplan-icon_svg__a)"
-    >
-      <path d="M11 6c0 .796.527 1.559 1.464 2.121.938.563 2.21.879 3.536.879s2.598-.316 3.535-.879S21 6.796 21 6s-.527-1.559-1.465-2.121C18.598 3.316 17.327 3 16 3s-2.598.316-3.536.879C11.528 4.44 11 5.204 11 6" />
-      <path d="M11 6v4c0 1.657 2.239 3 5 3s5-1.343 5-3V6" />
-      <path d="M11 10v4c0 1.657 2.239 3 5 3s5-1.343 5-3v-4" />
-      <path d="M11 14v4c0 1.657 2.239 3 5 3s5-1.343 5-3v-4M7 9H4.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 1 1 0 3H3M5 15v1m0-8v1" />
-    </g>
-    <defs>
-      <clipPath id="businessplan-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BusinessplanIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_80614)">
+<path d="M11 6C11 6.79565 11.5268 7.55871 12.4645 8.12132C13.4021 8.68393 14.6739 9 16 9C17.3261 9 18.5979 8.68393 19.5355 8.12132C20.4732 7.55871 21 6.79565 21 6C21 5.20435 20.4732 4.44129 19.5355 3.87868C18.5979 3.31607 17.3261 3 16 3C14.6739 3 13.4021 3.31607 12.4645 3.87868C11.5268 4.44129 11 5.20435 11 6Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M11 6V10C11 11.657 13.239 13 16 13C18.761 13 21 11.657 21 10V6" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M11 10V14C11 15.657 13.239 17 16 17C18.761 17 21 15.657 21 14V10" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M11 14V18C11 19.657 13.239 21 16 21C18.761 21 21 19.657 21 18V14" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M7 9H4.5C4.10218 9 3.72064 9.15804 3.43934 9.43934C3.15804 9.72064 3 10.1022 3 10.5C3 10.8978 3.15804 11.2794 3.43934 11.5607C3.72064 11.842 4.10218 12 4.5 12H5.5C5.89782 12 6.27936 12.158 6.56066 12.4393C6.84196 12.7206 7 13.1022 7 13.5C7 13.8978 6.84196 14.2794 6.56066 14.5607C6.27936 14.842 5.89782 15 5.5 15H3" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M5 15V16M5 8V9" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_80614">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBusinessplanIcon;

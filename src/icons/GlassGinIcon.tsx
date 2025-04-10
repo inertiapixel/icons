@@ -1,29 +1,19 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgGlassGinIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#glass-gin-icon_svg__a)"
-    >
-      <path d="M8 21h8M12 15v6M5.5 5c0 .53.685 1.04 1.904 1.414C8.623 6.79 10.276 7 12 7s3.377-.21 4.596-.586C17.816 6.04 18.5 5.53 18.5 5s-.685-1.04-1.904-1.414C15.377 3.21 13.724 3 12 3s-3.377.21-4.596.586C6.184 3.96 5.5 4.47 5.5 5" />
-      <path d="M5.75 4.5C5.138 5.25 5 6.5 5 8a7 7 0 1 0 14 0c0-1.5-.094-2.75-.75-3.5" />
-    </g>
-    <defs>
-      <clipPath id="glass-gin-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const GlassGinIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_72754)">
+<path d="M8 21H16" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 15V21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M5.5 5C5.5 5.53043 6.18482 6.03914 7.40381 6.41421C8.62279 6.78929 10.2761 7 12 7C13.7239 7 15.3772 6.78929 16.5962 6.41421C17.8152 6.03914 18.5 5.53043 18.5 5C18.5 4.46957 17.8152 3.96086 16.5962 3.58579C15.3772 3.21071 13.7239 3 12 3C10.2761 3 8.62279 3.21071 7.40381 3.58579C6.18482 3.96086 5.5 4.46957 5.5 5Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M5.75 4.5C5.138 5.25 5 6.5 5 8C5 9.85652 5.7375 11.637 7.05025 12.9497C8.36301 14.2625 10.1435 15 12 15C13.8565 15 15.637 14.2625 16.9497 12.9497C18.2625 11.637 19 9.85652 19 8C19 6.5 18.906 5.25 18.25 4.5" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_72754">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgGlassGinIcon;

@@ -1,25 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgCircleNumber4Icon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#circle-number-4-icon_svg__a)">
-      <path
-        fill="currentColor"
-        d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2m2 5a1 1 0 0 0-.993.883L13 8v3h-2V8l-.007-.117a1 1 0 0 0-1.986 0L9 8v3l.005.15a2 2 0 0 0 1.838 1.844L11 13h2v3l.007.117a1 1 0 0 0 1.986 0L15 16V8l-.007-.117A1 1 0 0 0 14 7"
-      />
-    </g>
-    <defs>
-      <clipPath id="circle-number-4-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const CircleNumber4Icon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_58420)">
+<path d="M12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2ZM14 7C13.7551 7.00003 13.5187 7.08996 13.3356 7.25272C13.1526 7.41547 13.0357 7.63975 13.007 7.883L13 8V11H11V8L10.993 7.883C10.9641 7.63995 10.847 7.41594 10.664 7.25341C10.481 7.09088 10.2448 7.00111 10 7.00111C9.75524 7.00111 9.51897 7.09088 9.33597 7.25341C9.15296 7.41594 9.03591 7.63995 9.007 7.883L9 8V11L9.005 11.15C9.04078 11.6262 9.24576 12.0738 9.58286 12.412C9.91996 12.7502 10.3669 12.9567 10.843 12.994L11 13H13V16L13.007 16.117C13.0359 16.3601 13.153 16.5841 13.336 16.7466C13.519 16.9091 13.7552 16.9989 14 16.9989C14.2448 16.9989 14.481 16.9091 14.664 16.7466C14.847 16.5841 14.9641 16.3601 14.993 16.117L15 16V8L14.993 7.883C14.9643 7.63975 14.8474 7.41547 14.6644 7.25272C14.4813 7.08996 14.2449 7.00003 14 7Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_58420">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgCircleNumber4Icon;

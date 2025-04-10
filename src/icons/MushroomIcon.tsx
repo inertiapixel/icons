@@ -1,25 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgMushroomIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#mushroom-icon_svg__a)">
-      <path
-        fill="currentColor"
-        d="M15 15v4a3 3 0 0 1-5.995.176L9 19v-4zM4.9 13a1.9 1.9 0 0 1-1.894-1.752L3 11.1C3 6.077 7.027 2 12 2s9 4.077 9 9.1a1.9 1.9 0 0 1-1.752 1.894L19.1 13z"
-      />
-    </g>
-    <defs>
-      <clipPath id="mushroom-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const MushroomIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_57703)">
+<path d="M15 15V19C15.0008 19.7809 14.697 20.5313 14.1532 21.0918C13.6095 21.6523 12.8686 21.9787 12.088 22.0016C11.3075 22.0245 10.5487 21.7422 9.97303 21.2145C9.39733 20.6869 9.05006 19.9556 9.005 19.176L9 19V15H15ZM4.9 13C4.42175 12.9999 3.96111 12.8195 3.61003 12.4948C3.25895 12.17 3.04325 11.7248 3.006 11.248L3 11.1C3 6.077 7.027 2 12 2C16.973 2 21 6.077 21 11.1C20.9999 11.5783 20.8195 12.0389 20.4948 12.39C20.17 12.7411 19.7248 12.9567 19.248 12.994L19.1 13H4.9Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_57703">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgMushroomIcon;

@@ -1,25 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgHexagonLetterLIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#hexagon-letter-l-icon_svg__a)">
-      <path
-        fill="currentColor"
-        d="m13.666 1.427 6.75 3.98.096.063.093.078.106.074a3.22 3.22 0 0 1 1.284 2.39l.005.204V15.5c0 1.175-.643 2.256-1.623 2.793l-6.804 4.302c-.98.538-2.166.538-3.2-.032l-6.695-4.237A3.23 3.23 0 0 1 2 15.5V8.215c0-1.106.57-2.128 1.476-2.705l6.95-4.098c1-.552 2.214-.552 3.24.015M10 6.998a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1l-.007-.117a1 1 0 0 0-.993-.883h-3v-7a1 1 0 0 0-1-1"
-      />
-    </g>
-    <defs>
-      <clipPath id="hexagon-letter-l-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const HexagonLetterLIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_58059)">
+<path d="M13.666 1.42714L20.416 5.40714L20.512 5.47014L20.605 5.54814L20.711 5.62214C21.086 5.90309 21.3952 6.26251 21.617 6.67531C21.8388 7.08811 21.9678 7.54434 21.995 8.01214L22 8.21614V15.5001C22 16.6751 21.357 17.7561 20.377 18.2931L13.573 22.5951C12.593 23.1331 11.407 23.1331 10.373 22.5631L3.678 18.3261C3.171 18.0484 2.74784 17.6396 2.45269 17.1425C2.15753 16.6454 2.0012 16.0783 2 15.5001V8.21514C2 7.10914 2.57 6.08714 3.476 5.51014L10.426 1.41214C11.426 0.860144 12.64 0.860144 13.666 1.42714ZM10 6.99814C9.73478 6.99814 9.48043 7.1035 9.29289 7.29104C9.10536 7.47857 9 7.73293 9 7.99814V15.9981C9 16.2634 9.10536 16.5177 9.29289 16.7053C9.48043 16.8928 9.73478 16.9981 10 16.9981H14C14.2652 16.9981 14.5196 16.8928 14.7071 16.7053C14.8946 16.5177 15 16.2634 15 15.9981L14.993 15.8811C14.9643 15.6379 14.8474 15.4136 14.6644 15.2509C14.4813 15.0881 14.2449 14.9982 14 14.9981H11V7.99814C11 7.73293 10.8946 7.47857 10.7071 7.29104C10.5196 7.1035 10.2652 6.99814 10 6.99814Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_58059">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgHexagonLetterLIcon;

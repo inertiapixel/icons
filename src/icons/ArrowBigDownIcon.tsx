@@ -1,25 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgArrowBigDownIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#arrow-big-down-icon_svg__a)">
-      <path
-        fill="currentColor"
-        d="m10 2-.15.005A2 2 0 0 0 8 4v6.999L5.414 11A2 2 0 0 0 4 14.414L10.586 21a2 2 0 0 0 2.828 0L20 14.414a2 2 0 0 0 .434-2.18l-.068-.145A2 2 0 0 0 18.586 11L16 10.999V4a2 2 0 0 0-2-2z"
-      />
-    </g>
-    <defs>
-      <clipPath id="arrow-big-down-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const ArrowBigDownIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_59126)">
+<path d="M9.99964 2L9.84964 2.005C9.34648 2.04284 8.87622 2.26947 8.53313 2.63945C8.19004 3.00943 7.99948 3.49542 7.99964 4V10.999L5.41364 11C5.01814 11.0001 4.63154 11.1174 4.30272 11.3372C3.9739 11.557 3.71762 11.8693 3.56628 12.2347C3.41494 12.6001 3.37533 13.0022 3.45247 13.3901C3.5296 13.778 3.72002 14.1343 3.99964 14.414L10.5856 21C10.9607 21.3749 11.4693 21.5856 11.9996 21.5856C12.53 21.5856 13.0386 21.3749 13.4136 21L19.9996 14.414C20.2795 14.1343 20.4701 13.7779 20.5474 13.3898C20.6246 13.0018 20.585 12.5995 20.4336 12.234L20.3656 12.089C20.1979 11.7612 19.943 11.4861 19.6289 11.294C19.3148 11.1018 18.9538 11.0001 18.5856 11L15.9996 10.999V4C15.9996 3.46957 15.7889 2.96086 15.4138 2.58579C15.0388 2.21071 14.5301 2 13.9996 2H9.99964Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_802_59126">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgArrowBigDownIcon;

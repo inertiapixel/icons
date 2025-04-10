@@ -1,29 +1,19 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgGlassChampagneIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#glass-champagne-icon_svg__a)"
-    >
-      <path d="M9 21h6M12 16v5M8 5c0 .53.421 1.04 1.172 1.414C9.922 6.79 10.939 7 12 7s2.078-.21 2.828-.586C15.578 6.04 16 5.53 16 5s-.421-1.04-1.172-1.414C14.078 3.21 13.061 3 12 3s-2.078.21-2.828.586C8.422 3.96 8 4.47 8 5" />
-      <path d="M8 5c0 6.075 1.79 11 4 11s4-4.925 4-11" />
-    </g>
-    <defs>
-      <clipPath id="glass-champagne-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const GlassChampagneIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_72772)">
+<path d="M9 21H15" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 16V21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M8 5C8 5.53043 8.42143 6.03914 9.17157 6.41421C9.92172 6.78929 10.9391 7 12 7C13.0609 7 14.0783 6.78929 14.8284 6.41421C15.5786 6.03914 16 5.53043 16 5C16 4.46957 15.5786 3.96086 14.8284 3.58579C14.0783 3.21071 13.0609 3 12 3C10.9391 3 9.92172 3.21071 9.17157 3.58579C8.42143 3.96086 8 4.46957 8 5Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M8 5C8 11.075 9.79 16 12 16C14.21 16 16 11.075 16 5" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_72772">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgGlassChampagneIcon;

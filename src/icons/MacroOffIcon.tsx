@@ -1,30 +1,21 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgMacroOffIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#macro-off-icon_svg__a)"
-    >
-      <path d="M6 15a6 6 0 0 0 11.47 2.467" />
-      <path d="M15.53 15.531a6 6 0 0 0-3.53 5.47" />
-      <path d="M12 21a6 6 0 0 0-6-6M12 21V11M10.866 10.87a5.01 5.01 0 0 1-3.734-3.723M7 3l3 2 2-2 2 2 3-2v3a5 5 0 0 1-2.604 4.389M3 3l18 18" />
-    </g>
-    <defs>
-      <clipPath id="macro-off-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const MacroOffIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_69814)">
+<path d="M6 15C5.99968 16.3724 6.46985 17.7034 7.33212 18.7712C8.19439 19.8389 9.39663 20.5787 10.7384 20.8673C12.0801 21.1559 13.4802 20.9757 14.7052 20.357C15.9302 19.7382 16.906 18.7182 17.47 17.467" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M15.53 15.5312C14.4776 16.0066 13.5848 16.7756 12.9586 17.7459C12.3325 18.7161 11.9996 19.8465 12 21.0013" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 21C12 19.4087 11.3679 17.8826 10.2426 16.7574C9.11742 15.6321 7.5913 15 6 15" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 21V11" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M10.866 10.87C9.9589 10.6582 9.12886 10.1976 8.46921 9.53985C7.80957 8.88215 7.34648 8.05348 7.132 7.147M7 3L10 5L12 3L14 5L17 3V6C17.0001 6.898 16.7583 7.77944 16.3001 8.55174C15.8419 9.32404 15.1842 9.95868 14.396 10.389" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3 3L21 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_69814">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgMacroOffIcon;

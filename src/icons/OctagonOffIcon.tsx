@@ -1,28 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgOctagonOffIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#octagon-off-icon_svg__a)"
-    >
-      <path d="M19.027 19.003a2 2 0 0 1-.65.444l-5.575 2.39a2.04 2.04 0 0 1-1.604 0l-5.575-2.39a2.04 2.04 0 0 1-1.07-1.07l-2.388-5.574a2.04 2.04 0 0 1 0-1.604l2.389-5.575c.103-.24.25-.457.433-.64m2.689-1.31 3.522-1.51a2.04 2.04 0 0 1 1.604 0l5.575 2.39c.48.207.863.59 1.07 1.07l2.388 5.575c.22.512.22 1.092 0 1.604l-1.51 3.522M3 3l18 18" />
-    </g>
-    <defs>
-      <clipPath id="octagon-off-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const OctagonOffIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_67279)">
+<path d="M19.0266 19.0026C18.841 19.1916 18.6202 19.3424 18.3766 19.4466L12.8016 21.8366C12.5481 21.945 12.2753 22.0009 11.9996 22.0009C11.7239 22.0009 11.4511 21.945 11.1976 21.8366L5.62261 19.4466C5.14173 19.2407 4.75857 18.8575 4.55261 18.3766L2.16461 12.8026C2.056 12.5492 2 12.2763 2 12.0006C2 11.7249 2.056 11.452 2.16461 11.1986L4.55361 5.62361C4.65661 5.38361 4.80361 5.16661 4.98661 4.98461M7.67561 3.67461L11.1976 2.16461C11.451 2.056 11.7239 2 11.9996 2C12.2753 2 12.5482 2.056 12.8016 2.16461L18.3766 4.55461C18.8566 4.76061 19.2396 5.14361 19.4466 5.62461L21.8346 11.1986C22.0546 11.7106 22.0546 12.2906 21.8346 12.8026L20.3256 16.3246" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M3 3L21 21" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_67279">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgOctagonOffIcon;

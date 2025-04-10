@@ -1,29 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandSvelteIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#brand-svelte-icon_svg__a)"
-    >
-      <path d="m15 8-5 3 .82-.495c1.86-1.15 4.412-.49 5.574 1.352a3.91 3.91 0 0 1-1.264 5.42l-5.053 3.126c-1.86 1.151-4.312.591-5.474-1.251a3.91 3.91 0 0 1 1.263-5.42l.26-.16" />
-      <path d="m7.999 17 5-3-.822.495c-1.86 1.151-4.411.491-5.574-1.35a3.91 3.91 0 0 1 1.264-5.42l5.054-3.128c1.86-1.15 4.311-.59 5.474 1.252a3.91 3.91 0 0 1-1.264 5.42l-.26.16" />
-    </g>
-    <defs>
-      <clipPath id="brand-svelte-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandSvelteIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_81431)">
+<path d="M14.9993 8L9.99932 11L10.8203 10.505C12.6803 9.355 15.2323 10.015 16.3943 11.857C16.6706 12.2949 16.8571 12.7833 16.9431 13.2939C17.029 13.8044 17.0128 14.327 16.8952 14.8312C16.7776 15.3354 16.561 15.8113 16.2581 16.2311C15.9551 16.651 15.5718 17.0065 15.1303 17.277L10.0773 20.403C8.21732 21.554 5.76532 20.994 4.60332 19.152C4.32703 18.7142 4.14045 18.2258 4.05439 17.7153C3.96834 17.2048 3.98453 16.6822 4.10202 16.178C4.21952 15.6738 4.43598 15.198 4.73884 14.7781C5.04171 14.3582 5.42494 14.0026 5.86632 13.732L6.12632 13.572" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M7.99904 16.9994L12.999 13.9994L12.177 14.4954C10.317 15.6464 7.76604 14.9864 6.60304 13.1444C6.3268 12.7065 6.14027 12.2181 6.05429 11.7076C5.96831 11.197 5.98459 10.6745 6.10218 10.1702C6.21977 9.66602 6.43633 9.19018 6.73929 8.77032C7.04225 8.35047 7.42558 7.99496 7.86704 7.72444L12.921 4.59744C14.781 3.44744 17.232 4.00744 18.395 5.84944C18.6713 6.28734 18.8578 6.77574 18.9438 7.2863C19.0298 7.79686 19.0135 8.31941 18.8959 8.82363C18.7783 9.32785 18.5618 9.8037 18.2588 10.2236C17.9558 10.6434 17.5725 10.9989 17.131 11.2694L16.871 11.4294" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_81431">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandSvelteIcon;

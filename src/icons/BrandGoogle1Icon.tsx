@@ -1,28 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandGoogle1Icon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#brand-google-1-icon_svg__a)">
-      <path
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M20.944 11a9 9 0 1 1-3.284-5.997l-2.655 2.392A5.5 5.5 0 1 0 17.125 14h-4.126v-3z"
-      />
-    </g>
-    <defs>
-      <clipPath id="brand-google-1-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandGoogle1Icon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_82162)">
+<path d="M20.9443 10.9997C21.1759 13.0714 20.6813 15.1592 19.5448 16.9067C18.4083 18.6543 16.7005 19.9531 14.7128 20.5814C12.7252 21.2098 10.5811 21.1286 8.64667 20.352C6.71221 19.5753 5.10734 18.1511 4.10611 16.3228C3.10488 14.4944 2.76938 12.3752 3.15689 10.3269C3.54441 8.27869 4.63091 6.42849 6.23087 5.09225C7.83083 3.75601 9.84503 3.0166 11.9295 3.00028C14.014 2.98395 16.0396 3.69172 17.6603 5.00274L15.0053 7.39474C14.0537 6.77399 12.9333 6.46315 11.7979 6.50494C10.6626 6.54673 9.568 6.93909 8.66465 7.62811C7.76131 8.31713 7.0935 9.26899 6.75301 10.3529C6.41252 11.4368 6.41605 12.5996 6.76312 13.6814C7.11018 14.7632 7.78375 15.711 8.69126 16.3945C9.59878 17.078 10.6957 17.4637 11.8313 17.4986C12.9669 17.5335 14.0854 17.2159 15.0332 16.5894C15.9809 15.9629 16.7114 15.0582 17.1243 13.9997H12.9993V10.9997H20.9443Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_82162">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandGoogle1Icon;

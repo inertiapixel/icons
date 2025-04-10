@@ -1,28 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandZalandoIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#brand-zalando-icon_svg__a)">
-      <path
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M7.531 21c-.65 0-1-.15-1.196-.27-.266-.157-.753-.563-1.197-1.747A20.6 20.6 0 0 1 4.001 12c.015-2.745.436-5.07 1.137-6.975.444-1.2.93-1.605 1.197-1.763C6.527 3.159 6.88 3 7.53 3c.244 0 .532.022.871.075a19.1 19.1 0 0 1 6.425 2.475h.007a19.6 19.6 0 0 1 5.287 4.508c.783.99.88 1.627.88 1.942s-.097.953-.88 1.943a19.6 19.6 0 0 1-5.287 4.5h-.007a19 19 0 0 1-6.425 2.474q-.43.079-.87.083"
-      />
-    </g>
-    <defs>
-      <clipPath id="brand-zalando-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandZalandoIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_81090)">
+<path d="M7.53132 21C6.88132 21 6.53132 20.85 6.33532 20.73C6.06932 20.573 5.58232 20.167 5.13832 18.983C4.35912 16.7384 3.97444 14.3758 4.00132 12C4.01632 9.255 4.43732 6.93 5.13832 5.025C5.58232 3.825 6.06832 3.42 6.33532 3.262C6.52732 3.159 6.88032 3 7.53032 3C7.77432 3 8.06232 3.022 8.40132 3.075C10.6753 3.50383 12.8523 4.34247 14.8263 5.55H14.8333C16.8504 6.72533 18.6409 8.25204 20.1203 10.058C20.9033 11.048 20.9993 11.685 20.9993 12C20.9993 12.315 20.9033 12.953 20.1203 13.943C18.6403 15.7461 16.8498 17.2701 14.8333 18.443H14.8263C12.8528 19.6512 10.6755 20.4896 8.40132 20.917C8.11396 20.97 7.82352 20.9978 7.53132 21Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_81090">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandZalandoIcon;

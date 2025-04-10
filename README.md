@@ -13,14 +13,14 @@ With **5000+ icons**, this package provides a scalable, flexible, and easy-to-us
 Install the package via npm:
 
 ```sh
-npm install @inertiapixel/icons
+npm install @inertiapixel/react-icons
 ```
 
 ## Usage
 
 ```tsx
 import React from "react";
-import { HeartIcon, StarIcon } from "@inertiapixel/icons";
+import { HeartIcon, StarIcon } from "@inertiapixel/react-icons";
 
 const App = () => {
   return (

@@ -1,28 +1,17 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgIceCream2Icon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#ice-cream-2-icon_svg__a)"
-    >
-      <path d="M17.658 10.998a6 6 0 1 0-11.315 0M6.344 11l5.658 11 5.657-11z" />
-    </g>
-    <defs>
-      <clipPath id="ice-cream-2-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const IceCream2Icon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_71468)">
+<path d="M17.6575 10.9982C17.9771 10.0932 18.075 9.12484 17.9429 8.17425C17.8108 7.22366 17.4526 6.31863 16.8984 5.53511C16.3442 4.75159 15.6101 4.11245 14.7578 3.67133C13.9054 3.23022 12.9597 3 12 3C11.0403 3 10.0946 3.23022 9.24223 3.67133C8.38989 4.11245 7.6558 4.75159 7.10158 5.53511C6.54736 6.31863 6.18918 7.22366 6.05709 8.17425C5.92501 9.12484 6.02289 10.0932 6.3425 10.9982" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M6.34375 11L12.0017 22L17.6587 11H6.34375Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_71468">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgIceCream2Icon;

@@ -1,29 +1,20 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgLemonIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#lemon-icon_svg__a)"
-    >
-      <path d="M17.538 3.395c3.904 3.906 3.904 10.237 0 14.143-3.906 3.904-10.237 3.904-14.143 0z" />
-      <path d="M5.867 15.06a6.5 6.5 0 1 0 9.193-9.193M10.465 10.465l4.597 4.597M10.465 10.465v6.364M10.465 10.465h6.364" />
-    </g>
-    <defs>
-      <clipPath id="lemon-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const LemonIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_70709)">
+<path d="M17.5375 3.39453C21.4425 7.30053 21.4425 13.6315 17.5375 17.5375C13.6315 21.4425 7.30053 21.4425 3.39453 17.5375L17.5375 3.39453Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M5.86719 15.0592C7.08612 16.2783 8.73941 16.9632 10.4633 16.9633C12.1873 16.9634 13.8406 16.2786 15.0597 15.0597C16.2788 13.8408 16.9637 12.1875 16.9638 10.4635C16.9639 8.73961 16.2791 7.08626 15.0602 5.86719" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M10.4648 10.4648L15.0618 15.0618" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M10.4648 10.4648V16.8288" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M10.4648 10.4648H16.8288" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_70709">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgLemonIcon;

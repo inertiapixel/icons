@@ -1,28 +1,22 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBoxAlignLeft1Icon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#box-align-left-1-icon_svg__a)"
-    >
-      <path d="M10.004 20.004v-16h-5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1zM15.002 20.004h-.01M20.003 20.004h-.01M20.003 15.004h-.01M20.003 9.004h-.01M20.003 4.004h-.01M15.002 4.004h-.01" />
-    </g>
-    <defs>
-      <clipPath id="box-align-left-1-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BoxAlignLeft1Icon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_83122)">
+<path d="M10.0039 20.0039V4.00391H5.00391C4.73869 4.00391 4.48434 4.10926 4.2968 4.2968C4.10926 4.48434 4.00391 4.73869 4.00391 5.00391V19.0039C4.00391 19.2691 4.10926 19.5235 4.2968 19.711C4.48434 19.8985 4.73869 20.0039 5.00391 20.0039H10.0039Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M15.0022 20.0039H14.9922" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M20.0032 20.0039H19.9922" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M20.0032 15.0039H19.9922" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M20.0032 9.00391H19.9922" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M20.0032 4.00391H19.9922" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M15.0022 4.00391H14.9922" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_83122">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBoxAlignLeft1Icon;

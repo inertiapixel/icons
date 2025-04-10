@@ -1,28 +1,18 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgTrowelIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      clipPath="url(#trowel-icon_svg__a)"
-    >
-      <path d="M14.42 9.058 9.06 14.42a1.978 1.978 0 0 1-3.275-.773L3.102 5.604a1.978 1.978 0 0 1 2.502-2.502l8.044 2.682a1.978 1.978 0 0 1 .773 3.274M10 10l6.5 6.5M19.347 16.575l1.08 1.079a1.96 1.96 0 0 1-2.773 2.771l-1.08-1.079a1.96 1.96 0 0 1 2.773-2.771" />
-    </g>
-    <defs>
-      <clipPath id="trowel-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const TrowelIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_60873)">
+<path d="M14.4205 9.05751L9.05851 14.4205C8.8201 14.6589 8.52473 14.8324 8.20043 14.9245C7.87613 15.0166 7.53366 15.0243 7.20554 14.9469C6.87742 14.8694 6.57455 14.7094 6.32567 14.482C6.07678 14.2546 5.89016 13.9673 5.78351 13.6475L3.10151 5.60351C2.98534 5.25502 2.96852 4.88107 3.05291 4.52355C3.13731 4.16604 3.31959 3.83909 3.57934 3.57934C3.83909 3.31959 4.16604 3.13731 4.52355 3.05291C4.88107 2.96852 5.25502 2.98534 5.60351 3.10151L13.6485 5.78351C13.9681 5.89024 14.2552 6.07685 14.4825 6.32566C14.7097 6.57446 14.8697 6.8772 14.9471 7.20516C15.0245 7.53312 15.0169 7.87543 14.9249 8.1996C14.8329 8.52378 14.6586 8.81909 14.4205 9.05751Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M10 10L16.5 16.5" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M19.347 16.5745L20.427 17.6535C20.7945 18.0212 21.001 18.5199 21.0009 19.0398C21.0008 19.5598 20.7942 20.0584 20.4265 20.426C20.0587 20.7935 19.56 21 19.0401 20.9999C18.5202 20.9998 18.0215 20.7932 17.654 20.4255L16.574 19.3465C16.2064 18.9787 15.9999 18.48 16 17.9601C16.0001 17.4402 16.2067 16.9415 16.5745 16.574C16.9422 16.2064 17.4409 15.9999 17.9608 16C18.4808 16.0001 18.9794 16.2067 19.347 16.5745Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_60873">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgTrowelIcon;

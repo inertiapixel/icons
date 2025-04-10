@@ -1,28 +1,16 @@
-import * as React from "react";
-import type { SVGProps } from "react";
-const SvgBrandSharikIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    viewBox="0 0 24 24"
-    {...props}
-  >
-    <g clipPath="url(#brand-sharik-icon_svg__a)">
-      <path
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M4.28 16.606A8.97 8.97 0 0 1 5.645 5.63a9.03 9.03 0 0 1 11.01-1.346C15.072 8.975 14.24 11.243 12 13c-1.584 1.242-3.836 2.24-7.72 3.606M20.617 9.3c2.113 7.59-4.892 13.361-11.302 11.264 1.93-3.1 3.235-4.606 4.686-6.065 1.705-1.715 3.59-3.23 6.616-5.199"
-      />
-    </g>
-    <defs>
-      <clipPath id="brand-sharik-icon_svg__a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </clipPath>
-    </defs>
-  </svg>
+import React from "react";
+
+export const BrandSharikIcon = (
+  props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
+) => (
+  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+<g clipPath="url(#clip0_802_81590)">
+<path d="M4.28078 16.6061C3.24816 14.8874 2.82129 12.8722 3.06836 10.8824C3.31543 8.89262 4.22218 7.04303 5.64378 5.62906C7.0681 4.21216 8.92413 3.31053 10.9183 3.06676C12.9125 2.82298 14.9311 3.25098 16.6548 4.28306C15.0708 8.97506 14.2398 11.2431 11.9998 13.0001C10.4158 14.2421 8.16378 15.2401 4.28078 16.6061ZM20.6158 9.30006C22.7288 16.8901 15.7238 22.6611 9.31379 20.5641C11.2448 17.4641 12.5488 15.9581 13.9998 14.4991C15.7048 12.7841 17.5908 11.2691 20.6158 9.30006Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_802_81590">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 );
-export default SvgBrandSharikIcon;
