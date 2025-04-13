@@ -3,7 +3,7 @@ import React from "react";
 export const ArtboardIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_59078)">
 <path d="M15 7H9C8.46957 7 7.96086 7.21071 7.58579 7.58579C7.21071 7.96086 7 8.46957 7 9V15C7 15.5304 7.21071 16.0391 7.58579 16.4142C7.96086 16.7893 8.46957 17 9 17H15C15.5304 17 16.0391 16.7893 16.4142 16.4142C16.7893 16.0391 17 15.5304 17 15V9C17 8.46957 16.7893 7.96086 16.4142 7.58579C16.0391 7.21071 15.5304 7 15 7Z" fill="black"/>
 <path d="M3.99889 7C4.25377 7.00028 4.49892 7.09788 4.68426 7.27285C4.8696 7.44782 4.98113 7.68695 4.99606 7.94139C5.011 8.19584 4.92822 8.44638 4.76463 8.64183C4.60104 8.83729 4.36899 8.9629 4.11589 8.993L3.99889 9H2.99889C2.74401 8.99972 2.49886 8.90212 2.31352 8.72715C2.12819 8.55218 2.01666 8.31305 2.00172 8.05861C1.98678 7.80416 2.06957 7.55362 2.23316 7.35817C2.39675 7.16271 2.6288 7.0371 2.88189 7.007L2.99889 7H3.99889Z" fill="black"/>

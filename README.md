@@ -20,13 +20,14 @@ npm install @inertiapixel/react-icons
 
 ```tsx
 import React from "react";
-import { HeartIcon, StarIcon } from "@inertiapixel/react-icons";
+import { Heart1Icon, Star1Icon, ShoppingCart1Icon } from "@inertiapixel/react-icons";
 
 const App = () => {
   return (
     <div>
-      <HeartIcon width={50} height={50} color="red" />
-      <StarIcon />
+      <ShoppingCart1Icon />
+      <Heart1Icon width={100} height={100} color="red" />
+      <Star1Icon width={100} height={100} color="#008000" />
     </div>
   );
 };
@@ -34,18 +35,16 @@ const App = () => {
 export default App;
 ```
 
-### Customization
+## Authors
 
-You can style the icons using props like `width`, `height`, and `fill`:
+- **Md Asif** - [LinkedIn](https://www.linkedin.com/in/md-asif-ba446aa3/)
+- **Anand Bhatt** - [LinkedIn](https://www.linkedin.com/in/anandbhatt1983/)
+- **Md Shaquib** - [LinkedIn](https://www.linkedin.com/in/md-saquib-32604a232/)
 
-```tsx
-<HeartIcon width={40} height={40} fill="blue" />
-```
-
-### Visit our official website for live previews:
+### Visit our official website for live previews and easily find the icons you need for your project:
 🔗 www.inertiapixel.com/react-icons
 
-## 📄 License
+## License
 
 This icon set is **free** and open-source under the **MIT License**.  
 See the full license [here](https://github.com/inertiapixel/icons/blob/master/LICENSE).

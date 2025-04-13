@@ -3,10 +3,10 @@ import React from "react";
 export const SmartHomeIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_63532)">
-<path d="M19.0013 8.70977L13.6683 4.56177C13.2002 4.19768 12.6242 4 12.0312 4C11.4383 4 10.8623 4.19768 10.3942 4.56177L5.06025 8.70977C4.73969 8.95905 4.48034 9.2783 4.30201 9.64312C4.12367 10.0079 4.03106 10.4087 4.03125 10.8148V18.0148C4.03125 18.5452 4.24196 19.0539 4.61704 19.429C4.99211 19.8041 5.50082 20.0148 6.03125 20.0148H18.0313C18.5617 20.0148 19.0704 19.8041 19.4455 19.429C19.8205 19.0539 20.0312 18.5452 20.0312 18.0148V10.8148C20.0312 9.99177 19.6513 9.21477 19.0013 8.70977Z" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
-<path d="M16 15C13.79 16.333 10.208 16.333 8 15" stroke="black" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M19.0013 8.70977L13.6683 4.56177C13.2002 4.19768 12.6242 4 12.0312 4C11.4383 4 10.8623 4.19768 10.3942 4.56177L5.06025 8.70977C4.73969 8.95905 4.48034 9.2783 4.30201 9.64312C4.12367 10.0079 4.03106 10.4087 4.03125 10.8148V18.0148C4.03125 18.5452 4.24196 19.0539 4.61704 19.429C4.99211 19.8041 5.50082 20.0148 6.03125 20.0148H18.0313C18.5617 20.0148 19.0704 19.8041 19.4455 19.429C19.8205 19.0539 20.0312 18.5452 20.0312 18.0148V10.8148C20.0312 9.99177 19.6513 9.21477 19.0013 8.70977Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M16 15C13.79 16.333 10.208 16.333 8 15"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 </g>
 <defs>
 <clipPath id="clip0_802_63532">

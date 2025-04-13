@@ -3,7 +3,7 @@ import React from "react";
 export const BoxAlignTopRightIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_58792)">
 <path d="M19 3.01172H14C13.4696 3.01172 12.9609 3.22243 12.5858 3.59751C12.2107 3.97258 12 4.48129 12 5.01172V10.0117C12 10.5422 12.2107 11.0509 12.5858 11.4259C12.9609 11.801 13.4696 12.0117 14 12.0117H19C19.5304 12.0117 20.0391 11.801 20.4142 11.4259C20.7893 11.0509 21 10.5422 21 10.0117V5.01172C21 4.48129 20.7893 3.97258 20.4142 3.59751C20.0391 3.22243 19.5304 3.01172 19 3.01172Z" fill="black"/>
 <path d="M20 14C20.2449 14 20.4813 14.09 20.6644 14.2527C20.8474 14.4155 20.9643 14.6397 20.993 14.883L21 15.01C20.9997 15.2649 20.9021 15.51 20.7272 15.6954C20.5522 15.8807 20.313 15.9922 20.0586 16.0072C19.8042 16.0221 19.5536 15.9393 19.3582 15.7757C19.1627 15.6121 19.0371 15.3801 19.007 15.127L19 15C19 14.7348 19.1054 14.4804 19.2929 14.2929C19.4804 14.1054 19.7348 14 20 14Z" fill="black"/>

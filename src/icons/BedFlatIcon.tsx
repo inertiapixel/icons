@@ -3,7 +3,7 @@ import React from "react";
 export const BedFlatIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_58959)">
 <path d="M5 8C5.59334 8 6.17336 8.17595 6.66671 8.50559C7.16006 8.83524 7.54458 9.30377 7.77164 9.85195C7.9987 10.4001 8.05811 11.0033 7.94236 11.5853C7.8266 12.1672 7.54088 12.7018 7.12132 13.1213C6.70176 13.5409 6.16721 13.8266 5.58527 13.9424C5.00333 14.0581 4.40013 13.9987 3.85195 13.7716C3.30377 13.5446 2.83524 13.1601 2.50559 12.6667C2.17595 12.1734 2 11.5933 2 11L2.005 10.824C2.04989 10.0601 2.38499 9.34224 2.94174 8.81728C3.49849 8.29233 4.23479 7.99996 5 8Z" fill="black"/>
 <path d="M18 7C19.0609 7 20.0783 7.42143 20.8284 8.17157C21.5786 8.92172 22 9.93913 22 11V13C22 13.2652 21.8946 13.5196 21.7071 13.7071C21.5196 13.8946 21.2652 14 21 14H10C9.73478 14 9.48043 13.8946 9.29289 13.7071C9.10536 13.5196 9 13.2652 9 13V8C9 7.73478 9.10536 7.48043 9.29289 7.29289C9.48043 7.10536 9.73478 7 10 7H18Z" fill="black"/>

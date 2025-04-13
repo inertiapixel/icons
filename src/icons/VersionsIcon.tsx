@@ -3,7 +3,7 @@ import React from "react";
 export const VersionsIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg width={props.width || 15} height={props.height || 15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.25" {...props}>
+  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_57054)">
 <path d="M18 4H12C11.2044 4 10.4413 4.31607 9.87868 4.87868C9.31607 5.44129 9 6.20435 9 7V17C9 17.7956 9.31607 18.5587 9.87868 19.1213C10.4413 19.6839 11.2044 20 12 20H18C18.7956 20 19.5587 19.6839 20.1213 19.1213C20.6839 18.5587 21 17.7956 21 17V7C21 6.20435 20.6839 5.44129 20.1213 4.87868C19.5587 4.31607 18.7956 4 18 4Z" fill="black"/>
 <path d="M7 6C7.24493 6.00003 7.48134 6.08996 7.66437 6.25272C7.84741 6.41547 7.96434 6.63975 7.993 6.883L8 7V17C7.99972 17.2549 7.90212 17.5 7.72715 17.6854C7.55218 17.8707 7.31305 17.9822 7.05861 17.9972C6.80416 18.0121 6.55362 17.9293 6.35817 17.7657C6.16271 17.6021 6.0371 17.3701 6.007 17.117L6 17V7C6 6.73478 6.10536 6.48043 6.29289 6.29289C6.48043 6.10536 6.73478 6 7 6Z" fill="black"/>
