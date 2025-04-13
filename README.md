@@ -35,6 +35,9 @@ const App = () => {
 export default App;
 ```
 
+### Why use InertiaPixel React Icons instead of icon fonts?
+SVGs are supported by all major browsers and offer better flexibility, scalability, and performance compared to icon fonts. With InertiaPixel React Icons, you can import only the icons you need, avoiding the overhead of large font files. This keeps your bundle size optimized and makes it easy to manage and track icon usage across your project.
+
 ## Authors
 
 - **Md Asif** - [LinkedIn](https://www.linkedin.com/in/md-asif-ba446aa3/)
