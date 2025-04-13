@@ -3,7 +3,7 @@ import React from "react";
 export const FolderRootIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_73250)">
 <path d="M10 13C10 13.5304 10.2107 14.0391 10.5858 14.4142C10.9609 14.7893 11.4696 15 12 15C12.5304 15 13.0391 14.7893 13.4142 14.4142C13.7893 14.0391 14 13.5304 14 13C14 12.4696 13.7893 11.9609 13.4142 11.5858C13.0391 11.2107 12.5304 11 12 11C11.4696 11 10.9609 11.2107 10.5858 11.5858C10.2107 11.9609 10 12.4696 10 13Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M12 15V19"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -11,7 +11,7 @@ export const FolderRootIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_73250">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

@@ -3,7 +3,7 @@ import React from "react";
 export const WashHandIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_60024)">
 <path d="M3.48438 8.965C3.65237 8.985 3.82437 8.998 3.99837 9C4.78837 9.009 5.53737 8.822 5.99837 8.5C6.42437 8.204 6.77537 8 7.49837 8H8.49837"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M16 8L16.615 8.034C17.167 8.101 17.661 8.264 18 8.5C18.461 8.822 19.21 9.009 20 9C20.17 9 20.339 8.986 20.503 8.966"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -12,7 +12,7 @@ export const WashHandIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_60024">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

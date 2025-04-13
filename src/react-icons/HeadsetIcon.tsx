@@ -3,7 +3,7 @@ import React from "react";
 export const HeadsetIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_72319)">
 <path d="M4 14V11C4 8.87827 4.84285 6.84344 6.34315 5.34315C7.84344 3.84285 9.87827 3 12 3C14.1217 3 16.1566 3.84285 17.6569 5.34315C19.1571 6.84344 20 8.87827 20 11V14"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M18 19C18 20.657 15.314 22 12 22"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -12,7 +12,7 @@ export const HeadsetIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_72319">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

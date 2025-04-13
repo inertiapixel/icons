@@ -3,7 +3,7 @@ import React from "react";
 export const TransactionBitcoinIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_61168)">
 <path d="M15 12H19.09C20.145 12 21 12.895 21 14C21 15.105 20.145 16 19.09 16C20.145 16 21 16.895 21 18C21 19.105 20.145 20 19.09 20H15"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M16 16H20"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -17,7 +17,7 @@ export const TransactionBitcoinIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_61168">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

@@ -3,7 +3,7 @@ import React from "react";
 export const BrandTwilioIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_81318)">
 <path d="M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M8 9C8 9.26522 8.10536 9.51957 8.29289 9.70711C8.48043 9.89464 8.73478 10 9 10C9.26522 10 9.51957 9.89464 9.70711 9.70711C9.89464 9.51957 10 9.26522 10 9C10 8.73478 9.89464 8.48043 9.70711 8.29289C9.51957 8.10536 9.26522 8 9 8C8.73478 8 8.48043 8.10536 8.29289 8.29289C8.10536 8.48043 8 8.73478 8 9Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -13,7 +13,7 @@ export const BrandTwilioIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_81318">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

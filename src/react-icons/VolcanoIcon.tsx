@@ -3,7 +3,7 @@ import React from "react";
 export const VolcanoIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_60197)">
 <path d="M9 8V7C9 6.46957 8.78929 5.96086 8.41421 5.58579C8.03914 5.21071 7.53043 5 7 5C6.46957 5 5.96086 5.21071 5.58579 5.58579C5.21071 5.96086 5 6.46957 5 7"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M15 8V7C15 6.46957 15.2107 5.96086 15.5858 5.58579C15.9609 5.21071 16.4696 5 17 5C17.5304 5 18.0391 5.21071 18.4142 5.58579C18.7893 5.96086 19 6.46957 19 7"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -13,7 +13,7 @@ export const VolcanoIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_60197">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

@@ -3,7 +3,7 @@ import React from "react";
 export const CoinsIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_78086)">
 <path d="M9 14C9 15.657 11.686 17 15 17C18.314 17 21 15.657 21 14C21 12.343 18.314 11 15 11C11.686 11 9 12.343 9 14Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M9 14V18C9 19.656 11.686 21 15 21C18.314 21 21 19.656 21 18V14"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -13,7 +13,7 @@ export const CoinsIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_78086">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

@@ -3,7 +3,7 @@ import React from "react";
 export const BrandMastercardIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_81971)">
 <path d="M11 12C11 12.394 11.0776 12.7841 11.2284 13.1481C11.3791 13.512 11.6001 13.8427 11.8787 14.1213C12.1573 14.3999 12.488 14.6209 12.8519 14.7716C13.2159 14.9224 13.606 15 14 15C14.394 15 14.7841 14.9224 15.1481 14.7716C15.512 14.6209 15.8427 14.3999 16.1213 14.1213C16.3999 13.8427 16.6209 13.512 16.7716 13.1481C16.9224 12.7841 17 12.394 17 12C17 11.606 16.9224 11.2159 16.7716 10.8519C16.6209 10.488 16.3999 10.1573 16.1213 9.87868C15.8427 9.6001 15.512 9.37913 15.1481 9.22836C14.7841 9.0776 14.394 9 14 9C13.606 9 13.2159 9.0776 12.8519 9.22836C12.488 9.37913 12.1573 9.6001 11.8787 9.87868C11.6001 10.1573 11.3791 10.488 11.2284 10.8519C11.0776 11.2159 11 11.606 11 12Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M12.0012 9.765C11.5696 9.3786 11.0355 9.12539 10.4631 9.03597C9.89081 8.94654 9.30484 9.02472 8.77599 9.26106C8.24713 9.4974 7.79801 9.8818 7.48285 10.3678C7.1677 10.8539 7 11.4207 7 12C7 12.5793 7.1677 13.1461 7.48285 13.6322C7.79801 14.1182 8.24713 14.5026 8.77599 14.7389C9.30484 14.9753 9.89081 15.0535 10.4631 14.964C11.0355 14.8746 11.5696 14.6214 12.0012 14.235"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -11,7 +11,7 @@ export const BrandMastercardIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_81971">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

@@ -3,7 +3,7 @@ import React from "react";
 export const Chess1Icon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_79477)">
 <path d="M12 3C12.7956 3 13.5587 3.31607 14.1213 3.87868C14.6839 4.44129 15 5.20435 15 6C15 7.113 14.4 8.482 13.5 9L15 16H9L10.5 9C9.6 8.482 9 7.113 9 6C9 5.20435 9.31607 4.44129 9.87868 3.87868C10.4413 3.31607 11.2044 3 12 3Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M8 9H16"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -11,7 +11,7 @@ export const Chess1Icon = (
 </g>
 <defs>
 <clipPath id="clip0_802_79477">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

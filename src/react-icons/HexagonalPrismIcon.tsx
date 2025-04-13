@@ -3,7 +3,7 @@ import React from "react";
 export const HexagonalPrismIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_71884)">
 <path d="M20.7929 6.99609L17.0179 9.63909C16.6815 9.87394 16.2812 9.99994 15.8709 10.0001H8.13094C7.72094 10.0001 7.32094 9.87409 6.98494 9.63809L3.21094 6.99709"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M8 10V21"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -12,7 +12,7 @@ export const HexagonalPrismIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_71884">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

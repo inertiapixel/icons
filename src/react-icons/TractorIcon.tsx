@@ -3,7 +3,7 @@ import React from "react";
 export const TractorIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_61219)">
 <path d="M3 15C3 16.0609 3.42143 17.0783 4.17157 17.8284C4.92172 18.5786 5.93913 19 7 19C8.06087 19 9.07828 18.5786 9.82843 17.8284C10.5786 17.0783 11 16.0609 11 15C11 13.9391 10.5786 12.9217 9.82843 12.1716C9.07828 11.4214 8.06087 11 7 11C5.93913 11 4.92172 11.4214 4.17157 12.1716C3.42143 12.9217 3 13.9391 3 15Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M7 15V15.01"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -14,7 +14,7 @@ export const TractorIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_61219">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

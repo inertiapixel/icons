@@ -3,7 +3,7 @@ import React from "react";
 export const PasswordFingerprintIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_67039)">
 <path d="M17 8C17.788 9 18 10 18 11V12"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M9 11C9 9.422 10.343 8 12 8C13.657 8 15 9.422 15 11V13"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -21,7 +21,7 @@ export const PasswordFingerprintIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_67039">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

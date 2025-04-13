@@ -3,7 +3,7 @@ import React from "react";
 export const CoinTaka1Icon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_78111)">
 <path d="M8 7.99865L8.553 7.72265C8.70542 7.64649 8.87477 7.61053 9.04499 7.6182C9.21521 7.62587 9.38065 7.6769 9.52561 7.76646C9.67056 7.85602 9.79023 7.98113 9.87326 8.12993C9.95628 8.27872 9.99991 8.44626 10 8.61665V14.9987C10 15.5291 10.2107 16.0378 10.5858 16.4129C10.9609 16.7879 11.4696 16.9987 12 16.9987H12.5C13.163 16.9987 13.7989 16.7353 14.2678 16.2664C14.7366 15.7976 15 15.1617 15 14.4987V13.9987H14"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M8 11H15"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -11,7 +11,7 @@ export const CoinTaka1Icon = (
 </g>
 <defs>
 <clipPath id="clip0_802_78111">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

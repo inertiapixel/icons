@@ -3,7 +3,7 @@ import React from "react";
 export const AB2Icon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_86603)">
 <path d="M16 21H19C19.81 21 20.48 20.33 20.48 19.52L20.5 19.5C20.5 18.68 19.81 18 19 18H16V21Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M16 15.0001H18.5C19.34 14.9901 20 15.6601 20 16.5001C20 17.3401 19.34 18.0001 18.5 18.0001H16V15.0001Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -13,7 +13,7 @@ export const AB2Icon = (
 </g>
 <defs>
 <clipPath id="clip0_802_86603">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

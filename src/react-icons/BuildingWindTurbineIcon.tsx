@@ -3,7 +3,7 @@ import React from "react";
 export const BuildingWindTurbineIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_80687)">
 <path d="M10 11C10 11.5304 10.2107 12.0391 10.5858 12.4142C10.9609 12.7893 11.4696 13 12 13C12.5304 13 13.0391 12.7893 13.4142 12.4142C13.7893 12.0391 14 11.5304 14 11C14 10.4696 13.7893 9.96086 13.4142 9.58579C13.0391 9.21071 12.5304 9 12 9C11.4696 9 10.9609 9.21071 10.5858 9.58579C10.2107 9.96086 10 10.4696 10 11Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M10 11V8.427C10 8.247 10.013 8.069 10.04 7.891L10.756 3.063C10.82 2.466 11.353 2 12 2C12.647 2 13.18 2.466 13.244 3.063L13.96 7.891C13.987 8.069 14 8.248 14 8.427V11"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -15,7 +15,7 @@ export const BuildingWindTurbineIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_80687">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

@@ -3,7 +3,7 @@ import React from "react";
 export const HandLittleFingerIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_72456)">
 <path d="M8 13V10.5C8 10.1022 8.15804 9.72064 8.43934 9.43934C8.72064 9.15804 9.10218 9 9.5 9C9.89782 9 10.2794 9.15804 10.5607 9.43934C10.842 9.72064 11 10.1022 11 10.5V12"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M11 11.5V10.5C11 10.1022 11.158 9.72064 11.4393 9.43934C11.7206 9.15804 12.1022 9 12.5 9C12.8978 9 13.2794 9.15804 13.5607 9.43934C13.842 9.72064 14 10.1022 14 10.5V12"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -12,7 +12,7 @@ export const HandLittleFingerIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_72456">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

@@ -3,7 +3,7 @@ import React from "react";
 export const EaseInOutControlPointsIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_74948)">
 <path d="M17 20C17 20.5304 17.2107 21.0391 17.5858 21.4142C17.9609 21.7893 18.4696 22 19 22C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20C21 19.4696 20.7893 18.9609 20.4142 18.5858C20.0391 18.2107 19.5304 18 19 18C18.4696 18 17.9609 18.2107 17.5858 18.5858C17.2107 18.9609 17 19.4696 17 20Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M17 20H15"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -15,7 +15,7 @@ export const EaseInOutControlPointsIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_74948">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

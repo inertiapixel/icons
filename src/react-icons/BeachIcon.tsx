@@ -3,7 +3,7 @@ import React from "react";
 export const BeachIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_83968)">
 <path d="M17.5513 16.7511C16.1448 15.3447 14.2373 14.5547 12.2483 14.5547C10.2593 14.5547 8.35181 15.3447 6.94531 16.7511"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M18.0007 3.80383C16.6226 3.00822 14.9849 2.79261 13.4479 3.20444C11.9109 3.61627 10.6004 4.6218 9.80469 5.99984L20.1967 11.9998C20.9923 10.6218 21.2079 8.98408 20.7961 7.44704C20.3843 5.91 19.3787 4.59951 18.0007 3.80383Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -13,7 +13,7 @@ export const BeachIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_83968">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

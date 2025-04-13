@@ -3,7 +3,7 @@ import React from "react";
 export const MichelinBibGourmandIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_68482)">
 <path d="M4.97006 20C2.57506 18.053 0.207059 14.755 3.96506 12C3.44506 8 7.40706 4.5 9.48906 4.5C9.83606 3.5 10.9881 3 12.0291 3C13.0691 3 14.1641 3.5 14.5111 4.5C16.5931 4.5 20.5551 8 20.0351 12C23.7931 14.755 21.4251 18.053 19.0301 20"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M8 11C8 11.5304 8.10536 12.0391 8.29289 12.4142C8.48043 12.7893 8.73478 13 9 13C9.26522 13 9.51957 12.7893 9.70711 12.4142C9.89464 12.0391 10 11.5304 10 11C10 10.4696 9.89464 9.96086 9.70711 9.58579C9.51957 9.21071 9.26522 9 9 9C8.73478 9 8.48043 9.21071 8.29289 9.58579C8.10536 9.96086 8 10.4696 8 11Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -13,7 +13,7 @@ export const MichelinBibGourmandIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_68482">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

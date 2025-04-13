@@ -3,7 +3,7 @@ import React from "react";
 export const CameraHeartIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_80248)">
 <path d="M10.5 20H5C4.46957 20 3.96086 19.7893 3.58579 19.4142C3.21071 19.0391 3 18.5304 3 18V9C3 8.46957 3.21071 7.96086 3.58579 7.58579C3.96086 7.21071 4.46957 7 5 7H6C6.53043 7 7.03914 6.78929 7.41421 6.41421C7.78929 6.03914 8 5.53043 8 5C8 4.73478 8.10536 4.48043 8.29289 4.29289C8.48043 4.10536 8.73478 4 9 4H15C15.2652 4 15.5196 4.10536 15.7071 4.29289C15.8946 4.48043 16 4.73478 16 5C16 5.53043 16.2107 6.03914 16.5858 6.41421C16.9609 6.78929 17.4696 7 18 7H19C19.5304 7 20.0391 7.21071 20.4142 7.58579C20.7893 7.96086 21 8.46957 21 9V11"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M14.4091 11.2122C14.1508 10.8641 13.82 10.576 13.4396 10.368C13.0593 10.1599 12.6383 10.0368 12.2058 10.0071C11.7733 9.97733 11.3395 10.0417 10.9342 10.1957C10.5289 10.3497 10.1619 10.5898 9.85828 10.8993C9.55469 11.2088 9.3218 11.5804 9.17563 11.9886C9.02947 12.3968 8.97351 12.8318 9.01161 13.2636C9.0497 13.6955 9.18095 14.114 9.39631 14.4902C9.61168 14.8665 9.90603 15.1916 10.2591 15.4432"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -11,7 +11,7 @@ export const CameraHeartIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_80248">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

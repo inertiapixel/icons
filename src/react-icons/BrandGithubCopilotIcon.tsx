@@ -3,7 +3,7 @@ import React from "react";
 export const BrandGithubCopilotIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_82242)">
 <path d="M4 18V12.5C4 11.833 4.167 11.167 4.5 10.5"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M12 7.49966C12 6.49966 11.99 3.42966 8 3.99966C4.5 4.49966 4 6.49966 4 7.49966C4 8.99966 4 11.4997 7 11.4997C11 11.4997 12 8.99966 12 7.49966Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -15,7 +15,7 @@ export const BrandGithubCopilotIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_82242">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

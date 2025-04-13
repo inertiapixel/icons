@@ -3,7 +3,7 @@ import React from "react";
 export const RecycleIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_65341)">
 <path d="M12 17L10 19L12 21"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M10 19H19C19.3186 18.9836 19.6287 18.8912 19.9043 18.7305C20.1799 18.5698 20.4131 18.3456 20.5843 18.0764C20.7556 17.8073 20.86 17.501 20.8888 17.1833C20.9177 16.8656 20.8701 16.5456 20.75 16.25L20.2 15.25"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -14,7 +14,7 @@ export const RecycleIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_65341">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

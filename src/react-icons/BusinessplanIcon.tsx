@@ -3,7 +3,7 @@ import React from "react";
 export const BusinessplanIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_80614)">
 <path d="M11 6C11 6.79565 11.5268 7.55871 12.4645 8.12132C13.4021 8.68393 14.6739 9 16 9C17.3261 9 18.5979 8.68393 19.5355 8.12132C20.4732 7.55871 21 6.79565 21 6C21 5.20435 20.4732 4.44129 19.5355 3.87868C18.5979 3.31607 17.3261 3 16 3C14.6739 3 13.4021 3.31607 12.4645 3.87868C11.5268 4.44129 11 5.20435 11 6Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M11 6V10C11 11.657 13.239 13 16 13C18.761 13 21 11.657 21 10V6"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -14,7 +14,7 @@ export const BusinessplanIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_80614">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

@@ -3,7 +3,7 @@ import React from "react";
 export const HandGrabIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_72462)">
 <path d="M8 11V7.5C8 7.10218 8.15804 6.72064 8.43934 6.43934C8.72064 6.15804 9.10218 6 9.5 6C9.89782 6 10.2794 6.15804 10.5607 6.43934C10.842 6.72064 11 7.10218 11 7.5V10"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M11 9.5V6.5C11 6.10218 11.158 5.72064 11.4393 5.43934C11.7206 5.15804 12.1022 5 12.5 5C12.8978 5 13.2794 5.15804 13.5607 5.43934C13.842 5.72064 14 6.10218 14 6.5V10"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -12,7 +12,7 @@ export const HandGrabIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_72462">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

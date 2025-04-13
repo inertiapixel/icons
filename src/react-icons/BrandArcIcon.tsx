@@ -3,7 +3,7 @@ import React from "react";
 export const BrandArcIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_82778)">
 <path d="M4.68799 14.6953L3.70099 16.7983C3.19899 17.8683 3.57599 19.1853 4.60899 19.7433C5.70499 20.3333 7.05299 19.8733 7.58099 18.7483L8.48099 16.8283"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M18.3157 14.576C20.1337 12.976 21.4757 10.796 21.9557 8.35898C22.1907 7.16498 21.4307 6.00798 20.2607 5.77298C19.9817 5.71654 19.6943 5.7163 19.4153 5.77227C19.1363 5.82825 18.8712 5.93932 18.6357 6.09898C18.1577 6.42198 17.8257 6.92498 17.7137 7.49698C17.5057 8.55098 17.0187 9.53398 16.3477 10.369"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -12,7 +12,7 @@ export const BrandArcIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_82778">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

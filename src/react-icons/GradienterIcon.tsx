@@ -3,7 +3,7 @@ import React from "react";
 export const GradienterIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_72698)">
 <path d="M3.22656 14C4.14356 18 7.72356 21 11.9996 21C16.2766 21 19.8576 18 20.7726 14"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M20.7808 10C20.3274 8.01081 19.2116 6.23468 17.6163 4.96283C16.021 3.69097 14.041 2.99888 12.0007 3.00002C9.95948 2.9957 7.97759 3.68658 6.38136 4.95891C4.78513 6.23125 3.66971 8.00919 3.21875 10"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -11,7 +11,7 @@ export const GradienterIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_72698">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

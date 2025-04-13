@@ -3,7 +3,7 @@ import React from "react";
 export const Fountain1Icon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_73168)">
 <path d="M9 16V11C9 10.4696 8.78929 9.96086 8.41421 9.58579C8.03914 9.21071 7.53043 9 7 9C6.46957 9 5.96086 9.21071 5.58579 9.58579C5.21071 9.96086 5 10.4696 5 11"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M15 16V11C15 10.4696 15.2107 9.96086 15.5858 9.58579C15.9609 9.21071 16.4696 9 17 9C17.5304 9 18.0391 9.21071 18.4142 9.58579C18.7893 9.96086 19 10.4696 19 11"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -13,7 +13,7 @@ export const Fountain1Icon = (
 </g>
 <defs>
 <clipPath id="clip0_802_73168">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

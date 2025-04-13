@@ -3,7 +3,7 @@ import React from "react";
 export const UvIndexIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_60534)">
 <path d="M3 12.0016H4M20 12.0016H21M5.6 5.60156L6.3 6.30156M18.4 5.60156L17.7 6.30156M8 12.0016C8 10.9407 8.42143 9.92328 9.17157 9.17314C9.92172 8.42299 10.9391 8.00156 12 8.00156C13.0609 8.00156 14.0783 8.42299 14.8284 9.17314C15.5786 9.92328 16 10.9407 16 12.0016"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M12 4V3"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -12,7 +12,7 @@ export const UvIndexIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_60534">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

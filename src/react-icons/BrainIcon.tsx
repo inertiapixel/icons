@@ -3,7 +3,7 @@ import React from "react";
 export const BrainIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_82889)">
 <path d="M15.5 13C14.5717 13 13.6815 13.3687 13.0251 14.0251C12.3687 14.6815 12 15.5717 12 16.5V17.5C12 18.4283 12.3687 19.3185 13.0251 19.9749C13.6815 20.6313 14.5717 21 15.5 21C16.4283 21 17.3185 20.6313 17.9749 19.9749C18.6313 19.3185 19 18.4283 19 17.5V15.7"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M8.5 13C9.42826 13 10.3185 13.3687 10.9749 14.0251C11.6313 14.6815 12 15.5717 12 16.5V17.5C12 18.4283 11.6313 19.3185 10.9749 19.9749C10.3185 20.6313 9.42826 21 8.5 21C7.57174 21 6.6815 20.6313 6.02513 19.9749C5.36875 19.3185 5 18.4283 5 17.5V15.7"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -14,7 +14,7 @@ export const BrainIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_82889">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

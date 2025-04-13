@@ -3,7 +3,7 @@ import React from "react";
 export const TrowelIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_60873)">
 <path d="M14.4205 9.05751L9.05851 14.4205C8.8201 14.6589 8.52473 14.8324 8.20043 14.9245C7.87613 15.0166 7.53366 15.0243 7.20554 14.9469C6.87742 14.8694 6.57455 14.7094 6.32567 14.482C6.07678 14.2546 5.89016 13.9673 5.78351 13.6475L3.10151 5.60351C2.98534 5.25502 2.96852 4.88107 3.05291 4.52355C3.13731 4.16604 3.31959 3.83909 3.57934 3.57934C3.83909 3.31959 4.16604 3.13731 4.52355 3.05291C4.88107 2.96852 5.25502 2.98534 5.60351 3.10151L13.6485 5.78351C13.9681 5.89024 14.2552 6.07685 14.4825 6.32566C14.7097 6.57446 14.8697 6.8772 14.9471 7.20516C15.0245 7.53312 15.0169 7.87543 14.9249 8.1996C14.8329 8.52378 14.6586 8.81909 14.4205 9.05751Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M10 10L16.5 16.5"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -11,7 +11,7 @@ export const TrowelIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_60873">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

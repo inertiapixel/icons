@@ -3,7 +3,7 @@ import React from "react";
 export const MasksTheaterIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_69233)">
 <path d="M13.1918 9H19.8078C20.0859 8.99995 20.361 9.05789 20.6154 9.17014C20.8699 9.28238 21.0981 9.44646 21.2856 9.65189C21.473 9.85733 21.6156 10.0996 21.7041 10.3632C21.7927 10.6269 21.8252 10.9061 21.7998 11.183L21.2328 17.365C21.1418 18.3585 20.6828 19.2821 19.9459 19.9546C19.209 20.6271 18.2474 20.9999 17.2498 21H15.7498C14.7522 20.9999 13.7906 20.6271 13.0537 19.9546C12.3168 19.2821 11.8578 18.3585 11.7668 17.365L11.1998 11.183C11.1743 10.9061 11.2069 10.6269 11.2955 10.3632C11.384 10.0996 11.5266 9.85733 11.714 9.65189C11.9015 9.44646 12.1297 9.28238 12.3842 9.17014C12.6386 9.05789 12.9137 8.99995 13.1918 9Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M15 13H15.01"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -16,7 +16,7 @@ export const MasksTheaterIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_69233">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

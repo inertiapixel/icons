@@ -3,7 +3,7 @@ import React from "react";
 export const WritingOffIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_59520)">
 <path d="M16 7H20"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M16 16V17L18 19L18.5 18.5M20 16V5C20 3.879 19.121 3 18 3C16.879 3 16 3.879 16 5V12"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -12,7 +12,7 @@ export const WritingOffIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_59520">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

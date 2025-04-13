@@ -3,7 +3,7 @@ import React from "react";
 export const SolarPanel2Icon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_63419)">
 <path d="M8 2C8 3.06087 8.42143 4.07828 9.17157 4.82843C9.92172 5.57857 10.9391 6 12 6C13.0609 6 14.0783 5.57857 14.8284 4.82843C15.5786 4.07828 16 3.06087 16 2"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M4 3H5"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -18,7 +18,7 @@ export const SolarPanel2Icon = (
 </g>
 <defs>
 <clipPath id="clip0_802_63419">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

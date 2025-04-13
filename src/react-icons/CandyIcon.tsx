@@ -3,7 +3,7 @@ import React from "react";
 export const CandyIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_80140)">
 <path d="M7.05042 11.2934L11.2934 7.05042C11.6685 6.67547 12.1771 6.46484 12.7074 6.46484C13.2377 6.46484 13.7464 6.67547 14.1214 7.05042L16.9504 9.88042C17.3254 10.2555 17.536 10.7641 17.536 11.2944C17.536 11.8247 17.3254 12.3334 16.9504 12.7084L12.7074 16.9514C12.3324 17.3264 11.8237 17.537 11.2934 17.537C10.7631 17.537 10.2545 17.3264 9.87942 16.9514L7.05042 14.1204C6.67547 13.7454 6.46484 13.2367 6.46484 12.7064C6.46484 12.1761 6.67547 11.6675 7.05042 11.2924V11.2934Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M16.2421 9.17127L19.3281 8.39927C19.5856 8.33492 19.8215 8.20338 20.0116 8.01806C20.2017 7.83274 20.3392 7.6003 20.4101 7.34446C20.4809 7.08863 20.4826 6.81856 20.415 6.56185C20.3474 6.30514 20.2128 6.07098 20.0251 5.88327L17.8091 3.66627C17.6358 3.49281 17.4225 3.36449 17.1881 3.29255C16.9536 3.22062 16.7051 3.20726 16.4643 3.25364C16.2235 3.30002 15.9978 3.40474 15.8068 3.55861C15.6159 3.71249 15.4656 3.91083 15.3691 4.13627L14.1211 7.04927"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -11,7 +11,7 @@ export const CandyIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_80140">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

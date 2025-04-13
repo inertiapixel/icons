@@ -3,7 +3,7 @@ import React from "react";
 export const LinkPlusIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_70390)">
 <path d="M9 15L15 9"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M11 6.00093L11.463 5.46493C11.9273 5.0005 12.4786 4.63208 13.0853 4.38073C13.692 4.12937 14.3423 4 14.999 4C15.6557 4 16.306 4.12937 16.9127 4.38073C17.5194 4.63208 18.0707 5.0005 18.535 5.46493C19.0002 5.92884 19.3693 6.47999 19.6211 7.08681C19.8729 7.69362 20.0024 8.34416 20.0023 9.00114C20.0022 9.65812 19.8725 10.3086 19.6205 10.9154C19.3686 11.5221 18.9993 12.0732 18.534 12.5369"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -13,7 +13,7 @@ export const LinkPlusIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_70390">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

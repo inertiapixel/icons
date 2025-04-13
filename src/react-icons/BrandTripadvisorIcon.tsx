@@ -3,7 +3,7 @@ import React from "react";
 export const BrandTripadvisorIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_81328)">
 <path d="M5 13.5C5 13.8978 5.15804 14.2794 5.43934 14.5607C5.72064 14.842 6.10218 15 6.5 15C6.89782 15 7.27936 14.842 7.56066 14.5607C7.84196 14.2794 8 13.8978 8 13.5C8 13.1022 7.84196 12.7206 7.56066 12.4393C7.27936 12.158 6.89782 12 6.5 12C6.10218 12 5.72064 12.158 5.43934 12.4393C5.15804 12.7206 5 13.1022 5 13.5Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M16 13.5C16 13.8978 16.158 14.2794 16.4393 14.5607C16.7206 14.842 17.1022 15 17.5 15C17.8978 15 18.2794 14.842 18.5607 14.5607C18.842 14.2794 19 13.8978 19 13.5C19 13.1022 18.842 12.7206 18.5607 12.4393C18.2794 12.158 17.8978 12 17.5 12C17.1022 12 16.7206 12.158 16.4393 12.4393C16.158 12.7206 16 13.1022 16 13.5Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -14,7 +14,7 @@ export const BrandTripadvisorIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_81328">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

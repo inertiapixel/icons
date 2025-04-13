@@ -3,7 +3,7 @@ import React from "react";
 export const BrandAwsIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_82757)">
 <path d="M17 18.5C14.7025 19.5889 12.1684 20.084 9.63 19.94C7.20814 19.5324 4.92799 18.5213 3 17"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M19.5 21C20.407 19.589 20.951 17.677 21 16C19.803 15.227 18.423 15.065 17 15"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -14,7 +14,7 @@ export const BrandAwsIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_82757">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

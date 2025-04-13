@@ -3,7 +3,7 @@ import React from "react";
 export const SpacesIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_63278)">
 <path d="M6.04464 9.77734C4.89307 10.4291 3.98925 11.4433 3.47385 12.662C2.95845 13.8807 2.86038 15.2356 3.19491 16.5159C3.52943 17.7961 4.27778 18.9299 5.32348 19.7407C6.36919 20.5515 7.6536 20.9939 8.97681 20.999C10.3 21.0041 11.5878 20.5716 12.6398 19.7689C13.6917 18.9662 14.4488 17.8383 14.7932 16.5607C15.1376 15.2831 15.05 13.9274 14.5441 12.7048C14.0381 11.4821 13.1421 10.461 11.9956 9.80034"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M11.9988 20.1951C13.1137 20.8393 14.4063 21.1078 15.6855 20.9608C16.9648 20.8138 18.1628 20.2591 19.1025 19.3788C20.0422 18.4985 20.6738 17.3392 20.9039 16.0723C21.1341 14.8053 20.9505 13.498 20.3804 12.3434C19.8102 11.1889 18.8838 10.2484 17.738 9.66087C16.5922 9.07339 15.2877 8.87011 14.0175 9.08109C12.7472 9.29206 11.5785 9.90609 10.6841 10.8324C9.78974 11.7588 9.21707 12.9483 9.05078 14.2251"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -11,7 +11,7 @@ export const SpacesIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_63278">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

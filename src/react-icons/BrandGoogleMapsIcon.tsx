@@ -3,7 +3,7 @@ import React from "react";
 export const BrandGoogleMapsIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_82191)">
 <path d="M9.5 9.5C9.5 10.163 9.76339 10.7989 10.2322 11.2678C10.7011 11.7366 11.337 12 12 12C12.663 12 13.2989 11.7366 13.7678 11.2678C14.2366 10.7989 14.5 10.163 14.5 9.5C14.5 8.83696 14.2366 8.20107 13.7678 7.73223C13.2989 7.26339 12.663 7 12 7C11.337 7 10.7011 7.26339 10.2322 7.73223C9.76339 8.20107 9.5 8.83696 9.5 9.5Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M6.42969 12.4942L13.7437 3.24219"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -13,7 +13,7 @@ export const BrandGoogleMapsIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_82191">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

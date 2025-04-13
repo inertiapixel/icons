@@ -3,7 +3,7 @@ import React from "react";
 export const NetworkOffIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_67567)">
 <path d="M6.52628 6.53491C6.02535 7.64602 5.87469 8.88335 6.09434 10.0822C6.31399 11.2811 6.89354 12.3846 7.75586 13.2459C8.61818 14.1073 9.72237 14.6856 10.9215 14.9039C12.1206 15.1222 13.3577 14.9701 14.4683 14.4679M16.7153 12.7079C17.6239 11.554 18.0777 10.1069 17.9907 8.64077C17.9037 7.17465 17.282 5.79136 16.2433 4.75296C15.2047 3.71455 13.8213 3.09318 12.3551 3.00655C10.889 2.91992 9.44198 3.37405 8.28828 4.28291"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M12 3C13.333 3.333 14 5.333 14 9C14 9.337 13.994 9.66 13.983 9.968M13.433 13.441C13.1 14.325 12.623 14.844 12 15"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -17,7 +17,7 @@ export const NetworkOffIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_67567">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

@@ -3,7 +3,7 @@ import React from "react";
 export const CurrencyDinarIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_77418)">
 <path d="M14 20.01V20"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M6 13L8.386 12.1C8.5842 12.0253 8.75357 11.8896 8.86969 11.7125C8.98581 11.5353 9.04268 11.3259 9.03211 11.1144C9.02155 10.9028 8.94409 10.7001 8.81089 10.5354C8.6777 10.3707 8.49566 10.2526 8.291 10.198L6.777 9.794C6.57273 9.73976 6.39089 9.6222 6.25759 9.45819C6.12429 9.29417 6.04638 9.09214 6.03505 8.88109C6.02372 8.67005 6.07955 8.46083 6.19453 8.28349C6.3095 8.10615 6.47771 7.96979 6.675 7.894L9 7"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -12,7 +12,7 @@ export const CurrencyDinarIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_77418">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

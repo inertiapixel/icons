@@ -3,7 +3,7 @@ import React from "react";
 export const BrandReactIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_81651)">
 <path d="M6.306 8.71094C3.704 9.43394 2 10.6369 2 11.9999C2 14.2099 6.477 15.9999 12 15.9999C12.773 15.9999 13.526 15.9649 14.248 15.8979"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M17.692 15.289C20.295 14.567 22 13.363 22 12C22 9.79 17.523 8 12 8C11.227 8 10.474 8.035 9.75 8.102"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -15,7 +15,7 @@ export const BrandReactIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_81651">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

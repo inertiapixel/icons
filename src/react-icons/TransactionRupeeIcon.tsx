@@ -3,7 +3,7 @@ import React from "react";
 export const TransactionRupeeIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_61136)">
 <path d="M21 12H15H16C16.7956 12 17.5587 12.3161 18.1213 12.8787C18.6839 13.4413 19 14.2044 19 15C19 15.7956 18.6839 16.5587 18.1213 17.1213C17.5587 17.6839 16.7956 18 16 18H15L18 21"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M15 15H21"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -14,7 +14,7 @@ export const TransactionRupeeIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_61136">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

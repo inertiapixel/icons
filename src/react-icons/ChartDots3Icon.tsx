@@ -3,7 +3,7 @@ import React from "react";
 export const ChartDots3Icon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_79675)">
 <path d="M3 7C3 7.53043 3.21071 8.03914 3.58579 8.41421C3.96086 8.78929 4.46957 9 5 9C5.53043 9 6.03914 8.78929 6.41421 8.41421C6.78929 8.03914 7 7.53043 7 7C7 6.46957 6.78929 5.96086 6.41421 5.58579C6.03914 5.21071 5.53043 5 5 5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M14 15C14 15.5304 14.2107 16.0391 14.5858 16.4142C14.9609 16.7893 15.4696 17 16 17C16.5304 17 17.0391 16.7893 17.4142 16.4142C17.7893 16.0391 18 15.5304 18 15C18 14.4696 17.7893 13.9609 17.4142 13.5858C17.0391 13.2107 16.5304 13 16 13C15.4696 13 14.9609 13.2107 14.5858 13.5858C14.2107 13.9609 14 14.4696 14 15Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -15,7 +15,7 @@ export const ChartDots3Icon = (
 </g>
 <defs>
 <clipPath id="clip0_802_79675">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

@@ -3,7 +3,7 @@ import React from "react";
 export const BallpenOffIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_84353)">
 <path d="M14 6L21 13L19 15"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M10.0004 10L5.82843 14.172C5.56578 14.4346 5.35744 14.7464 5.2153 15.0896C5.07316 15.4328 5 15.8006 5 16.172C5 16.5434 5.07316 16.9112 5.2153 17.2544C5.35744 17.5976 5.56578 17.9094 5.82843 18.172C6.09107 18.4346 6.40287 18.643 6.74604 18.7851C7.0892 18.9273 7.45699 19.0004 7.82843 19.0004C8.19986 19.0004 8.56766 18.9273 8.91082 18.7851C9.25398 18.643 9.56578 18.4346 9.82843 18.172L14.0004 14"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -13,7 +13,7 @@ export const BallpenOffIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_84353">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

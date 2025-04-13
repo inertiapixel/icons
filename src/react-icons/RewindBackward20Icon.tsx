@@ -3,7 +3,7 @@ import React from "react";
 export const RewindBackward20Icon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_65163)">
 <path d="M19.007 16.466C19.9109 15.655 20.5474 14.5889 20.8325 13.4084C21.1176 12.228 21.0377 10.9888 20.6035 9.8547C20.1693 8.7206 19.4012 7.74495 18.4007 7.05669C17.4002 6.36843 16.2144 5.99997 15 6H4"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M7 9L4 6L7 3"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -12,7 +12,7 @@ export const RewindBackward20Icon = (
 </g>
 <defs>
 <clipPath id="clip0_802_65163">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

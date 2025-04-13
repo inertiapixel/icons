@@ -3,7 +3,7 @@ import React from "react";
 export const WashTemperature5Icon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_59971)">
 <path d="M10 15H10.01"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M3 6L4.721 16.329C4.79888 16.796 5.0399 17.2202 5.40118 17.5262C5.76245 17.8322 6.22056 18.0001 6.694 18H17.306C17.7794 18.0001 18.2375 17.8322 18.5988 17.5262C18.9601 17.2202 19.2011 16.796 19.279 16.329L21 6"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -15,7 +15,7 @@ export const WashTemperature5Icon = (
 </g>
 <defs>
 <clipPath id="clip0_802_59971">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

@@ -3,7 +3,7 @@ import React from "react";
 export const DiscountOffIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_75271)">
 <path d="M9 15L12 12M14 10L15 9"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M9.14691 9.14453C9.07558 9.2139 9.02666 9.30304 9.00646 9.40047C8.98626 9.49789 8.99571 9.59913 9.03359 9.69114C9.07147 9.78315 9.13604 9.8617 9.21898 9.91666C9.30191 9.97163 9.39941 10.0005 9.49891 9.99953C9.62965 9.99978 9.75529 9.9488 9.84891 9.85753"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -13,7 +13,7 @@ export const DiscountOffIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_75271">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

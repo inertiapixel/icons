@@ -3,7 +3,7 @@ import React from "react";
 export const BrandGoogleAnalyticsIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_82218)">
 <path d="M10 10.105C10 9.95989 10.0286 9.8162 10.0841 9.68213C10.1396 9.54807 10.221 9.42626 10.3236 9.32365C10.4263 9.22104 10.5481 9.13964 10.6821 9.08411C10.8162 9.02858 10.9599 9 11.105 9H12.895C13.0401 9 13.1838 9.02858 13.3179 9.08411C13.4519 9.13964 13.5737 9.22104 13.6764 9.32365C13.779 9.42626 13.8604 9.54807 13.9159 9.68213C13.9714 9.8162 14 9.95989 14 10.105V19.895C14 20.1881 13.8836 20.4691 13.6764 20.6764C13.4691 20.8836 13.1881 21 12.895 21H11.105C10.8119 21 10.5309 20.8836 10.3236 20.6764C10.1164 20.4691 10 20.1881 10 19.895V10.105Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M17 4.105C17 3.81194 17.1164 3.53087 17.3236 3.32365C17.5309 3.11642 17.8119 3 18.105 3H19.895C20.1881 3 20.4691 3.11642 20.6764 3.32365C20.8836 3.53087 21 3.81194 21 4.105V19.895C21 20.1881 20.8836 20.4691 20.6764 20.6764C20.4691 20.8836 20.1881 21 19.895 21H18.105C17.8119 21 17.5309 20.8836 17.3236 20.6764C17.1164 20.4691 17 20.1881 17 19.895V4.105Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -11,7 +11,7 @@ export const BrandGoogleAnalyticsIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_82218">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

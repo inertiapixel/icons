@@ -3,7 +3,7 @@ import React from "react";
 export const ZodiacLeoIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_59407)">
 <path d="M13 17C13 18.0609 13.4214 19.0783 14.1716 19.8284C14.9217 20.5786 15.9391 21 17 21C18.0609 21 19.0783 20.5786 19.8284 19.8284C20.5786 19.0783 21 18.0609 21 17"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M3 16C3 16.7956 3.31607 17.5587 3.87868 18.1213C4.44129 18.6839 5.20435 19 6 19C6.79565 19 7.55871 18.6839 8.12132 18.1213C8.68393 17.5587 9 16.7956 9 16C9 15.2044 8.68393 14.4413 8.12132 13.8787C7.55871 13.3161 6.79565 13 6 13C5.20435 13 4.44129 13.3161 3.87868 13.8787C3.31607 14.4413 3 15.2044 3 16Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -13,7 +13,7 @@ export const ZodiacLeoIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_59407">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

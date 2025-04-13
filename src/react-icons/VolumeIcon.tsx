@@ -3,7 +3,7 @@ import React from "react";
 export const VolumeIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_60178)">
 <path d="M15 8C15.621 8.46574 16.125 9.06966 16.4721 9.76393C16.8193 10.4582 17 11.2238 17 12C17 12.7762 16.8193 13.5418 16.4721 14.2361C16.125 14.9303 15.621 15.5343 15 16"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M17.6992 5C18.7432 5.84365 19.5852 6.91013 20.1637 8.12132C20.7421 9.33252 21.0424 10.6578 21.0424 12C21.0424 13.3422 20.7421 14.6675 20.1637 15.8787C19.5852 17.0899 18.7432 18.1563 17.6992 19"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -11,7 +11,7 @@ export const VolumeIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_60178">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

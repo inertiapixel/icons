@@ -3,7 +3,7 @@ import React from "react";
 export const CloudDataConnectionIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_78354)">
 <path d="M5 9.89689C5 8.18289 6.46 6.79289 8.26 6.79289C8.535 5.57289 9.515 4.57789 10.832 4.18189C12.149 3.78489 13.602 4.04789 14.643 4.87189C15.685 5.69389 16.157 6.95189 15.882 8.17189H16.575C17.2167 8.17056 17.8326 8.42412 18.2873 8.8768C18.7421 9.32949 18.9984 9.94424 19 10.5859C18.9984 11.2275 18.7421 11.8423 18.2873 12.295C17.8326 12.7477 17.2167 13.0012 16.575 12.9999H8.26C6.46 12.9999 5 11.6099 5 9.89689Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M12 13V16"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -13,7 +13,7 @@ export const CloudDataConnectionIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_78354">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

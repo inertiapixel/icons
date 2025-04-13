@@ -3,7 +3,7 @@ import React from "react";
 export const Bomb1Icon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_83606)">
 <path d="M15.3481 5.34904L18.6491 8.65004C18.7607 8.76148 18.8492 8.89383 18.9096 9.03951C18.9699 9.18519 19.001 9.34134 19.001 9.49904C19.001 9.65674 18.9699 9.81289 18.9096 9.95857C18.8492 10.1042 18.7607 10.2366 18.6491 10.348L17.6771 11.32C18.1624 12.9201 18.0992 14.6364 17.4974 16.1964C16.8957 17.7563 15.7899 19.0705 14.3558 19.9301C12.9216 20.7897 11.2414 21.1454 9.58191 20.9407C7.92247 20.736 6.37901 19.9827 5.19671 18.8004C4.01441 17.6181 3.26109 16.0746 3.05642 14.4152C2.85174 12.7558 3.20745 11.0755 4.06703 9.64137C4.92661 8.20723 6.24077 7.10144 7.80075 6.49968C9.36073 5.89792 11.0771 5.83469 12.6771 6.32004L13.6491 5.34804C13.7605 5.23647 13.8929 5.14796 14.0386 5.08757C14.1842 5.02718 14.3404 4.99609 14.4981 4.99609C14.6558 4.99609 14.8119 5.02718 14.9576 5.08757C15.1033 5.14796 15.2356 5.23647 15.3471 5.34804L15.3481 5.34904Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M17 7L18.293 5.707C18.5172 5.48283 18.695 5.2167 18.8163 4.92382C18.9376 4.63093 19 4.31702 19 4C19 3.73478 19.1054 3.48043 19.2929 3.29289C19.4804 3.10536 19.7348 3 20 3H21"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -11,7 +11,7 @@ export const Bomb1Icon = (
 </g>
 <defs>
 <clipPath id="clip0_802_83606">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

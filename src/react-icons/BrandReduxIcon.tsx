@@ -3,7 +3,7 @@ import React from "react";
 export const BrandReduxIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_81624)">
 <path d="M16.5396 7C15.7346 4.635 14.0036 3 11.9996 3C9.22556 3 6.97656 5.632 6.97656 9.496C6.97656 11.452 8.55856 14.223 9.48856 15.496"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M4.71092 11.9805C3.05492 13.8575 2.49692 16.1655 3.49992 17.8915C4.88692 20.2815 8.63792 20.7225 12.0009 18.7915C13.7039 17.8125 14.8759 15.4295 15.5169 13.9935"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -14,7 +14,7 @@ export const BrandReduxIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_81624">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

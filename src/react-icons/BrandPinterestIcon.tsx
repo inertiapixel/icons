@@ -3,7 +3,7 @@ import React from "react";
 export const BrandPinterestIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_81739)">
 <path d="M8 20L12 11"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M10.7 13.9981C11.137 15.2611 12.13 15.9981 13.25 15.9981C15.321 15.9981 17 14.4441 17 11.9981C17.0009 11.2679 16.8418 10.5464 16.5339 9.88426C16.2261 9.22214 15.777 8.63548 15.2182 8.16552C14.6593 7.69555 14.0044 7.35369 13.2993 7.16395C12.5942 6.97421 11.8561 6.9412 11.1369 7.06725C10.4177 7.1933 9.73477 7.47534 9.13623 7.89355C8.53768 8.31176 8.038 8.85599 7.6723 9.48799C7.3066 10.12 7.08376 10.8244 7.01944 11.5517C6.95512 12.2791 7.05088 13.0117 7.3 13.6981"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -11,7 +11,7 @@ export const BrandPinterestIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_81739">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

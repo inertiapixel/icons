@@ -3,7 +3,7 @@ import React from "react";
 export const UniverseIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_60766)">
 <path d="M7.02738 11.4788C6.92404 12.4623 7.11463 13.4543 7.57507 14.3295C8.0355 15.2046 8.74509 15.9235 9.61412 16.3954C10.4831 16.8673 11.4726 17.0709 12.4573 16.9804C13.442 16.89 14.3778 16.5096 15.1464 15.8873C15.9149 15.265 16.4817 14.4289 16.775 13.4845C17.0683 12.5401 17.075 11.53 16.7943 10.5818C16.5135 9.63363 15.9579 8.78999 15.1977 8.15757C14.4375 7.52515 13.5068 7.13236 12.5234 7.02885C11.4473 6.91219 10.3626 7.15139 9.43538 7.70985"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M5.63767 5.63443C4.07906 7.19415 3.14728 9.27178 3.01913 11.473C2.89098 13.6743 3.57539 15.846 4.94247 17.5761C6.30956 19.3061 8.26419 20.4741 10.4354 20.8584C12.6067 21.2426 14.8434 20.8165 16.7213 19.6607C18.5991 18.505 19.9873 16.7001 20.6225 14.5886C21.2576 12.477 21.0955 10.2058 20.1669 8.20587C19.2383 6.20595 17.6078 4.61651 15.5849 3.73918C13.5619 2.86185 11.2873 2.75767 9.19267 3.44643"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -13,7 +13,7 @@ export const UniverseIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_60766">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

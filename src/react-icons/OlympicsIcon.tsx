@@ -3,7 +3,7 @@ import React from "react";
 export const OlympicsIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_67226)">
 <path d="M3 9C3 9.79565 3.31607 10.5587 3.87868 11.1213C4.44129 11.6839 5.20435 12 6 12C6.79565 12 7.55871 11.6839 8.12132 11.1213C8.68393 10.5587 9 9.79565 9 9C9 8.20435 8.68393 7.44129 8.12132 6.87868C7.55871 6.31607 6.79565 6 6 6C5.20435 6 4.44129 6.31607 3.87868 6.87868C3.31607 7.44129 3 8.20435 3 9Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M15 9C15 9.79565 15.3161 10.5587 15.8787 11.1213C16.4413 11.6839 17.2044 12 18 12C18.7956 12 19.5587 11.6839 20.1213 11.1213C20.6839 10.5587 21 9.79565 21 9C21 8.20435 20.6839 7.44129 20.1213 6.87868C19.5587 6.31607 18.7956 6 18 6C17.2044 6 16.4413 6.31607 15.8787 6.87868C15.3161 7.44129 15 8.20435 15 9Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -13,7 +13,7 @@ export const OlympicsIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_67226">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

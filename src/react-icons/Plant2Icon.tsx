@@ -3,7 +3,7 @@ import React from "react";
 export const Plant2Icon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_66240)">
 <path d="M2 9C2 11.6522 3.05357 14.1957 4.92893 16.0711C6.8043 17.9464 9.34784 19 12 19C14.6522 19 17.1957 17.9464 19.0711 16.0711C20.9464 14.1957 22 11.6522 22 9"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M12 19C12 16.3478 13.0536 13.8043 14.9289 11.9289C16.8043 10.0536 19.3478 9 22 9"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -13,7 +13,7 @@ export const Plant2Icon = (
 </g>
 <defs>
 <clipPath id="clip0_802_66240">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

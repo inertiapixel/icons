@@ -3,7 +3,7 @@ import React from "react";
 export const DeviceComputerCameraOffIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_76793)">
 <path d="M6.14966 6.15138C5.26351 7.49721 4.86881 9.10754 5.03217 10.7106C5.19553 12.3137 5.90695 13.8113 7.04636 14.9507C8.18576 16.0901 9.68338 16.8015 11.2864 16.9649C12.8895 17.1282 14.4998 16.7335 15.8457 15.8474M17.8457 13.8474C18.7325 12.5013 19.1277 10.8904 18.9643 9.28675C18.801 7.68308 18.0891 6.18493 16.9491 5.04534C15.809 3.90574 14.3106 3.19454 12.7068 3.03185C11.1031 2.86916 9.49236 3.26495 8.14666 4.15238"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M9.13178 9.12187C8.97221 9.64233 8.95726 10.1964 9.08854 10.7247C9.21981 11.253 9.49236 11.7356 9.87698 12.1209C10.2616 12.5061 10.7438 12.7794 11.2719 12.9115C11.8 13.0437 12.3541 13.0296 12.8748 12.8709M14.8748 10.8709C15.0307 10.3518 15.0431 9.80025 14.9107 9.27473C14.7782 8.74921 14.5059 8.26937 14.1226 7.88621C13.7394 7.50304 13.2595 7.23086 12.7339 7.09856C12.2084 6.96627 11.6568 6.97882 11.1378 7.13487"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -12,7 +12,7 @@ export const DeviceComputerCameraOffIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_76793">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

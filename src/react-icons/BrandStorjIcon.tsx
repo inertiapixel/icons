@@ -3,7 +3,7 @@ import React from "react";
 export const BrandStorjIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_81478)">
 <path d="M3 17C3 17.2652 3.10536 17.5196 3.29289 17.7071C3.48043 17.8946 3.73478 18 4 18C4.26522 18 4.51957 17.8946 4.70711 17.7071C4.89464 17.5196 5 17.2652 5 17C5 16.7348 4.89464 16.4804 4.70711 16.2929C4.51957 16.1054 4.26522 16 4 16C3.73478 16 3.48043 16.1054 3.29289 16.2929C3.10536 16.4804 3 16.7348 3 17Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M3 7C3 7.26522 3.10536 7.51957 3.29289 7.70711C3.48043 7.89464 3.73478 8 4 8C4.26522 8 4.51957 7.89464 4.70711 7.70711C4.89464 7.51957 5 7.26522 5 7C5 6.73478 4.89464 6.48043 4.70711 6.29289C4.51957 6.10536 4.26522 6 4 6C3.73478 6 3.48043 6.10536 3.29289 6.29289C3.10536 6.48043 3 6.73478 3 7Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -22,7 +22,7 @@ export const BrandStorjIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_81478">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

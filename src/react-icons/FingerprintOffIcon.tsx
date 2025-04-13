@@ -3,7 +3,7 @@ import React from "react";
 export const FingerprintOffIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_73704)">
 <path d="M18.8984 7C19.8029 8.50118 20.1894 10.2578 19.9984 12V13C19.9973 14.0529 20.2732 15.0875 20.7984 16"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M8 11.0006C8 10.1526 8.264 9.36659 8.713 8.72059M11.113 7.09959C11.6987 6.96638 12.307 6.96681 12.8925 7.10085C13.4781 7.23489 14.0259 7.49909 14.4954 7.87384C14.9649 8.2486 15.3439 8.72428 15.6044 9.26557C15.8649 9.80687 16.0001 10.3999 16 11.0006V12.0006"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -14,7 +14,7 @@ export const FingerprintOffIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_73704">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

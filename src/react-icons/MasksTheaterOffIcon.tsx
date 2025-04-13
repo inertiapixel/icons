@@ -3,7 +3,7 @@ import React from "react";
 export const MasksTheaterOffIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_69243)">
 <path d="M12.9992 9C13.0572 9 13.1322 9 13.1912 9H19.8072C20.0853 8.99995 20.3604 9.05789 20.6148 9.17014C20.8693 9.28238 21.0975 9.44646 21.285 9.65189C21.4724 9.85733 21.615 10.0996 21.7035 10.3632C21.7921 10.6269 21.8247 10.9061 21.7992 11.183L21.2452 17.224M19.9592 19.942C19.2212 20.6232 18.2535 21.001 17.2492 21H15.7492C14.7516 20.9999 13.79 20.6271 13.0531 19.9546C12.3162 19.2821 11.8573 18.3585 11.7662 17.365L11.1992 11.183"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M18 13H18.01"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -15,7 +15,7 @@ export const MasksTheaterOffIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_69243">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

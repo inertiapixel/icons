@@ -3,7 +3,7 @@ import React from "react";
 export const DeviceNintendoOffIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_75997)">
 <path d="M4.713 4.718C4.18415 5.08655 3.75221 5.57745 3.45395 6.14889C3.15569 6.72034 2.99995 7.3554 3 8V16C3 17.0609 3.42143 18.0783 4.17157 18.8284C4.92172 19.5786 5.93913 20 7 20H10V10M10 6V4H8"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M14 10V4H17C18.0609 4 19.0783 4.42143 19.8284 5.17157C20.5786 5.92172 21 6.93913 21 8V16C21 16.308 20.965 16.608 20.9 16.896M19.28 19.286C18.611 19.7518 17.8152 20.001 17 20H14V14"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -12,7 +12,7 @@ export const DeviceNintendoOffIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_75997">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

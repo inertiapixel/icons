@@ -3,7 +3,7 @@ import React from "react";
 export const BrandBaiduIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_82738)">
 <path d="M4 9.5C4 9.89782 4.10536 10.2794 4.29289 10.5607C4.48043 10.842 4.73478 11 5 11C5.26522 11 5.51957 10.842 5.70711 10.5607C5.89464 10.2794 6 9.89782 6 9.5C6 9.10218 5.89464 8.72064 5.70711 8.43934C5.51957 8.15804 5.26522 8 5 8C4.73478 8 4.48043 8.15804 4.29289 8.43934C4.10536 8.72064 4 9.10218 4 9.5Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M14.4626 11.595C15.7446 13.369 17.9386 15.011 17.9386 15.011C17.9386 15.011 19.8596 16.585 18.5316 18.647C17.2036 20.71 13.6396 19.799 13.6396 19.799C13.6396 19.799 12.2236 19.359 10.5796 19.711C8.93557 20.067 7.51957 19.931 7.51957 19.931C7.51957 19.931 5.46457 19.711 5.04957 17.627C4.63357 15.543 6.96757 13.989 7.15157 13.769C7.33357 13.547 8.56057 12.803 9.43557 11.375C10.3106 9.94702 12.7726 9.08802 14.4626 11.596V11.595Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -13,7 +13,7 @@ export const BrandBaiduIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_82738">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

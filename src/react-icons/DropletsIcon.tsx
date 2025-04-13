@@ -3,7 +3,7 @@ import React from "react";
 export const DropletsIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_74993)">
 <path d="M4.0726 20.301C4.61276 20.7544 5.2954 21.0029 6.0006 21.0029C6.7058 21.0029 7.38845 20.7544 7.9286 20.301C8.46858 19.8475 8.83165 19.2183 8.95416 18.5239C9.07667 17.8294 8.95079 17.114 8.5986 16.503L6.5036 13.276C6.44908 13.1925 6.37457 13.1238 6.28683 13.0763C6.19909 13.0288 6.10089 13.0039 6.0011 13.0039C5.90132 13.0039 5.80311 13.0288 5.71537 13.0763C5.62763 13.1238 5.55313 13.1925 5.4986 13.276L3.4006 16.503C3.04872 17.1141 2.92312 17.8296 3.0458 18.524C3.16849 19.2184 3.53263 19.8475 4.0726 20.301Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M16.0726 20.301C16.6128 20.7544 17.2954 21.0029 18.0006 21.0029C18.7058 21.0029 19.3884 20.7544 19.9286 20.301C20.4686 19.8475 20.8317 19.2183 20.9542 18.5239C21.0767 17.8294 20.9508 17.114 20.5986 16.503L18.5036 13.276C18.4491 13.1925 18.3746 13.1238 18.2868 13.0763C18.1991 13.0288 18.1009 13.0039 18.0011 13.0039C17.9013 13.0039 17.8031 13.0288 17.7154 13.0763C17.6276 13.1238 17.5531 13.1925 17.4986 13.276L15.4006 16.503C15.0487 17.1141 14.9231 17.8296 15.0458 18.524C15.1685 19.2184 15.5316 19.8475 16.0716 20.301H16.0726Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -11,7 +11,7 @@ export const DropletsIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_74993">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

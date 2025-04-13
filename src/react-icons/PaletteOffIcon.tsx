@@ -3,7 +3,7 @@ import React from "react";
 export const PaletteOffIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_67125)">
 <path d="M15.0001 15.0005H14.0001C13.554 14.9933 13.1182 15.1355 12.7622 15.4045C12.4062 15.6735 12.1504 16.0538 12.0354 16.4849C11.9204 16.9161 11.9529 17.3733 12.1277 17.7838C12.3025 18.1943 12.6096 18.5346 13.0001 18.7505C13.1998 18.9348 13.3367 19.1769 13.3916 19.443C13.4466 19.7091 13.4168 19.9857 13.3065 20.2339C13.1961 20.4822 13.0108 20.6896 12.7765 20.8271C12.5421 20.9646 12.2706 21.0253 12.0001 21.0005C10.221 21.0005 8.48183 20.4733 7.00227 19.4854C5.5227 18.4974 4.36912 17.0931 3.68726 15.4499C3.0054 13.8067 2.82585 11.9982 3.17129 10.253C3.51673 8.5078 4.37167 6.9041 5.62809 5.64453"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M8 4C9.236 3.377 10.569 3 12 3C16.97 3 21 6.582 21 11C21 12.06 20.526 13.078 19.682 13.828C19.3448 14.1261 18.9649 14.3722 18.555 14.558"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -14,7 +14,7 @@ export const PaletteOffIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_67125">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

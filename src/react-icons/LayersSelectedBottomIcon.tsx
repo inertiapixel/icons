@@ -3,7 +3,7 @@ import React from "react";
 export const LayersSelectedBottomIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_70955)">
 <path d="M4 14.5L8 10.5"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M9.49609 20L13.5001 16"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -13,7 +13,7 @@ export const LayersSelectedBottomIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_70955">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

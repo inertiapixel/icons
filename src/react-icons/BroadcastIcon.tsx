@@ -3,7 +3,7 @@ import React from "react";
 export const BroadcastIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_80973)">
 <path d="M18.364 19.3639C19.6227 18.1052 20.4798 16.5016 20.8271 14.7558C21.1743 13.0099 20.9961 11.2004 20.3149 9.55582C19.6337 7.9113 18.4802 6.50569 17.0001 5.51677C15.5201 4.52784 13.78 4 12 4C10.22 4 8.47992 4.52784 6.99988 5.51677C5.51984 6.50569 4.36629 7.9113 3.6851 9.55582C3.00391 11.2004 2.82567 13.0099 3.17293 14.7558C3.52019 16.5016 4.37734 18.1052 5.636 19.3639"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M15.536 16.5351C16.2351 15.8358 16.7112 14.9448 16.904 13.975C17.0968 13.0051 16.9978 11.9998 16.6193 11.0863C16.2408 10.1727 15.5999 9.39191 14.7777 8.84256C13.9555 8.29321 12.9889 8 12 8C11.0112 8 10.0445 8.29321 9.22229 8.84256C8.40007 9.39191 7.75921 10.1727 7.38073 11.0863C7.00225 11.9998 6.90316 13.0051 7.09598 13.975C7.2888 14.9448 7.76487 15.8358 8.464 16.5351"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -11,7 +11,7 @@ export const BroadcastIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_80973">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

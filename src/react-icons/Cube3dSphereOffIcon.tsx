@@ -3,7 +3,7 @@ import React from "react";
 export const Cube3dSphereOffIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_77524)">
 <path d="M6 17.6L4 16.5V14"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M4 9.99844V7.49844L6 6.39844"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -20,7 +20,7 @@ export const Cube3dSphereOffIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_77524">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

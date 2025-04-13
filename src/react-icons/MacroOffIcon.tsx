@@ -3,7 +3,7 @@ import React from "react";
 export const MacroOffIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_69814)">
 <path d="M6 15C5.99968 16.3724 6.46985 17.7034 7.33212 18.7712C8.19439 19.8389 9.39663 20.5787 10.7384 20.8673C12.0801 21.1559 13.4802 20.9757 14.7052 20.357C15.9302 19.7382 16.906 18.7182 17.47 17.467"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M15.53 15.5312C14.4776 16.0066 13.5848 16.7756 12.9586 17.7459C12.3325 18.7161 11.9996 19.8465 12 21.0013"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -14,7 +14,7 @@ export const MacroOffIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_69814">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

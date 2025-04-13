@@ -3,7 +3,7 @@ import React from "react";
 export const WorldCancelIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_59744)">
 <path d="M21 12C21 10.2193 20.4718 8.47867 19.4822 6.9983C18.4926 5.51794 17.0861 4.3644 15.4407 3.68365C13.7953 3.0029 11.9849 2.82555 10.2387 3.17404C8.49243 3.52252 6.88881 4.38118 5.63074 5.64135C4.37266 6.90153 3.51668 8.50658 3.17111 10.2534C2.82554 12.0002 3.00591 13.8103 3.6894 15.4545C4.37289 17.0988 5.52878 18.5034 7.01079 19.4905C8.49281 20.4776 10.2343 21.003 12.015 21"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M3.60156 9H20.4016"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -15,7 +15,7 @@ export const WorldCancelIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_59744">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

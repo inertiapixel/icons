@@ -3,7 +3,7 @@ import React from "react";
 export const TimeDuration15Icon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_61619)">
 <path d="M12 15H14C14.2652 15 14.5196 14.8946 14.7071 14.7071C14.8946 14.5196 15 14.2652 15 14V13C15 12.7348 14.8946 12.4804 14.7071 12.2929C14.5196 12.1054 14.2652 12 14 12H12V9H15"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M9 9V15"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -19,7 +19,7 @@ export const TimeDuration15Icon = (
 </g>
 <defs>
 <clipPath id="clip0_802_61619">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

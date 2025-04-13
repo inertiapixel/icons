@@ -3,7 +3,7 @@ import React from "react";
 export const BrandShazamIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_81585)">
 <path d="M10 12.0005L12 10.0005C12.2626 9.73778 12.5744 9.5294 12.9176 9.38723C13.2607 9.24505 13.6285 9.17188 14 9.17188C14.3715 9.17188 14.7393 9.24505 15.0824 9.38723C15.4256 9.5294 15.7374 9.73778 16 10.0005C16.2627 10.2631 16.4711 10.5749 16.6133 10.9181C16.7554 11.2612 16.8286 11.629 16.8286 12.0005C16.8286 12.3719 16.7554 12.7397 16.6133 13.0829C16.4711 13.4261 16.2627 13.7379 16 14.0005L13 17.0005"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M14.0003 12L12.0003 14C11.7377 14.2626 11.4259 14.471 11.0827 14.6131C10.7395 14.7553 10.3717 14.8284 10.0003 14.8284C9.25016 14.8284 8.53074 14.5304 8.0003 14C7.73766 13.7374 7.52932 13.4256 7.38718 13.0824C7.24503 12.7392 7.17188 12.3714 7.17188 12C7.17188 11.2499 7.46987 10.5304 8.0003 10L11.0003 7"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -11,7 +11,7 @@ export const BrandShazamIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_81585">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

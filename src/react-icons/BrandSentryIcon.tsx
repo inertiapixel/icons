@@ -3,13 +3,13 @@ import React from "react";
 export const BrandSentryIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_81593)">
 <path d="M3.00028 18.0005C2.99382 18.3815 3.10029 18.7559 3.30628 19.0765C3.47748 19.3457 3.71058 19.57 3.98614 19.7307C4.26169 19.8915 4.5717 19.984 4.89028 20.0005C5.53628 20.0335 4.35328 20.0005 5.00028 20.0005H8.00028C8.00006 18.9089 7.64201 17.8474 6.98097 16.9786C6.31993 16.1099 5.39234 15.4818 4.34028 15.1905C4.89828 14.2175 5.58028 13.0415 6.38028 11.6595C8.04093 12.3324 9.46291 13.4857 10.4641 14.9717C11.4654 16.4577 12.0002 18.2087 12.0003 20.0005H16.0003M16.0003 20.0005C16.6633 20.0005 18.3373 20.0005 19.0003 20.0005C19.3266 19.9982 19.6474 19.9161 19.9347 19.7614C20.222 19.6066 20.467 19.3839 20.6485 19.1127C20.8299 18.8415 20.9423 18.53 20.9757 18.2054C21.0092 17.8809 20.9627 17.553 20.8403 17.2505L13.7403 5.0005C13.5673 4.6879 13.3138 4.42733 13.006 4.24589C12.6983 4.06445 12.3475 3.96875 11.9903 3.96875C11.633 3.96875 11.2823 4.06445 10.9745 4.24589C10.6668 4.42733 10.4132 4.6879 10.2403 5.0005L8.40028 8.1765C12.8823 10.2265 16.0003 14.7475 16.0003 20.0005Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 </g>
 <defs>
 <clipPath id="clip0_802_81593">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

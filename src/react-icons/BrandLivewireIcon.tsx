@@ -3,7 +3,7 @@ import React from "react";
 export const BrandLivewireIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_81995)">
 <path d="M20.982 18.777C20.61 19.325 20.33 20 19.576 20C18.307 20 18.239 18.087 16.969 18.087C15.699 18.087 15.769 20 14.499 20C13.231 20 13.162 18.087 11.892 18.087C10.623 18.087 10.692 20 9.42203 20C8.15403 20 8.08503 18.087 6.81503 18.087C5.54503 18.087 5.61503 20 4.34503 20C3.94703 20 3.66603 19.811 3.43003 19.552C2.48965 17.9479 1.99589 16.1214 2.00003 14.262C2.00003 8.593 6.47703 4 12 4C17.524 4 22 8.594 22 14.261C22 15.881 21.634 17.413 20.982 18.777Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M20.982 18.777C20.61 19.325 20.33 20 19.576 20C18.307 20 18.239 18.087 16.969 18.087C15.699 18.087 15.769 20 14.499 20C13.231 20 13.162 18.087 11.892 18.087C10.623 18.087 10.692 20 9.42203 20C8.15403 20 8.08503 18.087 6.81503 18.087C5.54503 18.087 5.61503 20 4.34503 20C3.94703 20 3.66603 19.811 3.43003 19.552C2.48965 17.9479 1.99589 16.1214 2.00003 14.262C2.00003 8.593 6.47703 4 12 4C17.524 4 22 8.594 22 14.261C22 15.881 21.634 17.413 20.982 18.777Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -12,7 +12,7 @@ export const BrandLivewireIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_81995">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

@@ -3,7 +3,7 @@ import React from "react";
 export const OmIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_67219)">
 <path d="M6.99972 12C9.20972 12 10.9997 10.433 10.9997 8.5C10.9997 6.567 9.20972 5 6.99972 5C5.40572 5 4.02972 5.816 3.38672 7"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M3.42303 14.483C3.14191 15.1182 2.99778 15.8054 3.00003 16.5C3.00003 18.985 4.79003 21 7.00003 21C9.21003 21 11 18.985 11 16.5C11 14.015 9.21003 12 7.00003 12"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -13,7 +13,7 @@ export const OmIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_67219">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

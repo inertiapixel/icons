@@ -3,7 +3,7 @@ import React from "react";
 export const Affiliate1Icon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_86175)">
 <path d="M5.92969 6.9375L7.20469 11.1865M12.8117 16.7955L17.0627 18.0705"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M11.6836 12.3176L17.4426 6.55859"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -14,7 +14,7 @@ export const Affiliate1Icon = (
 </g>
 <defs>
 <clipPath id="clip0_802_86175">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

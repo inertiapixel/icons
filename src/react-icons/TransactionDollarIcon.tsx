@@ -3,7 +3,7 @@ import React from "react";
 export const TransactionDollarIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_61160)">
 <path d="M20.8 13.0011C20.6188 12.6869 20.3557 12.4278 20.0386 12.2517C19.7215 12.0755 19.3625 11.9889 19 12.0011H17C16.4696 12.0011 15.9609 12.2118 15.5858 12.5869C15.2107 12.962 15 13.4707 15 14.0011C15 14.5316 15.2107 15.0403 15.5858 15.4153C15.9609 15.7904 16.4696 16.0011 17 16.0011H19C19.5304 16.0011 20.0391 16.2118 20.4142 16.5869C20.7893 16.962 21 17.4707 21 18.0011C21 18.5316 20.7893 19.0403 20.4142 19.4153C20.0391 19.7904 19.5304 20.0011 19 20.0011H17C16.6375 20.0133 16.2785 19.9267 15.9614 19.7506C15.6443 19.5744 15.3812 19.3154 15.2 19.0011"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M18 11V21"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -14,7 +14,7 @@ export const TransactionDollarIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_61160">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

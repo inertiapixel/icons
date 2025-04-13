@@ -3,7 +3,7 @@ import React from "react";
 export const Analyze1Icon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_85859)">
 <path d="M20.0011 11.0013C19.7565 9.24166 18.9401 7.61124 17.6777 6.36117C16.4154 5.1111 14.7771 4.31072 13.0151 4.08331C11.4416 3.87855 9.84258 4.14076 8.41686 4.83735C6.99115 5.53394 5.8016 6.63418 4.99609 8.00131"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M4 13C4.23134 14.6651 4.97504 16.217 6.12797 17.4404C7.2809 18.6639 8.78594 19.4983 10.4344 19.828C12.0829 20.1577 13.793 19.9663 15.3279 19.2804C16.8627 18.5945 18.146 17.448 19 16"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -13,7 +13,7 @@ export const Analyze1Icon = (
 </g>
 <defs>
 <clipPath id="clip0_802_85859">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

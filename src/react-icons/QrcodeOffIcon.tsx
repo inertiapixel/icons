@@ -3,7 +3,7 @@ import React from "react";
 export const QrcodeOffIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_65625)">
 <path d="M8 4H9C9.26522 4 9.51957 4.10536 9.70711 4.29289C9.89464 4.48043 10 4.73478 10 5V6M9.703 9.711C9.51584 9.89611 9.26324 9.99995 9 10H5C4.73478 10 4.48043 9.89464 4.29289 9.70711C4.10536 9.51957 4 9.26522 4 9V5C4 4.725 4.11 4.476 4.29 4.295"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M7 17V17.01"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -18,7 +18,7 @@ export const QrcodeOffIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_65625">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

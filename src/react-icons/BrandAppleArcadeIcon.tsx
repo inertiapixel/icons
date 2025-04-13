@@ -3,7 +3,7 @@ import React from "react";
 export const BrandAppleArcadeIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_82799)">
 <path d="M10 5C10 5.53043 10.2107 6.03914 10.5858 6.41421C10.9609 6.78929 11.4696 7 12 7C12.5304 7 13.0391 6.78929 13.4142 6.41421C13.7893 6.03914 14 5.53043 14 5C14 4.46957 13.7893 3.96086 13.4142 3.58579C13.0391 3.21071 12.5304 3 12 3C11.4696 3 10.9609 3.21071 10.5858 3.58579C10.2107 3.96086 10 4.46957 10 5Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M20.0001 12.5V17.25C20.0066 17.3611 19.9878 17.4722 19.9451 17.575C19.8783 17.7358 19.7543 17.8662 19.5971 17.941L14.1351 20.521C13.4675 20.8362 12.7383 20.9997 12.0001 20.9997C11.2618 20.9997 10.5327 20.8362 9.86507 20.521L4.40307 17.941C4.27417 17.8799 4.16683 17.7812 4.09524 17.6578C4.02364 17.5344 3.99115 17.3922 4.00207 17.25V12.5"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -12,7 +12,7 @@ export const BrandAppleArcadeIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_82799">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

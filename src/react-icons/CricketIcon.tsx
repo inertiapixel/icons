@@ -3,7 +3,7 @@ import React from "react";
 export const CricketIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_77610)">
 <path d="M11.1063 18.7914L10.1063 19.7834C9.33921 20.5437 8.30642 20.9758 7.22643 20.9882C6.14645 21.0007 5.10399 20.5925 4.31958 19.8501C3.53517 19.1076 3.07035 18.0891 3.02346 17.0101C2.97656 15.9311 3.35127 14.8761 4.0683 14.0684L4.2253 13.9024L12.5073 5.5014L14.0073 7.0014L17.4573 3.6104C17.8374 3.23367 18.3482 3.01798 18.8833 3.00816C19.4184 2.99835 19.9367 3.19518 20.3304 3.55771C20.7241 3.92025 20.9629 4.4206 20.9972 4.9547C21.0314 5.4888 20.8585 6.01555 20.5143 6.4254L20.3983 6.5514L17.0073 10.0014L18.5073 11.5014L14.8393 15.1184"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M10.5 7.5L16.5 13.5"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -11,7 +11,7 @@ export const CricketIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_77610">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

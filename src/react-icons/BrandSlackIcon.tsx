@@ -3,7 +3,7 @@ import React from "react";
 export const BrandSlackIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_81567)">
 <path d="M16 12V6C16 5.46957 15.7893 4.96086 15.4142 4.58579C15.0391 4.21071 14.5304 4 14 4C13.4696 4 12.9609 4.21071 12.5858 4.58579C12.2107 4.96086 12 5.46957 12 6V12H18C18.3956 12 18.7822 11.8827 19.1111 11.6629C19.44 11.4432 19.6964 11.1308 19.8478 10.7654C19.9991 10.3999 20.0387 9.99778 19.9616 9.60982C19.8844 9.22186 19.6939 8.86549 19.4142 8.58579C19.1345 8.30608 18.7781 8.1156 18.3902 8.03843C18.0022 7.96126 17.6001 8.00087 17.2346 8.15224C16.8692 8.30362 16.5568 8.55996 16.3371 8.88886C16.1173 9.21776 16 9.60444 16 10"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M12 16H18C18.5304 16 19.0391 15.7893 19.4142 15.4142C19.7893 15.0391 20 14.5304 20 14C20 13.4696 19.7893 12.9609 19.4142 12.5858C19.0391 12.2107 18.5304 12 18 12H12V18C12 18.3956 12.1173 18.7822 12.3371 19.1111C12.5568 19.44 12.8692 19.6964 13.2346 19.8478C13.6001 19.9991 14.0022 20.0387 14.3902 19.9616C14.7781 19.8844 15.1345 19.6939 15.4142 19.4142C15.6939 19.1345 15.8844 18.7781 15.9616 18.3902C16.0387 18.0022 15.9991 17.6001 15.8478 17.2346C15.6964 16.8692 15.44 16.5568 15.1111 16.3371C14.7822 16.1173 14.3956 16 14 16"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -12,7 +12,7 @@ export const BrandSlackIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_81567">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

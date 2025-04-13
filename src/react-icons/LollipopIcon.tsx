@@ -3,7 +3,7 @@ import React from "react";
 export const LollipopIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_69852)">
 <path d="M7 10C7 11.8565 7.7375 13.637 9.05025 14.9497C10.363 16.2625 12.1435 17 14 17C15.8565 17 17.637 16.2625 18.9497 14.9497C20.2625 13.637 21 11.8565 21 10C21 8.14348 20.2625 6.36301 18.9497 5.05025C17.637 3.7375 15.8565 3 14 3C12.1435 3 10.363 3.7375 9.05025 5.05025C7.7375 6.36301 7 8.14348 7 10Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M21 10C21 9.07174 20.6313 8.1815 19.9749 7.52513C19.3185 6.86875 18.4283 6.5 17.5 6.5C16.5717 6.5 15.6815 6.86875 15.0251 7.52513C14.3687 8.1815 14 9.07174 14 10"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -14,7 +14,7 @@ export const LollipopIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_69852">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

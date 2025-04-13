@@ -3,7 +3,7 @@ import React from "react";
 export const CactusOffIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_80602)">
 <path d="M6 9V10C6 10.7956 6.31607 11.5587 6.87868 12.1213C7.44129 12.6839 8.20435 13 9 13H10"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M18 8V13C18.0002 13.2954 17.9567 13.5893 17.871 13.872M15.857 15.872C15.5788 15.9546 15.2902 15.9963 15 15.996H14"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -13,7 +13,7 @@ export const CactusOffIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_80602">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

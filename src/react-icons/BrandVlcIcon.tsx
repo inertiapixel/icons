@@ -3,14 +3,14 @@ import React from "react";
 export const BrandVlcIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_81243)">
 <path d="M13.7899 4.337L16.8909 13.642C17.2209 14.627 16.7779 15.712 15.8709 16.141C14.6589 16.707 13.3375 17.0004 11.9999 17.0004C10.6622 17.0004 9.34086 16.707 8.12888 16.141C7.22188 15.713 6.77888 14.627 7.10888 13.642L10.2089 4.337C10.4759 3.537 11.1939 3 11.9999 3C12.8069 3 13.5249 3.537 13.7899 4.337Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M7.00011 14H5.57111C5.13657 14 4.71384 14.1415 4.36689 14.4031C4.01993 14.6647 3.76761 15.0322 3.64811 15.45L3.07711 17.45C2.99197 17.7477 2.9771 18.0611 3.03368 18.3655C3.09026 18.6699 3.21674 18.957 3.40316 19.2042C3.58958 19.4514 3.83086 19.652 4.10798 19.7901C4.38509 19.9281 4.69049 20 5.00011 20H18.9981C19.3077 20 19.6131 19.9281 19.8902 19.7901C20.1674 19.652 20.4086 19.4514 20.5951 19.2042C20.7815 18.957 20.908 18.6699 20.9645 18.3655C21.0211 18.0611 21.0063 17.7477 20.9211 17.45L20.3491 15.45C20.2296 15.0322 19.9773 14.6647 19.6303 14.4031C19.2834 14.1415 18.8607 14 18.4261 14H17.0001"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 </g>
 <defs>
 <clipPath id="clip0_802_81243">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

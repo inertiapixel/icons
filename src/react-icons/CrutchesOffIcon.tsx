@@ -3,7 +3,7 @@ import React from "react";
 export const CrutchesOffIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_77555)">
 <path d="M8.17969 4.174C8.33845 3.82391 8.59473 3.52699 8.91786 3.31878C9.24099 3.11057 9.61728 2.9999 10.0017 3H14.0017C14.2643 3 14.5244 3.05173 14.7671 3.15224C15.0097 3.25275 15.2302 3.40007 15.4159 3.58579C15.6016 3.7715 15.7489 3.99198 15.8494 4.23463C15.95 4.47728 16.0017 4.73736 16.0017 5C16.0017 5.26264 15.95 5.52272 15.8494 5.76537C15.7489 6.00802 15.6016 6.2285 15.4159 6.41421C15.2302 6.59993 15.0097 6.74725 14.7671 6.84776C14.5244 6.94827 14.2643 7 14.0017 7H11.0017"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M11 21H13"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -14,7 +14,7 @@ export const CrutchesOffIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_77555">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

@@ -3,7 +3,7 @@ import React from "react";
 export const CoinOffIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_78126)">
 <path d="M14.7999 9.00113C14.6188 8.68689 14.3556 8.42784 14.0385 8.25169C13.7214 8.07554 13.3624 7.98893 12.9999 8.00113H11.9999M9.1799 9.17213C9.04114 9.47679 8.98107 9.8114 9.0052 10.1453C9.02933 10.4792 9.13689 10.8017 9.31801 11.0832C9.49913 11.3648 9.74803 11.5963 10.0419 11.7567C10.3357 11.9171 10.6651 12.0011 10.9999 12.0011H11.9999M14.8239 14.8231C14.6656 15.1743 14.4093 15.4722 14.0857 15.6812C13.7621 15.8902 13.3851 16.0013 12.9999 16.0011H10.9999C10.6374 16.0133 10.2784 15.9267 9.96132 15.7506C9.64425 15.5744 9.38105 15.3154 9.1999 15.0011"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M20.0435 16.0456C20.8956 14.3545 21.1925 12.4377 20.892 10.568C20.5915 8.69838 19.709 6.97114 18.37 5.63214C17.031 4.29314 15.3037 3.4106 13.4341 3.11013C11.5645 2.80965 9.64767 3.10656 7.95654 3.95858M5.63854 5.63559C4.79148 6.46864 4.11774 7.46116 3.65617 8.5559C3.19461 9.65064 2.95437 10.8259 2.9493 12.014C2.94423 13.202 3.17444 14.3793 3.62664 15.478C4.07884 16.5766 4.74409 17.5748 5.58401 18.4151C6.42393 19.2553 7.4219 19.921 8.52036 20.3736C9.61883 20.8263 10.796 21.0569 11.9841 21.0523C13.1721 21.0477 14.3475 20.8079 15.4424 20.3468C16.5374 19.8857 17.5302 19.2123 18.3635 18.3656"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -12,7 +12,7 @@ export const CoinOffIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_78126">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

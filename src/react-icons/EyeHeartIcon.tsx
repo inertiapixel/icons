@@ -3,7 +3,7 @@ import React from "react";
 export const EyeHeartIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_74613)">
 <path d="M13.9046 11.3898C13.8048 11.0782 13.63 10.7958 13.3956 10.5674C13.1612 10.3391 12.8744 10.1718 12.5603 10.0801C12.2462 9.98842 11.9144 9.97522 11.594 10.0417C11.2735 10.1081 10.9743 10.2521 10.7226 10.4611C10.4708 10.6701 10.2741 10.9377 10.1498 11.2404C10.0256 11.5431 9.97747 11.8717 10.0098 12.1973C10.042 12.523 10.1537 12.8357 10.335 13.1081C10.5163 13.3805 10.7617 13.6043 11.0496 13.7598"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M9.992 17.779C7.27 17.158 4.939 15.232 3 12C5.4 8 8.4 6 12 6C15.332 6 18.15 7.714 20.454 11.14"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -11,7 +11,7 @@ export const EyeHeartIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_74613">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

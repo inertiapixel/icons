@@ -3,7 +3,7 @@ import React from "react";
 export const BrandQqIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_81674)">
 <path d="M6 9.74759C7.89092 10.5817 9.93634 11.0082 12.003 10.9992C14.0697 10.9902 16.1114 10.5461 17.995 9.69559C18.27 0.459591 6.891 -1.56041 6 9.74759Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M18 10C18.984 12.762 19.949 14.765 20 17.153C20.014 17.841 19.336 18.499 18.816 17.456C18.47 16.76 17.864 16.275 17 16"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -17,7 +17,7 @@ export const BrandQqIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_81674">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

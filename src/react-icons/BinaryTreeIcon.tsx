@@ -3,7 +3,7 @@ import React from "react";
 export const BinaryTreeIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_83745)">
 <path d="M6 20C6 19.4696 5.78929 18.9609 5.41421 18.5858C5.03914 18.2107 4.53043 18 4 18C3.46957 18 2.96086 18.2107 2.58579 18.5858C2.21071 18.9609 2 19.4696 2 20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22C4.53043 22 5.03914 21.7893 5.41421 21.4142C5.78929 21.0391 6 20.5304 6 20Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M16 4C16 3.46957 15.7893 2.96086 15.4142 2.58579C15.0391 2.21071 14.5304 2 14 2C13.4696 2 12.9609 2.21071 12.5858 2.58579C12.2107 2.96086 12 3.46957 12 4C12 4.53043 12.2107 5.03914 12.5858 5.41421C12.9609 5.78929 13.4696 6 14 6C14.5304 6 15.0391 5.78929 15.4142 5.41421C15.7893 5.03914 16 4.53043 16 4Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -17,7 +17,7 @@ export const BinaryTreeIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_83745">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

@@ -3,7 +3,7 @@ import React from "react";
 export const CardboardsOffIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_79998)">
 <path d="M20.96 16.953C20.986 16.806 21 16.655 21 16.5V8C21 7.46957 20.7893 6.96086 20.4142 6.58579C20.0391 6.21071 19.5304 6 19 6H10M6 6H5C4.46957 6 3.96086 6.21071 3.58579 6.58579C3.21071 6.96086 3 7.46957 3 8V16.5C3 17.163 3.26339 17.7989 3.73223 18.2678C4.20107 18.7366 4.83696 19 5.5 19H6.56C7.0098 18.9991 7.45365 18.8971 7.8587 18.7015C8.26374 18.5059 8.61962 18.2217 8.9 17.87L10.44 15.95C10.6274 15.7164 10.8649 15.5279 11.1349 15.3984C11.4049 15.2688 11.7005 15.2016 12 15.2016C12.2995 15.2016 12.5951 15.2688 12.8651 15.3984C13.1351 15.5279 13.3726 15.7164 13.56 15.95L15.1 17.87C15.3804 18.2217 15.7363 18.5059 16.1413 18.7015C16.5464 18.8971 16.9902 18.9991 17.44 19H18.5C18.655 19 18.807 18.986 18.954 18.959"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M7 12C7 12.2652 7.10536 12.5196 7.29289 12.7071C7.48043 12.8946 7.73478 13 8 13C8.26522 13 8.51957 12.8946 8.70711 12.7071C8.89464 12.5196 9 12.2652 9 12C9 11.7348 8.89464 11.4804 8.70711 11.2929C8.51957 11.1054 8.26522 11 8 11C7.73478 11 7.48043 11.1054 7.29289 11.2929C7.10536 11.4804 7 11.7348 7 12Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -12,7 +12,7 @@ export const CardboardsOffIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_79998">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

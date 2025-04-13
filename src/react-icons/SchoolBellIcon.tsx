@@ -3,7 +3,7 @@ import React from "react";
 export const SchoolBellIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_64546)">
 <path d="M4 17C4 17.7956 4.31607 18.5587 4.87868 19.1213C5.44129 19.6839 6.20435 20 7 20"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M14.8047 6.37005L17.5877 3.58605C17.7734 3.4003 17.9938 3.25293 18.2365 3.15238C18.4791 3.05183 18.7392 3.00005 19.0018 3C19.2645 2.99995 19.5246 3.05164 19.7672 3.15211C20.0099 3.25258 20.2304 3.39986 20.4162 3.58555C20.6019 3.77124 20.7493 3.9917 20.8499 4.23434C20.9504 4.47698 21.0022 4.73705 21.0022 4.9997C21.0023 5.26235 20.9506 5.52244 20.8501 5.76511C20.7497 6.00779 20.6024 6.2283 20.4167 6.41405L17.6327 9.20005"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -11,7 +11,7 @@ export const SchoolBellIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_64546">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

@@ -3,7 +3,7 @@ import React from "react";
 export const SatelliteOffIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_64630)">
 <path d="M7.70685 3.70703L13.2928 9.29303M11.9998 12L10.7068 13.293C10.5193 13.4805 10.265 13.5858 9.99985 13.5858C9.73468 13.5858 9.48038 13.4805 9.29285 13.293L3.70685 7.70703C3.51938 7.5195 3.41406 7.2652 3.41406 7.00003C3.41406 6.73487 3.51938 6.48056 3.70685 6.29303L4.99985 5.00003"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M6 10L3 13L6 16L9 13"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -15,7 +15,7 @@ export const SatelliteOffIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_64630">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

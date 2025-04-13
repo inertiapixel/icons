@@ -3,7 +3,7 @@ import React from "react";
 export const CoffeeOffIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_78163)">
 <path d="M3 14.0017C3.83 14.6437 5.077 15.0187 6.5 15.0017C7.923 15.0187 9.17 14.6437 10 14.0017C10.73 13.4367 11.783 13.0787 13 13.0117"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M7.99819 3C7.80419 3.14 7.63419 3.305 7.49219 3.49"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -14,7 +14,7 @@ export const CoffeeOffIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_78163">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

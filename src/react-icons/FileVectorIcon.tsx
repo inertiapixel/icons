@@ -3,7 +3,7 @@ import React from "react";
 export const FileVectorIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_73859)">
 <path d="M14 3V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H19"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M8 16.5C8 16.8978 8.15804 17.2794 8.43934 17.5607C8.72064 17.842 9.10218 18 9.5 18C9.89782 18 10.2794 17.842 10.5607 17.5607C10.842 17.2794 11 16.8978 11 16.5C11 16.1022 10.842 15.7206 10.5607 15.4393C10.2794 15.158 9.89782 15 9.5 15C9.10218 15 8.72064 15.158 8.43934 15.4393C8.15804 15.7206 8 16.1022 8 16.5Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -13,7 +13,7 @@ export const FileVectorIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_73859">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

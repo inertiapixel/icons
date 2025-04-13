@@ -3,7 +3,7 @@ import React from "react";
 export const PhotoScanIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_66508)">
 <path d="M15 8H15.01"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M6 12.9988L8.644 10.3548C8.75637 10.2423 8.88981 10.1531 9.03669 10.0922C9.18357 10.0313 9.34101 10 9.5 10C9.65899 10 9.81643 10.0313 9.96331 10.0922C10.1102 10.1531 10.2436 10.2423 10.356 10.3548L14 13.9988"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -15,7 +15,7 @@ export const PhotoScanIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_66508">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

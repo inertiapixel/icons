@@ -3,7 +3,7 @@ import React from "react";
 export const SunWindIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_62283)">
 <path d="M14.4667 10.0006C14.1605 9.46863 13.736 9.01427 13.226 8.67269C12.716 8.33111 12.1343 8.11148 11.5258 8.0308C10.9173 7.95012 10.2984 8.01055 9.71703 8.20743C9.13566 8.4043 8.60739 8.73233 8.17313 9.16611C7.73886 9.5999 7.41026 10.1278 7.21275 10.709C7.01523 11.2901 6.95412 11.9089 7.03413 12.5175C7.11414 13.1261 7.33313 13.7081 7.67415 14.2184C8.01517 14.7288 8.46907 15.1538 9.0007 15.4606"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M2 12H3"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -17,7 +17,7 @@ export const SunWindIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_62283">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

@@ -3,7 +3,7 @@ import React from "react";
 export const AdCircleOffIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_86509)">
 <path d="M4.91001 4.94922C3.04352 6.82077 1.99679 9.35703 2.00001 12.0002C2.00001 17.5232 6.47701 22.0002 12 22.0002C14.6427 22.0034 17.1785 20.9571 19.05 19.0912"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M20.7772 16.793C21.5813 15.3236 22.0016 13.675 21.9992 12C21.9992 6.477 17.5222 2 11.9992 2C10.2592 2 8.62322 2.444 7.19922 3.225"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -16,7 +16,7 @@ export const AdCircleOffIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_86509">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

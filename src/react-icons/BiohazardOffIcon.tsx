@@ -3,7 +3,7 @@ import React from "react";
 export const BiohazardOffIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_83729)">
 <path d="M10.5866 10.5859C10.3962 10.771 10.2446 10.9921 10.1405 11.2364C10.0364 11.4807 9.98203 11.7432 9.9805 12.0088C9.97898 12.2743 10.0303 12.5375 10.1316 12.7829C10.2329 13.0284 10.382 13.2512 10.5703 13.4385C10.7585 13.6257 10.9822 13.7735 11.2283 13.8734C11.4743 13.9733 11.7378 14.0232 12.0033 14.0201C12.2688 14.0171 12.531 13.9612 12.7747 13.8558C13.0184 13.7503 13.2387 13.5974 13.4226 13.4059"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M11.9401 14C11.9401 14.173 11.9881 14.351 11.9961 14.533V14.75C11.9961 15.9722 11.525 17.1474 10.6807 18.0311C9.83644 18.9149 8.68402 19.4392 7.46309 19.495H7.24609"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -16,7 +16,7 @@ export const BiohazardOffIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_83729">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

@@ -3,7 +3,7 @@ import React from "react";
 export const BrandBehanceIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_82720)">
 <path d="M3 18V6H7.5C8.29565 6 9.05871 6.31607 9.62132 6.87868C10.1839 7.44129 10.5 8.20435 10.5 9C10.5 9.79565 10.1839 10.5587 9.62132 11.1213C9.05871 11.6839 8.29565 12 7.5 12C8.29565 12 9.05871 12.3161 9.62132 12.8787C10.1839 13.4413 10.5 14.2044 10.5 15C10.5 15.7956 10.1839 16.5587 9.62132 17.1213C9.05871 17.6839 8.29565 18 7.5 18H3Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M3 12H7.5"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -12,7 +12,7 @@ export const BrandBehanceIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_82720">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

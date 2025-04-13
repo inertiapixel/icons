@@ -3,7 +3,7 @@ import React from "react";
 export const FiltersIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_73712)">
 <path d="M7 8C7 9.32608 7.52678 10.5979 8.46447 11.5355C9.40215 12.4732 10.6739 13 12 13C13.3261 13 14.5979 12.4732 15.5355 11.5355C16.4732 10.5979 17 9.32608 17 8C17 6.67392 16.4732 5.40215 15.5355 4.46447C14.5979 3.52678 13.3261 3 12 3C10.6739 3 9.40215 3.52678 8.46447 4.46447C7.52678 5.40215 7 6.67392 7 8Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M7.99975 11C6.87325 11.0001 5.77978 11.3805 4.89655 12.0797C4.01331 12.7789 3.39207 13.7559 3.1335 14.8523C2.87493 15.9488 2.99419 17.1004 3.47194 18.1205C3.9497 19.1407 4.75795 19.9696 5.76573 20.473C6.7735 20.9764 7.92173 21.1247 9.02433 20.894C10.1269 20.6632 11.1193 20.0668 11.8406 19.2015C12.5619 18.3362 12.9699 17.2527 12.9984 16.1266C13.0269 15.0005 12.6743 13.8977 11.9978 12.997"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -11,7 +11,7 @@ export const FiltersIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_73712">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

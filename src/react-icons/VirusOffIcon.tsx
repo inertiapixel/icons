@@ -3,7 +3,7 @@ import React from "react";
 export const VirusOffIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_60259)">
 <path d="M3 3L21 21"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M8.46864 8.46094C7.53539 9.39818 7.01152 10.667 7.01172 11.9897C7.01192 13.3123 7.53617 14.581 8.46969 15.5179C9.40322 16.4549 10.67 16.9838 11.9926 16.9889C13.3152 16.9939 14.586 16.4747 15.5266 15.5449"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -25,7 +25,7 @@ export const VirusOffIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_60259">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

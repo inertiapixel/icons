@@ -3,7 +3,7 @@ import React from "react";
 export const CarFanIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_80051)">
 <path d="M12 12V3L16.912 4.914C17.1919 5.02302 17.438 5.20427 17.625 5.4393C17.8121 5.67432 17.9336 5.95472 17.9771 6.25196C18.0206 6.5492 17.9846 6.85265 17.8727 7.13143C17.7607 7.4102 17.5769 7.65435 17.34 7.839L12 12Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M12 12H21L19.086 16.912C18.977 17.1919 18.7957 17.438 18.5607 17.625C18.3257 17.8121 18.0453 17.9336 17.748 17.9771C17.4508 18.0206 17.1473 17.9846 16.8686 17.8727C16.5898 17.7607 16.3457 17.5769 16.161 17.34L12 12Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -12,7 +12,7 @@ export const CarFanIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_80051">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

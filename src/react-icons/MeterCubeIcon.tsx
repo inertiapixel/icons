@@ -3,7 +3,7 @@ import React from "react";
 export const MeterCubeIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_68499)">
 <path d="M17 5H18.5C18.8978 5 19.2794 5.15804 19.5607 5.43934C19.842 5.72064 20 6.10218 20 6.5C20 6.89782 19.842 7.27936 19.5607 7.56066C19.2794 7.84196 18.8978 8 18.5 8M18.5 8H18M18.5 8C18.8978 8 19.2794 8.15804 19.5607 8.43934C19.842 8.72064 20 9.10218 20 9.5C20 9.89782 19.842 10.2794 19.5607 10.5607C19.2794 10.842 18.8978 11 18.5 11H17"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M4 12V18"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -12,7 +12,7 @@ export const MeterCubeIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_68499">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

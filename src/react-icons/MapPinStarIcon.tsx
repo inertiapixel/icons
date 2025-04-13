@@ -3,7 +3,7 @@ import React from "react";
 export const MapPinStarIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_69390)">
 <path d="M15 10.9993C14.9999 10.4452 14.8463 9.90198 14.5563 9.42984C14.2663 8.95771 13.8512 8.57511 13.357 8.32447C12.8629 8.07384 12.309 7.96495 11.7567 8.00988C11.2044 8.05482 10.6754 8.25182 10.2283 8.57905C9.78114 8.90628 9.43336 9.35095 9.2235 9.86376C9.01364 10.3766 8.9499 10.9375 9.03935 11.4843C9.1288 12.0311 9.36794 12.5425 9.73025 12.9617C10.0926 13.3809 10.5639 13.6916 11.092 13.8593"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M11.0588 21.2495C10.8851 21.1568 10.7261 21.0388 10.5868 20.8995L6.34284 16.6565C5.42527 15.7389 4.74471 14.6118 4.35987 13.3724C3.97503 12.1331 3.89746 10.8187 4.13385 9.54272C4.37024 8.26672 4.9135 7.06738 5.71676 6.04815C6.52002 5.02891 7.55917 4.22039 8.74458 3.69232C9.93 3.16424 11.2261 2.93247 12.521 3.01699C13.816 3.10151 15.071 3.49978 16.1777 4.17746C17.2844 4.85514 18.2096 5.79187 18.8736 6.90687C19.5376 8.02186 19.9203 9.28164 19.9888 10.5775"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -11,7 +11,7 @@ export const MapPinStarIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_69390">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

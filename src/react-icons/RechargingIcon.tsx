@@ -3,7 +3,7 @@ import React from "react";
 export const RechargingIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_65399)">
 <path d="M7.03797 4.5C6.05222 5.15156 5.20443 5.99086 4.54297 6.97"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M3.18429 10.2109C2.95419 11.369 2.95419 12.5609 3.18429 13.7189"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -18,7 +18,7 @@ export const RechargingIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_65399">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

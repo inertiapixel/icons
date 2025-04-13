@@ -3,7 +3,7 @@ import React from "react";
 export const BinaryIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_83739)">
 <path d="M11 10V5H10M18 19V14H17"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M15 5.5C15 5.36739 15.0527 5.24021 15.1464 5.14645C15.2402 5.05268 15.3674 5 15.5 5H17.5C17.6326 5 17.7598 5.05268 17.8536 5.14645C17.9473 5.24021 18 5.36739 18 5.5V9.5C18 9.63261 17.9473 9.75979 17.8536 9.85355C17.7598 9.94732 17.6326 10 17.5 10H15.5C15.3674 10 15.2402 9.94732 15.1464 9.85355C15.0527 9.75979 15 9.63261 15 9.5V5.5Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -12,7 +12,7 @@ export const BinaryIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_83739">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

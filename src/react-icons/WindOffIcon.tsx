@@ -3,7 +3,7 @@ import React from "react";
 export const WindOffIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_59839)">
 <path d="M5 7.99954H8M12 7.99954H13.5C13.9644 8.00843 14.4222 7.88775 14.8218 7.65103C15.2215 7.41431 15.5473 7.07092 15.7627 6.65937C15.9782 6.24783 16.0747 5.7844 16.0414 5.32108C16.0082 4.85775 15.8465 4.41285 15.5745 4.03627C15.3026 3.6597 14.931 3.36635 14.5017 3.18912C14.0723 3.01189 13.602 2.95779 13.1436 3.03289C12.6852 3.108 12.2568 3.30933 11.9064 3.61432C11.5561 3.9193 11.2976 4.31587 11.16 4.75954"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M3 12H12"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -13,7 +13,7 @@ export const WindOffIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_59839">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

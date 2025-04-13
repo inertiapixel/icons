@@ -3,14 +3,14 @@ import React from "react";
 export const EarIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_74963)">
 <path d="M6 10.0016C5.99915 8.92252 6.2478 7.85782 6.72652 6.8907C7.20525 5.92358 7.9011 5.08023 8.7597 4.42655C9.6183 3.77286 10.6164 3.32654 11.676 3.12244C12.7357 2.91834 13.8282 2.96199 14.8682 3.24998C15.9081 3.53798 16.8674 4.06252 17.6712 4.78262C18.4749 5.50273 19.1012 6.3989 19.5012 7.40113C19.9013 8.40336 20.0642 9.48451 19.9772 10.5601C19.8903 11.6357 19.5558 12.6767 19 13.6016C18.4315 14.3597 17.7581 15.0331 17 15.6016C16.1137 16.4364 15.4297 17.4625 15 18.6016C14.6897 19.1881 14.2535 19.6986 13.7228 20.0967C13.192 20.4948 12.5798 20.7707 11.93 20.9045C11.2802 21.0383 10.6088 21.0267 9.96393 20.8706C9.31908 20.7145 8.71673 20.4178 8.2 20.0016"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M10.0002 10.0007C9.99421 9.49883 10.1142 9.00346 10.3493 8.55997C10.5843 8.11648 10.9269 7.73905 11.3456 7.46226C11.7643 7.18546 12.2458 7.01814 12.7459 6.97563C13.246 6.93311 13.7488 7.01675 14.2082 7.2189C14.6676 7.42104 15.069 7.73523 15.3755 8.13267C15.6821 8.53012 15.884 8.99813 15.9628 9.49383C16.0416 9.98953 15.9948 10.4971 15.8266 10.97C15.6584 11.4429 15.3743 11.8661 15.0002 12.2007"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 </g>
 <defs>
 <clipPath id="clip0_802_74963">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

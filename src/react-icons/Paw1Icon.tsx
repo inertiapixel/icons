@@ -3,7 +3,7 @@ import React from "react";
 export const Paw1Icon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_66986)">
 <path d="M14.6993 13.5C13.5993 11.5 13.2583 11 11.9993 11C10.7403 11 10.2633 11.755 9.16328 13.747C8.22128 15.45 6.31728 15.592 5.84228 17.038C5.74528 17.303 5.69728 17.715 5.69928 18C5.69928 19.176 6.48628 20 7.49928 20C8.75828 20 10.4993 19 11.9993 19C13.4993 19 15.2403 20 16.4993 20C17.5123 20 18.2993 19.177 18.2993 18C18.2993 17.715 18.2503 17.303 18.1533 17.038C17.6783 15.587 15.6413 15.203 14.6993 13.5Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M20.1882 8.082C20.0597 8.0277 19.9216 7.99981 19.7822 8H19.7672C19.0322 8.012 18.2072 8.75 17.7742 9.866C17.2552 11.201 17.4942 12.566 18.3122 12.918C18.4412 12.973 18.5792 13 18.7182 13C19.4572 13 20.2932 12.258 20.7292 11.134C21.2452 9.799 21.0012 8.434 20.1882 8.082Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -13,7 +13,7 @@ export const Paw1Icon = (
 </g>
 <defs>
 <clipPath id="clip0_802_66986">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

@@ -3,7 +3,7 @@ import React from "react";
 export const HandStopIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_72413)">
 <path d="M8 13V5.5C8 5.10218 8.15804 4.72064 8.43934 4.43934C8.72064 4.15804 9.10218 4 9.5 4C9.89782 4 10.2794 4.15804 10.5607 4.43934C10.842 4.72064 11 5.10218 11 5.5V12"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M11 5.5V3.5C11 3.30302 11.0388 3.10796 11.1142 2.92597C11.1896 2.74399 11.3001 2.57863 11.4393 2.43934C11.5786 2.30005 11.744 2.18956 11.926 2.11418C12.108 2.0388 12.303 2 12.5 2C12.697 2 12.892 2.0388 13.074 2.11418C13.256 2.18956 13.4214 2.30005 13.5607 2.43934C13.6999 2.57863 13.8104 2.74399 13.8858 2.92597C13.9612 3.10796 14 3.30302 14 3.5V12"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -12,7 +12,7 @@ export const HandStopIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_72413">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

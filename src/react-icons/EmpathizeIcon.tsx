@@ -3,14 +3,14 @@ import React from "react";
 export const EmpathizeIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_74862)">
 <path d="M9.5 5.5C9.5 6.16304 9.76339 6.79893 10.2322 7.26777C10.7011 7.73661 11.337 8 12 8C12.663 8 13.2989 7.73661 13.7678 7.26777C14.2366 6.79893 14.5 6.16304 14.5 5.5C14.5 4.83696 14.2366 4.20107 13.7678 3.73223C13.2989 3.26339 12.663 3 12 3C11.337 3 10.7011 3.26339 10.2322 3.73223C9.76339 4.20107 9.5 4.83696 9.5 5.5Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M12.0019 21.3699L17.0969 16.2739C17.3867 15.9878 17.6171 15.6473 17.7747 15.2718C17.9324 14.8964 18.0142 14.4935 18.0155 14.0863C18.0168 13.6791 17.9376 13.2756 17.7824 12.8992C17.6272 12.5227 17.399 12.1807 17.1111 11.8927C16.8232 11.6048 16.4811 11.3767 16.1047 11.2214C15.7282 11.0662 15.3248 10.987 14.9176 10.9883C14.5104 10.9896 14.1074 11.0715 13.732 11.2291C13.3565 11.3868 13.016 11.6171 12.7299 11.9069L12.0019 12.6339L11.2739 11.9069C10.9878 11.6171 10.6473 11.3868 10.2718 11.2291C9.8964 11.0715 9.49348 10.9896 9.08627 10.9883C8.67907 10.987 8.27563 11.0662 7.89917 11.2214C7.52271 11.3767 7.18067 11.6048 6.89274 11.8927C6.6048 12.1807 6.37665 12.5227 6.22143 12.8992C6.06621 13.2756 5.98698 13.6791 5.9883 14.0863C5.98962 14.4935 6.07146 14.8964 6.22911 15.2718C6.38677 15.6473 6.61712 15.9878 6.90691 16.2739L12.0019 21.3699Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 </g>
 <defs>
 <clipPath id="clip0_802_74862">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

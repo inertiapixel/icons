@@ -3,7 +3,7 @@ import React from "react";
 export const BrandOpenaiIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_81791)">
 <path d="M11.2188 19.3824C11.5046 20.1521 12.0517 20.7968 12.7647 21.2039C13.4776 21.611 14.3109 21.7546 15.119 21.6096C15.9271 21.4646 16.6585 21.0403 17.1855 20.4107C17.7124 19.7811 18.0013 18.9864 18.0017 18.1654V12.9984L12.0017 9.64844"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M5.21554 15.0148C4.69151 15.6471 4.40644 16.4435 4.41019 17.2648C4.41395 18.086 4.70628 18.8798 5.23608 19.5073C5.76587 20.1348 6.4994 20.5561 7.30838 20.6975C8.11736 20.8389 8.95031 20.6914 9.66154 20.2808L14.0015 17.7468V10.8008"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -14,7 +14,7 @@ export const BrandOpenaiIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_81791">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

@@ -3,7 +3,7 @@ import React from "react";
 export const PlugConnectedXIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_66099)">
 <path d="M20 16L16 20"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M6.99847 12L11.9985 17L10.4985 18.5C10.1721 18.8371 9.78198 19.1059 9.35072 19.2907C8.91947 19.4755 8.45575 19.5727 7.98658 19.5765C7.51741 19.5803 7.05217 19.4907 6.61798 19.3129C6.18378 19.1351 5.78931 18.8727 5.45755 18.5409C5.12578 18.2092 4.86336 17.8147 4.68557 17.3805C4.50778 16.9463 4.41818 16.4811 4.42199 16.0119C4.4258 15.5427 4.52294 15.079 4.70776 14.6477C4.89257 14.2165 5.16136 13.8263 5.49847 13.5L6.99847 12Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -16,7 +16,7 @@ export const PlugConnectedXIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_66099">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

@@ -3,7 +3,7 @@ import React from "react";
 export const BrandWazeIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_81201)">
 <path d="M6.66 17.52C5.76161 17.073 4.96983 16.438 4.33835 15.6581C3.70686 14.8782 3.25043 13.9717 3 13C5 13 6 12 6 10.49C6 6.57 8.25 3 13.38 3C18 3 21 6.51 21 11C21.0065 12.2943 20.7019 13.5712 20.112 14.7232C19.522 15.8753 18.664 16.8687 17.61 17.62"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M10 18.6914C11.0977 18.8987 12.2129 18.9992 13.33 18.9914H13.87"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -14,7 +14,7 @@ export const BrandWazeIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_81201">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

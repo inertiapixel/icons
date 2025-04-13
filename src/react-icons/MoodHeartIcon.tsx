@@ -3,7 +3,7 @@ import React from "react";
 export const MoodHeartIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_68230)">
 <path d="M21 11.9996C20.9999 10.1774 20.4467 8.39816 19.4136 6.89717C18.3804 5.39617 16.916 4.24414 15.2139 3.59342C13.5119 2.94271 11.6524 2.82397 9.88144 3.25291C8.11045 3.68185 6.51138 4.63826 5.2957 5.99565C4.08002 7.35305 3.30501 9.04748 3.07316 10.8549C2.84131 12.6622 3.16354 14.4974 3.99724 16.1177C4.83094 17.738 6.13683 19.0671 7.74221 19.9291C9.34759 20.7912 11.1768 21.1456 12.988 20.9456"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M9 10H9.01"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -13,7 +13,7 @@ export const MoodHeartIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_68230">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

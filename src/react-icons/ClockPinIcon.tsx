@@ -3,7 +3,7 @@ import React from "react";
 export const ClockPinIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_78473)">
 <path d="M20.971 11.2779C20.8284 9.50635 20.1645 7.81666 19.0629 6.4219C17.9614 5.02714 16.4715 3.98974 14.7812 3.44051C13.0909 2.89129 11.2758 2.85482 9.56484 3.33571C7.85384 3.8166 6.32353 4.79331 5.16685 6.1427C4.01016 7.4921 3.2789 9.15375 3.06526 10.9182C2.85163 12.6826 3.16517 14.4707 3.96638 16.0572C4.76758 17.6436 6.02056 18.9574 7.56734 19.8327C9.11413 20.7081 10.8855 21.1059 12.658 20.9759"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M12 7V12L13.5 13.5"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -12,7 +12,7 @@ export const ClockPinIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_78473">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

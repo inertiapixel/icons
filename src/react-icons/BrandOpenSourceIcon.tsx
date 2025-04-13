@@ -3,13 +3,13 @@ import React from "react";
 export const BrandOpenSourceIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_81799)">
 <path d="M11.9986 3C14.0655 2.99883 16.0698 3.70911 17.6748 5.01149C19.2797 6.31387 20.3875 8.12898 20.8119 10.1518C21.2364 12.1747 20.9516 14.282 20.0055 16.1196C19.0594 17.9573 17.5096 19.4133 15.6166 20.243L13.4236 14.641C14.0113 14.3239 14.4764 13.8198 14.7453 13.2085C15.0141 12.5972 15.0713 11.9136 14.9078 11.2662C14.7442 10.6187 14.3694 10.0443 13.8425 9.63394C13.3156 9.22359 12.6669 9.00077 11.9991 9.00077C11.3313 9.00077 10.6826 9.22359 10.1557 9.63394C9.62885 10.0443 9.25396 10.6187 9.09043 11.2662C8.92691 11.9136 8.98409 12.5972 9.25293 13.2085C9.52176 13.8198 9.98688 14.3239 10.5746 14.641L8.3816 20.244C6.48803 19.4147 4.93767 17.9588 3.99111 16.121C3.04456 14.2832 2.75951 12.1756 3.18388 10.1524C3.60826 8.12923 4.71618 6.3138 6.32142 5.01127C7.92667 3.70875 9.93138 2.99853 11.9986 3Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 </g>
 <defs>
 <clipPath id="clip0_802_81799">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

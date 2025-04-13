@@ -1,6 +1,6 @@
 {
   "name": "@inertiapixel/react-icons",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "InertiaPixel: 5000+ high-quality SVG icons for React and Next.js projects.",
   "author": "Md Asif <mdasiff007@gmail.com>",
   "main": "dist/index.js",

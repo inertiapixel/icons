@@ -3,7 +3,7 @@ import React from "react";
 export const PawOffIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_66993)">
 <path d="M11.1672 11.1523C10.4572 11.4623 9.98319 12.2593 9.16719 13.7453C8.22519 15.4483 6.32119 15.5903 5.84619 17.0363C5.74919 17.3013 5.70119 17.7133 5.70319 17.9983C5.70319 19.1743 6.49019 19.9983 7.50319 19.9983C8.76219 19.9983 10.5032 18.9983 12.0032 18.9983C13.5032 18.9983 15.2442 19.9983 16.5032 19.9983C17.4302 19.9983 18.1672 19.3093 18.2862 18.2903"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M20.1882 8.082C20.0597 8.0277 19.9216 7.99981 19.7822 8H19.7672C19.0322 8.012 18.2072 8.75 17.7742 9.866C17.2552 11.201 17.4942 12.566 18.3122 12.918C18.4412 12.973 18.5792 13 18.7182 13C19.4572 13 20.2932 12.258 20.7292 11.134C21.2452 9.799 21.0012 8.434 20.1882 8.082Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -14,7 +14,7 @@ export const PawOffIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_66993">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

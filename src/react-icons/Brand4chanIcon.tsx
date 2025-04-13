@@ -3,7 +3,7 @@ import React from "react";
 export const Brand4chanIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_82882)">
 <path d="M14.0009 11C14.0009 11 20.0549 9.95 20.0009 6.5C19.9629 4.176 17.5159 3.31 16.9849 5C16.9849 5 16.4829 3 14.9749 3C13.4669 3 11.9909 6 14.0009 11Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M13.9787 11C13.9787 11 20.0537 9.95 19.9987 6.5C19.9607 4.176 17.5057 3.31 16.9737 5C16.9737 5 16.4687 3 14.9567 3C13.4437 3 11.9567 6 13.9797 11H13.9787Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -13,7 +13,7 @@ export const Brand4chanIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_82882">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

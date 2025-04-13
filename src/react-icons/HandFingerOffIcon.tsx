@@ -3,7 +3,7 @@ import React from "react";
 export const HandFingerOffIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_72474)">
 <path d="M8 13V8"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M8.05859 4.07611C8.15976 3.72923 8.38275 3.43052 8.68655 3.23491C8.99036 3.0393 9.35456 2.95993 9.71221 3.01139C10.0699 3.06284 10.3969 3.24167 10.6333 3.515C10.8696 3.78833 10.9993 4.13778 10.9986 4.49911V6.99911M10.9986 10.9991V11.9991"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -14,7 +14,7 @@ export const HandFingerOffIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_72474">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>

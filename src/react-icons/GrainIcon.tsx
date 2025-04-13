@@ -3,7 +3,7 @@ import React from "react";
 export const GrainIcon = (
   props: React.SVGProps<SVGSVGElement> & { width?: number; height?: number; color?: string }
 ) => (
-  <svg   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} width={props.width || 15} height={props.height || 15} {...props}>
+  <svg   viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke={props.color || 'currentColor'} fill={props.fill || 'none'} width={props.width || 15} height={props.height || 15} {...props}>
 <g clipPath="url(#clip0_802_72688)">
 <path d="M3.5 9.5C3.5 9.76522 3.60536 10.0196 3.79289 10.2071C3.98043 10.3946 4.23478 10.5 4.5 10.5C4.76522 10.5 5.01957 10.3946 5.20711 10.2071C5.39464 10.0196 5.5 9.76522 5.5 9.5C5.5 9.23478 5.39464 8.98043 5.20711 8.79289C5.01957 8.60536 4.76522 8.5 4.5 8.5C4.23478 8.5 3.98043 8.60536 3.79289 8.79289C3.60536 8.98043 3.5 9.23478 3.5 9.5Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M8.5 4.5C8.5 4.76522 8.60536 5.01957 8.79289 5.20711C8.98043 5.39464 9.23478 5.5 9.5 5.5C9.76522 5.5 10.0196 5.39464 10.2071 5.20711C10.3946 5.01957 10.5 4.76522 10.5 4.5C10.5 4.23478 10.3946 3.98043 10.2071 3.79289C10.0196 3.60536 9.76522 3.5 9.5 3.5C9.23478 3.5 8.98043 3.60536 8.79289 3.79289C8.60536 3.98043 8.5 4.23478 8.5 4.5Z"  strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -16,7 +16,7 @@ export const GrainIcon = (
 </g>
 <defs>
 <clipPath id="clip0_802_72688">
-<rect width="24" height="24" fill="white"/>
+<rect width="24" height="24" />
 </clipPath>
 </defs>
 </svg>
