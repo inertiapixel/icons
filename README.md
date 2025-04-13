@@ -66,3 +66,5 @@ SVGs are supported by all major browsers and offer better flexibility, scalabili
 
 This icon set is **free** and open-source under the **MIT License**.  
 See the full license [here](https://github.com/inertiapixel/icons/blob/master/LICENSE).
+
+**Crafted in India by [InertiaPixel](https://www.inertiapixel.com/)**
