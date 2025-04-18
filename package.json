@@ -1,6 +1,6 @@
 {
   "name": "@inertiapixel/react-icons",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "InertiaPixel: 5000+ high-quality SVG icons for React and Next.js projects.",
   "author": "Md Asif <mdasiff007@gmail.com>",
   "main": "dist/index.js",
@@ -25,10 +25,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/inertiapixel/icons"
+    "url": "https://github.com/inertiapixel/react-icons"
   },
   "bugs": {
-    "url": "https://github.com/inertiapixel/icons/issues"
+    "url": "https://github.com/inertiapixel/react-icons/issues"
   },
   "homepage": "https://www.inertiapixel.com/react-icons",
   "keywords": [
